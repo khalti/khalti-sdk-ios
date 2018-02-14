@@ -22,7 +22,7 @@ pod 'Khalti'
 
 ## Author
 
-rjndra, rjndrakarki@gmail.com
+Khalti
 
 ## License
 
