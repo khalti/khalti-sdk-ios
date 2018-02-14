@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Khalti_Example' do
+  pod 'Khalti', :path => '../'
+
+  target 'Khalti_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
