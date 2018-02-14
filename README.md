@@ -5,13 +5,15 @@
 [![License](https://img.shields.io/cocoapods/l/Khalti.svg?style=flat)](http://cocoapods.org/pods/Khalti)
 [![Platform](https://img.shields.io/cocoapods/p/Khalti.svg?style=flat)](http://cocoapods.org/pods/Khalti)
 
+## Under Development
+
+Khalti is currently under development. Please keep paitence until its release.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
-
-## Installation
+## Installation after release
 
 Khalti is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
