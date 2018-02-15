@@ -1,0 +1,16 @@
+PODS:
+  - Khalti (0.1.0)
+
+DEPENDENCIES:
+  - Khalti (from `../`)
+
+EXTERNAL SOURCES:
+  Khalti:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Khalti: 1f2e3965d18f8e299832f617ec9a831b32fdd762
+
+PODFILE CHECKSUM: 40820d69db60324c6f59d6d9461eda2f67ed265e
+
+COCOAPODS: 1.3.1

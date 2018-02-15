@@ -1,0 +1,27 @@
+{
+  "name": "Khalti",
+  "version": "0.1.0",
+  "summary": "A short description of Khalti.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/rjndra/Khalti",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "rjndra": "rjndrakarki@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/rjndra/Khalti.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "khalti/Classes/*.{swift}",
+  "resource_bundles": {
+    "Khalti": [
+      "khalti/Classes/**/*.{png,storyboard,xib}"
+    ]
+  }
+}
