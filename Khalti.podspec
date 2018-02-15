@@ -30,13 +30,13 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'Khalti/Classes/**/*'
+  s.source_files = 'khalti/Classes/*.{swift}'
   
-  # s.resource_bundles = {
-  #   'Khalti' => ['Khalti/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'Khalti' => ['khalti/Classes/**/*.{png,storyboard,xib}']
+  }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  # s.public_header_files = 'khalti/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
