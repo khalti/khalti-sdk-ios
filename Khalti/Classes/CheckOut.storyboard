@@ -1,31 +1,266 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="85Z-3d-vgn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nqx-nj-bY9">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment version="2064" identifier="iOS"/>
+        <deployment version="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--Check Out View Controller-->
-        <scene sceneID="occ-sA-gwn">
+        <!--Payment-->
+        <scene sceneID="c4a-3B-mI4">
             <objects>
-                <viewController storyboardIdentifier="CheckOutViewController" id="85Z-3d-vgn" customClass="CheckOutViewController" customModule="Khalti" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CheckOutViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nqx-nj-bY9" customClass="CheckOutViewController" customModule="Khalti" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="fln-xH-CEc"/>
-                        <viewControllerLayoutGuide type="bottom" id="1qL-vZ-Ni2"/>
+                        <viewControllerLayoutGuide type="top" id="DDh-Ia-Wbq"/>
+                        <viewControllerLayoutGuide type="bottom" id="LrS-rl-nqc"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Xzc-qG-meR">
+                    <view key="view" contentMode="scaleToFill" id="c5D-30-e8l">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.29803921570000003" green="0.1529411765" blue="0.42745098040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XvB-q8-IUF" userLabel="Content View">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cbb-AN-Xci" userLabel="Top View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
+                                        <color key="backgroundColor" red="0.27890625600000002" green="0.1618569195" blue="0.41170451050000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" id="vqS-RD-cuw"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wd4-Zz-mXB" userLabel="Choose View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lhl-ps-D4c" userLabel="First Option">
+                                                <rect key="frame" x="0.0" y="0.0" width="125" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmN-Jf-MN8">
+                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="59"/>
+                                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                                                        <inset key="contentEdgeInsets" minX="0.0" minY="16" maxX="0.0" maxY="16"/>
+                                                        <state key="normal" title="eBanking">
+                                                            <color key="titleColor" red="0.96770882609999997" green="0.57780718799999997" blue="0.13238912820000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="ebankingPay:" destination="nqx-nj-bY9" eventType="touchUpInside" id="7uj-E8-U2a"/>
+                                                        </connections>
+                                                    </button>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3LM-wg-iWH" userLabel="First Line">
+                                                        <rect key="frame" x="0.0" y="59" width="125" height="1"/>
+                                                        <color key="backgroundColor" red="0.96770882609999997" green="0.57780718799999997" blue="0.13238912820000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="yAn-am-Fea"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="3LM-wg-iWH" secondAttribute="trailing" id="bMu-ll-4y2"/>
+                                                    <constraint firstAttribute="bottom" secondItem="3LM-wg-iWH" secondAttribute="bottom" id="htg-3D-fXd"/>
+                                                    <constraint firstItem="3LM-wg-iWH" firstAttribute="leading" secondItem="lhl-ps-D4c" secondAttribute="leading" id="lLG-Ki-LIE"/>
+                                                    <constraint firstAttribute="trailing" secondItem="pmN-Jf-MN8" secondAttribute="trailing" id="mrt-3d-cSP"/>
+                                                    <constraint firstItem="pmN-Jf-MN8" firstAttribute="top" secondItem="lhl-ps-D4c" secondAttribute="top" id="nNj-kY-be7"/>
+                                                    <constraint firstItem="3LM-wg-iWH" firstAttribute="top" secondItem="pmN-Jf-MN8" secondAttribute="bottom" id="ru4-rK-xIx"/>
+                                                    <constraint firstItem="pmN-Jf-MN8" firstAttribute="leading" secondItem="lhl-ps-D4c" secondAttribute="leading" id="yRF-kA-f65"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5rK-84-HC5" userLabel="Second Option">
+                                                <rect key="frame" x="125" y="0.0" width="125" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePr-0x-FK1">
+                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="59"/>
+                                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                                                        <state key="normal" title="Khalti">
+                                                            <color key="titleColor" red="0.27890625600000002" green="0.1618569195" blue="0.41170451050000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="khaltiPay:" destination="nqx-nj-bY9" eventType="touchUpInside" id="sXV-Jo-1VP"/>
+                                                        </connections>
+                                                    </button>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B0Z-v7-JOE">
+                                                        <rect key="frame" x="0.0" y="59" width="125" height="1"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="Dh9-q5-dZm"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="ePr-0x-FK1" firstAttribute="top" secondItem="5rK-84-HC5" secondAttribute="top" id="8Uq-6R-1cJ"/>
+                                                    <constraint firstItem="B0Z-v7-JOE" firstAttribute="top" secondItem="ePr-0x-FK1" secondAttribute="bottom" id="GY8-RB-NBS"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ePr-0x-FK1" secondAttribute="trailing" id="XAF-Wo-ArQ"/>
+                                                    <constraint firstItem="B0Z-v7-JOE" firstAttribute="leading" secondItem="5rK-84-HC5" secondAttribute="leading" id="YhO-4S-gWs"/>
+                                                    <constraint firstItem="ePr-0x-FK1" firstAttribute="leading" secondItem="5rK-84-HC5" secondAttribute="leading" id="o0B-9j-RIE"/>
+                                                    <constraint firstAttribute="trailing" secondItem="B0Z-v7-JOE" secondAttribute="trailing" id="rUB-b6-Mb5"/>
+                                                    <constraint firstAttribute="bottom" secondItem="B0Z-v7-JOE" secondAttribute="bottom" id="wFJ-0L-n0a"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z8P-2s-5vh" userLabel="Third Option">
+                                                <rect key="frame" x="250" y="0.0" width="125" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHu-S6-tkB">
+                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="59"/>
+                                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                                                        <state key="normal" title="Card">
+                                                            <color key="titleColor" red="0.27890625600000002" green="0.1618569195" blue="0.41170451050000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="cardPay:" destination="nqx-nj-bY9" eventType="touchUpInside" id="ZeU-iH-DCc"/>
+                                                        </connections>
+                                                    </button>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MJM-R6-pxS">
+                                                        <rect key="frame" x="0.0" y="59" width="125" height="1"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="sKG-aU-wMn"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="qHu-S6-tkB" firstAttribute="leading" secondItem="z8P-2s-5vh" secondAttribute="leading" id="9Uq-vB-pfN"/>
+                                                    <constraint firstAttribute="bottom" secondItem="MJM-R6-pxS" secondAttribute="bottom" id="JMq-4u-lqb"/>
+                                                    <constraint firstItem="qHu-S6-tkB" firstAttribute="top" secondItem="z8P-2s-5vh" secondAttribute="top" id="QrX-Wc-RHG"/>
+                                                    <constraint firstItem="MJM-R6-pxS" firstAttribute="leading" secondItem="z8P-2s-5vh" secondAttribute="leading" id="Vxt-Rn-cVR"/>
+                                                    <constraint firstAttribute="trailing" secondItem="MJM-R6-pxS" secondAttribute="trailing" id="dIf-DX-9mZ"/>
+                                                    <constraint firstItem="MJM-R6-pxS" firstAttribute="top" secondItem="qHu-S6-tkB" secondAttribute="bottom" id="fH9-3J-Ghj"/>
+                                                    <constraint firstAttribute="trailing" secondItem="qHu-S6-tkB" secondAttribute="trailing" id="r07-N6-eMU"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="lhl-ps-D4c" firstAttribute="width" secondItem="5rK-84-HC5" secondAttribute="width" id="6NY-Vs-KTw"/>
+                                            <constraint firstItem="lhl-ps-D4c" firstAttribute="width" secondItem="z8P-2s-5vh" secondAttribute="width" id="6op-So-26U"/>
+                                            <constraint firstAttribute="trailing" secondItem="z8P-2s-5vh" secondAttribute="trailing" id="Jjj-4q-aSA"/>
+                                            <constraint firstItem="lhl-ps-D4c" firstAttribute="leading" secondItem="Wd4-Zz-mXB" secondAttribute="leading" id="La8-kA-1UM"/>
+                                            <constraint firstItem="lhl-ps-D4c" firstAttribute="top" secondItem="Wd4-Zz-mXB" secondAttribute="top" id="N1O-jU-4Kb"/>
+                                            <constraint firstAttribute="bottom" secondItem="lhl-ps-D4c" secondAttribute="bottom" id="PAE-YD-Nbn"/>
+                                            <constraint firstItem="z8P-2s-5vh" firstAttribute="top" secondItem="Wd4-Zz-mXB" secondAttribute="top" id="QEO-FJ-KHR"/>
+                                            <constraint firstAttribute="bottom" secondItem="z8P-2s-5vh" secondAttribute="bottom" id="Sul-nc-mrj"/>
+                                            <constraint firstItem="5rK-84-HC5" firstAttribute="top" secondItem="Wd4-Zz-mXB" secondAttribute="top" id="f4e-9K-1HP"/>
+                                            <constraint firstAttribute="bottom" secondItem="5rK-84-HC5" secondAttribute="bottom" id="iwG-LY-W1r"/>
+                                            <constraint firstItem="z8P-2s-5vh" firstAttribute="leading" secondItem="5rK-84-HC5" secondAttribute="trailing" id="rCo-G8-SC4"/>
+                                            <constraint firstItem="5rK-84-HC5" firstAttribute="leading" secondItem="lhl-ps-D4c" secondAttribute="trailing" id="ua1-5b-mxv"/>
+                                            <constraint firstAttribute="height" constant="60" id="x4o-Ws-bfK"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2S8-bU-rul" userLabel="Views">
+                                        <rect key="frame" x="0.0" y="60" width="375" height="587"/>
+                                        <subviews>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a9E-OV-RkC">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="587"/>
+                                            </containerView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="a9E-OV-RkC" secondAttribute="bottom" id="8FZ-4h-gmr"/>
+                                            <constraint firstItem="a9E-OV-RkC" firstAttribute="top" secondItem="2S8-bU-rul" secondAttribute="top" id="UT4-uT-4hb"/>
+                                            <constraint firstItem="a9E-OV-RkC" firstAttribute="leading" secondItem="2S8-bU-rul" secondAttribute="leading" id="Yx7-3R-aiS"/>
+                                            <constraint firstAttribute="trailing" secondItem="a9E-OV-RkC" secondAttribute="trailing" id="nUs-cl-IQL"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="2S8-bU-rul" firstAttribute="top" secondItem="Wd4-Zz-mXB" secondAttribute="bottom" id="2TF-ih-Kjv"/>
+                                    <constraint firstAttribute="trailing" secondItem="Wd4-Zz-mXB" secondAttribute="trailing" id="CEv-Lp-dSf"/>
+                                    <constraint firstItem="cbb-AN-Xci" firstAttribute="leading" secondItem="XvB-q8-IUF" secondAttribute="leading" id="INl-jw-gy9"/>
+                                    <constraint firstItem="cbb-AN-Xci" firstAttribute="top" secondItem="XvB-q8-IUF" secondAttribute="top" id="OJE-u9-MGr"/>
+                                    <constraint firstAttribute="bottom" secondItem="2S8-bU-rul" secondAttribute="bottom" id="TV1-rX-cDu"/>
+                                    <constraint firstItem="Wd4-Zz-mXB" firstAttribute="top" secondItem="cbb-AN-Xci" secondAttribute="bottom" id="Tsj-9H-onL"/>
+                                    <constraint firstAttribute="trailing" secondItem="2S8-bU-rul" secondAttribute="trailing" id="Uk9-iF-0k6"/>
+                                    <constraint firstItem="Wd4-Zz-mXB" firstAttribute="leading" secondItem="XvB-q8-IUF" secondAttribute="leading" id="eVa-qF-zMJ"/>
+                                    <constraint firstItem="2S8-bU-rul" firstAttribute="leading" secondItem="XvB-q8-IUF" secondAttribute="leading" id="fRx-XK-MaN"/>
+                                    <constraint firstAttribute="trailing" secondItem="cbb-AN-Xci" secondAttribute="trailing" id="tXc-gd-4WY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="XvB-q8-IUF" secondAttribute="bottom" id="FnD-H0-zAf"/>
+                            <constraint firstItem="XvB-q8-IUF" firstAttribute="top" secondItem="DDh-Ia-Wbq" secondAttribute="bottom" id="IPV-C1-bKS"/>
+                            <constraint firstItem="XvB-q8-IUF" firstAttribute="leading" secondItem="c5D-30-e8l" secondAttribute="leading" id="suR-3X-W6Q"/>
+                            <constraint firstAttribute="trailing" secondItem="XvB-q8-IUF" secondAttribute="trailing" id="yZm-VJ-LQ8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Payment" id="vUV-gd-Cig"/>
+                    <connections>
+                        <outlet property="containerView" destination="a9E-OV-RkC" id="WNg-TB-hsq"/>
+                        <outlet property="firstButton" destination="pmN-Jf-MN8" id="nbs-ev-ywt"/>
+                        <outlet property="firstLine" destination="3LM-wg-iWH" id="eE6-QL-vSJ"/>
+                        <outlet property="secondButton" destination="ePr-0x-FK1" id="uSw-ew-Nk3"/>
+                        <outlet property="secondLine" destination="B0Z-v7-JOE" id="eSm-Hv-jnW"/>
+                        <outlet property="thirdButton" destination="qHu-S6-tkB" id="AM0-SE-dFb"/>
+                        <outlet property="thirdLine" destination="MJM-R6-pxS" id="fMU-Fh-3Xh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hbR-oJ-fBK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1090" y="237"/>
+        </scene>
+        <!--Ebanking View Controller-->
+        <scene sceneID="P1o-C6-Ity">
+            <objects>
+                <viewController storyboardIdentifier="EbankingViewController" id="lLl-Sf-WPI" customClass="EbankingViewController" customModule="Khalti" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qaS-hc-dQG"/>
+                        <viewControllerLayoutGuide type="bottom" id="JfF-03-IID"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="m0m-Wq-Vxk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bxY-nQ-U5B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gdh-ig-Z4e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="273" y="290"/>
+            <point key="canvasLocation" x="-1022" y="833"/>
+        </scene>
+        <!--Khalti Payment View Controller-->
+        <scene sceneID="T8d-n1-LQX">
+            <objects>
+                <viewController storyboardIdentifier="KhaltiPaymentViewController" id="siR-AJ-8F4" customClass="KhaltiPaymentViewController" customModule="Khalti" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TK8-Yx-ifc"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kq7-he-ubL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hDU-uw-Yhl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6g4-Lk-Xxo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1022" y="833"/>
+        </scene>
+        <!--Card Payment View Controller-->
+        <scene sceneID="ED0-yQ-IMy">
+            <objects>
+                <viewController storyboardIdentifier="CardPaymentViewController" id="1aT-ZB-2GE" customClass="CardPaymentViewController" customModule="Khalti" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="71f-CQ-688"/>
+                        <viewControllerLayoutGuide type="bottom" id="aPy-Lf-D54"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aN7-nC-JLq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Exw-Dq-Him" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1022" y="833"/>
         </scene>
     </scenes>
 </document>

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04DDEB425DE22417BD41CAB5766DB7A8 /* CheckOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA863395016DAB13C34E6D8111BB0CB /* CheckOutView.swift */; };
+		04DDEB425DE22417BD41CAB5766DB7A8 /* CheckOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA863395016DAB13C34E6D8111BB0CB /* CheckOutViewController.swift */; };
 		06FC90F4A85EFD916573DC1673605787 /* DictionaryTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E7E12F2DB4BE0FFB38C60A044990D3 /* DictionaryTransform.swift */; };
 		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E5BDB0B45ECBBFAE70B137084D2144 /* Timeline.swift */; };
 		132A9D559C9969FB66DEB1AF6ADF29A4 /* Khalti.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589689FC9F299331B63CA8BBBBA5D37B /* Khalti.swift */; };
@@ -37,6 +37,14 @@
 		6E28BCC6203A9F460057E37A /* CheckOutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E28BCC0203A9F3D0057E37A /* CheckOutDelegate.swift */; };
 		6E28BCC7203A9F4A0057E37A /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E28BCC1203A9F3D0057E37A /* Config.swift */; };
 		6E28BCC8203A9F4D0057E37A /* KaltiApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E28BCC2203A9F3D0057E37A /* KaltiApi.swift */; };
+		6E28BCCD203AA2E30057E37A /* ExtensionJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E28BCCB203AA2C30057E37A /* ExtensionJSON.swift */; };
+		6E28BCCE203AA2E50057E37A /* ErrorAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E28BCC9203AA1140057E37A /* ErrorAction.swift */; };
+		6E28BCD0203AC6A70057E37A /* EbankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E28BCCF203AC6A70057E37A /* EbankingViewController.swift */; };
+		6E28BCD2203AC6B70057E37A /* KhaltiPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E28BCD1203AC6B70057E37A /* KhaltiPaymentViewController.swift */; };
+		6E28BCD4203AC6C60057E37A /* CardPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E28BCD3203AC6C60057E37A /* CardPaymentViewController.swift */; };
+		6E28BCD9203AC9600057E37A /* EbankingWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E28BCD8203AC9600057E37A /* EbankingWireframe.swift */; };
+		6E28BCDB203AC9C10057E37A /* KhaltiWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E28BCDA203AC9C10057E37A /* KhaltiWireframe.swift */; };
+		6E28BCDD203AC9EC0057E37A /* CardPaymentWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E28BCDC203AC9EC0057E37A /* CardPaymentWireframe.swift */; };
 		6EA763AA6F10C5EAD7C87435684A9E81 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E717345CA5F63FC38F916CB42B3A018D /* SwiftyJSON.framework */; };
 		73B9C996AED49ED7CF8EC2A6F1738059 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B60BDBCB88E38FC6D72918650647ED2 /* Foundation.framework */; };
 		744E85B86731712E0AF27755E566C8F3 /* Pods-Khalti_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 72BB23F9E1F51AD123E76D77D96281DB /* Pods-Khalti_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -179,6 +187,14 @@
 		6E28BCC0203A9F3D0057E37A /* CheckOutDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckOutDelegate.swift; sourceTree = "<group>"; };
 		6E28BCC1203A9F3D0057E37A /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		6E28BCC2203A9F3D0057E37A /* KaltiApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KaltiApi.swift; sourceTree = "<group>"; };
+		6E28BCC9203AA1140057E37A /* ErrorAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorAction.swift; sourceTree = "<group>"; };
+		6E28BCCB203AA2C30057E37A /* ExtensionJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionJSON.swift; sourceTree = "<group>"; };
+		6E28BCCF203AC6A70057E37A /* EbankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EbankingViewController.swift; sourceTree = "<group>"; };
+		6E28BCD1203AC6B70057E37A /* KhaltiPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KhaltiPaymentViewController.swift; sourceTree = "<group>"; };
+		6E28BCD3203AC6C60057E37A /* CardPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPaymentViewController.swift; sourceTree = "<group>"; };
+		6E28BCD8203AC9600057E37A /* EbankingWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EbankingWireframe.swift; sourceTree = "<group>"; };
+		6E28BCDA203AC9C10057E37A /* KhaltiWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KhaltiWireframe.swift; sourceTree = "<group>"; };
+		6E28BCDC203AC9EC0057E37A /* CardPaymentWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPaymentWireframe.swift; sourceTree = "<group>"; };
 		6EF456E288A9F15EDF45F26B1956A121 /* Pods-Khalti_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Khalti_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		708C33C6522A61B388AC6372C3CF447A /* Pods-Khalti_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Khalti_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		727D0A850368F63F5BBD4ECC6196DB67 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
@@ -242,7 +258,7 @@
 		EEBFC672A522BF4EBFA470784C2C7BD9 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
 		F516F24AB18BB5E32C058B3254B81FB7 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9EEBF277C12CFC3F28A25654602A260 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
-		FAA863395016DAB13C34E6D8111BB0CB /* CheckOutView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CheckOutView.swift; path = Khalti/Classes/CheckOutView.swift; sourceTree = "<group>"; };
+		FAA863395016DAB13C34E6D8111BB0CB /* CheckOutViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CheckOutViewController.swift; path = Khalti/Classes/CheckOutViewController.swift; sourceTree = "<group>"; };
 		FCDB0DC30726221D2BB4738634C50F84 /* Pods-Khalti_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Khalti_Example-dummy.m"; sourceTree = "<group>"; };
 		FEF1B77CF829D2A707AE8E3F52F52F6C /* Mapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mapper.swift; path = Sources/Mapper.swift; sourceTree = "<group>"; };
 		FF18F6C885FB0FD1F0A2899523815A4E /* DateFormatterTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateFormatterTransform.swift; path = Sources/DateFormatterTransform.swift; sourceTree = "<group>"; };
@@ -418,8 +434,11 @@
 		344D62A031E5E8F779864EF6624DF971 /* Khalti */ = {
 			isa = PBXGroup;
 			children = (
+				6E28BCD7203AC7040057E37A /* CardPayment */,
+				6E28BCD6203AC6F70057E37A /* KhaltiPayment */,
+				6E28BCD5203AC6EB0057E37A /* Ebanking */,
 				6E28BCBE203A9F3D0057E37A /* CheckOut */,
-				FAA863395016DAB13C34E6D8111BB0CB /* CheckOutView.swift */,
+				FAA863395016DAB13C34E6D8111BB0CB /* CheckOutViewController.swift */,
 				589689FC9F299331B63CA8BBBBA5D37B /* Khalti.swift */,
 				E531E6535CDE4E762E04F1F75383AC32 /* KhaltiButton.swift */,
 				ADA1016F11AA38710C9D374D14BB9B49 /* Resources */,
@@ -477,8 +496,37 @@
 				6E28BCC0203A9F3D0057E37A /* CheckOutDelegate.swift */,
 				6E28BCC1203A9F3D0057E37A /* Config.swift */,
 				6E28BCC2203A9F3D0057E37A /* KaltiApi.swift */,
+				6E28BCC9203AA1140057E37A /* ErrorAction.swift */,
+				6E28BCCB203AA2C30057E37A /* ExtensionJSON.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		6E28BCD5203AC6EB0057E37A /* Ebanking */ = {
+			isa = PBXGroup;
+			children = (
+				6E28BCCF203AC6A70057E37A /* EbankingViewController.swift */,
+				6E28BCD8203AC9600057E37A /* EbankingWireframe.swift */,
+			);
+			path = Ebanking;
+			sourceTree = "<group>";
+		};
+		6E28BCD6203AC6F70057E37A /* KhaltiPayment */ = {
+			isa = PBXGroup;
+			children = (
+				6E28BCD1203AC6B70057E37A /* KhaltiPaymentViewController.swift */,
+				6E28BCDA203AC9C10057E37A /* KhaltiWireframe.swift */,
+			);
+			path = KhaltiPayment;
+			sourceTree = "<group>";
+		};
+		6E28BCD7203AC7040057E37A /* CardPayment */ = {
+			isa = PBXGroup;
+			children = (
+				6E28BCD3203AC6C60057E37A /* CardPaymentViewController.swift */,
+				6E28BCDC203AC9EC0057E37A /* CardPaymentWireframe.swift */,
+			);
+			path = CardPayment;
 			sourceTree = "<group>";
 		};
 		76B1E546E6A916F15F836B2E0BA8380F /* Alamofire */ = {
@@ -864,12 +912,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E28BCC6203A9F460057E37A /* CheckOutDelegate.swift in Sources */,
-				04DDEB425DE22417BD41CAB5766DB7A8 /* CheckOutView.swift in Sources */,
+				04DDEB425DE22417BD41CAB5766DB7A8 /* CheckOutViewController.swift in Sources */,
 				5B28382E49673064F7BBF4EDD618A90D /* Khalti-dummy.m in Sources */,
+				6E28BCDB203AC9C10057E37A /* KhaltiWireframe.swift in Sources */,
 				132A9D559C9969FB66DEB1AF6ADF29A4 /* Khalti.swift in Sources */,
+				6E28BCDD203AC9EC0057E37A /* CardPaymentWireframe.swift in Sources */,
+				6E28BCCE203AA2E50057E37A /* ErrorAction.swift in Sources */,
+				6E28BCD4203AC6C60057E37A /* CardPaymentViewController.swift in Sources */,
 				6E28BCC8203A9F4D0057E37A /* KaltiApi.swift in Sources */,
+				6E28BCCD203AA2E30057E37A /* ExtensionJSON.swift in Sources */,
+				6E28BCD2203AC6B70057E37A /* KhaltiPaymentViewController.swift in Sources */,
 				B1E25CF7D0D5EEB77D98018054357FAE /* KhaltiButton.swift in Sources */,
 				6E28BCC7203A9F4A0057E37A /* Config.swift in Sources */,
+				6E28BCD0203AC6A70057E37A /* EbankingViewController.swift in Sources */,
+				6E28BCD9203AC9600057E37A /* EbankingWireframe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

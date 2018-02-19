@@ -8,6 +8,8 @@
 import Foundation
 import Alamofire
 
+
+
 public struct Config {
     private var publicKey:String
     private var productId:String

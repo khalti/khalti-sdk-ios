@@ -20,7 +20,6 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        CheckOutViewController.presentMe(caller: self)
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,5 +27,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func payNow(_ sender: UIButton) {
+        
+        CheckOutWireFrame.present(caller: self)
+    }
 }
 

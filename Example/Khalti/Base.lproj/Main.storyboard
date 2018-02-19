@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,11 +21,47 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEP-2o-3ms">
+                                <rect key="frame" x="137.5" y="314.5" width="100" height="38"/>
+                                <color key="backgroundColor" red="0.96770882609999997" green="0.57780718799999997" blue="0.13238912820000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                                <state key="normal" title="Pay Now">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="payNow:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="t1b-7Z-jzC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is payment example from Khalti" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXt-YV-I2U">
+                                <rect key="frame" x="16" y="60" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Khalti payment allows pay via ebanking, wallet(Khalit itself and card)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVN-to-Doe">
+                                <rect key="frame" x="16" y="101" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gEP-2o-3ms" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="9vM-SE-V7u"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JVN-to-Doe" secondAttribute="trailing" id="CwN-lN-Q6i"/>
+                            <constraint firstItem="xXt-YV-I2U" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="40" id="LFe-FF-NFF"/>
+                            <constraint firstItem="xXt-YV-I2U" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="dGF-1b-BM0"/>
+                            <constraint firstItem="gEP-2o-3ms" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="f7e-6d-9bM"/>
+                            <constraint firstItem="JVN-to-Doe" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="pGb-Pz-QyE"/>
+                            <constraint firstItem="JVN-to-Doe" firstAttribute="top" secondItem="xXt-YV-I2U" secondAttribute="bottom" constant="20" id="qcX-cx-xwt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xXt-YV-I2U" secondAttribute="trailing" id="w8W-pJ-8NT"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>
