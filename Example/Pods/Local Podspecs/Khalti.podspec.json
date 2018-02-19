@@ -23,5 +23,17 @@
     "Khalti": [
       "khalti/Classes/**/*.{png,storyboard,xib}"
     ]
-  }
+  },
+  "dependencies": {
+    "ObjectMapper": [
+
+    ],
+    "Alamofire": [
+
+    ],
+    "SwiftyJSON": [
+
+    ]
+  },
+  "frameworks": "UIKit"
 }

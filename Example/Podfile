@@ -5,7 +5,7 @@ target 'Khalti_Example' do
 
   target 'Khalti_Tests' do
     inherit! :search_paths
-
+    
     
   end
 end

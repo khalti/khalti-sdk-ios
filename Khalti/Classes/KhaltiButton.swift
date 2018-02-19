@@ -62,7 +62,4 @@ class KhaltiButton: UIButton {
     }
     
     
-    
-    
-    
 }
