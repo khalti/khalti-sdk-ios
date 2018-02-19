@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nqx-nj-bY9">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -23,27 +23,27 @@
                         <viewControllerLayoutGuide type="bottom" id="LrS-rl-nqc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="c5D-30-e8l">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XvB-q8-IUF" userLabel="Content View">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cbb-AN-Xci" userLabel="Top View">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="0.0"/>
                                         <color key="backgroundColor" red="0.27890625600000002" green="0.1618569195" blue="0.41170451050000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" id="vqS-RD-cuw"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wd4-Zz-mXB" userLabel="Choose View">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lhl-ps-D4c" userLabel="First Option">
-                                                <rect key="frame" x="0.0" y="0.0" width="125" height="60"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="106.5" height="60"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmN-Jf-MN8">
-                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="59"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="106.5" height="59"/>
                                                         <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
                                                         <inset key="contentEdgeInsets" minX="0.0" minY="16" maxX="0.0" maxY="16"/>
                                                         <state key="normal" title="eBanking">
@@ -54,7 +54,7 @@
                                                         </connections>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3LM-wg-iWH" userLabel="First Line">
-                                                        <rect key="frame" x="0.0" y="59" width="125" height="1"/>
+                                                        <rect key="frame" x="0.0" y="59" width="106.5" height="1"/>
                                                         <color key="backgroundColor" red="0.96770882609999997" green="0.57780718799999997" blue="0.13238912820000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="yAn-am-Fea"/>
@@ -73,10 +73,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5rK-84-HC5" userLabel="Second Option">
-                                                <rect key="frame" x="125" y="0.0" width="125" height="60"/>
+                                                <rect key="frame" x="106.5" y="0.0" width="107" height="60"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePr-0x-FK1">
-                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="59"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="107" height="59"/>
                                                         <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
                                                         <state key="normal" title="Khalti">
                                                             <color key="titleColor" red="0.27890625600000002" green="0.1618569195" blue="0.41170451050000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -86,7 +86,7 @@
                                                         </connections>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B0Z-v7-JOE">
-                                                        <rect key="frame" x="0.0" y="59" width="125" height="1"/>
+                                                        <rect key="frame" x="0.0" y="59" width="107" height="1"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="Dh9-q5-dZm"/>
@@ -105,10 +105,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z8P-2s-5vh" userLabel="Third Option">
-                                                <rect key="frame" x="250" y="0.0" width="125" height="60"/>
+                                                <rect key="frame" x="213.5" y="0.0" width="106.5" height="60"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHu-S6-tkB">
-                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="59"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="106.5" height="59"/>
                                                         <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
                                                         <state key="normal" title="Card">
                                                             <color key="titleColor" red="0.27890625600000002" green="0.1618569195" blue="0.41170451050000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -118,7 +118,7 @@
                                                         </connections>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MJM-R6-pxS">
-                                                        <rect key="frame" x="0.0" y="59" width="125" height="1"/>
+                                                        <rect key="frame" x="0.0" y="59" width="106.5" height="1"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="sKG-aU-wMn"/>
@@ -155,10 +155,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2S8-bU-rul" userLabel="Views">
-                                        <rect key="frame" x="0.0" y="60" width="375" height="587"/>
+                                        <rect key="frame" x="0.0" y="60" width="320" height="400"/>
                                         <subviews>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a9E-OV-RkC">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="587"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="400"/>
                                             </containerView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -206,7 +206,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hbR-oJ-fBK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1090" y="237"/>
+            <point key="canvasLocation" x="-1530" y="235"/>
         </scene>
         <!--Ebanking View Controller-->
         <scene sceneID="P1o-C6-Ity">
@@ -217,14 +217,14 @@
                         <viewControllerLayoutGuide type="bottom" id="JfF-03-IID"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="m0m-Wq-Vxk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gdh-ig-Z4e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1022" y="833"/>
+            <point key="canvasLocation" x="-847" y="235"/>
         </scene>
         <!--Khalti Payment View Controller-->
         <scene sceneID="T8d-n1-LQX">
@@ -235,14 +235,14 @@
                         <viewControllerLayoutGuide type="bottom" id="Kq7-he-ubL"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hDU-uw-Yhl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6g4-Lk-Xxo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1022" y="833"/>
+            <point key="canvasLocation" x="-129" y="236"/>
         </scene>
         <!--Card Payment View Controller-->
         <scene sceneID="ED0-yQ-IMy">
@@ -253,14 +253,14 @@
                         <viewControllerLayoutGuide type="bottom" id="aPy-Lf-D54"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="aN7-nC-JLq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Exw-Dq-Him" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1022" y="833"/>
+            <point key="canvasLocation" x="513" y="236"/>
         </scene>
     </scenes>
 </document>

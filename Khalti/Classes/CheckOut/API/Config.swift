@@ -11,7 +11,7 @@ import Alamofire
 
 
 public struct Config {
-    private var publicKey:String
+    private var publicKey:String = KhaltiConfig.shared.publicKey ?? ""
     private var productId:String
     private var productName:String
     private var productUrl:String
@@ -20,7 +20,7 @@ public struct Config {
     private var delegate:CheckOutDelegate
 
     
-    public init(publicKey:String,productId:String,productName:String, productUrl:String, amount:Double,delgate:CheckOutDelegate) {
+    public init(publicKey:String = (KhaltiConfig.shared.publicKey ?? ""), productId:String,productName:String, productUrl:String, amount:Double,delgate:CheckOutDelegate) {
         self.publicKey = publicKey
         self.productId = productId
         self.productName = productName
