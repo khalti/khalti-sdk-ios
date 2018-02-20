@@ -8,6 +8,6 @@
 import Foundation
 
 public protocol CheckOutDelegate {
-     func onSuccess(data: Dictionary<String,Any>)
-     func onError(action:String, message:String)
+    func onCheckOutSuccess(data: Dictionary<String,Any>)
+    func onCheckOutError(action:String, message:String)
 }

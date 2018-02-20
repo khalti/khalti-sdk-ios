@@ -19,29 +19,26 @@ struct KhaltiColor {
     static var orange: UIColor { return UIColor(red:247.0/255.0, green: 147.0/255.0, blue: 34.0/255.0, alpha: 1.0) }
 }
 
-public class CheckOutWireFrame {
+public class Khalti {
     
-    public static func present(caller: UIViewController, withNavBar:Bool = true) {
-        let vc = self.createView()
-        if withNavBar {
-            let nabVC = UINavigationController(rootViewController: vc)
-            
-            nabVC.navigationBar.isTranslucent = false
-            nabVC.navigationBar.barTintColor = UIColor(red: 76.0/255.0, green: 39.0/255.0, blue: 109.0/255.0, alpha: 1)
-            nabVC.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
-            caller.present(nabVC, animated: true, completion: nil)
-        } else {
-            caller.present(vc, animated: true, completion: nil)
-        }
+    public static func present(caller: UIViewController, with config:Config) {
+        let viewController = self.payView()
+        viewController.config = config
+        let navigationViewController = UINavigationController(rootViewController: viewController)
+        
+        navigationViewController.navigationBar.isTranslucent = false
+        navigationViewController.navigationBar.barTintColor = UIColor(red: 76.0/255.0, green: 39.0/255.0, blue: 109.0/255.0, alpha: 1)
+        navigationViewController.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        caller.present(navigationViewController, animated: true, completion: nil)
     }
     
-    private static func createView() -> CheckOutViewController {
+    fileprivate static func payView() -> CheckOutViewController {
         let storyboard = UIStoryboard(name: "CheckOut", bundle: bundle)
         let vc = storyboard.instantiateInitialViewController() as! CheckOutViewController
         return vc
     }
     
-    static var bundle:Bundle {
+    private static var bundle:Bundle {
         let podBundle = Bundle(for: CheckOutViewController.self)
         let bundleURL = podBundle.url(forResource: "Khalti", withExtension: "bundle")
         return Bundle(url: bundleURL!)!
@@ -59,20 +56,22 @@ class CheckOutViewController: UIViewController {
     @IBOutlet weak var thirdLine: UIView!
     @IBOutlet weak var containerView: UIView!
     
+    var config:Config?
+    
     private lazy var ebankingViewController:EbankingViewController = {
-        let vc = EbankingWireFrame.createView()
+        let vc = Ebanking.viewController()
         self.add(asChildViewController: vc)
         return vc
     }()
     
     private lazy var khaltiPayViewController: KhaltiPaymentViewController = {
-        let vc = KhaltiPaymentWireFrame.createView()
+        let vc = KhaltiPayment.viewController()
         self.add(asChildViewController: vc)
         return vc
     }()
     
     private lazy var cardPayViewController: CardPaymentViewController = {
-        let vc = CardPaymentWireFrame.createView()
+        let vc = CardPayment.viewController()
         self.add(asChildViewController: vc)
         return vc
     }()

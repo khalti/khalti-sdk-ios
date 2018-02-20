@@ -29,16 +29,18 @@ class ViewController: UIViewController {
 
     @IBAction func payNow(_ sender: UIButton) {
         let config = Config(publicKey: "test_public_key_03a427da14344b1eabe56ce1f8a0a024", productId: "1234567890", productName: "Dragon_boss", productUrl: "http://gameofthrones.wikia.com/wiki/Dragons", amount: 2567, delgate: self)
-        CheckOutWireFrame.present(caller: self)
+        Khalti.present(caller: self, with: config)
     }
 }
 
 extension ViewController: CheckOutDelegate {
-    func onSuccess(data: Dictionary<String, Any>) {
+
+    
+    func onCheckOutSuccess(data: Dictionary<String, Any>) {
         print("Oh there is success message received")
     }
     
-    func onError(action: String, message: String) {
+    func onCheckOutError(action: String, message: String) {
         print("Oh there occure error in payment")
     }
 }
