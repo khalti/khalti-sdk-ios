@@ -93,7 +93,8 @@ public class KhaltiAPI {
         headers["checkout-device-id"] = UIDevice.current.identifierForVendor?.uuidString ?? ""
         headers["checkout-ios-version"] = UIDevice.current.systemVersion
         
-        let request = Alamofire.request(url, method: HTTPMethod.post, parameters: params, encoding: JSONEncoding(options: []), headers: headers)
+        
+        let request = Alamofire.request(url, method: HTTPMethod.post, parameters: params, encoding: URLEncoding.default, headers: headers)
         
         print(url)
         print(params)
