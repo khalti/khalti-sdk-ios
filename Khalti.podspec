@@ -36,12 +36,7 @@ TODO: Add long description of the pod here.
     'Khalti' => ['khalti/Assets/**/*.{png,storyboard,xib,xcassets}']
   }
 
-  s.dependency 'ObjectMapper'
-  s.dependency 'Alamofire'
-
   # s.public_header_files = 'khalti/Classes/**/*.h'
   s.frameworks = 'UIKit'
   s.dependency 'Alamofire'
-  s.dependency 'ObjectMapper'
-  s.dependency 'SwiftyJSON'
 end

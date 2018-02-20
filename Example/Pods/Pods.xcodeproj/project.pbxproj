@@ -7,263 +7,159 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		011D64705FE360015E126D6F0ECB14C6 /* DataTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EF2D0C7001BE4BDCC5C6CA26D66E77 /* DataTransform.swift */; };
-		01722D9EA74E759B1615CB8BDADAC59E /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE19B5A5B95AE7C2D154F7B530810D51 /* Operators.swift */; };
-		039A6ADF9613E1948037456489290433 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B37DB2C445EC0D255019896EA7AB721 /* Config.swift */; };
-		03FF51CEEB00229658E1CAA79623DA6F /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F9EEBF277C12CFC3F28A25654602A260 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0688953805020751A3112821195FB1D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B60BDBCB88E38FC6D72918650647ED2 /* Foundation.framework */; };
-		0A8EEEF1E14CBC11EB7924E8085A4BBA /* KhaltiPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC87A0D58ACF212990A0CF3D1C30F9 /* KhaltiPaymentViewController.swift */; };
-		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E5BDB0B45ECBBFAE70B137084D2144 /* Timeline.swift */; };
-		135D03F83006B0E748C43D9CCD247BBF /* TransformOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EDF4970E66D181E77C6972B2757349 /* TransformOf.swift */; };
-		1B6667FB11A9C0A3831A48FE5ECE2F76 /* TransformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA429151D3270A6F7F8DB3E9770096D0 /* TransformType.swift */; };
-		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F6EE8D67E15FCC3969B8FBB4EBE91DF /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		236D94EE785DEB73A6EC3C0FB096CAF8 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF1B77CF829D2A707AE8E3F52F52F6C /* Mapper.swift */; };
-		2703C328077DB327E3B946F019C37B51 /* TransformOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCEA0E25430F794CCE5071238280C68 /* TransformOperators.swift */; };
-		2E68297B9318349DA8E21F0C7C80A04A /* IntegerOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3886318A13813A28263B8EBDE9FD2D /* IntegerOperators.swift */; };
-		2EBE6C5C9364038EC10FC8709115EB29 /* Khalti-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 933C43A5AA51B2E620FA9BE5181C274E /* Khalti-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		31151424031505F0F7F75D67DF2C1D69 /* ToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1990E849CBBAB107F9E07AA750654DB1 /* ToJSON.swift */; };
-		31C4DDC73BA9BC8BC64D7116358AC814 /* HexColorTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA0077F69D623760BD222C5FB82343E /* HexColorTransform.swift */; };
-		32AE3D73365D31D6239680F53800DB81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B60BDBCB88E38FC6D72918650647ED2 /* Foundation.framework */; };
-		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC35F0FAACE02EE418FDFFF494F1482 /* TaskDelegate.swift */; };
-		379877B2F7127F3E45FA31AB15EF3C8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B60BDBCB88E38FC6D72918650647ED2 /* Foundation.framework */; };
-		397D88F14F3D3753B929900F80760708 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D64330F498BF32A9B935D068BD345F /* ObjectMapper.framework */; };
-		3A57F427F2FD120F1CC121E36D91AEAB /* ObjectMapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 30A49E41A602DACA1D3590796B28CBF4 /* ObjectMapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3B441A6F4E9DF2E97F09768FCCF4D909 /* ExtensionJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B831DF3D4E79324E5BC90C6166903 /* ExtensionJSON.swift */; };
-		3E50ED41F288F747208113D8B4FF9CFD /* Ebanking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BB9AAFF02A65E2189BD86461285E7C /* Ebanking.swift */; };
-		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA5A8D1F493CEC090EF06F90B724D23 /* Request.swift */; };
-		5693DDE87FAAEBEF8322B9B72286FE3C /* CardPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABF438CA6CE4BA3406B3F1217D031AE /* CardPaymentViewController.swift */; };
-		5CD352F785286E60327404140DD97094 /* CheckOut.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BECEAB9448399D48557BC4362B39EEA /* CheckOut.storyboard */; };
-		6044DF126A2440094E680AA0946139C7 /* KhaltiButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD399BC127C581B77E201A8961DC720 /* KhaltiButton.swift */; };
-		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B12739CE173502D274CB5B351511E /* DispatchQueue+Alamofire.swift */; };
-		614EAF18CBE6E2D278F920B687765816 /* CustomDateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BB986C0645F82BFAD89E53B20D63B1 /* CustomDateFormatTransform.swift */; };
-		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED0896BA97607363838FAD542E20F16 /* ServerTrustPolicy.swift */; };
+		0C2D5F8E770881BB2047AEA3075A07FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8425F802DF869B8844D9D072CFCE373 /* Foundation.framework */; };
+		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87882A1F5A92C8138D54545E51D51E6F /* Timeline.swift */; };
+		12AB7439ED85AE488BFF8AB60C03CACA /* Khalti.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAD1C974F66323C500E7B05AF328C00 /* Khalti.swift */; };
+		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B44A27EFBB0DA84D738057B77F3413B1 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		232AA1F17B4A25291D9AEAB5E6C06115 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = B158430827EFB3F158BB54CB5DF98C4C /* Config.swift */; };
+		2A84B7B4DB7D16570C220C0E8236ACB0 /* Khalti.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 862C8D1E750744DE503591D120DC34F6 /* Khalti.bundle */; };
+		33E679A64CCAA1B4C64E1C943FBE4B1F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FA268F7976194C5CD1F9A31D556CB0 /* UIKit.framework */; };
+		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01C037B4034EDA3D7955BC5E4E9D9D6 /* TaskDelegate.swift */; };
+		3CA8B6548E63A3AEBF455FA199C88609 /* KhaltiPayDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA06287617CFB00690AC0E7839FEB87D /* KhaltiPayDelegate.swift */; };
+		3E100DF83233765A9461906D7625438F /* EbankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C0A336078501DB49C9D74997B4DB88 /* EbankingViewController.swift */; };
+		4C6D7BA3F505756C5090C00AD457AD58 /* CheckOut.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 800B4E0C98932A8804205784341E7CFB /* CheckOut.storyboard */; };
+		508B08EF4E4B620BA56250ACB13EF703 /* CardPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A001FA4A8E5087E4ABB37626BE4FE8A /* CardPaymentViewController.swift */; };
+		522BED26C5791EAF21BEF8FE4C9843F6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F02A739100B7422F36AE23783BE8C24 /* Alamofire.framework */; };
+		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E230A0448B394DE26E688DAC8E6201E /* Request.swift */; };
+		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBF1EED873F61C6D46CE37FA5C39D3 /* DispatchQueue+Alamofire.swift */; };
+		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B030D27CAC730C5EB0F22390645310 /* ServerTrustPolicy.swift */; };
 		649953889F2B8CA0E95AFBFDB7F933B4 /* Pods-Khalti_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D40C52DBD9260F26EA86372DE710FC4 /* Pods-Khalti_Tests-dummy.m */; };
-		6D325DCF78D2E00428D2EB3A8F310CB5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2434ACADD30CDCF0D898A638C9D58ED1 /* Alamofire.framework */; };
-		7017903A3D6301DF74A63736CD589B87 /* CheckOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3DB67EFFDE44E65926EF02CA13ABD1 /* CheckOutViewController.swift */; };
-		70D3E21F6B40CD598BD8A2291E6C5420 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EE13712EB3F4DB4476B47C1F67471E /* Mappable.swift */; };
-		7348554967A563723B96ABD7681A201E /* Khalti.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E95A1144354AAEC2A22E17AC692D79F /* Khalti.swift */; };
-		73B9C996AED49ED7CF8EC2A6F1738059 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B60BDBCB88E38FC6D72918650647ED2 /* Foundation.framework */; };
-		744E85B86731712E0AF27755E566C8F3 /* Pods-Khalti_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 72BB23F9E1F51AD123E76D77D96281DB /* Pods-Khalti_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		74C20910ED558896719D4D6ED781C92A /* ErrorAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27295C9E84F7B189FFB9D58A930D65C9 /* ErrorAction.swift */; };
-		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBFC672A522BF4EBFA470784C2C7BD9 /* SessionDelegate.swift */; };
-		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD4A6FB93D26D7F55D7F370C3BDDB80 /* Result.swift */; };
-		8A78BDE8EEBAF6D7FE1EA72C70284B8E /* KhaltiPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D85DCE3CAC2ACBD469C4F103882C3BE /* KhaltiPayment.swift */; };
-		8AA31C7E98F330D2C413B3F73ABC2E2F /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E45F568CD1784844774411F15B621A5 /* SwiftyJSON.swift */; };
-		9034AA715BABF5AC91E0B5DBD40370D6 /* DateFormatterTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF18F6C885FB0FD1F0A2899523815A4E /* DateFormatterTransform.swift */; };
-		91D33825273E166A6D331A0486EA28ED /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0512DC6DE9794A396D09EAAE83EDF5 /* SwiftyJSON-dummy.m */; };
-		9424631984E054B8B40948D4AC0ADAFF /* URLTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF9E9B26231E9ED0F75E1275B72968C /* URLTransform.swift */; };
-		9C26B9D51F635427D3805C22E750A681 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BF1669219C43EE8AB7763B633089E0 /* Map.swift */; };
-		9E7B7D08F5400007218748584F173944 /* DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13CDE9E496FD29A84A5B756B7AE24BD /* DateTransform.swift */; };
-		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87C9138FA91D2E6815C4B8B2E4FB966 /* AFError.swift */; };
-		A01F55F4E5F61F3B4A6F5E38DFF24215 /* ImmutableMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B78242C8427AA261A71D1A1E726D89F /* ImmutableMappable.swift */; };
-		A0224B97367149559CFA647274E1592B /* ISO8601DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C01CC099913BA6E2BF13D1D1914025 /* ISO8601DateTransform.swift */; };
-		A261304B281B2252ABFD3E30A1388E2B /* FromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F1B79254593795A693DB073C4EF1BE /* FromJSON.swift */; };
-		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB185BB62E5056D9D05CA271978CFA07 /* NetworkReachabilityManager.swift */; };
-		A8204255BF4D138B261F4D8682A0EB7D /* Pods-Khalti_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDB0DC30726221D2BB4738634C50F84 /* Pods-Khalti_Example-dummy.m */; };
-		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A31865D9B565EE7E2C6C916D37E4914 /* Alamofire-dummy.m */; };
-		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D913883443DABFDB3F778DB370278C /* SessionManager.swift */; };
-		B0DA5FDAD588A99D71CCEC4BBC88A43C /* EbankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C4D491CED8451A012B92BA4583E464 /* EbankingViewController.swift */; };
-		B20DA8DE641F15E16BC707635D78E117 /* Khalti-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A258E8D1B5C30F8465315168CBB84912 /* Khalti-dummy.m */; };
-		B3FD743A32304E431367E284B77747AE /* DictionaryTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E7E12F2DB4BE0FFB38C60A044990D3 /* DictionaryTransform.swift */; };
-		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB0C47DE442BF755047362E9CEE00D5 /* MultipartFormData.swift */; };
-		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8119DB15A888AD6A273A7791410D2733 /* Validation.swift */; };
-		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB4F37E83A8D079BEE16FDC7F459F8E /* ParameterEncoding.swift */; };
-		BF8D9D0BCE94239E8AA57CB4D023A5D2 /* CardPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89861DE38DBA96135892D14340F5123 /* CardPayment.swift */; };
-		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8320E46217961006024A9FEC32921D7A /* Response.swift */; };
-		CF2B02B1E266A8444B7284B2EFFA2F0B /* NSDecimalNumberTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC58A2601A48A3061DCD7662CC267BD /* NSDecimalNumberTransform.swift */; };
-		D00A1EBE3DCC71225C0BFEDAF12FDAF0 /* KaltiApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2F5CC10B28A3F1101A44D02D21AA0F /* KaltiApi.swift */; };
-		D1EB7E23B5A54A60158B236FC4A558F0 /* CheckOutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB6A118917309EECFB46EFD0B028F79 /* CheckOutDelegate.swift */; };
-		D5B88D45A31BE9BC0C414DA5897265DF /* Khalti.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 69B21C4799F050CB74CEA17798860156 /* Khalti.bundle */; };
-		DED81F6EA369D17E751D7580AAED26CF /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 376B826016B14753934944F835524A4F /* images.xcassets */; };
-		E078CF40D879F8E904E5329C457E1DA3 /* ObjectMapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEF34B3A4F836B98EF390438711163D /* ObjectMapper-dummy.m */; };
-		E2057A9CAB28620A993BC96A0C0AD8F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B60BDBCB88E38FC6D72918650647ED2 /* Foundation.framework */; };
-		E4F4C1DF5F63648EA0B7529D3D565046 /* EnumTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D94BCD280680A36AC842675FFBA153 /* EnumTransform.swift */; };
-		E6BCCE252D15BA3BD7E85FDBE8066DB8 /* EnumOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BB02B093600C0B342AF8C4EEAAEFFC /* EnumOperators.swift */; };
-		EB5558B8BE8C74F47396FDB4BE89DBE7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B565246722E8ACDD2DD27BA243A453 /* UIKit.framework */; };
-		ED531A4BDBBCB6AA5577306B9331E99B /* MapError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7480176EE3B1EEF580F7F571E4516939 /* MapError.swift */; };
-		ED71C7DD5F25028FDB1B228868566FD2 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E717345CA5F63FC38F916CB42B3A018D /* SwiftyJSON.framework */; };
-		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EF40FE2E61FA482204AC1EDD50C0AB /* Notifications.swift */; };
-		F499B67DF743099443BB2BE1B0B682ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B60BDBCB88E38FC6D72918650647ED2 /* Foundation.framework */; };
-		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB1AFB5315FA82C60EC92E1F76F3D86 /* ResponseSerialization.swift */; };
-		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4008B007ECEBB8086921D5649001C8 /* Alamofire.swift */; };
+		70EA78D79365E11FE194B138B7933A47 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D11371B0FF9D3A50CDA2EA7F1AE23FC8 /* images.xcassets */; };
+		73B9C996AED49ED7CF8EC2A6F1738059 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8425F802DF869B8844D9D072CFCE373 /* Foundation.framework */; };
+		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195D73DD9EF275A3C56569E2B1CA8026 /* SessionDelegate.swift */; };
+		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60BC9955B4F7FFA62D7440CB385C11 /* Result.swift */; };
+		83CCAC57CAE50A77E22BA4273AD91972 /* KaltiApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6071F438BB0096C870BA242B209C53F /* KaltiApi.swift */; };
+		8AC76FEE8039238A0F3517B69E281AD2 /* Pods-Khalti_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDB0DC30726221D2BB4738634C50F84 /* Pods-Khalti_Example-dummy.m */; };
+		96783D1870A6B92D95440CFBEA9B4015 /* KhaltiPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B64E89C8103D966A563D58B4109222 /* KhaltiPayment.swift */; };
+		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF006B0AD5765D1BFA8253C2DCBB126 /* AFError.swift */; };
+		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8AA5F9EDED0A0BDDE7E830BF4AEE0 /* NetworkReachabilityManager.swift */; };
+		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C1C119BCE81C53F76CAC2BE27C38E0 /* Alamofire-dummy.m */; };
+		AC666E895CC248FF74FBA843AB575F0D /* Pods-Khalti_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 72BB23F9E1F51AD123E76D77D96281DB /* Pods-Khalti_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CDAC6C1187C5467E576980E1062C8B /* SessionManager.swift */; };
+		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155538D91ACEEEDF82069ACF6C1A02E7 /* MultipartFormData.swift */; };
+		B7154DB2C99CEF7ECBFE08CE73BF75D2 /* CardPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79462013CF8744937D9D4670925EFE89 /* CardPayment.swift */; };
+		B71A3511D772A00DCD0D5D8B1DB8D3C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8425F802DF869B8844D9D072CFCE373 /* Foundation.framework */; };
+		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B029DBC43E49A740F12B5E4D2E6DD452 /* Validation.swift */; };
+		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6639346628280A0D0FAD35196BF56108 /* ParameterEncoding.swift */; };
+		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F47F5C9CDB035C5AFADEBA5BF44F1C /* Response.swift */; };
+		CCC9AABF9862CD4E63885C6536E1406D /* ErrorAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BEE84F3CF445642DE38B0C43B98F38 /* ErrorAction.swift */; };
+		D9C61086EE84130410FA1E5B1E02FB84 /* Khalti-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ADB3BB70FA734D21B7229792E625FCE8 /* Khalti-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2F9E7FE1567F97FA802308E72D6F132 /* Ebanking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4814F4C422F44CFFB253906AD6BCB2E /* Ebanking.swift */; };
+		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A46F517F0AF7E85A16D723F6406896 /* Notifications.swift */; };
+		F1E30208716471E6F668E193E8525CF2 /* KhaltiPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5161C93E8329FB93B602E094F5396926 /* KhaltiPaymentViewController.swift */; };
+		F2F7C4344FDF117A683ED0A71CE1A2C8 /* Khalti-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6065111DD95EAC5CB8B4121957003A89 /* Khalti-dummy.m */; };
+		F499B67DF743099443BB2BE1B0B682ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8425F802DF869B8844D9D072CFCE373 /* Foundation.framework */; };
+		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F9510473F6FFD7AA66524DB16C2263 /* ResponseSerialization.swift */; };
+		F708290CB231D3C076BC0B79F21914F5 /* CheckOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A30D27915FE702C92AC188968C42E /* CheckOutViewController.swift */; };
+		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCB8C44DE758E906C0BCDA455937B85 /* Alamofire.swift */; };
 		FB90FE7DEE468B06E14E799C30A5530F /* Pods-Khalti_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 86056207DED522441BEE4A932950BC3E /* Pods-Khalti_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		012D585AA884DA48945E8F62DA73981F /* PBXContainerItemProxy */ = {
+		9900EE1C732775B5410D20FCAC5990A2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8C0285D4DD1D50ADEA3BC6BCD59EC927;
+			remoteGlobalIDString = 1A133BDA692810B84B6B13E4E877CF0F;
 			remoteInfo = Khalti;
 		};
-		0D6D26EE7897F39D8AE15DF23BE56C4C /* PBXContainerItemProxy */ = {
+		BF6BE444A90FB768D3DB7FB93B839239 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5ACAC771F988A4B56DF1AA4E9A4E2C30;
-			remoteInfo = SwiftyJSON;
-		};
-		2F376AB842CE91822345B90C7236C2E7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5ACAC771F988A4B56DF1AA4E9A4E2C30;
-			remoteInfo = SwiftyJSON;
-		};
-		67E961623F1E28821EF0F23C106312CC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 59E5001C6D80BF58D090D00062A9E9C2;
-			remoteInfo = ObjectMapper;
-		};
-		8577DF9A88B81DA73E1EA00FD6687060 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
-			remoteInfo = Alamofire;
-		};
-		B3BA5B0459F31916B13AE9E611B5AE9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
-			remoteInfo = Alamofire;
-		};
-		C6F5E8D829E805174B6B43512B1BF90A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 59E5001C6D80BF58D090D00062A9E9C2;
-			remoteInfo = ObjectMapper;
-		};
-		F368F492F8717086801B65D8B28D8C8E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5DE7EBD758CCE9830B08C05D92136E11;
+			remoteGlobalIDString = E8395CB1CB5ECD77C141181B5AF49F41;
 			remoteInfo = "Khalti-Khalti";
+		};
+		D826B58E9445261F78A37FF91A992AAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
+			remoteInfo = Alamofire;
+		};
+		F42CFA0AD0F27241DCB4348C4417B7DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
+			remoteInfo = Alamofire;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02D913883443DABFDB3F778DB370278C /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
-		03BFF8074AEB03901640112035A8A78C /* ObjectMapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ObjectMapper.modulemap; sourceTree = "<group>"; };
-		05F8C1C270CB9EE421860A8371CFA5BC /* ObjectMapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectMapper-prefix.pch"; sourceTree = "<group>"; };
+		04F47F5C9CDB035C5AFADEBA5BF44F1C /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		0A001FA4A8E5087E4ABB37626BE4FE8A /* CardPaymentViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardPaymentViewController.swift; sourceTree = "<group>"; };
+		0BE62040D7CCE57658CE367AC164246A /* Khalti.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Khalti.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CDAE2ECBE068CA195C028DDD685F664 /* Pods-Khalti_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Khalti_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		0EB4F37E83A8D079BEE16FDC7F459F8E /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		132B1BD9BE5337B4E9C2030AE2276E93 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		1433D9F6D9A1588AF70186E176DBD70D /* Pods-Khalti_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Khalti_Example.modulemap"; sourceTree = "<group>"; };
-		1438E608F421EA48EC95FA643EAF8507 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ObjectMapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1990E849CBBAB107F9E07AA750654DB1 /* ToJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToJSON.swift; path = Sources/ToJSON.swift; sourceTree = "<group>"; };
-		1BECEAB9448399D48557BC4362B39EEA /* CheckOut.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = CheckOut.storyboard; path = Khalti/Assets/CheckOut.storyboard; sourceTree = "<group>"; };
-		1E0512DC6DE9794A396D09EAAE83EDF5 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
-		1E95A1144354AAEC2A22E17AC692D79F /* Khalti.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Khalti.swift; path = Khalti/Classes/Khalti.swift; sourceTree = "<group>"; };
-		2434ACADD30CDCF0D898A638C9D58ED1 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		27295C9E84F7B189FFB9D58A930D65C9 /* ErrorAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ErrorAction.swift; sourceTree = "<group>"; };
+		0FCBF1EED873F61C6D46CE37FA5C39D3 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		13A0A663B36A229C69D5274A83E93F88 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1433D9F6D9A1588AF70186E176DBD70D /* Pods-Khalti_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Khalti_Example.modulemap"; sourceTree = "<group>"; };
+		155538D91ACEEEDF82069ACF6C1A02E7 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		1889C94F012F7805D5A69A4043837BD0 /* Khalti-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Khalti-prefix.pch"; sourceTree = "<group>"; };
+		195D73DD9EF275A3C56569E2B1CA8026 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		1E230A0448B394DE26E688DAC8E6201E /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		22C1C119BCE81C53F76CAC2BE27C38E0 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		23FA268F7976194C5CD1F9A31D556CB0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		2732A0961B3C83AEB484536F39E08A00 /* Pods-Khalti_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Khalti_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		27D1280CCF10BAA826705094202D859E /* Khalti.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Khalti.xcconfig; sourceTree = "<group>"; };
-		29BB9AAFF02A65E2189BD86461285E7C /* Ebanking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Ebanking.swift; sourceTree = "<group>"; };
-		29C01CC099913BA6E2BF13D1D1914025 /* ISO8601DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISO8601DateTransform.swift; path = Sources/ISO8601DateTransform.swift; sourceTree = "<group>"; };
-		2B37DB2C445EC0D255019896EA7AB721 /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
-		2C3B12739CE173502D274CB5B351511E /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		2BB313C12ED54809364F8A8044FC6DEA /* ResourceBundle-Khalti-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Khalti-Info.plist"; sourceTree = "<group>"; };
 		2C419D78036ECEA4B74040D1D98CCA5B /* Pods-Khalti_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Khalti_Example-frameworks.sh"; sourceTree = "<group>"; };
-		30A49E41A602DACA1D3590796B28CBF4 /* ObjectMapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectMapper-umbrella.h"; sourceTree = "<group>"; };
+		32B030D27CAC730C5EB0F22390645310 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
 		368B5CCAD6107E749A9EF77D8D06F99A /* Pods-Khalti_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Khalti_Example-resources.sh"; sourceTree = "<group>"; };
-		376B826016B14753934944F835524A4F /* images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = images.xcassets; path = Khalti/Assets/images.xcassets; sourceTree = "<group>"; };
-		3D85DCE3CAC2ACBD469C4F103882C3BE /* KhaltiPayment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KhaltiPayment.swift; sourceTree = "<group>"; };
-		3DA4FA00EAEC0FE793962F75B66EA4E9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3EB1AFB5315FA82C60EC92E1F76F3D86 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		3D60BC9955B4F7FFA62D7440CB385C11 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
 		40B5DF4BBE46A692FC953D50D7A4AC56 /* Pods-Khalti_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Khalti_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		43E13C41D7DA11D7A23F987F1D93F8CC /* Khalti.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Khalti.modulemap; sourceTree = "<group>"; };
-		47D94BCD280680A36AC842675FFBA153 /* EnumTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumTransform.swift; path = Sources/EnumTransform.swift; sourceTree = "<group>"; };
-		4CCEA0E25430F794CCE5071238280C68 /* TransformOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformOperators.swift; path = Sources/TransformOperators.swift; sourceTree = "<group>"; };
-		4F4008B007ECEBB8086921D5649001C8 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		50C4D491CED8451A012B92BA4583E464 /* EbankingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EbankingViewController.swift; sourceTree = "<group>"; };
+		46CDAC6C1187C5467E576980E1062C8B /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		4AF006B0AD5765D1BFA8253C2DCBB126 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		4BAD1C974F66323C500E7B05AF328C00 /* Khalti.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Khalti.swift; path = Khalti/Classes/Khalti.swift; sourceTree = "<group>"; };
+		4DE76DD15A1E674DFEFB22342073A26B /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FCB48DD0D8FD201C3E4346D1448C893 /* Khalti.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Khalti.xcconfig; sourceTree = "<group>"; };
+		503F39605D8F160214351C349F661477 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5161C93E8329FB93B602E094F5396926 /* KhaltiPaymentViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KhaltiPaymentViewController.swift; sourceTree = "<group>"; };
 		53352A13A1C1EFCDF17E7B07C358C5E1 /* Pods-Khalti_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Khalti_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		57E7E12F2DB4BE0FFB38C60A044990D3 /* DictionaryTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DictionaryTransform.swift; path = Sources/DictionaryTransform.swift; sourceTree = "<group>"; };
-		5DB0C47DE442BF755047362E9CEE00D5 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		60BF1669219C43EE8AB7763B633089E0 /* Map.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Map.swift; path = Sources/Map.swift; sourceTree = "<group>"; };
-		60D64330F498BF32A9B935D068BD345F /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A988338A0C21B0B0B118859F09E0917 /* Pods_Khalti_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Khalti_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6065111DD95EAC5CB8B4121957003A89 /* Khalti-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Khalti-dummy.m"; sourceTree = "<group>"; };
 		60DFDA2E7B3823EDC480261F3D94794D /* Pods-Khalti_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Khalti_Example.release.xcconfig"; sourceTree = "<group>"; };
-		69B21C4799F050CB74CEA17798860156 /* Khalti.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Khalti.bundle; path = Khalti.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		6ABF438CA6CE4BA3406B3F1217D031AE /* CardPaymentViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardPaymentViewController.swift; sourceTree = "<group>"; };
+		61C0A336078501DB49C9D74997B4DB88 /* EbankingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EbankingViewController.swift; sourceTree = "<group>"; };
+		6639346628280A0D0FAD35196BF56108 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		66A46F517F0AF7E85A16D723F6406896 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
 		6D40C52DBD9260F26EA86372DE710FC4 /* Pods-Khalti_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Khalti_Tests-dummy.m"; sourceTree = "<group>"; };
 		6EF456E288A9F15EDF45F26B1956A121 /* Pods-Khalti_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Khalti_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		708C33C6522A61B388AC6372C3CF447A /* Pods-Khalti_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Khalti_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		727D0A850368F63F5BBD4ECC6196DB67 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
 		72BB23F9E1F51AD123E76D77D96281DB /* Pods-Khalti_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Khalti_Example-umbrella.h"; sourceTree = "<group>"; };
-		7480176EE3B1EEF580F7F571E4516939 /* MapError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MapError.swift; path = Sources/MapError.swift; sourceTree = "<group>"; };
 		74FE209F97927BF9838FB20CA5ED5F2A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7B60BDBCB88E38FC6D72918650647ED2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7DB6A118917309EECFB46EFD0B028F79 /* CheckOutDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CheckOutDelegate.swift; sourceTree = "<group>"; };
-		7DD399BC127C581B77E201A8961DC720 /* KhaltiButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KhaltiButton.swift; path = Khalti/Classes/KhaltiButton.swift; sourceTree = "<group>"; };
-		80BD1D3886BD0F9FB0FEB85902304156 /* Pods_Khalti_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Khalti_Tests.framework; path = "Pods-Khalti_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		80E5BDB0B45ECBBFAE70B137084D2144 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
-		8119DB15A888AD6A273A7791410D2733 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		8320E46217961006024A9FEC32921D7A /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		84A1743C19A49C627F07104F816EA1D8 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		76B64E89C8103D966A563D58B4109222 /* KhaltiPayment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KhaltiPayment.swift; sourceTree = "<group>"; };
+		79462013CF8744937D9D4670925EFE89 /* CardPayment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardPayment.swift; sourceTree = "<group>"; };
+		7D141D1953E5C6E67E362CE73090E48A /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		800B4E0C98932A8804205784341E7CFB /* CheckOut.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = CheckOut.storyboard; path = Khalti/Assets/CheckOut.storyboard; sourceTree = "<group>"; };
+		847A30D27915FE702C92AC188968C42E /* CheckOutViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CheckOutViewController.swift; path = Khalti/Classes/CheckOutViewController.swift; sourceTree = "<group>"; };
 		86056207DED522441BEE4A932950BC3E /* Pods-Khalti_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Khalti_Tests-umbrella.h"; sourceTree = "<group>"; };
-		87EF2D0C7001BE4BDCC5C6CA26D66E77 /* DataTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataTransform.swift; path = Sources/DataTransform.swift; sourceTree = "<group>"; };
-		87F2AFF68FAF2F1F45E94C60D05752E0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		89CAF1EB884BD3CE3B754941D6DB2CED /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
-		8A31865D9B565EE7E2C6C916D37E4914 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
-		8B78242C8427AA261A71D1A1E726D89F /* ImmutableMappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImmutableMappable.swift; path = Sources/ImmutableMappable.swift; sourceTree = "<group>"; };
-		8BE40BC6DEF94CC9A8A6FB94EC0DDC11 /* Pods-Khalti_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Khalti_Tests.modulemap"; sourceTree = "<group>"; };
-		8E25A98E7A4F5095CAB710997D638D25 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
-		8E45F568CD1784844774411F15B621A5 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
-		8F6EE8D67E15FCC3969B8FBB4EBE91DF /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		862C8D1E750744DE503591D120DC34F6 /* Khalti.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Khalti.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		87882A1F5A92C8138D54545E51D51E6F /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		8BE40BC6DEF94CC9A8A6FB94EC0DDC11 /* Pods-Khalti_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Khalti_Tests.modulemap"; sourceTree = "<group>"; };
 		8FB0A7AB174BE559C93085849C156294 /* Pods-Khalti_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Khalti_Tests-resources.sh"; sourceTree = "<group>"; };
-		91EDF4970E66D181E77C6972B2757349 /* TransformOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformOf.swift; path = Sources/TransformOf.swift; sourceTree = "<group>"; };
-		933C43A5AA51B2E620FA9BE5181C274E /* Khalti-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Khalti-umbrella.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		96B565246722E8ACDD2DD27BA243A453 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		9995E8D2A28A14878683952AEEB5A960 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C3DB67EFFDE44E65926EF02CA13ABD1 /* CheckOutViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CheckOutViewController.swift; path = Khalti/Classes/CheckOutViewController.swift; sourceTree = "<group>"; };
-		A13CDE9E496FD29A84A5B756B7AE24BD /* DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateTransform.swift; path = Sources/DateTransform.swift; sourceTree = "<group>"; };
-		A258E8D1B5C30F8465315168CBB84912 /* Khalti-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Khalti-dummy.m"; sourceTree = "<group>"; };
-		A3EE13712EB3F4DB4476B47C1F67471E /* Mappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mappable.swift; path = Sources/Mappable.swift; sourceTree = "<group>"; };
-		A6BB02B093600C0B342AF8C4EEAAEFFC /* EnumOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumOperators.swift; path = Sources/EnumOperators.swift; sourceTree = "<group>"; };
-		A9EF40FE2E61FA482204AC1EDD50C0AB /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
-		AAA5A8D1F493CEC090EF06F90B724D23 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F02A739100B7422F36AE23783BE8C24 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A01C037B4034EDA3D7955BC5E4E9D9D6 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		A4814F4C422F44CFFB253906AD6BCB2E /* Ebanking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Ebanking.swift; sourceTree = "<group>"; };
+		A87D89E112E6CBE69FB0E7B33693CDAA /* Pods_Khalti_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Khalti_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF5CF5E6CA103DB475C8B05EC0A9CB8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB185BB62E5056D9D05CA271978CFA07 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		AD7403994D7C8759B4EDA315F0D56E37 /* ResourceBundle-Khalti-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Khalti-Info.plist"; sourceTree = "<group>"; };
-		B553733A57C14D88276B2217F50DEB2C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B87C9138FA91D2E6815C4B8B2E4FB966 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
-		BAF9E9B26231E9ED0F75E1275B72968C /* URLTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLTransform.swift; path = Sources/URLTransform.swift; sourceTree = "<group>"; };
-		BCA0077F69D623760BD222C5FB82343E /* HexColorTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HexColorTransform.swift; path = Sources/HexColorTransform.swift; sourceTree = "<group>"; };
-		BD76C20B731A45B8471E8BAFD0370C20 /* ObjectMapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ObjectMapper.xcconfig; sourceTree = "<group>"; };
-		BEC58A2601A48A3061DCD7662CC267BD /* NSDecimalNumberTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSDecimalNumberTransform.swift; path = Sources/NSDecimalNumberTransform.swift; sourceTree = "<group>"; };
-		BED0896BA97607363838FAD542E20F16 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		ADB3BB70FA734D21B7229792E625FCE8 /* Khalti-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Khalti-umbrella.h"; sourceTree = "<group>"; };
+		B029DBC43E49A740F12B5E4D2E6DD452 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		B158430827EFB3F158BB54CB5DF98C4C /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Config.swift; path = Khalti/Classes/Config.swift; sourceTree = "<group>"; };
+		B44A27EFBB0DA84D738057B77F3413B1 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		BCCA9CA7D9C1A2047BB93336C5708DFD /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		C079F0100FAF35B273112C0D4F52C1DA /* Pods-Khalti_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Khalti_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		C2B47BB6EBF05E19DD730B68F1C8016F /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
-		C7F1B79254593795A693DB073C4EF1BE /* FromJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FromJSON.swift; path = Sources/FromJSON.swift; sourceTree = "<group>"; };
-		CDC35F0FAACE02EE418FDFFF494F1482 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
-		CDD4A6FB93D26D7F55D7F370C3BDDB80 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		D0B277CF74CFB89EF6795D597F5F61A9 /* Khalti.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Khalti.framework; path = Khalti.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D33F142C6F196ADA4DC591E6C740CE8C /* Pods_Khalti_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Khalti_Example.framework; path = "Pods-Khalti_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA429151D3270A6F7F8DB3E9770096D0 /* TransformType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformType.swift; path = Sources/TransformType.swift; sourceTree = "<group>"; };
-		DD3886318A13813A28263B8EBDE9FD2D /* IntegerOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IntegerOperators.swift; path = Sources/IntegerOperators.swift; sourceTree = "<group>"; };
-		DD4E9B5C693066A7F155A9217E6C8008 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DEEF34B3A4F836B98EF390438711163D /* ObjectMapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ObjectMapper-dummy.m"; sourceTree = "<group>"; };
-		E0DC87A0D58ACF212990A0CF3D1C30F9 /* KhaltiPaymentViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KhaltiPaymentViewController.swift; sourceTree = "<group>"; };
-		E1BB986C0645F82BFAD89E53B20D63B1 /* CustomDateFormatTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomDateFormatTransform.swift; path = Sources/CustomDateFormatTransform.swift; sourceTree = "<group>"; };
-		E717345CA5F63FC38F916CB42B3A018D /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E77B831DF3D4E79324E5BC90C6166903 /* ExtensionJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExtensionJSON.swift; sourceTree = "<group>"; };
+		C8425F802DF869B8844D9D072CFCE373 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CA06287617CFB00690AC0E7839FEB87D /* KhaltiPayDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KhaltiPayDelegate.swift; path = Khalti/Classes/KhaltiPayDelegate.swift; sourceTree = "<group>"; };
+		D11371B0FF9D3A50CDA2EA7F1AE23FC8 /* images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = images.xcassets; path = Khalti/Assets/images.xcassets; sourceTree = "<group>"; };
+		D5BEE84F3CF445642DE38B0C43B98F38 /* ErrorAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ErrorAction.swift; path = Khalti/Classes/ErrorAction.swift; sourceTree = "<group>"; };
+		DFCB8C44DE758E906C0BCDA455937B85 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		E20738A1C3A00C68A73B22EF3722EA31 /* Khalti.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Khalti.modulemap; sourceTree = "<group>"; };
+		E2F9510473F6FFD7AA66524DB16C2263 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		E5A8AA5F9EDED0A0BDDE7E830BF4AEE0 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		E6071F438BB0096C870BA242B209C53F /* KaltiApi.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaltiApi.swift; path = Khalti/Classes/KaltiApi.swift; sourceTree = "<group>"; };
+		E6F34CCF86067ED508C12C676E298C69 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
 		EA309CAF3CB3B84DAC41BB8641CC4993 /* Pods-Khalti_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Khalti_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		EE19B5A5B95AE7C2D154F7B530810D51 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/Operators.swift; sourceTree = "<group>"; };
-		EEBFC672A522BF4EBFA470784C2C7BD9 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
-		F2525345BF9C4BBF8E39A8D5AC0B2D72 /* Khalti-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Khalti-prefix.pch"; sourceTree = "<group>"; };
-		F516F24AB18BB5E32C058B3254B81FB7 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F89861DE38DBA96135892D14340F5123 /* CardPayment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardPayment.swift; sourceTree = "<group>"; };
-		F9EEBF277C12CFC3F28A25654602A260 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
-		FC2F5CC10B28A3F1101A44D02D21AA0F /* KaltiApi.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KaltiApi.swift; sourceTree = "<group>"; };
 		FCDB0DC30726221D2BB4738634C50F84 /* Pods-Khalti_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Khalti_Example-dummy.m"; sourceTree = "<group>"; };
-		FEF1B77CF829D2A707AE8E3F52F52F6C /* Mapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mapper.swift; path = Sources/Mapper.swift; sourceTree = "<group>"; };
-		FF18F6C885FB0FD1F0A2899523815A4E /* DateFormatterTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateFormatterTransform.swift; path = Sources/DateFormatterTransform.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,38 +171,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		32FA8CFF10937C0CDD806AB4445B5522 /* Frameworks */ = {
+		63512763F233151A1E084EB697B37639 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D325DCF78D2E00428D2EB3A8F310CB5 /* Alamofire.framework in Frameworks */,
-				0688953805020751A3112821195FB1D7 /* Foundation.framework in Frameworks */,
-				397D88F14F3D3753B929900F80760708 /* ObjectMapper.framework in Frameworks */,
-				ED71C7DD5F25028FDB1B228868566FD2 /* SwiftyJSON.framework in Frameworks */,
-				EB5558B8BE8C74F47396FDB4BE89DBE7 /* UIKit.framework in Frameworks */,
+				B71A3511D772A00DCD0D5D8B1DB8D3C0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C5E859A6A410CBD0E41EFCCA7F0E129 /* Frameworks */ = {
+		7100019A975DA3DF781DBDB4834447C7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				379877B2F7127F3E45FA31AB15EF3C8F /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		52A2E3CC520080A5F7E555F9711503F5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		709946C9EE3A4C0CD5AEF79E2585685A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				32AE3D73365D31D6239680F53800DB81 /* Foundation.framework in Frameworks */,
+				522BED26C5791EAF21BEF8FE4C9843F6 /* Alamofire.framework in Frameworks */,
+				0C2D5F8E770881BB2047AEA3075A07FC /* Foundation.framework in Frameworks */,
+				33E679A64CCAA1B4C64E1C943FBE4B1F /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,11 +197,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C81B2C61BB7751BC511B6AB67E5130B2 /* Frameworks */ = {
+		F57BDEBD7E192414D59017C7778C89F5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2057A9CAB28620A993BC96A0C0AD8F4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,15 +225,6 @@
 			path = "Target Support Files/Pods-Khalti_Tests";
 			sourceTree = "<group>";
 		};
-		03ACDBDC13F2C772BD191B8781BE83AB /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				1BECEAB9448399D48557BC4362B39EEA /* CheckOut.storyboard */,
-				376B826016B14753934944F835524A4F /* images.xcassets */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 		04F1FCAD657C2EDBE05D44F64F087AB7 /* Pods-Khalti_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -374,155 +243,133 @@
 			path = "Target Support Files/Pods-Khalti_Example";
 			sourceTree = "<group>";
 		};
-		0B08CF699ACA6F735F66470A15BC2F53 /* ObjectMapper */ = {
+		200D10EB20F0397D47F022B50CF0433F /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				E1BB986C0645F82BFAD89E53B20D63B1 /* CustomDateFormatTransform.swift */,
-				87EF2D0C7001BE4BDCC5C6CA26D66E77 /* DataTransform.swift */,
-				FF18F6C885FB0FD1F0A2899523815A4E /* DateFormatterTransform.swift */,
-				A13CDE9E496FD29A84A5B756B7AE24BD /* DateTransform.swift */,
-				57E7E12F2DB4BE0FFB38C60A044990D3 /* DictionaryTransform.swift */,
-				A6BB02B093600C0B342AF8C4EEAAEFFC /* EnumOperators.swift */,
-				47D94BCD280680A36AC842675FFBA153 /* EnumTransform.swift */,
-				C7F1B79254593795A693DB073C4EF1BE /* FromJSON.swift */,
-				BCA0077F69D623760BD222C5FB82343E /* HexColorTransform.swift */,
-				8B78242C8427AA261A71D1A1E726D89F /* ImmutableMappable.swift */,
-				DD3886318A13813A28263B8EBDE9FD2D /* IntegerOperators.swift */,
-				29C01CC099913BA6E2BF13D1D1914025 /* ISO8601DateTransform.swift */,
-				60BF1669219C43EE8AB7763B633089E0 /* Map.swift */,
-				7480176EE3B1EEF580F7F571E4516939 /* MapError.swift */,
-				A3EE13712EB3F4DB4476B47C1F67471E /* Mappable.swift */,
-				FEF1B77CF829D2A707AE8E3F52F52F6C /* Mapper.swift */,
-				BEC58A2601A48A3061DCD7662CC267BD /* NSDecimalNumberTransform.swift */,
-				EE19B5A5B95AE7C2D154F7B530810D51 /* Operators.swift */,
-				1990E849CBBAB107F9E07AA750654DB1 /* ToJSON.swift */,
-				91EDF4970E66D181E77C6972B2757349 /* TransformOf.swift */,
-				4CCEA0E25430F794CCE5071238280C68 /* TransformOperators.swift */,
-				DA429151D3270A6F7F8DB3E9770096D0 /* TransformType.swift */,
-				BAF9E9B26231E9ED0F75E1275B72968C /* URLTransform.swift */,
-				10886FB6A86EDE25E715768153B1433F /* Support Files */,
+				4AF006B0AD5765D1BFA8253C2DCBB126 /* AFError.swift */,
+				DFCB8C44DE758E906C0BCDA455937B85 /* Alamofire.swift */,
+				0FCBF1EED873F61C6D46CE37FA5C39D3 /* DispatchQueue+Alamofire.swift */,
+				155538D91ACEEEDF82069ACF6C1A02E7 /* MultipartFormData.swift */,
+				E5A8AA5F9EDED0A0BDDE7E830BF4AEE0 /* NetworkReachabilityManager.swift */,
+				66A46F517F0AF7E85A16D723F6406896 /* Notifications.swift */,
+				6639346628280A0D0FAD35196BF56108 /* ParameterEncoding.swift */,
+				1E230A0448B394DE26E688DAC8E6201E /* Request.swift */,
+				04F47F5C9CDB035C5AFADEBA5BF44F1C /* Response.swift */,
+				E2F9510473F6FFD7AA66524DB16C2263 /* ResponseSerialization.swift */,
+				3D60BC9955B4F7FFA62D7440CB385C11 /* Result.swift */,
+				32B030D27CAC730C5EB0F22390645310 /* ServerTrustPolicy.swift */,
+				195D73DD9EF275A3C56569E2B1CA8026 /* SessionDelegate.swift */,
+				46CDAC6C1187C5467E576980E1062C8B /* SessionManager.swift */,
+				A01C037B4034EDA3D7955BC5E4E9D9D6 /* TaskDelegate.swift */,
+				87882A1F5A92C8138D54545E51D51E6F /* Timeline.swift */,
+				B029DBC43E49A740F12B5E4D2E6DD452 /* Validation.swift */,
+				55F14F994FE7AB51F028BFE66CEF3106 /* Support Files */,
 			);
-			name = ObjectMapper;
-			path = ObjectMapper;
+			path = Alamofire;
 			sourceTree = "<group>";
 		};
-		10886FB6A86EDE25E715768153B1433F /* Support Files */ = {
+		25FBABEA8245B7CB598AE440D0469108 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DD4E9B5C693066A7F155A9217E6C8008 /* Info.plist */,
-				03BFF8074AEB03901640112035A8A78C /* ObjectMapper.modulemap */,
-				BD76C20B731A45B8471E8BAFD0370C20 /* ObjectMapper.xcconfig */,
-				DEEF34B3A4F836B98EF390438711163D /* ObjectMapper-dummy.m */,
-				05F8C1C270CB9EE421860A8371CFA5BC /* ObjectMapper-prefix.pch */,
-				30A49E41A602DACA1D3590796B28CBF4 /* ObjectMapper-umbrella.h */,
+				4DE76DD15A1E674DFEFB22342073A26B /* Alamofire.framework */,
+				862C8D1E750744DE503591D120DC34F6 /* Khalti.bundle */,
+				0BE62040D7CCE57658CE367AC164246A /* Khalti.framework */,
+				5A988338A0C21B0B0B118859F09E0917 /* Pods_Khalti_Example.framework */,
+				A87D89E112E6CBE69FB0E7B33693CDAA /* Pods_Khalti_Tests.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/ObjectMapper";
+			name = Products;
 			sourceTree = "<group>";
 		};
-		233FD1F3A73E63F2F80C657D5E47924B /* iOS */ = {
+		35F128EB69B6F7FB7DA93BBF6C130FAE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7B60BDBCB88E38FC6D72918650647ED2 /* Foundation.framework */,
-				96B565246722E8ACDD2DD27BA243A453 /* UIKit.framework */,
+				200D10EB20F0397D47F022B50CF0433F /* Alamofire */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		39064BAA369DC19F825BF274E6C35E38 /* Pay Options */ = {
+			isa = PBXGroup;
+			children = (
+				84A2D79A77483BF29D591167E985F543 /* CardPayment */,
+				920D9502553A713DBB28F80F3252EC50 /* Ebanking */,
+				B773152607BF193BAB6AD17EBDCACE99 /* KhaltiPayment */,
+			);
+			name = "Pay Options";
+			path = "Khalti/Classes/Pay Options";
+			sourceTree = "<group>";
+		};
+		3DEE1ACBDC16A904764EAF208F4294E8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				800B4E0C98932A8804205784341E7CFB /* CheckOut.storyboard */,
+				D11371B0FF9D3A50CDA2EA7F1AE23FC8 /* images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3ECD03AA521A4A175A9969B71E9C3B0F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C8425F802DF869B8844D9D072CFCE373 /* Foundation.framework */,
+				23FA268F7976194C5CD1F9A31D556CB0 /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		276CDABC879FDA015FF8318FC478164D /* Support Files */ = {
+		55F14F994FE7AB51F028BFE66CEF3106 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C2B47BB6EBF05E19DD730B68F1C8016F /* Alamofire.modulemap */,
-				727D0A850368F63F5BBD4ECC6196DB67 /* Alamofire.xcconfig */,
-				8A31865D9B565EE7E2C6C916D37E4914 /* Alamofire-dummy.m */,
-				132B1BD9BE5337B4E9C2030AE2276E93 /* Alamofire-prefix.pch */,
-				8F6EE8D67E15FCC3969B8FBB4EBE91DF /* Alamofire-umbrella.h */,
-				3DA4FA00EAEC0FE793962F75B66EA4E9 /* Info.plist */,
+				7D141D1953E5C6E67E362CE73090E48A /* Alamofire.modulemap */,
+				E6F34CCF86067ED508C12C676E298C69 /* Alamofire.xcconfig */,
+				22C1C119BCE81C53F76CAC2BE27C38E0 /* Alamofire-dummy.m */,
+				BCCA9CA7D9C1A2047BB93336C5708DFD /* Alamofire-prefix.pch */,
+				B44A27EFBB0DA84D738057B77F3413B1 /* Alamofire-umbrella.h */,
+				13A0A663B36A229C69D5274A83E93F88 /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Alamofire";
 			sourceTree = "<group>";
 		};
-		402EE8B1020994B41DB4079CD6D55815 /* CardPayment */ = {
+		578F56F1009DA25B19562D0017F72208 /* Khalti */ = {
 			isa = PBXGroup;
 			children = (
-				F89861DE38DBA96135892D14340F5123 /* CardPayment.swift */,
-				6ABF438CA6CE4BA3406B3F1217D031AE /* CardPaymentViewController.swift */,
-			);
-			name = CardPayment;
-			path = Khalti/Classes/CardPayment;
-			sourceTree = "<group>";
-		};
-		4ACD907AD78621F57553F68DC7113169 /* KhaltiPayment */ = {
-			isa = PBXGroup;
-			children = (
-				3D85DCE3CAC2ACBD469C4F103882C3BE /* KhaltiPayment.swift */,
-				E0DC87A0D58ACF212990A0CF3D1C30F9 /* KhaltiPaymentViewController.swift */,
-			);
-			name = KhaltiPayment;
-			path = Khalti/Classes/KhaltiPayment;
-			sourceTree = "<group>";
-		};
-		5C3F26BA3E8638DF74A63C614D9C4D22 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				76B1E546E6A916F15F836B2E0BA8380F /* Alamofire */,
-				0B08CF699ACA6F735F66470A15BC2F53 /* ObjectMapper */,
-				A31E316AEECD0650118322335AAC6BCB /* SwiftyJSON */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		6AE45F9B7CAF13C344AB9E73834AB673 /* CheckOut */ = {
-			isa = PBXGroup;
-			children = (
-				C63BD22D6877C96B98E97D07306484A7 /* API */,
-			);
-			name = CheckOut;
-			path = Khalti/Classes/CheckOut;
-			sourceTree = "<group>";
-		};
-		6EF796260FEA7F0C3906E238009D45DD /* Khalti */ = {
-			isa = PBXGroup;
-			children = (
-				9C3DB67EFFDE44E65926EF02CA13ABD1 /* CheckOutViewController.swift */,
-				1E95A1144354AAEC2A22E17AC692D79F /* Khalti.swift */,
-				7DD399BC127C581B77E201A8961DC720 /* KhaltiButton.swift */,
-				402EE8B1020994B41DB4079CD6D55815 /* CardPayment */,
-				6AE45F9B7CAF13C344AB9E73834AB673 /* CheckOut */,
-				F0FD3A3AF99D059E21A344270729E274 /* Ebanking */,
-				4ACD907AD78621F57553F68DC7113169 /* KhaltiPayment */,
-				03ACDBDC13F2C772BD191B8781BE83AB /* Resources */,
-				CAF06DF99448169E393CED855DC0887D /* Support Files */,
+				847A30D27915FE702C92AC188968C42E /* CheckOutViewController.swift */,
+				B158430827EFB3F158BB54CB5DF98C4C /* Config.swift */,
+				D5BEE84F3CF445642DE38B0C43B98F38 /* ErrorAction.swift */,
+				E6071F438BB0096C870BA242B209C53F /* KaltiApi.swift */,
+				4BAD1C974F66323C500E7B05AF328C00 /* Khalti.swift */,
+				CA06287617CFB00690AC0E7839FEB87D /* KhaltiPayDelegate.swift */,
+				39064BAA369DC19F825BF274E6C35E38 /* Pay Options */,
+				3DEE1ACBDC16A904764EAF208F4294E8 /* Resources */,
+				7677C8CD640443FC8415C8707B3F724C /* Support Files */,
 			);
 			name = Khalti;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		76B1E546E6A916F15F836B2E0BA8380F /* Alamofire */ = {
+		7677C8CD640443FC8415C8707B3F724C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B87C9138FA91D2E6815C4B8B2E4FB966 /* AFError.swift */,
-				4F4008B007ECEBB8086921D5649001C8 /* Alamofire.swift */,
-				2C3B12739CE173502D274CB5B351511E /* DispatchQueue+Alamofire.swift */,
-				5DB0C47DE442BF755047362E9CEE00D5 /* MultipartFormData.swift */,
-				AB185BB62E5056D9D05CA271978CFA07 /* NetworkReachabilityManager.swift */,
-				A9EF40FE2E61FA482204AC1EDD50C0AB /* Notifications.swift */,
-				0EB4F37E83A8D079BEE16FDC7F459F8E /* ParameterEncoding.swift */,
-				AAA5A8D1F493CEC090EF06F90B724D23 /* Request.swift */,
-				8320E46217961006024A9FEC32921D7A /* Response.swift */,
-				3EB1AFB5315FA82C60EC92E1F76F3D86 /* ResponseSerialization.swift */,
-				CDD4A6FB93D26D7F55D7F370C3BDDB80 /* Result.swift */,
-				BED0896BA97607363838FAD542E20F16 /* ServerTrustPolicy.swift */,
-				EEBFC672A522BF4EBFA470784C2C7BD9 /* SessionDelegate.swift */,
-				02D913883443DABFDB3F778DB370278C /* SessionManager.swift */,
-				CDC35F0FAACE02EE418FDFFF494F1482 /* TaskDelegate.swift */,
-				80E5BDB0B45ECBBFAE70B137084D2144 /* Timeline.swift */,
-				8119DB15A888AD6A273A7791410D2733 /* Validation.swift */,
-				276CDABC879FDA015FF8318FC478164D /* Support Files */,
+				503F39605D8F160214351C349F661477 /* Info.plist */,
+				E20738A1C3A00C68A73B22EF3722EA31 /* Khalti.modulemap */,
+				4FCB48DD0D8FD201C3E4346D1448C893 /* Khalti.xcconfig */,
+				6065111DD95EAC5CB8B4121957003A89 /* Khalti-dummy.m */,
+				1889C94F012F7805D5A69A4043837BD0 /* Khalti-prefix.pch */,
+				ADB3BB70FA734D21B7229792E625FCE8 /* Khalti-umbrella.h */,
+				2BB313C12ED54809364F8A8044FC6DEA /* ResourceBundle-Khalti-Info.plist */,
 			);
-			name = Alamofire;
-			path = Alamofire;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Khalti";
+			sourceTree = "<group>";
+		};
+		7B05826141F5DEB7AF13094100054778 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F02A739100B7422F36AE23783BE8C24 /* Alamofire.framework */,
+				3ECD03AA521A4A175A9969B71E9C3B0F /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -530,94 +377,44 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				DF6F9266ECF30D90EC16711788E1CE70 /* Development Pods */,
-				D488872F9786975ECBCD82EFA167286F /* Frameworks */,
-				5C3F26BA3E8638DF74A63C614D9C4D22 /* Pods */,
-				BC3A8A4FFE0B2CF51B2F43ED02A616AA /* Products */,
+				7B05826141F5DEB7AF13094100054778 /* Frameworks */,
+				35F128EB69B6F7FB7DA93BBF6C130FAE /* Pods */,
+				25FBABEA8245B7CB598AE440D0469108 /* Products */,
 				E147269E0D6F8149F50E677511182C0D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		939AC04B2F77C69A1473AD7B55F82F25 /* Support Files */ = {
+		84A2D79A77483BF29D591167E985F543 /* CardPayment */ = {
 			isa = PBXGroup;
 			children = (
-				B553733A57C14D88276B2217F50DEB2C /* Info.plist */,
-				89CAF1EB884BD3CE3B754941D6DB2CED /* SwiftyJSON.modulemap */,
-				84A1743C19A49C627F07104F816EA1D8 /* SwiftyJSON.xcconfig */,
-				1E0512DC6DE9794A396D09EAAE83EDF5 /* SwiftyJSON-dummy.m */,
-				8E25A98E7A4F5095CAB710997D638D25 /* SwiftyJSON-prefix.pch */,
-				F9EEBF277C12CFC3F28A25654602A260 /* SwiftyJSON-umbrella.h */,
+				79462013CF8744937D9D4670925EFE89 /* CardPayment.swift */,
+				0A001FA4A8E5087E4ABB37626BE4FE8A /* CardPaymentViewController.swift */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftyJSON";
+			path = CardPayment;
 			sourceTree = "<group>";
 		};
-		A31E316AEECD0650118322335AAC6BCB /* SwiftyJSON */ = {
+		920D9502553A713DBB28F80F3252EC50 /* Ebanking */ = {
 			isa = PBXGroup;
 			children = (
-				8E45F568CD1784844774411F15B621A5 /* SwiftyJSON.swift */,
-				939AC04B2F77C69A1473AD7B55F82F25 /* Support Files */,
+				A4814F4C422F44CFFB253906AD6BCB2E /* Ebanking.swift */,
+				61C0A336078501DB49C9D74997B4DB88 /* EbankingViewController.swift */,
 			);
-			name = SwiftyJSON;
-			path = SwiftyJSON;
+			path = Ebanking;
 			sourceTree = "<group>";
 		};
-		BC3A8A4FFE0B2CF51B2F43ED02A616AA /* Products */ = {
+		B773152607BF193BAB6AD17EBDCACE99 /* KhaltiPayment */ = {
 			isa = PBXGroup;
 			children = (
-				9995E8D2A28A14878683952AEEB5A960 /* Alamofire.framework */,
-				69B21C4799F050CB74CEA17798860156 /* Khalti.bundle */,
-				D0B277CF74CFB89EF6795D597F5F61A9 /* Khalti.framework */,
-				1438E608F421EA48EC95FA643EAF8507 /* ObjectMapper.framework */,
-				D33F142C6F196ADA4DC591E6C740CE8C /* Pods_Khalti_Example.framework */,
-				80BD1D3886BD0F9FB0FEB85902304156 /* Pods_Khalti_Tests.framework */,
-				F516F24AB18BB5E32C058B3254B81FB7 /* SwiftyJSON.framework */,
+				76B64E89C8103D966A563D58B4109222 /* KhaltiPayment.swift */,
+				5161C93E8329FB93B602E094F5396926 /* KhaltiPaymentViewController.swift */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		C63BD22D6877C96B98E97D07306484A7 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				7DB6A118917309EECFB46EFD0B028F79 /* CheckOutDelegate.swift */,
-				2B37DB2C445EC0D255019896EA7AB721 /* Config.swift */,
-				27295C9E84F7B189FFB9D58A930D65C9 /* ErrorAction.swift */,
-				E77B831DF3D4E79324E5BC90C6166903 /* ExtensionJSON.swift */,
-				FC2F5CC10B28A3F1101A44D02D21AA0F /* KaltiApi.swift */,
-			);
-			name = API;
-			path = API;
-			sourceTree = "<group>";
-		};
-		CAF06DF99448169E393CED855DC0887D /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				87F2AFF68FAF2F1F45E94C60D05752E0 /* Info.plist */,
-				43E13C41D7DA11D7A23F987F1D93F8CC /* Khalti.modulemap */,
-				27D1280CCF10BAA826705094202D859E /* Khalti.xcconfig */,
-				A258E8D1B5C30F8465315168CBB84912 /* Khalti-dummy.m */,
-				F2525345BF9C4BBF8E39A8D5AC0B2D72 /* Khalti-prefix.pch */,
-				933C43A5AA51B2E620FA9BE5181C274E /* Khalti-umbrella.h */,
-				AD7403994D7C8759B4EDA315F0D56E37 /* ResourceBundle-Khalti-Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Khalti";
-			sourceTree = "<group>";
-		};
-		D488872F9786975ECBCD82EFA167286F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2434ACADD30CDCF0D898A638C9D58ED1 /* Alamofire.framework */,
-				60D64330F498BF32A9B935D068BD345F /* ObjectMapper.framework */,
-				E717345CA5F63FC38F916CB42B3A018D /* SwiftyJSON.framework */,
-				233FD1F3A73E63F2F80C657D5E47924B /* iOS */,
-			);
-			name = Frameworks;
+			path = KhaltiPayment;
 			sourceTree = "<group>";
 		};
 		DF6F9266ECF30D90EC16711788E1CE70 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6EF796260FEA7F0C3906E238009D45DD /* Khalti */,
+				578F56F1009DA25B19562D0017F72208 /* Khalti */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -631,24 +428,14 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		F0FD3A3AF99D059E21A344270729E274 /* Ebanking */ = {
-			isa = PBXGroup;
-			children = (
-				29BB9AAFF02A65E2189BD86461285E7C /* Ebanking.swift */,
-				50C4D491CED8451A012B92BA4583E464 /* EbankingViewController.swift */,
-			);
-			name = Ebanking;
-			path = Khalti/Classes/Ebanking;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		592C1A5CB1B84A6234D0B674298FEC3B /* Headers */ = {
+		177AFB84E1F15B761D770F009E598D3E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				744E85B86731712E0AF27755E566C8F3 /* Pods-Khalti_Example-umbrella.h in Headers */,
+				AC666E895CC248FF74FBA843AB575F0D /* Pods-Khalti_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,27 +447,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		836F19C8525176CA6680886770EAC1E5 /* Headers */ = {
+		A2E8BBD99F924EEADA5E102603CEF388 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03FF51CEEB00229658E1CAA79623DA6F /* SwiftyJSON-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A3891F25C63399D2142E22DBB8191BE4 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3A57F427F2FD120F1CC121E36D91AEAB /* ObjectMapper-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AF5662B54063FB1FF5E2EB9BE10229A7 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2EBE6C5C9364038EC10FC8709115EB29 /* Khalti-umbrella.h in Headers */,
+				D9C61086EE84130410FA1E5B1E02FB84 /* Khalti-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -695,76 +466,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		59E5001C6D80BF58D090D00062A9E9C2 /* ObjectMapper */ = {
+		1A133BDA692810B84B6B13E4E877CF0F /* Khalti */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5AAF3A02AC7EB6BCAC66EEAC9DCF31AF /* Build configuration list for PBXNativeTarget "ObjectMapper" */;
+			buildConfigurationList = 9C48840D740B59FC7ED3ABBA47150BF5 /* Build configuration list for PBXNativeTarget "Khalti" */;
 			buildPhases = (
-				0B2059FE14D6B64C1E952B590E9B0153 /* Sources */,
-				709946C9EE3A4C0CD5AEF79E2585685A /* Frameworks */,
-				A3891F25C63399D2142E22DBB8191BE4 /* Headers */,
+				AD8CD8DB913968BAF5D78E44D4441023 /* Sources */,
+				7100019A975DA3DF781DBDB4834447C7 /* Frameworks */,
+				60D920CB69C396987E62D413F7D4EAD0 /* Resources */,
+				A2E8BBD99F924EEADA5E102603CEF388 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3EB5E073BD04A638F54AB77E81E5F675 /* PBXTargetDependency */,
+				CEEBCDB3E746203FC63E33CDFB89C984 /* PBXTargetDependency */,
 			);
-			name = ObjectMapper;
-			productName = ObjectMapper;
-			productReference = 1438E608F421EA48EC95FA643EAF8507 /* ObjectMapper.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		5ACAC771F988A4B56DF1AA4E9A4E2C30 /* SwiftyJSON */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5F3E7E654E0418C0321D3B34201A9ECF /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
-			buildPhases = (
-				0AEC171E70817AA08B439E596C01BB52 /* Sources */,
-				4C5E859A6A410CBD0E41EFCCA7F0E129 /* Frameworks */,
-				836F19C8525176CA6680886770EAC1E5 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SwiftyJSON;
-			productName = SwiftyJSON;
-			productReference = F516F24AB18BB5E32C058B3254B81FB7 /* SwiftyJSON.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		5DE7EBD758CCE9830B08C05D92136E11 /* Khalti-Khalti */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 699AFA382A4C2E5D9DB186A4D32FCACC /* Build configuration list for PBXNativeTarget "Khalti-Khalti" */;
-			buildPhases = (
-				1B24449AC9D4BB69A46117E005437D67 /* Sources */,
-				52A2E3CC520080A5F7E555F9711503F5 /* Frameworks */,
-				2BD458E132CF46260A23F6D634E5822C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Khalti-Khalti";
-			productName = "Khalti-Khalti";
-			productReference = 69B21C4799F050CB74CEA17798860156 /* Khalti.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-		85F79D0972AEB443F21CD97360EDD55C /* Pods-Khalti_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 23A6A271C62281AF58E6EED9DBC3E8A1 /* Build configuration list for PBXNativeTarget "Pods-Khalti_Example" */;
-			buildPhases = (
-				A90F5F378805F08F2347B83F3A660149 /* Sources */,
-				C81B2C61BB7751BC511B6AB67E5130B2 /* Frameworks */,
-				592C1A5CB1B84A6234D0B674298FEC3B /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A0797FBDB2A10473FC0DCAC2DC450BA2 /* PBXTargetDependency */,
-				7CA236286E914D0848811650923DD158 /* PBXTargetDependency */,
-				37F71C0DF246BAD5F26CC4A0DC7D2349 /* PBXTargetDependency */,
-				A0028A14F070C1BB6038731DAB78FE0F /* PBXTargetDependency */,
-			);
-			name = "Pods-Khalti_Example";
-			productName = "Pods-Khalti_Example";
-			productReference = D33F142C6F196ADA4DC591E6C740CE8C /* Pods_Khalti_Example.framework */;
+			name = Khalti;
+			productName = Khalti;
+			productReference = 0BE62040D7CCE57658CE367AC164246A /* Khalti.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */ = {
@@ -781,30 +500,25 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = 9995E8D2A28A14878683952AEEB5A960 /* Alamofire.framework */;
+			productReference = 4DE76DD15A1E674DFEFB22342073A26B /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		8C0285D4DD1D50ADEA3BC6BCD59EC927 /* Khalti */ = {
+		E8395CB1CB5ECD77C141181B5AF49F41 /* Khalti-Khalti */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 12065BD577ACA57CEABA4147557692E3 /* Build configuration list for PBXNativeTarget "Khalti" */;
+			buildConfigurationList = 30687DDC15497CBCE67E7139B0E1DAA9 /* Build configuration list for PBXNativeTarget "Khalti-Khalti" */;
 			buildPhases = (
-				E574D1AC226EBD6E51477DD63ECEFFE3 /* Sources */,
-				32FA8CFF10937C0CDD806AB4445B5522 /* Frameworks */,
-				2C2CA5E2D7EE23BD7E88F1BA2D345EA5 /* Resources */,
-				AF5662B54063FB1FF5E2EB9BE10229A7 /* Headers */,
+				F6B6D260EA335859AE926596F5A9BB28 /* Sources */,
+				F57BDEBD7E192414D59017C7778C89F5 /* Frameworks */,
+				49A8755775E9D86A0F6EF8E28120EF5F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CB3EED8BF1FE1A68FA2A88BE9AC8708F /* PBXTargetDependency */,
-				F7981B7F9F435684A19807A65F326B29 /* PBXTargetDependency */,
-				40688606C0C0CC741AF84BF2FF7CA188 /* PBXTargetDependency */,
-				CB708FFB861095327FF3703F0799BBD6 /* PBXTargetDependency */,
 			);
-			name = Khalti;
-			productName = Khalti;
-			productReference = D0B277CF74CFB89EF6795D597F5F61A9 /* Khalti.framework */;
-			productType = "com.apple.product-type.framework";
+			name = "Khalti-Khalti";
+			productName = "Khalti-Khalti";
+			productReference = 862C8D1E750744DE503591D120DC34F6 /* Khalti.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 		F3BDA38A1676E8DCB9944567EEDAAF21 /* Pods-Khalti_Tests */ = {
 			isa = PBXNativeTarget;
@@ -820,7 +534,26 @@
 			);
 			name = "Pods-Khalti_Tests";
 			productName = "Pods-Khalti_Tests";
-			productReference = 80BD1D3886BD0F9FB0FEB85902304156 /* Pods_Khalti_Tests.framework */;
+			productReference = A87D89E112E6CBE69FB0E7B33693CDAA /* Pods_Khalti_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F5670638AE468B4AD7FE8B528A99C005 /* Pods-Khalti_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA76C64D53174FDBCA31A38506C42648 /* Build configuration list for PBXNativeTarget "Pods-Khalti_Example" */;
+			buildPhases = (
+				1EA2D1A551EA553B7872C85E2017C878 /* Sources */,
+				63512763F233151A1E084EB697B37639 /* Frameworks */,
+				177AFB84E1F15B761D770F009E598D3E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4E102BE2188D977A5442FE29AFC5A29 /* PBXTargetDependency */,
+				1098B93BC1D0FE841D6DDC4B9B114EE6 /* PBXTargetDependency */,
+			);
+			name = "Pods-Khalti_Example";
+			productName = "Pods-Khalti_Example";
+			productReference = 5A988338A0C21B0B0B118859F09E0917 /* Pods_Khalti_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -840,86 +573,45 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = BC3A8A4FFE0B2CF51B2F43ED02A616AA /* Products */;
+			productRefGroup = 25FBABEA8245B7CB598AE440D0469108 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */,
-				8C0285D4DD1D50ADEA3BC6BCD59EC927 /* Khalti */,
-				5DE7EBD758CCE9830B08C05D92136E11 /* Khalti-Khalti */,
-				59E5001C6D80BF58D090D00062A9E9C2 /* ObjectMapper */,
-				85F79D0972AEB443F21CD97360EDD55C /* Pods-Khalti_Example */,
+				1A133BDA692810B84B6B13E4E877CF0F /* Khalti */,
+				E8395CB1CB5ECD77C141181B5AF49F41 /* Khalti-Khalti */,
+				F5670638AE468B4AD7FE8B528A99C005 /* Pods-Khalti_Example */,
 				F3BDA38A1676E8DCB9944567EEDAAF21 /* Pods-Khalti_Tests */,
-				5ACAC771F988A4B56DF1AA4E9A4E2C30 /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2BD458E132CF46260A23F6D634E5822C /* Resources */ = {
+		49A8755775E9D86A0F6EF8E28120EF5F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CD352F785286E60327404140DD97094 /* CheckOut.storyboard in Resources */,
-				DED81F6EA369D17E751D7580AAED26CF /* images.xcassets in Resources */,
+				4C6D7BA3F505756C5090C00AD457AD58 /* CheckOut.storyboard in Resources */,
+				70EA78D79365E11FE194B138B7933A47 /* images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2C2CA5E2D7EE23BD7E88F1BA2D345EA5 /* Resources */ = {
+		60D920CB69C396987E62D413F7D4EAD0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5B88D45A31BE9BC0C414DA5897265DF /* Khalti.bundle in Resources */,
+				2A84B7B4DB7D16570C220C0E8236ACB0 /* Khalti.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0AEC171E70817AA08B439E596C01BB52 /* Sources */ = {
+		1EA2D1A551EA553B7872C85E2017C878 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91D33825273E166A6D331A0486EA28ED /* SwiftyJSON-dummy.m in Sources */,
-				8AA31C7E98F330D2C413B3F73ABC2E2F /* SwiftyJSON.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0B2059FE14D6B64C1E952B590E9B0153 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				614EAF18CBE6E2D278F920B687765816 /* CustomDateFormatTransform.swift in Sources */,
-				011D64705FE360015E126D6F0ECB14C6 /* DataTransform.swift in Sources */,
-				9034AA715BABF5AC91E0B5DBD40370D6 /* DateFormatterTransform.swift in Sources */,
-				9E7B7D08F5400007218748584F173944 /* DateTransform.swift in Sources */,
-				B3FD743A32304E431367E284B77747AE /* DictionaryTransform.swift in Sources */,
-				E6BCCE252D15BA3BD7E85FDBE8066DB8 /* EnumOperators.swift in Sources */,
-				E4F4C1DF5F63648EA0B7529D3D565046 /* EnumTransform.swift in Sources */,
-				A261304B281B2252ABFD3E30A1388E2B /* FromJSON.swift in Sources */,
-				31C4DDC73BA9BC8BC64D7116358AC814 /* HexColorTransform.swift in Sources */,
-				A01F55F4E5F61F3B4A6F5E38DFF24215 /* ImmutableMappable.swift in Sources */,
-				2E68297B9318349DA8E21F0C7C80A04A /* IntegerOperators.swift in Sources */,
-				A0224B97367149559CFA647274E1592B /* ISO8601DateTransform.swift in Sources */,
-				9C26B9D51F635427D3805C22E750A681 /* Map.swift in Sources */,
-				ED531A4BDBBCB6AA5577306B9331E99B /* MapError.swift in Sources */,
-				70D3E21F6B40CD598BD8A2291E6C5420 /* Mappable.swift in Sources */,
-				236D94EE785DEB73A6EC3C0FB096CAF8 /* Mapper.swift in Sources */,
-				CF2B02B1E266A8444B7284B2EFFA2F0B /* NSDecimalNumberTransform.swift in Sources */,
-				E078CF40D879F8E904E5329C457E1DA3 /* ObjectMapper-dummy.m in Sources */,
-				01722D9EA74E759B1615CB8BDADAC59E /* Operators.swift in Sources */,
-				31151424031505F0F7F75D67DF2C1D69 /* ToJSON.swift in Sources */,
-				135D03F83006B0E748C43D9CCD247BBF /* TransformOf.swift in Sources */,
-				2703C328077DB327E3B946F019C37B51 /* TransformOperators.swift in Sources */,
-				1B6667FB11A9C0A3831A48FE5ECE2F76 /* TransformType.swift in Sources */,
-				9424631984E054B8B40948D4AC0ADAFF /* URLTransform.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1B24449AC9D4BB69A46117E005437D67 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				8AC76FEE8039238A0F3517B69E281AD2 /* Pods-Khalti_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -956,93 +648,82 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A90F5F378805F08F2347B83F3A660149 /* Sources */ = {
+		AD8CD8DB913968BAF5D78E44D4441023 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8204255BF4D138B261F4D8682A0EB7D /* Pods-Khalti_Example-dummy.m in Sources */,
+				B7154DB2C99CEF7ECBFE08CE73BF75D2 /* CardPayment.swift in Sources */,
+				508B08EF4E4B620BA56250ACB13EF703 /* CardPaymentViewController.swift in Sources */,
+				F708290CB231D3C076BC0B79F21914F5 /* CheckOutViewController.swift in Sources */,
+				232AA1F17B4A25291D9AEAB5E6C06115 /* Config.swift in Sources */,
+				E2F9E7FE1567F97FA802308E72D6F132 /* Ebanking.swift in Sources */,
+				3E100DF83233765A9461906D7625438F /* EbankingViewController.swift in Sources */,
+				CCC9AABF9862CD4E63885C6536E1406D /* ErrorAction.swift in Sources */,
+				83CCAC57CAE50A77E22BA4273AD91972 /* KaltiApi.swift in Sources */,
+				F2F7C4344FDF117A683ED0A71CE1A2C8 /* Khalti-dummy.m in Sources */,
+				12AB7439ED85AE488BFF8AB60C03CACA /* Khalti.swift in Sources */,
+				3CA8B6548E63A3AEBF455FA199C88609 /* KhaltiPayDelegate.swift in Sources */,
+				96783D1870A6B92D95440CFBEA9B4015 /* KhaltiPayment.swift in Sources */,
+				F1E30208716471E6F668E193E8525CF2 /* KhaltiPaymentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E574D1AC226EBD6E51477DD63ECEFFE3 /* Sources */ = {
+		F6B6D260EA335859AE926596F5A9BB28 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF8D9D0BCE94239E8AA57CB4D023A5D2 /* CardPayment.swift in Sources */,
-				5693DDE87FAAEBEF8322B9B72286FE3C /* CardPaymentViewController.swift in Sources */,
-				D1EB7E23B5A54A60158B236FC4A558F0 /* CheckOutDelegate.swift in Sources */,
-				7017903A3D6301DF74A63736CD589B87 /* CheckOutViewController.swift in Sources */,
-				039A6ADF9613E1948037456489290433 /* Config.swift in Sources */,
-				3E50ED41F288F747208113D8B4FF9CFD /* Ebanking.swift in Sources */,
-				B0DA5FDAD588A99D71CCEC4BBC88A43C /* EbankingViewController.swift in Sources */,
-				74C20910ED558896719D4D6ED781C92A /* ErrorAction.swift in Sources */,
-				3B441A6F4E9DF2E97F09768FCCF4D909 /* ExtensionJSON.swift in Sources */,
-				D00A1EBE3DCC71225C0BFEDAF12FDAF0 /* KaltiApi.swift in Sources */,
-				B20DA8DE641F15E16BC707635D78E117 /* Khalti-dummy.m in Sources */,
-				7348554967A563723B96ABD7681A201E /* Khalti.swift in Sources */,
-				6044DF126A2440094E680AA0946139C7 /* KhaltiButton.swift in Sources */,
-				8A78BDE8EEBAF6D7FE1EA72C70284B8E /* KhaltiPayment.swift in Sources */,
-				0A8EEEF1E14CBC11EB7924E8085A4BBA /* KhaltiPaymentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		37F71C0DF246BAD5F26CC4A0DC7D2349 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ObjectMapper;
-			target = 59E5001C6D80BF58D090D00062A9E9C2 /* ObjectMapper */;
-			targetProxy = 67E961623F1E28821EF0F23C106312CC /* PBXContainerItemProxy */;
-		};
-		40688606C0C0CC741AF84BF2FF7CA188 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ObjectMapper;
-			target = 59E5001C6D80BF58D090D00062A9E9C2 /* ObjectMapper */;
-			targetProxy = C6F5E8D829E805174B6B43512B1BF90A /* PBXContainerItemProxy */;
-		};
-		7CA236286E914D0848811650923DD158 /* PBXTargetDependency */ = {
+		1098B93BC1D0FE841D6DDC4B9B114EE6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Khalti;
-			target = 8C0285D4DD1D50ADEA3BC6BCD59EC927 /* Khalti */;
-			targetProxy = 012D585AA884DA48945E8F62DA73981F /* PBXContainerItemProxy */;
+			target = 1A133BDA692810B84B6B13E4E877CF0F /* Khalti */;
+			targetProxy = 9900EE1C732775B5410D20FCAC5990A2 /* PBXContainerItemProxy */;
 		};
-		A0028A14F070C1BB6038731DAB78FE0F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftyJSON;
-			target = 5ACAC771F988A4B56DF1AA4E9A4E2C30 /* SwiftyJSON */;
-			targetProxy = 0D6D26EE7897F39D8AE15DF23BE56C4C /* PBXContainerItemProxy */;
-		};
-		A0797FBDB2A10473FC0DCAC2DC450BA2 /* PBXTargetDependency */ = {
+		3EB5E073BD04A638F54AB77E81E5F675 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
 			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
-			targetProxy = B3BA5B0459F31916B13AE9E611B5AE9B /* PBXContainerItemProxy */;
+			targetProxy = F42CFA0AD0F27241DCB4348C4417B7DA /* PBXContainerItemProxy */;
 		};
-		CB3EED8BF1FE1A68FA2A88BE9AC8708F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Alamofire;
-			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
-			targetProxy = 8577DF9A88B81DA73E1EA00FD6687060 /* PBXContainerItemProxy */;
-		};
-		CB708FFB861095327FF3703F0799BBD6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftyJSON;
-			target = 5ACAC771F988A4B56DF1AA4E9A4E2C30 /* SwiftyJSON */;
-			targetProxy = 2F376AB842CE91822345B90C7236C2E7 /* PBXContainerItemProxy */;
-		};
-		F7981B7F9F435684A19807A65F326B29 /* PBXTargetDependency */ = {
+		CEEBCDB3E746203FC63E33CDFB89C984 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Khalti-Khalti";
-			target = 5DE7EBD758CCE9830B08C05D92136E11 /* Khalti-Khalti */;
-			targetProxy = F368F492F8717086801B65D8B28D8C8E /* PBXContainerItemProxy */;
+			target = E8395CB1CB5ECD77C141181B5AF49F41 /* Khalti-Khalti */;
+			targetProxy = BF6BE444A90FB768D3DB7FB93B839239 /* PBXContainerItemProxy */;
+		};
+		E4E102BE2188D977A5442FE29AFC5A29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
+			targetProxy = D826B58E9445261F78A37FF91A992AAF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2CDE6E0A471CC7F747DAEA3D6575C4B3 /* Debug */ = {
+		02CC3E8AB28674F25C7F3530D80AA115 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84A1743C19A49C627F07104F816EA1D8 /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = 4FCB48DD0D8FD201C3E4346D1448C893 /* Khalti.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Khalti";
+				INFOPLIST_FILE = "Target Support Files/Khalti/ResourceBundle-Khalti-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = Khalti;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		2364CC05C2028BB78F4A1AF41F8325D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FCB48DD0D8FD201C3E4346D1448C893 /* Khalti.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1053,13 +734,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Khalti/Khalti-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Khalti/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
-				PRODUCT_NAME = SwiftyJSON;
+				MODULEMAP_FILE = "Target Support Files/Khalti/Khalti.modulemap";
+				PRODUCT_NAME = Khalti;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1071,41 +752,9 @@
 			};
 			name = Debug;
 		};
-		492C849075631C538822629BC6D0307C /* Release */ = {
+		35CAACFB4C33A7A2E87BACB2DD4CED52 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84A1743C19A49C627F07104F816EA1D8 /* SwiftyJSON.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
-				PRODUCT_NAME = SwiftyJSON;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		51CDEC8C602BCA578735899F5043C23F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27D1280CCF10BAA826705094202D859E /* Khalti.xcconfig */;
+			baseConfigurationReference = 4FCB48DD0D8FD201C3E4346D1448C893 /* Khalti.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Khalti";
@@ -1121,7 +770,7 @@
 		};
 		6CD2CF3CB56F8D2390B8CD744515AD17 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 727D0A850368F63F5BBD4ECC6196DB67 /* Alamofire.xcconfig */;
+			baseConfigurationReference = E6F34CCF86067ED508C12C676E298C69 /* Alamofire.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1184,43 +833,9 @@
 			};
 			name = Release;
 		};
-		95C6A5975162422CCD35A14155AD9ACC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60DFDA2E7B3823EDC480261F3D94794D /* Pods-Khalti_Example.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Khalti_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Khalti_Example/Pods-Khalti_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Khalti_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		972BD31D68F98035DE59A64D32AC1F3A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 727D0A850368F63F5BBD4ECC6196DB67 /* Alamofire.xcconfig */;
+			baseConfigurationReference = E6F34CCF86067ED508C12C676E298C69 /* Alamofire.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1249,9 +864,9 @@
 			};
 			name = Debug;
 		};
-		9EE34DB297C7BFD24962B13CCE58D030 /* Debug */ = {
+		A3C036D1F1706420035440B38883FA24 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD76C20B731A45B8471E8BAFD0370C20 /* ObjectMapper.xcconfig */;
+			baseConfigurationReference = 4FCB48DD0D8FD201C3E4346D1448C893 /* Khalti.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1262,23 +877,24 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ObjectMapper/ObjectMapper-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ObjectMapper/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Khalti/Khalti-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Khalti/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ObjectMapper/ObjectMapper.modulemap";
-				PRODUCT_NAME = ObjectMapper;
+				MODULEMAP_FILE = "Target Support Files/Khalti/Khalti.modulemap";
+				PRODUCT_NAME = Khalti;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		B254DAA6CF0CE39F4A3D11B90A7E059A /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1335,72 +951,9 @@
 			};
 			name = Release;
 		};
-		B64B237682F4D06E2714A501E3E4EF1F /* Debug */ = {
+		D819816EE72C605C980B03A0317F736F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27D1280CCF10BAA826705094202D859E /* Khalti.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Khalti/Khalti-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Khalti/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Khalti/Khalti.modulemap";
-				PRODUCT_NAME = Khalti;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		DB0BD3B10BEECF6521185204CCCD79D1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27D1280CCF10BAA826705094202D859E /* Khalti.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Khalti/Khalti-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Khalti/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Khalti/Khalti.modulemap";
-				PRODUCT_NAME = Khalti;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		DD5C84872FD55BC3131FD46F808BCA07 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6EF456E288A9F15EDF45F26B1956A121 /* Pods-Khalti_Example.debug.xcconfig */;
+			baseConfigurationReference = 60DFDA2E7B3823EDC480261F3D94794D /* Pods-Khalti_Example.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1424,13 +977,13 @@
 				PRODUCT_NAME = Pods_Khalti_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		E3646DEE30364BDC695FA43C93C6167D /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1458,6 +1011,40 @@
 				PRODUCT_NAME = Pods_Khalti_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E4A9144E68D0F373738D0D354122A00A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EF456E288A9F15EDF45F26B1956A121 /* Pods-Khalti_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Khalti_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Khalti_Example/Pods-Khalti_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Khalti_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1524,80 +1111,23 @@
 			};
 			name = Debug;
 		};
-		E57168F89711534F120EE364FBF79E21 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27D1280CCF10BAA826705094202D859E /* Khalti.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Khalti";
-				INFOPLIST_FILE = "Target Support Files/Khalti/ResourceBundle-Khalti-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = Khalti;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		F08661AF8BA03EE3C972E2BCEB5E71DB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD76C20B731A45B8471E8BAFD0370C20 /* ObjectMapper.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ObjectMapper/ObjectMapper-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ObjectMapper/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ObjectMapper/ObjectMapper.modulemap";
-				PRODUCT_NAME = ObjectMapper;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		12065BD577ACA57CEABA4147557692E3 /* Build configuration list for PBXNativeTarget "Khalti" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B64B237682F4D06E2714A501E3E4EF1F /* Debug */,
-				DB0BD3B10BEECF6521185204CCCD79D1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		23A6A271C62281AF58E6EED9DBC3E8A1 /* Build configuration list for PBXNativeTarget "Pods-Khalti_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DD5C84872FD55BC3131FD46F808BCA07 /* Debug */,
-				95C6A5975162422CCD35A14155AD9ACC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4B68EE12B21C47CB798D9B1ECA6D7A7 /* Debug */,
 				B254DAA6CF0CE39F4A3D11B90A7E059A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30687DDC15497CBCE67E7139B0E1DAA9 /* Build configuration list for PBXNativeTarget "Khalti-Khalti" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02CC3E8AB28674F25C7F3530D80AA115 /* Debug */,
+				35CAACFB4C33A7A2E87BACB2DD4CED52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1611,38 +1141,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5AAF3A02AC7EB6BCAC66EEAC9DCF31AF /* Build configuration list for PBXNativeTarget "ObjectMapper" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9EE34DB297C7BFD24962B13CCE58D030 /* Debug */,
-				F08661AF8BA03EE3C972E2BCEB5E71DB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5F3E7E654E0418C0321D3B34201A9ECF /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2CDE6E0A471CC7F747DAEA3D6575C4B3 /* Debug */,
-				492C849075631C538822629BC6D0307C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		699AFA382A4C2E5D9DB186A4D32FCACC /* Build configuration list for PBXNativeTarget "Khalti-Khalti" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E57168F89711534F120EE364FBF79E21 /* Debug */,
-				51CDEC8C602BCA578735899F5043C23F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		72A8E8203206BCF2E85CE798D51955B3 /* Build configuration list for PBXNativeTarget "Pods-Khalti_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E3646DEE30364BDC695FA43C93C6167D /* Debug */,
 				768AED478F24F05125CD1B5D14EFB314 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C48840D740B59FC7ED3ABBA47150BF5 /* Build configuration list for PBXNativeTarget "Khalti" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2364CC05C2028BB78F4A1AF41F8325D5 /* Debug */,
+				A3C036D1F1706420035440B38883FA24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA76C64D53174FDBCA31A38506C42648 /* Build configuration list for PBXNativeTarget "Pods-Khalti_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4A9144E68D0F373738D0D354122A00A /* Debug */,
+				D819816EE72C605C980B03A0317F736F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -37,7 +37,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: CheckOutDelegate {
+extension ViewController: KhaltiPayDelegate {
 
     
     func onCheckOutSuccess(data: Dictionary<String, Any>) {

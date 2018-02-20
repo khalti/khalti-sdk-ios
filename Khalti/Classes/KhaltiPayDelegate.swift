@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol CheckOutDelegate {
+public protocol KhaltiPayDelegate {
     func onCheckOutSuccess(data: Dictionary<String,Any>)
     func onCheckOutError(action:String, message:String)
 }

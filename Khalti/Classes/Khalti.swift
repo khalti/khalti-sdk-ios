@@ -22,7 +22,7 @@ struct KhaltiColor {
 
 public class Khalti {
     
-    public static func present(caller: UIViewController, with config:Config, delegate: CheckOutDelegate) {
+    public static func present(caller: UIViewController, with config:Config, delegate: KhaltiPayDelegate) {
         let viewController = self.payView()
         viewController.config = config
         viewController.delegate = delegate

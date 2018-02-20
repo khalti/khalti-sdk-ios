@@ -24,16 +24,10 @@
       "khalti/Assets/**/*.{png,storyboard,xib,xcassets}"
     ]
   },
+  "frameworks": "UIKit",
   "dependencies": {
-    "ObjectMapper": [
-
-    ],
     "Alamofire": [
 
-    ],
-    "SwiftyJSON": [
-
     ]
-  },
-  "frameworks": "UIKit"
+  }
 }

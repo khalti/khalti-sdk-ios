@@ -20,7 +20,7 @@ class CheckOutViewController: UIViewController {
     @IBOutlet weak var containerView: UIView!
     
     var config:Config?
-    var delegate:CheckOutDelegate?
+    var delegate:KhaltiPayDelegate?
     
     private lazy var ebankingViewController:EbankingViewController = {
         let viewController = Ebanking.viewController()
