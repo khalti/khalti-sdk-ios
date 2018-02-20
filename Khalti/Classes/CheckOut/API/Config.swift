@@ -11,21 +11,46 @@ import Alamofire
 
 
 public struct Config {
-    private var publicKey:String = KhaltiConfig.shared.publicKey ?? ""
+    private var publicKey:String
     private var productId:String
     private var productName:String
-    private var productUrl:String
-    private var amount:Double
-    private var additionalDate:Dictionary<String,Any>?
-    private var delegate:CheckOutDelegate
+    private var productUrl:String?
+    private var amount:Int
+    private var additionalData:Dictionary<String,Any>?
 
-    
-    public init(publicKey:String = (KhaltiConfig.shared.publicKey ?? ""), productId:String,productName:String, productUrl:String, amount:Double,delgate:CheckOutDelegate) {
+    public init(publicKey:String,  amount:Int, productId:String,productName:String, productUrl:String? = nil, additionalData:Dictionary<String,Any>? = nil) {
         self.publicKey = publicKey
         self.productId = productId
         self.productName = productName
         self.productUrl = productUrl
         self.amount = amount
-        self.delegate = delgate
+        self.additionalData = additionalData
+    }
+    
+    func getPublicKey() -> String {
+        return self.publicKey
+    }
+    
+    func getAmount() -> Int {
+        return self.amount
+    }
+    
+    func getProductId() -> String {
+        return self.productId
+    }
+    
+    func getProductName() -> String {
+        return self.productName
+    }
+    
+    func getProductUrl() -> String? {
+        return self.productUrl
+    }
+    
+    func getAdditionalData() -> Dictionary<String,Any>? {
+        if let data = self.additionalData {
+            return data
+        }
+        return nil
     }
 }

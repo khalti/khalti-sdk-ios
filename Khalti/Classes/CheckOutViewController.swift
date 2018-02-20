@@ -8,43 +8,6 @@
 
 import UIKit
 
-public enum PaymentType {
-    case khalti
-    case ebanking
-    case card
-}
-
-struct KhaltiColor {
-    static var base: UIColor  { return UIColor(red: 76.0/255.0, green: 39.0/255.0, blue: 109.0/255.0, alpha: 1.0) }
-    static var orange: UIColor { return UIColor(red:247.0/255.0, green: 147.0/255.0, blue: 34.0/255.0, alpha: 1.0) }
-}
-
-public class Khalti {
-    
-    public static func present(caller: UIViewController, with config:Config) {
-        let viewController = self.payView()
-        viewController.config = config
-        let navigationViewController = UINavigationController(rootViewController: viewController)
-        
-        navigationViewController.navigationBar.isTranslucent = false
-        navigationViewController.navigationBar.barTintColor = UIColor(red: 76.0/255.0, green: 39.0/255.0, blue: 109.0/255.0, alpha: 1)
-        navigationViewController.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
-        caller.present(navigationViewController, animated: true, completion: nil)
-    }
-    
-    fileprivate static func payView() -> CheckOutViewController {
-        let storyboard = UIStoryboard(name: "CheckOut", bundle: bundle)
-        let vc = storyboard.instantiateInitialViewController() as! CheckOutViewController
-        return vc
-    }
-    
-    private static var bundle:Bundle {
-        let podBundle = Bundle(for: CheckOutViewController.self)
-        let bundleURL = podBundle.url(forResource: "Khalti", withExtension: "bundle")
-        return Bundle(url: bundleURL!)!
-    }
-}
-
 class CheckOutViewController: UIViewController {
     
     // MARK: Outlets
@@ -57,23 +20,30 @@ class CheckOutViewController: UIViewController {
     @IBOutlet weak var containerView: UIView!
     
     var config:Config?
+    var delegate:CheckOutDelegate?
     
     private lazy var ebankingViewController:EbankingViewController = {
-        let vc = Ebanking.viewController()
-        self.add(asChildViewController: vc)
-        return vc
+        let viewController = Ebanking.viewController()
+        viewController.config = self.config
+        viewController.delegate = self.delegate
+        self.add(asChildViewController: viewController)
+        return viewController
     }()
     
     private lazy var khaltiPayViewController: KhaltiPaymentViewController = {
-        let vc = KhaltiPayment.viewController()
-        self.add(asChildViewController: vc)
-        return vc
+        let viewController = KhaltiPayment.viewController()
+        viewController.config = self.config
+        viewController.delegate = self.delegate
+        self.add(asChildViewController: viewController)
+        return viewController
     }()
     
     private lazy var cardPayViewController: CardPaymentViewController = {
-        let vc = CardPayment.viewController()
-        self.add(asChildViewController: vc)
-        return vc
+        let viewController = CardPayment.viewController()
+        viewController.config = self.config
+        viewController.delegate = self.delegate
+        self.add(asChildViewController: viewController)
+        return viewController
     }()
     
     //MARK: - View Cycle
@@ -86,7 +56,22 @@ class CheckOutViewController: UIViewController {
         
         self.addBackButton()
         self.updateView(to: .ebanking)
-       
+      
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        guard let _ = config, let _ = delegate else {
+            let alertController = UIAlertController(title: "Missing Configuration", message: "Cannot process for payment.", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK" , style: .default, handler: {_ in
+                self.dismiss(animated: true, completion: nil)
+            })
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true, completion: nil)
+            return
+        }
+        
     }
     
     @objc func dismissKeyboard() {

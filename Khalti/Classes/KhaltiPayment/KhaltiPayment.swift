@@ -20,4 +20,8 @@ class KhaltiPayment {
         let bundleURL = podBundle.url(forResource: "Khalti", withExtension: "bundle")
         return Bundle(url: bundleURL!)!
     }
+    
+    func payInitiate(with params:Dictionary<String,Any>) {
+        
+    }
 }

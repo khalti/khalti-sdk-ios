@@ -33,7 +33,7 @@ TODO: Add long description of the pod here.
   s.source_files = 'khalti/Classes/**/*.{swift}'
   
   s.resource_bundles = {
-    'Khalti' => ['khalti/Classes/**/*.{png,storyboard,xib}']
+    'Khalti' => ['khalti/Assets/**/*.{png,storyboard,xib,xcassets}']
   }
 
   s.dependency 'ObjectMapper'
