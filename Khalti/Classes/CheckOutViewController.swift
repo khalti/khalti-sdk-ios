@@ -50,13 +50,13 @@ class CheckOutViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-            let tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
-            tap.cancelsTouchesInView = false
-            self.view.addGestureRecognizer(tap)
+        let tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        self.view.addGestureRecognizer(tap)
         
         self.addBackButton()
         self.updateView(to: .ebanking)
-      
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
