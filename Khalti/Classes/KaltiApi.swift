@@ -9,6 +9,12 @@ import UIKit
 import Foundation
 import Alamofire
 
+enum KhaltiAPIUrl: String {
+    case bankList = "http://192.168.1.211:8000/api/bank/?has_ebanking=true&page_size=200"
+    case paymentInitiate = "http://192.168.1.211:8000/api/payment/initiate/"
+    case paymentConfirm = "http://192.168.1.211:8000/api/payment/confirm/"
+}
+
 enum ErrorMessage:String {
     case server = "Kahlti Server Error"
     case noAccess = "Access is denied"
@@ -18,16 +24,12 @@ enum ErrorMessage:String {
     case noConnection = "No internet Connection."
 }
 
-public class KhaltiAPI {
+class KhaltiAPI {
     
     static let shared = KhaltiAPI()
     
-    public var publicKey:String?
-    
-    internal let baseUrl: String = "http://192.168.1.211:8000"
-    
-    public func getBankList(onCompletion: @escaping ((Any)->()), onError: @escaping ((String)->())) {
-        let url = baseUrl + "/api/bank/?has_ebanking= true"
+    func getBankList(onCompletion: @escaping (([List])->()), onError: @escaping ((String)->())) {
+        let url = KhaltiAPIUrl.bankList.rawValue
         var headers = Alamofire.SessionManager.defaultHTTPHeaders
         headers["checkout-version"] = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as? String
         headers["checkout-source"] = "iOS"
@@ -37,12 +39,28 @@ public class KhaltiAPI {
         
         let request = Alamofire.request(url, method: HTTPMethod.get, parameters: nil, encoding: URLEncoding.default, headers: headers)
         
+        print("Request: \(url))")
         request.responseJSON { (responseJSON) in
+            print("Response: \(url)")
+            print(responseJSON)
             
             switch responseJSON.result {
             case .success(let value):
-                onCompletion(value)
-                break
+                var banks: [List] = []
+                
+                if let dict = value as? [String:Any], let records =  dict["records"] as? [[String:Any]]  {
+                    for data in records {
+                        if let bank = List(json: data) {
+                            banks.append(bank)
+                        }
+                    }
+                }
+                
+                if banks.count == 0 {
+                    onError("No banks found")
+                } else {
+                    onCompletion(banks)
+                }
             case .failure(let error):
                 onError(error.localizedDescription)
                 break
@@ -51,9 +69,8 @@ public class KhaltiAPI {
     }
     
     
-    public func getPaymentInitiate(with params: Dictionary<String,Any>, onCompletion: @escaping ((Dictionary<String,Any>)->()), onError: @escaping ((String)->())) {
-        
-        let url = baseUrl + "/api/payment/initiate/"
+    func getPaymentInitiate(with params: Dictionary<String,Any>, onCompletion: @escaping ((Dictionary<String,Any>)->()), onError: @escaping ((String)->())) {
+        let url = KhaltiAPIUrl.paymentInitiate.rawValue
         var headers = Alamofire.SessionManager.defaultHTTPHeaders
         headers["checkout-version"] = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as? String
         headers["checkout-source"] = "iOS"
@@ -63,11 +80,11 @@ public class KhaltiAPI {
         
         let request = Alamofire.request(url, method: HTTPMethod.post, parameters: params, encoding: JSONEncoding(options: []), headers: headers)
         
-        print(url)
-        print(params)
-        request.response { (response) in
-        }
+        print("Request: \(url))")
+        print("Parameters: \(params)")
         request.responseJSON { (responseJSON) in
+            print("Response: \(url)")
+            print(responseJSON)
             
             switch responseJSON.result {
             case .success(let value):
@@ -83,9 +100,9 @@ public class KhaltiAPI {
         }
     }
     
-    public func getPaymentConfirm(with params: Dictionary<String,Any>, onCompletion: @escaping ((Dictionary<String,Any>)->()), onError: @escaping ((String)->())) {
+    func getPaymentConfirm(with params: Dictionary<String,Any>, onCompletion: @escaping ((Dictionary<String,Any>)->()), onError: @escaping ((String)->())) {
         
-        let url = baseUrl + "/api/payment/confirm/"
+        let url = KhaltiAPIUrl.paymentConfirm.rawValue
         var headers = Alamofire.SessionManager.defaultHTTPHeaders
         headers["checkout-version"] = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as? String
         headers["checkout-source"] = "iOS"
@@ -96,15 +113,15 @@ public class KhaltiAPI {
         
         let request = Alamofire.request(url, method: HTTPMethod.post, parameters: params, encoding: URLEncoding.default, headers: headers)
         
-        print(url)
-        print(params)
-        request.response { (response) in
-        }
+        print("Request: \(url))")
+        print("Parameters: \(params)")
         request.responseJSON { (responseJSON) in
+            print("Response: \(url)")
+            print(responseJSON)
             
             switch responseJSON.result {
             case .success(let value):
-                
+                print(value)
                 if let dict = value as? Dictionary<String, Any> {
                     onCompletion(dict)
                 }
@@ -114,7 +131,6 @@ public class KhaltiAPI {
                 break
             }
         }
-        
     }
     
 }
