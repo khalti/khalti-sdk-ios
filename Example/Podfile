@@ -1,9 +1,9 @@
 use_frameworks!
 
 target 'Khalti_Example' do
-  pod 'Khalti', :path => '../'
-  
+    
   pod 'IQKeyboardManager'
+  pod 'Khalti'
 
   target 'Khalti_Tests' do
     inherit! :search_paths

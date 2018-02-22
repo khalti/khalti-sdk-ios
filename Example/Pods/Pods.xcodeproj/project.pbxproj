@@ -141,7 +141,7 @@
 		0CDAE2ECBE068CA195C028DDD685F664 /* Pods-Khalti_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Khalti_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		0F4BD8776FDF520FD248B413A0F9B892 /* CheckOut.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = CheckOut.storyboard; path = Khalti/Assets/CheckOut.storyboard; sourceTree = "<group>"; };
 		11ACC52A53FC8E9885FCC29BE5403A24 /* IQUIView+IQKeyboardToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIView+IQKeyboardToolbar.m"; path = "IQKeyboardManager/IQToolbar/IQUIView+IQKeyboardToolbar.m"; sourceTree = "<group>"; };
-		1433D9F6D9A1588AF70186E176DBD70D /* Pods-Khalti_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Khalti_Example.modulemap"; sourceTree = "<group>"; };
+		1433D9F6D9A1588AF70186E176DBD70D /* Pods-Khalti_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Khalti_Example.modulemap"; sourceTree = "<group>"; };
 		156B3199A4B77A505BA28226ACEE842E /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		1707A3C9CB94E1EF6639B1979AA05B36 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
 		175B094D792481980444DD5D28598B86 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
@@ -157,14 +157,14 @@
 		35CBB81FA229C703952E0B767EEB6036 /* IQNSArray+Sort.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQNSArray+Sort.h"; path = "IQKeyboardManager/Categories/IQNSArray+Sort.h"; sourceTree = "<group>"; };
 		368B5CCAD6107E749A9EF77D8D06F99A /* Pods-Khalti_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Khalti_Example-resources.sh"; sourceTree = "<group>"; };
 		381DA07D177D4A5488218B88DF985F80 /* IQUITextFieldView+Additions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUITextFieldView+Additions.m"; path = "IQKeyboardManager/Categories/IQUITextFieldView+Additions.m"; sourceTree = "<group>"; };
-		3831F70DAE0A8942B808BB9BF51E3BF5 /* IQKeyboardManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = IQKeyboardManager.modulemap; sourceTree = "<group>"; };
+		3831F70DAE0A8942B808BB9BF51E3BF5 /* IQKeyboardManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = IQKeyboardManager.modulemap; sourceTree = "<group>"; };
 		389EF2CCF31BA85969AFA87C1109122A /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
 		397270F96311833216F7E562EF9D8D68 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A4EE212F43816150CAC04297A285CC2 /* IQKeyboardReturnKeyHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardReturnKeyHandler.h; path = IQKeyboardManager/IQKeyboardReturnKeyHandler.h; sourceTree = "<group>"; };
 		3A7B6B53D2FFF5135F942335E14B51CA /* IQBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQBarButtonItem.h; path = IQKeyboardManager/IQToolbar/IQBarButtonItem.h; sourceTree = "<group>"; };
 		3C8F65DC15567F647A329D8BD5823278 /* Khalti-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Khalti-umbrella.h"; sourceTree = "<group>"; };
 		3CD2F18EC90469BADA79435C15054977 /* IQKeyboardManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManager-prefix.pch"; sourceTree = "<group>"; };
-		3E1262427399F1E187EE03DB7A88B6BD /* Khalti.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Khalti.framework; path = Khalti.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E1262427399F1E187EE03DB7A88B6BD /* Khalti.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Khalti.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40B5DF4BBE46A692FC953D50D7A4AC56 /* Pods-Khalti_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Khalti_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		43CDFC7CD94BF4379872E1C51D6B94CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		45345751D402210580755CCBA2ADC0A2 /* KaltiApi.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaltiApi.swift; path = Khalti/Classes/KaltiApi.swift; sourceTree = "<group>"; };
@@ -172,9 +172,9 @@
 		4BD52843396088F121DD71149F303B7B /* Khalti-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Khalti-prefix.pch"; sourceTree = "<group>"; };
 		519D0C2D42D4EEFEFCBC64274B12177F /* KhaltiPayment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KhaltiPayment.swift; sourceTree = "<group>"; };
 		53352A13A1C1EFCDF17E7B07C358C5E1 /* Pods-Khalti_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Khalti_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		547A571A34CAA0F56A5349D06D1E3712 /* Khalti.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Khalti.modulemap; sourceTree = "<group>"; };
+		547A571A34CAA0F56A5349D06D1E3712 /* Khalti.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Khalti.modulemap; sourceTree = "<group>"; };
 		54B065151AB6D4445B61765A73CB4E63 /* CheckOutViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CheckOutViewController.swift; path = Khalti/Classes/CheckOutViewController.swift; sourceTree = "<group>"; };
-		5600A14F9539166E78B2640E35E8534B /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		5600A14F9539166E78B2640E35E8534B /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		56558296B3EDEE4883B9B6E55CF521CC /* IQUIView+Hierarchy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIView+Hierarchy.m"; path = "IQKeyboardManager/Categories/IQUIView+Hierarchy.m"; sourceTree = "<group>"; };
 		58EA07B2800C1C679C314BF2C5503A8F /* images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = images.xcassets; path = Khalti/Assets/images.xcassets; sourceTree = "<group>"; };
 		60DFDA2E7B3823EDC480261F3D94794D /* Pods-Khalti_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Khalti_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -201,14 +201,15 @@
 		86056207DED522441BEE4A932950BC3E /* Pods-Khalti_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Khalti_Tests-umbrella.h"; sourceTree = "<group>"; };
 		875DBE39B4CAC4A2A906932C408C55FF /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		881C6EF6ED8984B59CE60FE4096D2324 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		8BE40BC6DEF94CC9A8A6FB94EC0DDC11 /* Pods-Khalti_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Khalti_Tests.modulemap"; sourceTree = "<group>"; };
+		8BE40BC6DEF94CC9A8A6FB94EC0DDC11 /* Pods-Khalti_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Khalti_Tests.modulemap"; sourceTree = "<group>"; };
 		8FB0A7AB174BE559C93085849C156294 /* Pods-Khalti_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Khalti_Tests-resources.sh"; sourceTree = "<group>"; };
 		91631BB9C265A95B9A08EDDD1323698B /* IQTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQTextView.m; path = IQKeyboardManager/IQTextView/IQTextView.m; sourceTree = "<group>"; };
 		931A79078E717C8BB0B22F7E9322D445 /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Config.swift; path = Khalti/Classes/Config.swift; sourceTree = "<group>"; };
 		938D5514606C41EF00A5AC046B0F9D99 /* IQUIScrollView+Additions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIScrollView+Additions.m"; path = "IQKeyboardManager/Categories/IQUIScrollView+Additions.m"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		969E21E270F951E639AD3FB4291267EA /* IQKeyboardManagerConstantsInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardManagerConstantsInternal.h; path = IQKeyboardManager/Constants/IQKeyboardManagerConstantsInternal.h; sourceTree = "<group>"; };
-		9F4307950B3400AC7BFA89FF090B4278 /* Khalti.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Khalti.bundle; path = Khalti.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F4307950B3400AC7BFA89FF090B4278 /* Khalti.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Khalti.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		A57D546B203F0F04004EB33E /* .swift-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
 		A59678112B56C2FCDB9A55A6793B1585 /* CardPayment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardPayment.swift; sourceTree = "<group>"; };
 		A5A06AEB435E78B288137D79B46C0010 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
 		A843F08784879D7F3BF409751BF0AFC4 /* ResourceBundle-Khalti-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Khalti-Info.plist"; sourceTree = "<group>"; };
@@ -223,15 +224,15 @@
 		B784F1E3BA205DB6D96E9E879F9E65F5 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
 		B7BDE8AA58D03F06418159B5E2E20E57 /* KhaltiPaymentViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KhaltiPaymentViewController.swift; sourceTree = "<group>"; };
 		B8286EE812BE781358813B59881465E6 /* IQUIViewController+Additions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIViewController+Additions.m"; path = "IQKeyboardManager/Categories/IQUIViewController+Additions.m"; sourceTree = "<group>"; };
-		B831DF5776A74A8931E6B331095D7358 /* Pods_Khalti_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Khalti_Tests.framework; path = "Pods-Khalti_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B831DF5776A74A8931E6B331095D7358 /* Pods_Khalti_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Khalti_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA088F944C89A6F6531296F870D4CC8A /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		BB58A6D0777B22FDC7F69B3BDCD1FE73 /* IQUIWindow+Hierarchy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIWindow+Hierarchy.h"; path = "IQKeyboardManager/Categories/IQUIWindow+Hierarchy.h"; sourceTree = "<group>"; };
 		BCA865675B7F0CFBCD516B5A2F93192C /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
 		C079F0100FAF35B273112C0D4F52C1DA /* Pods-Khalti_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Khalti_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		C4BFDD2A63A98C89BDDFD90CAD002F93 /* IQUIScrollView+Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIScrollView+Additions.h"; path = "IQKeyboardManager/Categories/IQUIScrollView+Additions.h"; sourceTree = "<group>"; };
 		C96551E4E260C66D444F7075A39807AC /* Khalti-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Khalti-dummy.m"; sourceTree = "<group>"; };
-		CA905613A166B95F8F9A44130F90D198 /* Pods_Khalti_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Khalti_Example.framework; path = "Pods-Khalti_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D594DD8F1AEE925ACDFE1FB3692AC282 /* IQKeyboardManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IQKeyboardManager.framework; path = IQKeyboardManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA905613A166B95F8F9A44130F90D198 /* Pods_Khalti_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Khalti_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D594DD8F1AEE925ACDFE1FB3692AC282 /* IQKeyboardManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IQKeyboardManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C01CAF06394816DE12EC9314E5E242 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DADED37B8974B558E6FDCC436B54375B /* IQTitleBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQTitleBarButtonItem.m; path = IQKeyboardManager/IQToolbar/IQTitleBarButtonItem.m; sourceTree = "<group>"; };
 		DB28B7C35CCA331AF7E5479A05D25E8C /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
@@ -247,7 +248,7 @@
 		FC028EDF3892609CB153CBE7C37A373E /* IQPreviousNextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQPreviousNextView.h; path = IQKeyboardManager/IQToolbar/IQPreviousNextView.h; sourceTree = "<group>"; };
 		FCC2B18A29024520FB9FD7E330E594D7 /* IQUITextFieldView+Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUITextFieldView+Additions.h"; path = "IQKeyboardManager/Categories/IQUITextFieldView+Additions.h"; sourceTree = "<group>"; };
 		FCDB0DC30726221D2BB4738634C50F84 /* Pods-Khalti_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Khalti_Example-dummy.m"; sourceTree = "<group>"; };
-		FFD7BF4A713592BF4794F3514635219B /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFD7BF4A713592BF4794F3514635219B /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -330,7 +331,6 @@
 				A59678112B56C2FCDB9A55A6793B1585 /* CardPayment.swift */,
 				0696769796A0C11B802DB7FD158EE278 /* CardPaymentViewController.swift */,
 			);
-			name = CardPayment;
 			path = CardPayment;
 			sourceTree = "<group>";
 		};
@@ -409,7 +409,6 @@
 				030E072EC79C31BC35E6784CFAE37BCE /* Validation.swift */,
 				772C6034A810463B624553B5A4F925E8 /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -428,7 +427,6 @@
 				B4814C3480DFC2917B432E4BA3AB61DF /* EbankingViewController.swift */,
 				26EDE70521273F17B909F0866D35E249 /* ListCell.swift */,
 			);
-			name = Ebanking;
 			path = Ebanking;
 			sourceTree = "<group>";
 		};
@@ -438,7 +436,6 @@
 				519D0C2D42D4EEFEFCBC64274B12177F /* KhaltiPayment.swift */,
 				B7BDE8AA58D03F06418159B5E2E20E57 /* KhaltiPaymentViewController.swift */,
 			);
-			name = KhaltiPayment;
 			path = KhaltiPayment;
 			sourceTree = "<group>";
 		};
@@ -560,7 +557,6 @@
 				FEF6CAB1D8DA724D2C67C2A4156B18D3 /* Resources */,
 				ABD35A5F5B7A51FE1ECAE55A4778F094 /* Support Files */,
 			);
-			name = IQKeyboardManager;
 			path = IQKeyboardManager;
 			sourceTree = "<group>";
 		};
@@ -577,6 +573,7 @@
 				13DB064072CDE0AD879837ADC64C0585 /* Pay Options */,
 				1ACAF3AA13137DC22DBCE7468F7FEBA8 /* Resources */,
 				1FACAC750474D9F32E8CC9200CDA84B1 /* Support Files */,
+				A57D546B203F0F04004EB33E /* .swift-version */,
 			);
 			name = Khalti;
 			path = ../..;
