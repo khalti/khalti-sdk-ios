@@ -14,6 +14,7 @@ class EbankingViewController: UIViewController {
     var delegate:KhaltiPayDelegate?
     var activityIndicator: UIActivityIndicatorView!
     var banks:[List] = []
+    var selectedBank: List?
     var filteredBanks:[List] = []
     
     @IBOutlet weak var searchView: UIView!
@@ -60,8 +61,6 @@ class EbankingViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        
         
         guard let config = self.config else  {
             let alertController = UIAlertController(title: "Missing Required Data", message: "Cannot process for payment.", preferredStyle: .alert)
@@ -112,67 +111,96 @@ class EbankingViewController: UIViewController {
     }
     
     @IBAction func payAction(_ sender: UIButton) {
-//        let params = self.validate()
-//        print(params)
-        
-        let url = URL(string: "http://192.168.1.211:8000/ebanking/initiate/?return_url=khalti.test_public_key_03a427da14344b1eabe56ce1f8a0a024&public_key=test_public_key_03a427da14344b1eabe56ce1f8a0a024&amount=2560&product_identity=rajendra&product_name=name")
-        UIApplication.shared.openURL(url!)
+        var params = self.validate()
+        print(params)
+        if params.count == 0 {
+            return
+        }
+        if let intent:String = Khalti.shared.appUrlScheme {
+            Khalti.shared.canOpenUrl = true
+            params.append(URLQueryItem(name: "source", value: "ios"))
+            params.append(URLQueryItem(name: "return_url", value: intent))
+//            params.append(URLQueryItem(name: "is_card_payment", value: "true")) // For card payment
+            var urlComp = URLComponents(string: "http://192.168.1.211:8000/ebanking/initiate/")
+            urlComp?.queryItems = params
+            if let urll = try? urlComp!.asURL() {
+                if UIApplication.shared.canOpenURL(urll) {
+                    UIApplication.shared.openURL(urll)
+                } else {
+                    self.showError(with: "Unable to open your request.", dismiss: false)
+                }
+            } else {
+                self.showError(with: "Unable to open your request.", dismiss: false)
+            }
+        } else {
+            self.showError(with: "No Scheme defined yet", dismiss: false)
+        }
     }
     
     
     // MARK: - Helpers
     
-    func validate() -> Dictionary<String,Any> {
-        var params:[String:Any] = [:]
+    func validate() -> [URLQueryItem] {
+        var params:[URLQueryItem] = []
+        
+        
+        
+        guard let bankId = self.selectedBank?.idx else {
+            showError(with: "Public key missing")
+            return []
+        }
+        
+        params.append(URLQueryItem(name: "bank", value: bankId))
         
         guard let mobile = self.mobileTextField.text, mobile != "" else {
             showError(with: "Mobile number empty", dismiss: false)
-            return [:]
+            return []
         }
         
         let cellRegex = NSPredicate(format:"SELF MATCHES %@", "^([9][678][0-9]{8})$")
         if cellRegex.evaluate(with: mobile) {
-            params["mobile"] = mobile
+            params.append(URLQueryItem(name: "mobile", value: mobile))
         } else {
             showError(with: "Invalid contact Number", dismiss: false)
-            return [:]
+            return []
         }
         
         guard let publicKey = self.config?.getPublicKey() else {
             showError(with: "Public key missing")
-            return [:]
+            return []
         }
-        params["public_key"] = publicKey
+        
+        params.append(URLQueryItem(name: "public_key", value: publicKey))
         
         guard let amount = self.config?.getAmount() else {
             showError(with: "Amount not found")
-            return [:]
+            return []
         }
-        params["amount"] = amount
+        params.append(URLQueryItem(name: "amount", value: "\(amount)"))
         
         guard let productID = self.config?.getProductId() else {
             showError(with: "Amount not found")
-            return [:]
+            return []
         }
-        params["product_identity"] = productID
+        params.append(URLQueryItem(name: "product_identity", value: productID))
         
         guard let productName = self.config?.getProductName() else {
             showError(with: "Amount not found")
-            return [:]
+            return []
         }
-        params["product_name"] = productName
+        params.append(URLQueryItem(name: "product_name", value: productName))
         
         if let value = self.config?.getProductUrl() {
-            params["product_url"] = value
+            params.append(URLQueryItem(name: "product_url", value: value))
         }
         
         if let dict = self.config?.getAdditionalData() {
             for value in dict {
                 if !value.key.contains("merchant_") {
                     showError(with: "Addition data must contain keyword start with \"merchant_\" to ")
-                    return [:]
+                    return []
                 }
-                params[value.key] = value.value
+                params.append(URLQueryItem(name: value.key, value: value.value))
             }
         }
         
@@ -243,6 +271,10 @@ extension EbankingViewController : UICollectionViewDelegate, UICollectionViewDat
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
+        self.selectedBank = self.filteredBanks[indexPath.row]
+        
+        
+        
         func assign(name:String) {
             self.selectedBankButton.setImage(nil, for: .normal)
             self.selectedBankButton.setTitle(name, for: .normal)
@@ -262,7 +294,7 @@ extension EbankingViewController : UICollectionViewDelegate, UICollectionViewDat
             assign(name: name)
         }
         
-        if let name = self.filteredBanks[indexPath.row].name {
+        if let name = self.filteredBanks[indexPath.row].name  {
             self.selectedBankLabel.text = name
         }
         

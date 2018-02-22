@@ -16,9 +16,9 @@ public struct Config {
     private var productName:String
     private var productUrl:String?
     private var amount:Int
-    private var additionalData:Dictionary<String,Any>?
+    private var additionalData:Dictionary<String,String>?
 
-    public init(publicKey:String,  amount:Int, productId:String,productName:String, productUrl:String? = nil, additionalData:Dictionary<String,Any>? = nil) {
+    public init(publicKey:String,  amount:Int, productId:String,productName:String, productUrl:String? = nil, additionalData:Dictionary<String,String>? = nil) {
         self.publicKey = publicKey
         self.productId = productId
         self.productName = productName
@@ -47,7 +47,7 @@ public struct Config {
         return self.productUrl
     }
     
-    func getAdditionalData() -> Dictionary<String,Any>? {
+    func getAdditionalData() -> Dictionary<String,String>? {
         if let data = self.additionalData {
             return data
         }

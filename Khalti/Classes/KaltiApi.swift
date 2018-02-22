@@ -10,7 +10,8 @@ import Foundation
 import Alamofire
 
 enum KhaltiAPIUrl: String {
-    case bankList = "http://192.168.1.211:8000/api/bank/?has_ebanking=true&page_size=200"
+    case ebankList = "http://192.168.1.211:8000/api/bank/?has_ebanking=true&page_size=200"
+    case cardBankList = "http://192.168.1.211:8000/api/bank/?has_cardpayment=true&page_size=200"
     case paymentInitiate = "http://192.168.1.211:8000/api/payment/initiate/"
     case paymentConfirm = "http://192.168.1.211:8000/api/payment/confirm/"
 }
@@ -28,8 +29,8 @@ class KhaltiAPI {
     
     static let shared = KhaltiAPI()
     
-    func getBankList(onCompletion: @escaping (([List])->()), onError: @escaping ((String)->())) {
-        let url = KhaltiAPIUrl.bankList.rawValue
+    func getBankList(banking: Bool = true, onCompletion: @escaping (([List])->()), onError: @escaping ((String)->())) {
+        let url = banking ? KhaltiAPIUrl.ebankList.rawValue : KhaltiAPIUrl.cardBankList.rawValue
         var headers = Alamofire.SessionManager.defaultHTTPHeaders
         headers["checkout-version"] = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as? String
         headers["checkout-source"] = "iOS"

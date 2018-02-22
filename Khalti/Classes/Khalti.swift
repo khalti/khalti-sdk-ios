@@ -22,6 +22,26 @@ struct KhaltiColor {
 
 public class Khalti {
     
+    public static let shared = Khalti()
+    public var appUrlScheme:String?
+    public var canOpenUrl:Bool = {
+        return true
+    }()
+    
+    private init() {
+        
+    }
+    
+    public func defaultAction() -> Bool {
+        return self.canOpenUrl
+    }
+    
+    public func action(with url:URL) {
+        if let name = self.appUrlScheme, url.absoluteString.contains(name.lowercased()) {
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: name), object: nil, userInfo: ["url":url])
+        }
+    }
+    
     public static func present(caller: UIViewController, with config:Config, delegate: KhaltiPayDelegate) {
         let viewController = self.payView()
         viewController.config = config

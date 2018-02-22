@@ -7,7 +7,10 @@
 //
 
 import UIKit
+import Khalti
 import IQKeyboardManager
+
+let khaltiUrlScheme:String = "KhaltiExampleScheme"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,9 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
-        
-        return true
-        
+        Khalti.shared.action(with: url)
+        return Khalti.shared.defaultAction()
     }
     
 

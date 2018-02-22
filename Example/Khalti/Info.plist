@@ -23,9 +23,11 @@
 		<dict>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>org.cocoapods.demo.Khalti-Example</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>khalti.test_public_key_03a427da14344b1eabe56ce1f8a0a024</string>
+				<string>KhaltiExampleScheme</string>
 			</array>
 		</dict>
 	</array>

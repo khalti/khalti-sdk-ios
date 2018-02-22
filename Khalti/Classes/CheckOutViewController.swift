@@ -8,6 +8,21 @@
 
 import UIKit
 
+extension URL {
+    
+    public var queryParameters: [String: String]? {
+        guard let components = URLComponents(url: self.absoluteURL, resolvingAgainstBaseURL: true), let queryItems = components.queryItems else {
+            return nil
+        }
+        var parameters = [String: String]()
+        for item in queryItems {
+            parameters[item.name] = item.value
+        }
+        
+        return parameters
+    }
+}
+
 class CheckOutViewController: UIViewController {
     
     // MARK: Outlets
@@ -57,6 +72,8 @@ class CheckOutViewController: UIViewController {
         self.addBackButton()
         self.updateView(to: .ebanking)
         
+        NotificationCenter.default.addObserver(self, selector: #selector(handle(withNotification:)), name: Notification.Name(rawValue: Khalti.shared.appUrlScheme!), object: nil)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -72,6 +89,18 @@ class CheckOutViewController: UIViewController {
             return
         }
         
+    }
+    
+    @objc func handle(withNotification notification : Notification) {
+        if let url = notification.userInfo!["url"] as? URL {
+            NotificationCenter.default.removeObserver(self, name:notification.name, object: nil)
+            if let params = url.queryParameters {
+                self.dismiss(animated: true, completion: {
+                    self.delegate?.onCheckOutSuccess(data: params)
+                })
+            }
+        }
+        print("RECEIVED SPECIFIC NOTIFICATION: \(notification)")
     }
     
     @objc func dismissKeyboard() {

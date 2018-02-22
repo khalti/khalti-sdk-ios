@@ -28,10 +28,18 @@ class ViewController: UIViewController {
     }
 
     @IBAction func payNow(_ sender: UIButton) {
-        let additionalData:Dictionary<String,Any> = [
+        let extra:[String : Any] =  ["no":false,"yes":true,"int" : 0, "float":12.23]
+        
+        let jsonData = try? JSONSerialization.data(withJSONObject: extra, options: JSONSerialization.WritingOptions())
+        let jsonString = String(data: jsonData!, encoding: .utf8)!
+        
+        let additionalData:Dictionary<String,String> = [
             "merchant_name" : "haha",
-            "merchant_extra" : ["no":false,"yes":true]
+            "merchant_extra" : jsonString
          ]
+        
+        Khalti.shared.appUrlScheme = khaltiUrlScheme
+        
         let TEST_CONFIG:Config = Config(publicKey: "test_public_key_03a427da14344b1eabe56ce1f8a0a024", amount: 2567, productId: "1234567890", productName: "Dragon_boss", productUrl: "http://gameofthrones.wikia.com/wiki/Dragons",additionalData: additionalData)
         Khalti.present(caller: self, with: TEST_CONFIG, delegate: self)
     }
