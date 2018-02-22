@@ -5,9 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/Khalti.svg?style=flat)](http://cocoapods.org/pods/Khalti)
 [![Platform](https://img.shields.io/cocoapods/p/Khalti.svg?style=flat)](http://cocoapods.org/pods/Khalti)
 
-## Under Development
+## Under Development with beta release
 
-Khalti is currently under development. Please keep paitence until its release.
+Khalti is currently under development. Pod has already been released but updates are under process. Documentation will soon be available. Anyone intreseted can check the example and whole code to start integration Khalti.
 
 ## Example
 
