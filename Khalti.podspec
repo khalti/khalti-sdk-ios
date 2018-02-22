@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/rjndra/Khalti'
+  s.homepage         = 'https://github.com/khalti/khalti-sdk-ios'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'rjndra' => 'rjndrakarki@gmail.com' }
-  s.source           = { :git => 'https://github.com/rjndra/Khalti.git', :tag => s.version.to_s }
+  s.author           = { 'rjndra' => 'rajendrak@janakitech.com' }
+  s.source           = { :git => 'https://github.com/khalti/khalti-sdk-ios.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
