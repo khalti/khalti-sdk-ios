@@ -121,7 +121,7 @@ class CardPaymentViewController: UIViewController {
             params.append(URLQueryItem(name: "source", value: "ios"))
             params.append(URLQueryItem(name: "return_url", value: intent))
             params.append(URLQueryItem(name: "is_card_payment", value: "true"))
-            var urlComp = URLComponents(string: KhaltiAPIUrl.paymentInitiate.rawValue)
+            var urlComp = URLComponents(string: KhaltiAPIUrl.bankInitiate.rawValue)
             urlComp?.queryItems = params
             if let urll = try? urlComp!.asURL() {
                 if UIApplication.shared.canOpenURL(urll) {
