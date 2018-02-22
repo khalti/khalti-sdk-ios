@@ -41,7 +41,7 @@ class CardPaymentViewController: UIViewController {
         
         self.addLoading()
         self.showLoading()
-        KhaltiAPI.shared.getBankList(onCompletion: { (banks) in
+        KhaltiAPI.shared.getBankList(banking:false, onCompletion: { (banks) in
             self.hideLoading()
             self.banks = banks
             self.filteredBanks = self.banks

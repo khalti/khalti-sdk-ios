@@ -273,23 +273,35 @@ extension EbankingViewController : UICollectionViewDelegate, UICollectionViewDat
         
         self.selectedBank = self.filteredBanks[indexPath.row]
         
-        
-        
         func assign(name:String) {
-            self.selectedBankButton.setImage(nil, for: .normal)
-            self.selectedBankButton.setTitle(name, for: .normal)
+            DispatchQueue.main.async {
+                self.selectedBankButton.setImage(nil, for: .normal)
+                self.selectedBankButton.setTitle(name, for: .normal)
+            }
         }
         
-        if let image = self.filteredBanks[indexPath.row].logo {
-            let urll = URL(string: image)
-            let data = try? Data(contentsOf: urll!)
-            if let imageData = data {
-                let image = UIImage(data: imageData)
-                self.selectedBankButton.setImage(image, for: .normal)
-                self.selectedBankButton.setTitle(nil, for: .normal)
-            } else if let name = self.filteredBanks[indexPath.row].shortName {
-                assign(name: name)
+        if let image = self.filteredBanks[indexPath.row].logo, let name = self.filteredBanks[indexPath.row].shortName, let urll = URL(string: image) {
+            let session = URLSession(configuration: .default)
+            let downloadPicTask = session.dataTask(with: urll) { (data, response, error) in
+                if let _ = error {
+                    assign(name: name)
+                } else {
+                    if let _ = response as? HTTPURLResponse {
+                        if let imageData = data {
+                            let image = UIImage(data: imageData)
+                            DispatchQueue.main.async {
+                                self.selectedBankButton.setImage(image, for: .normal)
+                                self.selectedBankButton.setTitle(nil, for: .normal)
+                            }
+                        } else {
+                            assign(name: name)
+                        }
+                    } else {
+                        assign(name: name)
+                    }
+                }
             }
+            downloadPicTask.resume()
         } else if let name = self.filteredBanks[indexPath.row].shortName {
             assign(name: name)
         }

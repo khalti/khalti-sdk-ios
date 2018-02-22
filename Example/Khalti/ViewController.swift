@@ -39,8 +39,9 @@ class ViewController: UIViewController {
          ]
         
         Khalti.shared.appUrlScheme = khaltiUrlScheme
+        let khaltiMerchantKey = "test_public_key_dc74e0fd57cb46cd93832aee0a507256"
         
-        let TEST_CONFIG:Config = Config(publicKey: "test_public_key_03a427da14344b1eabe56ce1f8a0a024", amount: 2567, productId: "1234567890", productName: "Dragon_boss", productUrl: "http://gameofthrones.wikia.com/wiki/Dragons",additionalData: additionalData)
+        let TEST_CONFIG:Config = Config(publicKey: khaltiMerchantKey, amount: 1000, productId: "1234567890", productName: "Dragon_boss", productUrl: "http://gameofthrones.wikia.com/wiki/Dragons",additionalData: additionalData)
         Khalti.present(caller: self, with: TEST_CONFIG, delegate: self)
     }
 }

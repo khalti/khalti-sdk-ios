@@ -10,7 +10,7 @@ import UIKit
 import Khalti
 import IQKeyboardManager
 
-let khaltiUrlScheme:String = "KhaltiExampleScheme"
+let khaltiUrlScheme:String = "KhaltiPayExampleScheme"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

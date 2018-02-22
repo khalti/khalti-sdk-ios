@@ -10,10 +10,16 @@ import Foundation
 import Alamofire
 
 enum KhaltiAPIUrl: String {
-    case ebankList = "http://192.168.1.211:8000/api/bank/?has_ebanking=true&page_size=200"
-    case cardBankList = "http://192.168.1.211:8000/api/bank/?has_cardpayment=true&page_size=200"
-    case paymentInitiate = "http://192.168.1.211:8000/api/payment/initiate/"
-    case paymentConfirm = "http://192.168.1.211:8000/api/payment/confirm/"
+    case ebankList = "https://khalti.com/api/bank/?has_ebanking=true&page_size=200"
+    case cardBankList = "https://khalti.com/api/bank/?has_cardpayment=true&page_size=200"
+    case paymentInitiate = "https://khalti.com/api/payment/initiate/"
+    case paymentConfirm = "https://khalti.com/api/payment/confirm/"
+
+//    case ebankList = "http://192.168.1.211:8000/api/bank/?has_ebanking=true&page_size=200"
+//    case cardBankList = "http://192.168.1.211:8000/api/bank/?has_cardpayment=true&page_size=200"
+//    case paymentInitiate = "http://192.168.1.211:8000/api/payment/initiate/"
+//    case paymentConfirm = "http://192.168.1.211:8000/api/payment/confirm/"
+    
 }
 
 enum ErrorMessage:String {
@@ -89,7 +95,6 @@ class KhaltiAPI {
             
             switch responseJSON.result {
             case .success(let value):
-                
                 if let dict = value as? Dictionary<String, Any> {
                     onCompletion(dict)
                 }

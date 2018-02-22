@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>KhaltiPay</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -24,10 +26,10 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>org.cocoapods.demo.Khalti-Example</string>
+			<string>com.khalti.pay-example</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>KhaltiExampleScheme</string>
+				<string>KhaltiPayExampleScheme</string>
 			</array>
 		</dict>
 	</array>
