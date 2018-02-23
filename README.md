@@ -5,21 +5,57 @@
 [![License](https://img.shields.io/cocoapods/l/Khalti.svg?style=flat)](http://cocoapods.org/pods/Khalti)
 [![Platform](https://img.shields.io/cocoapods/p/Khalti.svg?style=flat)](http://cocoapods.org/pods/Khalti)
 
-## Under Development
+## Relased version 0.1.2 Under Development with release version 0.1.2
 
-Khalti is currently under development. Please keep paitence until its release.
+Khalti is currently under development. Pod has already been released but updates are under process. Documentation will soon be available. Anyone intreseted can check the example and whole code to start integration Khalti.
+
+## Pod Depedency 
+Khalti has currenlty depenceny on  ```Alamofire```.
+This dependency will be soon be removed.
+
+For best working with UI incorporated in this library ```IQKeyboardManager``` is used. Suggest using 
+```ruby
+pod 'IQKeyboarManager'
+```
+
+So installation of ```Khalti``` provides automatically dependency pod ```Alamofire``` but use of ```IQKeyboardManager``` is up to you.
 
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Installation after release
+## Installation guide
 
 Khalti is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'Khalti'
+```
+## Usage
+Khalti uses custom Scheme: So merhant should setup **URLScheme** unique for their app. We have made usability as of user case.
+
+
+![Khalti scheme setup overview](../img/customUrlScheme.png)
+
+After adding Url Scheme create global constant for same customUrlScheme as below 
+```ruby
+let khaltiUrlScheme:String = "KhaltiPayExampleScheme"
+```
+
+
+To work around with this redirection you have to implement some openUrl in ```Appdelegate.swift```. 
+```Khalti.shared.defaultAction()``` returns true if you initiate payment through Khalti.
+```Khalti.shared.action(with: url)``` is needed for complete action after ebanking and card payment. 
+
+**Note:** If ```Khalti.shared.defaultAction()```  is missed delegate ```onCheckOutSuccess(data: Dictionary<String, Any>)``` might not work properly.
+
+In ```Appdelegate.swift```
+```ruby
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        Khalti.shared.action(with: url)
+        return Khalti.shared.defaultAction()
+    }
 ```
 
 ## Author

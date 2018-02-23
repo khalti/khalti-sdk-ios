@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Khalti'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of Khalti.'
+  s.version          = '0.1.2'
+s.summary          = 'Khalti is the new generation Payment Gateway, Digital Wallet and API provider for various services.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+    Khalti is the new generation Payment Gateway, Digital Wallet and API provider for various services. We provide you with true Payment Gateway, where you can accepts payments from: Khalti User, Net Banking customers of our partner banks (need not be Khalti user).
                        DESC
 
   s.homepage         = 'https://github.com/khalti/khalti-sdk-ios'

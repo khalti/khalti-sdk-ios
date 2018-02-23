@@ -14,6 +14,8 @@ enum KhaltiAPIUrl: String {
     case cardBankList = "https://khalti.com/api/bank/?has_cardpayment=true&page_size=200"
     case paymentInitiate = "https://khalti.com/api/payment/initiate/"
     case paymentConfirm = "https://khalti.com/api/payment/confirm/"
+    case bankInitiate = "https://khalti.com/ebanking/initiate/"
+    
 
 //    case ebankList = "http://192.168.1.211:8000/api/bank/?has_ebanking=true&page_size=200"
 //    case cardBankList = "http://192.168.1.211:8000/api/bank/?has_cardpayment=true&page_size=200"

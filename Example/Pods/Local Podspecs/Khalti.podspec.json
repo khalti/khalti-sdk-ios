@@ -1,19 +1,19 @@
 {
   "name": "Khalti",
-  "version": "0.1.0",
-  "summary": "A short description of Khalti.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/rjndra/Khalti",
+  "version": "0.1.1",
+  "summary": "Khalti is the new generation Payment Gateway, Digital Wallet and API provider for various services.",
+  "description": "Khalti is the new generation Payment Gateway, Digital Wallet and API provider for various services. We provide you with true Payment Gateway, where you can accepts payments from: Khalti User, Net Banking customers of our partner banks (need not be Khalti user).",
+  "homepage": "https://github.com/khalti/khalti-sdk-ios",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "rjndra": "rjndrakarki@gmail.com"
+    "rjndra": "rajendrak@janakitech.com"
   },
   "source": {
-    "git": "https://github.com/rjndra/Khalti.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/khalti/khalti-sdk-ios.git",
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"

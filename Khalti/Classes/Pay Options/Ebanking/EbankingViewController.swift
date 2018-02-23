@@ -121,7 +121,7 @@ class EbankingViewController: UIViewController {
             params.append(URLQueryItem(name: "source", value: "ios"))
             params.append(URLQueryItem(name: "return_url", value: intent))
 //            params.append(URLQueryItem(name: "is_card_payment", value: "true")) // For card payment
-            var urlComp = URLComponents(string: "http://192.168.1.211:8000/ebanking/initiate/")
+            var urlComp = URLComponents(string: KhaltiAPIUrl.bankInitiate.rawValue)
             urlComp?.queryItems = params
             if let urll = try? urlComp!.asURL() {
                 if UIApplication.shared.canOpenURL(urll) {
