@@ -14,6 +14,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		6E0B7B11203FEECF004DC885 /* customUrlScheme.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E0B7B10203FEECE004DC885 /* customUrlScheme.png */; };
 		F18A1E13EABB0CD745CA9877 /* Pods_Khalti_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B70C53D91DFACA0446B0A8 /* Pods_Khalti_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		607FACE51AFB9204008FA782 /* Khalti_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Khalti_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		6E0B7B10203FEECE004DC885 /* customUrlScheme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = customUrlScheme.png; sourceTree = "<group>"; };
 		894E9C667574D5F5900A4E2B /* Pods-Khalti_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Khalti_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Khalti_Tests/Pods-Khalti_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B57B23BBE13CDD4ADAD4CAE4 /* Pods_Khalti_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Khalti_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD5F823C063319D1348149AF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -143,11 +145,20 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				6E0B7B0F203FEEBD004DC885 /* Screenshots */,
 				2F0C5E5C667F0019D102FE68 /* Khalti.podspec */,
 				CD5F823C063319D1348149AF /* README.md */,
 				4ECCC0E190291B77E7A325F4 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		6E0B7B0F203FEEBD004DC885 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				6E0B7B10203FEECE004DC885 /* customUrlScheme.png */,
+			);
+			name = Screenshots;
 			sourceTree = "<group>";
 		};
 		FBFFEACDDC10CA983ED565EC /* Frameworks */ = {
@@ -251,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				6E0B7B11203FEECF004DC885 /* customUrlScheme.png in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
