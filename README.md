@@ -167,6 +167,8 @@ The success message also contains all the `key` and `value` provide as extra dat
 | action                    | -                                      |   String  |
 | message                   | Detail Error Message                   |   String  |
 
+## Objective-C
+If you are using objective-c. See the example project [here](https://github.com/khalti/khalti-sdk-objective-c-example.git)
 
 ## Author
 
