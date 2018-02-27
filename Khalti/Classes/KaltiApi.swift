@@ -3,6 +3,7 @@
 //  Alamofire
 //
 //  Created by Rajendra Karki on 2/19/18.
+//  Copyright (c) 2018 khalti. All rights reserved.
 //
 
 import UIKit
@@ -15,13 +16,6 @@ enum KhaltiAPIUrl: String {
     case paymentInitiate = "https://khalti.com/api/payment/initiate/"
     case paymentConfirm = "https://khalti.com/api/payment/confirm/"
     case bankInitiate = "https://khalti.com/ebanking/initiate/"
-    
-
-//    case ebankList = "http://192.168.1.211:8000/api/bank/?has_ebanking=true&page_size=200"
-//    case cardBankList = "http://192.168.1.211:8000/api/bank/?has_cardpayment=true&page_size=200"
-//    case paymentInitiate = "http://192.168.1.211:8000/api/payment/initiate/"
-//    case paymentConfirm = "http://192.168.1.211:8000/api/payment/confirm/"
-    
 }
 
 enum ErrorMessage:String {

@@ -3,20 +3,21 @@
 //  Alamofire
 //
 //  Created by Rajendra Karki on 2/19/18.
+//  Copyright (c) 2018 khalti. All rights reserved.
 //
 
 import Foundation
 import Alamofire
 
-public struct Config {
+@objc public class Config: NSObject {
     private var publicKey:String
     private var productId:String
     private var productName:String
     private var productUrl:String?
     private var amount:Int
     private var additionalData:Dictionary<String,String>?
-
-    public init(publicKey:String,  amount:Int, productId:String,productName:String, productUrl:String? = nil, additionalData:Dictionary<String,String>? = nil) {
+    
+    @objc public init(publicKey:String,  amount:Int, productId:String,productName:String, productUrl:String? = nil, additionalData:Dictionary<String,String>? = nil) {
         self.publicKey = publicKey
         self.productId = productId
         self.productName = productName
@@ -25,30 +26,31 @@ public struct Config {
         self.additionalData = additionalData
     }
     
-    func getPublicKey() -> String {
+    @objc public func getPublicKey() -> String {
         return self.publicKey
     }
     
-    func getAmount() -> Int {
+    @objc public func getAmount() -> Int {
         return self.amount
     }
     
-    func getProductId() -> String {
+    @objc public func getProductId() -> String {
         return self.productId
     }
     
-    func getProductName() -> String {
+    @objc public func getProductName() -> String {
         return self.productName
     }
     
-    func getProductUrl() -> String? {
+    @objc public func getProductUrl() -> String? {
         return self.productUrl
     }
     
-    func getAdditionalData() -> Dictionary<String,String>? {
+    @objc public func getAdditionalData() -> Dictionary<String,String>? {
         if let data = self.additionalData {
             return data
         }
         return nil
     }
 }
+

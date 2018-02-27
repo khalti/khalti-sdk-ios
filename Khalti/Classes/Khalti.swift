@@ -20,29 +20,29 @@ struct KhaltiColor {
     static var orange: UIColor { return UIColor(red:247.0/255.0, green: 147.0/255.0, blue: 34.0/255.0, alpha: 1.0) }
 }
 
-public class Khalti {
+@objc public class Khalti: NSObject {
     
-    public static let shared = Khalti()
-    public var appUrlScheme:String?
-    public var canOpenUrl:Bool = {
+    @objc  public static let shared = Khalti()
+    @objc public var appUrlScheme:String?
+    @objc public var canOpenUrl:Bool = {
         return true
     }()
     
-    private init() {
+    private override init() {
         
     }
     
-    public func defaultAction() -> Bool {
+    @objc public func defaultAction() -> Bool {
         return self.canOpenUrl
     }
     
-    public func action(with url:URL) {
+    @objc public func action(with url:URL) {
         if let name = self.appUrlScheme, url.absoluteString.contains(name.lowercased()) {
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: name), object: nil, userInfo: ["url":url])
         }
     }
     
-    public static func present(caller: UIViewController, with config:Config, delegate: KhaltiPayDelegate) {
+    @objc public static func present(caller: UIViewController, with config:Config, delegate: KhaltiPayDelegate) {
         let viewController = self.payView()
         viewController.config = config
         viewController.delegate = delegate
@@ -66,3 +66,4 @@ public class Khalti {
         return Bundle(url: bundleURL!)!
     }
 }
+

@@ -3,6 +3,7 @@
 //  Alamofire
 //
 //  Created by Rajendra Karki on 2/21/18.
+//  Copyright (c) 2018 khalti. All rights reserved.
 //
 
 import Foundation
