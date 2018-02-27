@@ -1,18 +1,22 @@
 PODS:
   - Alamofire (4.6.0)
   - IQKeyboardManager (5.0.7)
-  - Khalti (0.1.2):
+  - Khalti (0.1.3):
     - Alamofire
 
 DEPENDENCIES:
   - IQKeyboardManager
-  - Khalti
+  - Khalti (from `../`)
+
+EXTERNAL SOURCES:
+  Khalti:
+    :path: ../
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   IQKeyboardManager: 0bfa4607d39924116b5c0c8b55b5d789288b5cba
-  Khalti: fa987144271ff0da71b5fc1738ff9ed899a314d1
+  Khalti: 8e2aa47640d379d837b453c856c6d3c73152cd6c
 
-PODFILE CHECKSUM: 999d19627b62a7a92be22c976c89a906459a8168
+PODFILE CHECKSUM: c3deb649febb3e38b67eab739f641c8a137b97b2
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.4.0

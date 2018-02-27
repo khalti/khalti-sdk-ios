@@ -4,9 +4,6 @@
 [![License](https://img.shields.io/cocoapods/l/Khalti.svg?style=flat)](http://cocoapods.org/pods/Khalti)
 [![Platform](https://img.shields.io/cocoapods/p/Khalti.svg?style=flat)](http://cocoapods.org/pods/Khalti)
 
-## Relase 0.1.2
-
-Pod has already been released but updates are under process.
 
 ## Pod Depedency 
 Khalti has currenlty depenceny on  ```Alamofire```.
