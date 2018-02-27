@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'Khalti'
   s.version          = '0.1.2'
-s.summary          = 'Khalti is the new generation Payment Gateway, Digital Wallet and API provider for various services.'
+  s.summary          = 'Khalti is the new generation Payment Gateway, Digital Wallet and API provider for various services.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -24,8 +24,8 @@ s.summary          = 'Khalti is the new generation Payment Gateway, Digital Wall
   s.homepage         = 'https://github.com/khalti/khalti-sdk-ios'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'rjndra' => 'rajendrak@janakitech.com' }
-  s.source           = { :git => 'https://github.com/khalti/khalti-sdk-ios.git', :tag => s.version.to_s }
+  s.author           = { 'khalti' => 'info@khalti.com' }
+  s.source           = { :git => 'https://github.com/khalti/khalti-sdk-ios.git', :branch => 'master', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'

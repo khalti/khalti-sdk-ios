@@ -1,8 +1,7 @@
 use_frameworks!
 
 target 'Khalti_Example' do
-  pod 'Khalti'
-  
+    
   pod 'IQKeyboardManager'
   pod 'Khalti'  #, :path => '../'
 
