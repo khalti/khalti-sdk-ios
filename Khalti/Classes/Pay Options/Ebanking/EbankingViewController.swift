@@ -17,14 +17,7 @@ class EbankingViewController: UIViewController {
     var banks:[List] = []
     var selectedBank: List?
     var filteredBanks:[List] = []
-    
-    @IBOutlet weak var searchView: UIView!
-    @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var mobileTextField: UITextField!
-    @IBOutlet weak var payButton: UIButton!
-    
-    @IBOutlet weak var selectedBankButton: UIButton!
-    @IBOutlet weak var selectedBankLabel: UILabel!
+    var loadType:KhaltiAPIUrl = .ebankList
     
     @IBOutlet weak var listView: UIView!
     @IBOutlet weak var listCollectionView: UICollectionView!
@@ -38,19 +31,32 @@ class EbankingViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.scrollView.isHidden = true
-        
+       
         self.addLoading()
         self.showLoading()
-        KhaltiAPI.shared.getBankList(onCompletion: { (banks) in
-            self.hideLoading()
-            self.banks = banks
-            self.filteredBanks = self.banks
-            self.listCollectionView.reloadData()
-        }, onError: { errorMessage in
-            self.hideLoading()
-            self.delegate?.onCheckOutError(action: "", message: errorMessage)
-        })
+        
+        switch loadType {
+        case .cardBankList:
+            KhaltiAPI.shared.getBankList(banking: false, onCompletion: { (banks) in
+                self.hideLoading()
+                self.banks = banks
+                self.filteredBanks = self.banks
+                self.listCollectionView.reloadData()
+            }, onError: { errorMessage in
+                self.hideLoading()
+                self.delegate?.onCheckOutError(action: "", message: errorMessage)
+            })
+        default:
+            KhaltiAPI.shared.getBankList(onCompletion: { (banks) in
+                self.hideLoading()
+                self.banks = banks
+                self.filteredBanks = self.banks
+                self.listCollectionView.reloadData()
+            }, onError: { errorMessage in
+                self.hideLoading()
+                self.delegate?.onCheckOutError(action: "", message: errorMessage)
+            })
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -58,32 +64,13 @@ class EbankingViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        guard let config = self.config else  {
-            let alertController = UIAlertController(title: "Missing Required Data", message: "Cannot process for payment.", preferredStyle: .alert)
-            let okAction = UIAlertAction(title: "OK" , style: .default, handler: {_ in
-                self.dismiss(animated: true, completion: nil)
-            })
-            alertController.addAction(okAction)
-            self.present(alertController, animated: true, completion: nil)
+        guard let _ = self.config else  {
+            showError(with: "Missing required data! Cannot process for payment.", dismiss: true)
             return
         }
-        
-        self.scrollView.layer.shadowColor = UIColor.black.cgColor
-        self.scrollView.layer.shadowOpacity = 0.11
-        self.scrollView.layer.shadowOffset = CGSize(width: 0, height: 1.0)
-        self.scrollView.layer.shadowRadius = 1.0
-        self.selectedBankButton.layer.cornerRadius = self.selectedBankButton.frame.size.height/2
-        self.selectedBankButton.layer.masksToBounds = true
-        
-        
-        let value = config.getAmount()
-        self.payButton.setTitle("PAY Rs \(value/100)", for: .normal)
-        
     }
     
 
@@ -102,17 +89,8 @@ class EbankingViewController: UIViewController {
         }
     }
     
-    @IBAction func mobileTextChanged(_ sender: UITextField) {
-        
-    }
-    
-    @IBAction func closeAction(_ sender: UIButton) {
-        self.scrollView.isHidden = true
-        self.listView.isHidden = false
-    }
-    
-    @IBAction func payAction(_ sender: UIButton) {
-        var params = self.validate()
+    internal func payAction(with mobile:String) {
+        var params = self.validate(with: mobile)
         print(params)
         if params.count == 0 {
             return
@@ -121,7 +99,12 @@ class EbankingViewController: UIViewController {
             Khalti.shared.canOpenUrl = true
             params.append(URLQueryItem(name: "source", value: "ios"))
             params.append(URLQueryItem(name: "return_url", value: intent))
-//            params.append(URLQueryItem(name: "is_card_payment", value: "true")) // For card payment
+            switch self.loadType {
+            case .cardBankList:
+                params.append(URLQueryItem(name: "is_card_payment", value: "true")) // For card payment
+            default:
+                break
+            }
             var urlComp = URLComponents(string: KhaltiAPIUrl.bankInitiate.rawValue)
             urlComp?.queryItems = params
             if let urll = try? urlComp!.asURL() {
@@ -141,30 +124,16 @@ class EbankingViewController: UIViewController {
     
     // MARK: - Helpers
     
-    func validate() -> [URLQueryItem] {
+    private func validate(with mobile:String) -> [URLQueryItem] {
         var params:[URLQueryItem] = []
-        
-        
+        params.append(URLQueryItem(name: "mobile", value: mobile))
         
         guard let bankId = self.selectedBank?.idx else {
-            showError(with: "Public key missing")
+            showError(with: "Bank not selected.")
             return []
         }
         
         params.append(URLQueryItem(name: "bank", value: bankId))
-        
-        guard let mobile = self.mobileTextField.text, mobile != "" else {
-            showError(with: "Mobile number empty", dismiss: false)
-            return []
-        }
-        
-        let cellRegex = NSPredicate(format:"SELF MATCHES %@", "^([9][678][0-9]{8})$")
-        if cellRegex.evaluate(with: mobile) {
-            params.append(URLQueryItem(name: "mobile", value: mobile))
-        } else {
-            showError(with: "Invalid contact Number", dismiss: false)
-            return []
-        }
         
         guard let publicKey = self.config?.getPublicKey() else {
             showError(with: "Public key missing")
@@ -180,13 +149,13 @@ class EbankingViewController: UIViewController {
         params.append(URLQueryItem(name: "amount", value: "\(amount)"))
         
         guard let productID = self.config?.getProductId() else {
-            showError(with: "Amount not found")
+            showError(with: "Product Id missing.")
             return []
         }
         params.append(URLQueryItem(name: "product_identity", value: productID))
         
         guard let productName = self.config?.getProductName() else {
-            showError(with: "Amount not found")
+            showError(with: "Product Name missing.")
             return []
         }
         params.append(URLQueryItem(name: "product_name", value: productName))
@@ -229,7 +198,7 @@ class EbankingViewController: UIViewController {
     }
     
     // MARK: - Alert
-    private func showError(with message:String, dismiss:Bool = true) {
+    internal func showError(with message:String, dismiss:Bool = true) {
         let alertController = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK" , style: .default, handler: {_ in
             if dismiss {
@@ -266,52 +235,66 @@ extension EbankingViewController : UICollectionViewDelegate, UICollectionViewDat
         let data = self.filteredBanks[indexPath.row]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ListCell", for: indexPath) as! ListCell
         cell.itemNameLabel.text = data.name
-        cell.setImage(with: data.logo, name: data.shortName!)
+        cell.setImage(with: data.logo)
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
         self.selectedBank = self.filteredBanks[indexPath.row]
-        
-        func assign(name:String) {
-            DispatchQueue.main.async {
-                self.selectedBankButton.setImage(nil, for: .normal)
-                self.selectedBankButton.setTitle(name, for: .normal)
-            }
-        }
-        
-        if let image = self.filteredBanks[indexPath.row].logo, let name = self.filteredBanks[indexPath.row].shortName, let urll = URL(string: image) {
-            let session = URLSession(configuration: .default)
-            let downloadPicTask = session.dataTask(with: urll) { (data, response, error) in
-                if let _ = error {
-                    assign(name: name)
-                } else {
-                    if let _ = response as? HTTPURLResponse {
-                        if let imageData = data {
-                            let image = UIImage(data: imageData)
-                            DispatchQueue.main.async {
-                                self.selectedBankButton.setImage(image, for: .normal)
-                                self.selectedBankButton.setTitle(nil, for: .normal)
-                            }
-                        } else {
-                            assign(name: name)
-                        }
-                    } else {
-                        assign(name: name)
-                    }
-                }
-            }
-            downloadPicTask.resume()
-        } else if let name = self.filteredBanks[indexPath.row].shortName {
-            assign(name: name)
-        }
-        
-        if let name = self.filteredBanks[indexPath.row].name  {
-            self.selectedBankLabel.text = name
-        }
-        
-        self.scrollView.isHidden = false
+        self.presentLoad()
     }
-
 }
+
+extension EbankingViewController: UIPopoverControllerDelegate, UIPopoverPresentationControllerDelegate {
+    
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .none
+    }
+    
+    func popoverPresentationControllerDidDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) {
+        self.view.alpha = 1.0
+    }
+    
+    func presentLoad() {
+        let popoverVC = BankingPop.viewController()
+        
+        popoverVC.modalPresentationStyle = UIModalPresentationStyle.popover
+        let popoverController = popoverVC.popoverPresentationController
+        popoverController?.permittedArrowDirections = UIPopoverArrowDirection(rawValue: 0)
+        
+        popoverController?.delegate = self
+        popoverController?.sourceView = self.view
+        popoverController?.sourceRect = CGRect(x: 0, y: self.view!.bounds.height, width: 0.1, height: 0.1)
+        
+        popoverVC.preferredContentSize = CGSize(width: self.view!.bounds.width, height: 312)
+        switch self.loadType {
+        case .cardBankList:
+            popoverVC.preferredContentSize = CGSize(width: self.view!.bounds.width, height: 392)
+        default:
+            break
+        }
+        
+        popoverVC.delegate = self
+        popoverVC.bankName = self.selectedBank?.name
+        popoverVC.bankShortName = self.selectedBank?.shortName
+        popoverVC.bankLogo = self.selectedBank?.logo
+        
+        if let amount = config?.getAmount() {
+            popoverVC.amount = amount
+        }
+        
+        self.present(popoverVC,animated: true, completion: {
+            self.view!.alpha = 0.3
+        })
+    }
+}
+
+extension EbankingViewController: BankingPopDelegate {
+    func eBankingloadActivated(with mobile: String) {
+        self.view!.alpha = 1.0
+        self.payAction(with: mobile)
+    }
+    
+}
+
+

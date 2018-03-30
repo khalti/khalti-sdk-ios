@@ -11,60 +11,52 @@ import UIKit
 
 class ListCell: UICollectionViewCell {
     
-    var itemImageView:UIImageView!
     var itemNameLabel: UILabel!
     var itemButton: UIButton!
+    var image:UIImage?
     
     override func awakeFromNib() {
         // Please check Main.storyboard with PaymentCell for the tag.
-        itemImageView = self.viewWithTag(201) as! UIImageView
         itemNameLabel = self.viewWithTag(202) as! UILabel
         itemButton = self.viewWithTag(203) as! UIButton
+        itemButton.isHidden = false
+        itemButton.layer.cornerRadius = 53/2
+        itemButton.layer.masksToBounds = true
     }
     
-    func setImage(with url:String?, name:String) {
+    func setImage(with url:String?) {
+        image = UIImage(named: "khalti_small")
+        self.itemButton.setImage(image, for: .normal)
+        self.setImageWithoutLibrary(with: url)
+    }
+    
+    func setImageWithoutLibrary(with url:String?) {
         
         if let imageUrl = url, let urll = URL(string: imageUrl) {
             let session = URLSession(configuration: .default)
-            let downloadPicTask = session.dataTask(with: urll) { (data, response, error) in
+            let downloadPicTask = session.dataTask(with: urll) { [weak self] (data, response, error) in
                 if let e = error {
-                    print("Error downloading cat picture: \(e)")
-                    self.imageTask(label: name)
+                    print("Error downloading bank logo: \(e)")
+                    self?.itemButton.setImage(self?.image, for: .normal)
                 } else {
                     if let _ = response as? HTTPURLResponse {
                         if let imageData = data {
-                            let image = UIImage(data: imageData)
-                            self.imageTask(with: image, label: name)
+                            let imagee = UIImage(data: imageData)
+                            self?.itemButton.setImage(imagee, for: .normal)
                         } else {
-                            self.imageTask(label: name)
+                            self?.itemButton.setImage(self?.image, for: .normal)
                             print("Couldn't get image: Image is nil")
                         }
                     } else {
-                        self.imageTask(label: name)
+                        self?.itemButton.setImage(self?.image, for: .normal)
                         print("Couldn't get response code for some reason")
                     }
                 }
             }
             downloadPicTask.resume()
         } else {
-            self.imageTask(label: name)
+            self.itemButton.setImage(image, for: .normal)
         }
     }
     
-    private func imageTask(with image:UIImage? = nil, label:String) {
-        DispatchQueue.main.async {
-            if let image = image {
-                self.itemButton.isHidden = true
-                self.itemImageView.isHidden = false
-                self.itemImageView.image = image
-            } else {
-                self.itemButton.layer.cornerRadius = self.itemButton.frame.size.height/2
-                self.itemButton.layer.masksToBounds = true
-                self.itemImageView.isHidden = true
-                self.itemButton.isHidden = false
-                self.itemButton.setTitle(label, for: .normal)
-                self.itemButton.setImage(nil, for: .normal)
-            }
-        }
-    }  
 }

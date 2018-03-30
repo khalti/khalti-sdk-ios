@@ -9,7 +9,7 @@
 import UIKit
 import Khalti
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, KhaltiPayDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,15 +39,11 @@ class ViewController: UIViewController {
          ]
         
         Khalti.shared.appUrlScheme = khaltiUrlScheme
-        let khaltiMerchantKey = "test_public_key_dc74e0fd57cb46cd93832aee0a507256"
+        let khaltiMerchantKey = "test_public_key_dc74e0fd57cb46cd93832aee0a390234"
         
         let TEST_CONFIG:Config = Config(publicKey: khaltiMerchantKey, amount: 1000, productId: "1234567890", productName: "Dragon_boss", productUrl: "http://gameofthrones.wikia.com/wiki/Dragons",additionalData: additionalData)
         Khalti.present(caller: self, with: TEST_CONFIG, delegate: self)
     }
-}
-
-extension ViewController: KhaltiPayDelegate {
-
     
     func onCheckOutSuccess(data: Dictionary<String, Any>) {
         print(data)

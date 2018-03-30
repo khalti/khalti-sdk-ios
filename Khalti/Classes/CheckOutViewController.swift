@@ -41,6 +41,7 @@ class CheckOutViewController: UIViewController {
         let viewController = Ebanking.viewController()
         viewController.config = self.config
         viewController.delegate = self.delegate
+        viewController.loadType = KhaltiAPIUrl.ebankList
         self.add(asChildViewController: viewController)
         return viewController
     }()
@@ -53,10 +54,11 @@ class CheckOutViewController: UIViewController {
         return viewController
     }()
     
-    private lazy var cardPayViewController: CardPaymentViewController = {
-        let viewController = CardPayment.viewController()
+    private lazy var cardPayViewController: EbankingViewController = {
+        let viewController = Ebanking.viewController()
         viewController.config = self.config
         viewController.delegate = self.delegate
+        viewController.loadType = KhaltiAPIUrl.cardBankList
         self.add(asChildViewController: viewController)
         return viewController
     }()
