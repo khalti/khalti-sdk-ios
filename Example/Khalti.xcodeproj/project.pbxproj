@@ -15,69 +15,6 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		6E0B7B11203FEECF004DC885 /* customUrlScheme.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E0B7B10203FEECE004DC885 /* customUrlScheme.png */; };
-		6E4399D0206E2AAB00B7DF81 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E439948206E2AAB00B7DF81 /* AppDelegate.m */; };
-		6E4399D1206E2AAB00B7DF81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E439949206E2AAB00B7DF81 /* Assets.xcassets */; };
-		6E4399D2206E2AAB00B7DF81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E43994A206E2AAB00B7DF81 /* LaunchScreen.storyboard */; };
-		6E4399D3206E2AAB00B7DF81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E43994C206E2AAB00B7DF81 /* Main.storyboard */; };
-		6E4399D4206E2AAB00B7DF81 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6E43994E206E2AAB00B7DF81 /* Info.plist */; };
-		6E4399D5206E2AAB00B7DF81 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E43994F206E2AAB00B7DF81 /* main.m */; };
-		6E4399D6206E2AAB00B7DF81 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E439951206E2AAB00B7DF81 /* ViewController.m */; };
-		6E4399D7206E2AAB00B7DF81 /* Khalti-Pay.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = 6E439955206E2AAB00B7DF81 /* Khalti-Pay.xcworkspace */; };
-		6E4399D8206E2AAB00B7DF81 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 6E43996E206E2AAB00B7DF81 /* Podfile */; };
-		6E4399D9206E2AAB00B7DF81 /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 6E43996F206E2AAB00B7DF81 /* Podfile.lock */; };
-		6E4399DA206E2AAB00B7DF81 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 6E439972206E2AAB00B7DF81 /* LICENSE */; };
-		6E4399DB206E2AAC00B7DF81 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6E439973206E2AAB00B7DF81 /* README.md */; };
-		6E4399DC206E2AAC00B7DF81 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E439975206E2AAB00B7DF81 /* AFError.swift */; };
-		6E4399DD206E2AAC00B7DF81 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E439976206E2AAB00B7DF81 /* Alamofire.swift */; };
-		6E4399DE206E2AAC00B7DF81 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E439977206E2AAB00B7DF81 /* DispatchQueue+Alamofire.swift */; };
-		6E4399DF206E2AAC00B7DF81 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E439978206E2AAB00B7DF81 /* MultipartFormData.swift */; };
-		6E4399E0206E2AAC00B7DF81 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E439979206E2AAB00B7DF81 /* NetworkReachabilityManager.swift */; };
-		6E4399E1206E2AAC00B7DF81 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E43997A206E2AAB00B7DF81 /* Notifications.swift */; };
-		6E4399E2206E2AAC00B7DF81 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E43997B206E2AAB00B7DF81 /* ParameterEncoding.swift */; };
-		6E4399E3206E2AAC00B7DF81 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E43997C206E2AAB00B7DF81 /* Request.swift */; };
-		6E4399E4206E2AAC00B7DF81 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E43997D206E2AAB00B7DF81 /* Response.swift */; };
-		6E4399E5206E2AAC00B7DF81 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E43997E206E2AAB00B7DF81 /* ResponseSerialization.swift */; };
-		6E4399E6206E2AAC00B7DF81 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E43997F206E2AAB00B7DF81 /* Result.swift */; };
-		6E4399E7206E2AAC00B7DF81 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E439980206E2AAB00B7DF81 /* ServerTrustPolicy.swift */; };
-		6E4399E8206E2AAC00B7DF81 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E439981206E2AAB00B7DF81 /* SessionDelegate.swift */; };
-		6E4399E9206E2AAC00B7DF81 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E439982206E2AAB00B7DF81 /* SessionManager.swift */; };
-		6E4399EA206E2AAC00B7DF81 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E439983206E2AAB00B7DF81 /* TaskDelegate.swift */; };
-		6E4399EB206E2AAC00B7DF81 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E439984206E2AAB00B7DF81 /* Timeline.swift */; };
-		6E4399EC206E2AAC00B7DF81 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E439985206E2AAB00B7DF81 /* Validation.swift */; };
-		6E4399ED206E2AAC00B7DF81 /* CheckOut.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E43998A206E2AAB00B7DF81 /* CheckOut.storyboard */; };
-		6E4399EE206E2AAC00B7DF81 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E43998B206E2AAB00B7DF81 /* images.xcassets */; };
-		6E4399EF206E2AAC00B7DF81 /* CheckOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E43998D206E2AAB00B7DF81 /* CheckOutViewController.swift */; };
-		6E4399F0206E2AAC00B7DF81 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E43998E206E2AAB00B7DF81 /* Config.swift */; };
-		6E4399F1206E2AAC00B7DF81 /* ErrorAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E43998F206E2AAB00B7DF81 /* ErrorAction.swift */; };
-		6E4399F2206E2AAC00B7DF81 /* KaltiApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E439990206E2AAB00B7DF81 /* KaltiApi.swift */; };
-		6E4399F3206E2AAC00B7DF81 /* Khalti.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E439991206E2AAB00B7DF81 /* Khalti.swift */; };
-		6E4399F4206E2AAC00B7DF81 /* KhaltiPayDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E439992206E2AAB00B7DF81 /* KhaltiPayDelegate.swift */; };
-		6E4399F5206E2AAC00B7DF81 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E439993206E2AAB00B7DF81 /* List.swift */; };
-		6E4399F6206E2AAC00B7DF81 /* CardPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E439996206E2AAB00B7DF81 /* CardPayment.swift */; };
-		6E4399F7206E2AAC00B7DF81 /* CardPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E439997206E2AAB00B7DF81 /* CardPaymentViewController.swift */; };
-		6E4399F8206E2AAC00B7DF81 /* Ebanking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E439999206E2AAB00B7DF81 /* Ebanking.swift */; };
-		6E4399F9206E2AAC00B7DF81 /* EbankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E43999A206E2AAB00B7DF81 /* EbankingViewController.swift */; };
-		6E4399FA206E2AAC00B7DF81 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E43999B206E2AAB00B7DF81 /* ListCell.swift */; };
-		6E4399FB206E2AAC00B7DF81 /* KhaltiPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E43999D206E2AAB00B7DF81 /* KhaltiPayment.swift */; };
-		6E4399FC206E2AAC00B7DF81 /* KhaltiPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E43999E206E2AAB00B7DF81 /* KhaltiPaymentViewController.swift */; };
-		6E4399FD206E2AAC00B7DF81 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 6E43999F206E2AAB00B7DF81 /* LICENSE */; };
-		6E4399FE206E2AAC00B7DF81 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6E4399A0206E2AAB00B7DF81 /* README.md */; };
-		6E4399FF206E2AAC00B7DF81 /* Manifest.lock in Resources */ = {isa = PBXBuildFile; fileRef = 6E4399A2206E2AAB00B7DF81 /* Manifest.lock */; };
-		6E439A00206E2AAC00B7DF81 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4399A8206E2AAB00B7DF81 /* Alamofire-dummy.m */; };
-		6E439A01206E2AAC00B7DF81 /* Alamofire.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 6E4399AC206E2AAB00B7DF81 /* Alamofire.xcconfig */; };
-		6E439A02206E2AAC00B7DF81 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6E4399AD206E2AAB00B7DF81 /* Info.plist */; };
-		6E439A03206E2AAC00B7DF81 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6E4399AF206E2AAB00B7DF81 /* Info.plist */; };
-		6E439A04206E2AAC00B7DF81 /* Khalti-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4399B0206E2AAB00B7DF81 /* Khalti-dummy.m */; };
-		6E439A05206E2AAC00B7DF81 /* Khalti.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 6E4399B4206E2AAB00B7DF81 /* Khalti.xcconfig */; };
-		6E439A06206E2AAC00B7DF81 /* ResourceBundle-Khalti-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6E4399B5206E2AAB00B7DF81 /* ResourceBundle-Khalti-Info.plist */; };
-		6E439A07206E2AAC00B7DF81 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6E4399B7206E2AAB00B7DF81 /* Info.plist */; };
-		6E439A08206E2AAC00B7DF81 /* Pods-Khalti-Pay-acknowledgements.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 6E4399B8206E2AAB00B7DF81 /* Pods-Khalti-Pay-acknowledgements.markdown */; };
-		6E439A09206E2AAC00B7DF81 /* Pods-Khalti-Pay-acknowledgements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6E4399B9206E2AAB00B7DF81 /* Pods-Khalti-Pay-acknowledgements.plist */; };
-		6E439A0A206E2AAC00B7DF81 /* Pods-Khalti-Pay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4399BA206E2AAB00B7DF81 /* Pods-Khalti-Pay-dummy.m */; };
-		6E439A0B206E2AAC00B7DF81 /* Pods-Khalti-Pay-frameworks.sh in Resources */ = {isa = PBXBuildFile; fileRef = 6E4399BB206E2AAB00B7DF81 /* Pods-Khalti-Pay-frameworks.sh */; };
-		6E439A0C206E2AAC00B7DF81 /* Pods-Khalti-Pay-resources.sh in Resources */ = {isa = PBXBuildFile; fileRef = 6E4399BC206E2AAB00B7DF81 /* Pods-Khalti-Pay-resources.sh */; };
-		6E439A0D206E2AAC00B7DF81 /* Pods-Khalti-Pay.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 6E4399BE206E2AAB00B7DF81 /* Pods-Khalti-Pay.debug.xcconfig */; };
-		6E439A0E206E2AAC00B7DF81 /* Pods-Khalti-Pay.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 6E4399C0206E2AAB00B7DF81 /* Pods-Khalti-Pay.release.xcconfig */; };
 		F18A1E13EABB0CD745CA9877 /* Pods_Khalti_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B70C53D91DFACA0446B0A8 /* Pods_Khalti_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,41 +25,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
 			remoteInfo = Khalti;
-		};
-		6E4399C2206E2AAB00B7DF81 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E439952206E2AAB00B7DF81 /* Khalti-Pay.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6E3B26BA20451EF1002BD80C;
-			remoteInfo = "Khalti-Pay";
-		};
-		6E4399C8206E2AAB00B7DF81 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E4399A3206E2AAB00B7DF81 /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DDA88DF9026704E31CFFCCDF88C73D8A;
-			remoteInfo = Alamofire;
-		};
-		6E4399CA206E2AAB00B7DF81 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E4399A3206E2AAB00B7DF81 /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 20CE003F6B129E3316EE9AF543E0A3FF;
-			remoteInfo = Khalti;
-		};
-		6E4399CC206E2AAB00B7DF81 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E4399A3206E2AAB00B7DF81 /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 12B518ECCF75D8019C64BAE27B5EF1A0;
-			remoteInfo = "Khalti-Khalti";
-		};
-		6E4399CE206E2AAB00B7DF81 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E4399A3206E2AAB00B7DF81 /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6540ED30E0C25F53214D4841DF98234B;
-			remoteInfo = "Pods-Khalti-Pay";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -141,81 +43,6 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6E0B7B10203FEECE004DC885 /* customUrlScheme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = customUrlScheme.png; sourceTree = "<group>"; };
-		6E439947206E2AAB00B7DF81 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		6E439948206E2AAB00B7DF81 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6E439949206E2AAB00B7DF81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6E43994B206E2AAB00B7DF81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6E43994D206E2AAB00B7DF81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6E43994E206E2AAB00B7DF81 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6E43994F206E2AAB00B7DF81 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6E439950206E2AAB00B7DF81 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6E439951206E2AAB00B7DF81 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		6E439952206E2AAB00B7DF81 /* Khalti-Pay.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Khalti-Pay.xcodeproj"; sourceTree = "<group>"; };
-		6E439955206E2AAB00B7DF81 /* Khalti-Pay.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = "Khalti-Pay.xcworkspace"; sourceTree = "<group>"; };
-		6E43996E206E2AAB00B7DF81 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
-		6E43996F206E2AAB00B7DF81 /* Podfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
-		6E439972206E2AAB00B7DF81 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		6E439973206E2AAB00B7DF81 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		6E439975206E2AAB00B7DF81 /* AFError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFError.swift; sourceTree = "<group>"; };
-		6E439976206E2AAB00B7DF81 /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
-		6E439977206E2AAB00B7DF81 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		6E439978206E2AAB00B7DF81 /* MultipartFormData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipartFormData.swift; sourceTree = "<group>"; };
-		6E439979206E2AAB00B7DF81 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		6E43997A206E2AAB00B7DF81 /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
-		6E43997B206E2AAB00B7DF81 /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
-		6E43997C206E2AAB00B7DF81 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		6E43997D206E2AAB00B7DF81 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
-		6E43997E206E2AAB00B7DF81 /* ResponseSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseSerialization.swift; sourceTree = "<group>"; };
-		6E43997F206E2AAB00B7DF81 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
-		6E439980206E2AAB00B7DF81 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerTrustPolicy.swift; sourceTree = "<group>"; };
-		6E439981206E2AAB00B7DF81 /* SessionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionDelegate.swift; sourceTree = "<group>"; };
-		6E439982206E2AAB00B7DF81 /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
-		6E439983206E2AAB00B7DF81 /* TaskDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDelegate.swift; sourceTree = "<group>"; };
-		6E439984206E2AAB00B7DF81 /* Timeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
-		6E439985206E2AAB00B7DF81 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
-		6E43998A206E2AAB00B7DF81 /* CheckOut.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CheckOut.storyboard; sourceTree = "<group>"; };
-		6E43998B206E2AAB00B7DF81 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
-		6E43998D206E2AAB00B7DF81 /* CheckOutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckOutViewController.swift; sourceTree = "<group>"; };
-		6E43998E206E2AAB00B7DF81 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
-		6E43998F206E2AAB00B7DF81 /* ErrorAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorAction.swift; sourceTree = "<group>"; };
-		6E439990206E2AAB00B7DF81 /* KaltiApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KaltiApi.swift; sourceTree = "<group>"; };
-		6E439991206E2AAB00B7DF81 /* Khalti.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Khalti.swift; sourceTree = "<group>"; };
-		6E439992206E2AAB00B7DF81 /* KhaltiPayDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KhaltiPayDelegate.swift; sourceTree = "<group>"; };
-		6E439993206E2AAB00B7DF81 /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
-		6E439996206E2AAB00B7DF81 /* CardPayment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPayment.swift; sourceTree = "<group>"; };
-		6E439997206E2AAB00B7DF81 /* CardPaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPaymentViewController.swift; sourceTree = "<group>"; };
-		6E439999206E2AAB00B7DF81 /* Ebanking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ebanking.swift; sourceTree = "<group>"; };
-		6E43999A206E2AAB00B7DF81 /* EbankingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EbankingViewController.swift; sourceTree = "<group>"; };
-		6E43999B206E2AAB00B7DF81 /* ListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
-		6E43999D206E2AAB00B7DF81 /* KhaltiPayment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KhaltiPayment.swift; sourceTree = "<group>"; };
-		6E43999E206E2AAB00B7DF81 /* KhaltiPaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KhaltiPaymentViewController.swift; sourceTree = "<group>"; };
-		6E43999F206E2AAB00B7DF81 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		6E4399A0206E2AAB00B7DF81 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		6E4399A2206E2AAB00B7DF81 /* Manifest.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Manifest.lock; sourceTree = "<group>"; };
-		6E4399A3206E2AAB00B7DF81 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Pods.xcodeproj; sourceTree = "<group>"; };
-		6E4399A8206E2AAB00B7DF81 /* Alamofire-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
-		6E4399A9206E2AAB00B7DF81 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		6E4399AA206E2AAB00B7DF81 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		6E4399AB206E2AAB00B7DF81 /* Alamofire.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
-		6E4399AC206E2AAB00B7DF81 /* Alamofire.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
-		6E4399AD206E2AAB00B7DF81 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6E4399AF206E2AAB00B7DF81 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6E4399B0206E2AAB00B7DF81 /* Khalti-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Khalti-dummy.m"; sourceTree = "<group>"; };
-		6E4399B1206E2AAB00B7DF81 /* Khalti-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Khalti-prefix.pch"; sourceTree = "<group>"; };
-		6E4399B2206E2AAB00B7DF81 /* Khalti-umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Khalti-umbrella.h"; sourceTree = "<group>"; };
-		6E4399B3206E2AAB00B7DF81 /* Khalti.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = Khalti.modulemap; sourceTree = "<group>"; };
-		6E4399B4206E2AAB00B7DF81 /* Khalti.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Khalti.xcconfig; sourceTree = "<group>"; };
-		6E4399B5206E2AAB00B7DF81 /* ResourceBundle-Khalti-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Khalti-Info.plist"; sourceTree = "<group>"; };
-		6E4399B7206E2AAB00B7DF81 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6E4399B8206E2AAB00B7DF81 /* Pods-Khalti-Pay-acknowledgements.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Pods-Khalti-Pay-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6E4399B9206E2AAB00B7DF81 /* Pods-Khalti-Pay-acknowledgements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pods-Khalti-Pay-acknowledgements.plist"; sourceTree = "<group>"; };
-		6E4399BA206E2AAB00B7DF81 /* Pods-Khalti-Pay-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Pods-Khalti-Pay-dummy.m"; sourceTree = "<group>"; };
-		6E4399BB206E2AAB00B7DF81 /* Pods-Khalti-Pay-frameworks.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "Pods-Khalti-Pay-frameworks.sh"; sourceTree = "<group>"; };
-		6E4399BC206E2AAB00B7DF81 /* Pods-Khalti-Pay-resources.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "Pods-Khalti-Pay-resources.sh"; sourceTree = "<group>"; };
-		6E4399BD206E2AAB00B7DF81 /* Pods-Khalti-Pay-umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Pods-Khalti-Pay-umbrella.h"; sourceTree = "<group>"; };
-		6E4399BE206E2AAB00B7DF81 /* Pods-Khalti-Pay.debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Pods-Khalti-Pay.debug.xcconfig"; sourceTree = "<group>"; };
-		6E4399BF206E2AAB00B7DF81 /* Pods-Khalti-Pay.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Khalti-Pay.modulemap"; sourceTree = "<group>"; };
-		6E4399C0206E2AAB00B7DF81 /* Pods-Khalti-Pay.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Pods-Khalti-Pay.release.xcconfig"; sourceTree = "<group>"; };
 		894E9C667574D5F5900A4E2B /* Pods-Khalti_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Khalti_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Khalti_Tests/Pods-Khalti_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B57B23BBE13CDD4ADAD4CAE4 /* Pods_Khalti_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Khalti_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD5F823C063319D1348149AF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -258,7 +85,6 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
-				6E439945206E2AAB00B7DF81 /* Khalti-Obj-C */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for Khalti */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -335,444 +161,6 @@
 			name = Screenshots;
 			sourceTree = "<group>";
 		};
-		6E439945206E2AAB00B7DF81 /* Khalti-Obj-C */ = {
-			isa = PBXGroup;
-			children = (
-				6E439946206E2AAB00B7DF81 /* Khalti-Pay */,
-				6E439952206E2AAB00B7DF81 /* Khalti-Pay.xcodeproj */,
-				6E439955206E2AAB00B7DF81 /* Khalti-Pay.xcworkspace */,
-				6E439956206E2AAB00B7DF81 /* khalti-sdk-ios-master */,
-				6E43996E206E2AAB00B7DF81 /* Podfile */,
-				6E43996F206E2AAB00B7DF81 /* Podfile.lock */,
-				6E439970206E2AAB00B7DF81 /* Pods */,
-			);
-			name = "Khalti-Obj-C";
-			path = "../Khalti-Obj-C";
-			sourceTree = "<group>";
-		};
-		6E439946206E2AAB00B7DF81 /* Khalti-Pay */ = {
-			isa = PBXGroup;
-			children = (
-				6E439947206E2AAB00B7DF81 /* AppDelegate.h */,
-				6E439948206E2AAB00B7DF81 /* AppDelegate.m */,
-				6E439949206E2AAB00B7DF81 /* Assets.xcassets */,
-				6E43994A206E2AAB00B7DF81 /* LaunchScreen.storyboard */,
-				6E43994C206E2AAB00B7DF81 /* Main.storyboard */,
-				6E43994E206E2AAB00B7DF81 /* Info.plist */,
-				6E43994F206E2AAB00B7DF81 /* main.m */,
-				6E439950206E2AAB00B7DF81 /* ViewController.h */,
-				6E439951206E2AAB00B7DF81 /* ViewController.m */,
-			);
-			path = "Khalti-Pay";
-			sourceTree = "<group>";
-		};
-		6E439953206E2AAB00B7DF81 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6E4399C3206E2AAB00B7DF81 /* Khalti-Pay.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		6E439956206E2AAB00B7DF81 /* khalti-sdk-ios-master */ = {
-			isa = PBXGroup;
-			children = (
-				6E439957206E2AAB00B7DF81 /* Example */,
-				6E439968206E2AAB00B7DF81 /* Khalti */,
-			);
-			path = "khalti-sdk-ios-master";
-			sourceTree = "<group>";
-		};
-		6E439957206E2AAB00B7DF81 /* Example */ = {
-			isa = PBXGroup;
-			children = (
-				6E439958206E2AAB00B7DF81 /* Khalti */,
-				6E439959206E2AAB00B7DF81 /* Pods */,
-				6E439967206E2AAB00B7DF81 /* Tests */,
-			);
-			path = Example;
-			sourceTree = "<group>";
-		};
-		6E439958206E2AAB00B7DF81 /* Khalti */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Khalti;
-			sourceTree = "<group>";
-		};
-		6E439959206E2AAB00B7DF81 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6E43995A206E2AAB00B7DF81 /* Alamofire */,
-				6E43995C206E2AAB00B7DF81 /* IQKeyboardManager */,
-				6E439961206E2AAB00B7DF81 /* Target Support Files */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		6E43995A206E2AAB00B7DF81 /* Alamofire */ = {
-			isa = PBXGroup;
-			children = (
-				6E43995B206E2AAB00B7DF81 /* Source */,
-			);
-			path = Alamofire;
-			sourceTree = "<group>";
-		};
-		6E43995B206E2AAB00B7DF81 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		6E43995C206E2AAB00B7DF81 /* IQKeyboardManager */ = {
-			isa = PBXGroup;
-			children = (
-				6E43995D206E2AAB00B7DF81 /* IQKeyboardManager */,
-			);
-			path = IQKeyboardManager;
-			sourceTree = "<group>";
-		};
-		6E43995D206E2AAB00B7DF81 /* IQKeyboardManager */ = {
-			isa = PBXGroup;
-			children = (
-				6E43995E206E2AAB00B7DF81 /* Categories */,
-				6E43995F206E2AAB00B7DF81 /* IQTextView */,
-				6E439960206E2AAB00B7DF81 /* IQToolbar */,
-			);
-			path = IQKeyboardManager;
-			sourceTree = "<group>";
-		};
-		6E43995E206E2AAB00B7DF81 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Categories;
-			sourceTree = "<group>";
-		};
-		6E43995F206E2AAB00B7DF81 /* IQTextView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = IQTextView;
-			sourceTree = "<group>";
-		};
-		6E439960206E2AAB00B7DF81 /* IQToolbar */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = IQToolbar;
-			sourceTree = "<group>";
-		};
-		6E439961206E2AAB00B7DF81 /* Target Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				6E439962206E2AAB00B7DF81 /* Alamofire */,
-				6E439963206E2AAB00B7DF81 /* IQKeyboardManager */,
-				6E439964206E2AAB00B7DF81 /* Khalti */,
-				6E439965206E2AAB00B7DF81 /* Pods-Khalti_Example */,
-				6E439966206E2AAB00B7DF81 /* Pods-Khalti_Tests */,
-			);
-			path = "Target Support Files";
-			sourceTree = "<group>";
-		};
-		6E439962206E2AAB00B7DF81 /* Alamofire */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Alamofire;
-			sourceTree = "<group>";
-		};
-		6E439963206E2AAB00B7DF81 /* IQKeyboardManager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = IQKeyboardManager;
-			sourceTree = "<group>";
-		};
-		6E439964206E2AAB00B7DF81 /* Khalti */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Khalti;
-			sourceTree = "<group>";
-		};
-		6E439965206E2AAB00B7DF81 /* Pods-Khalti_Example */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Pods-Khalti_Example";
-			sourceTree = "<group>";
-		};
-		6E439966206E2AAB00B7DF81 /* Pods-Khalti_Tests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Pods-Khalti_Tests";
-			sourceTree = "<group>";
-		};
-		6E439967206E2AAB00B7DF81 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		6E439968206E2AAB00B7DF81 /* Khalti */ = {
-			isa = PBXGroup;
-			children = (
-				6E439969206E2AAB00B7DF81 /* Classes */,
-			);
-			path = Khalti;
-			sourceTree = "<group>";
-		};
-		6E439969206E2AAB00B7DF81 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				6E43996A206E2AAB00B7DF81 /* Pay Options */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		6E43996A206E2AAB00B7DF81 /* Pay Options */ = {
-			isa = PBXGroup;
-			children = (
-				6E43996B206E2AAB00B7DF81 /* CardPayment */,
-				6E43996C206E2AAB00B7DF81 /* Ebanking */,
-				6E43996D206E2AAB00B7DF81 /* KhaltiPayment */,
-			);
-			path = "Pay Options";
-			sourceTree = "<group>";
-		};
-		6E43996B206E2AAB00B7DF81 /* CardPayment */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CardPayment;
-			sourceTree = "<group>";
-		};
-		6E43996C206E2AAB00B7DF81 /* Ebanking */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Ebanking;
-			sourceTree = "<group>";
-		};
-		6E43996D206E2AAB00B7DF81 /* KhaltiPayment */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = KhaltiPayment;
-			sourceTree = "<group>";
-		};
-		6E439970206E2AAB00B7DF81 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6E439971206E2AAB00B7DF81 /* Alamofire */,
-				6E439986206E2AAB00B7DF81 /* Headers */,
-				6E439987206E2AAB00B7DF81 /* Khalti */,
-				6E4399A1206E2AAB00B7DF81 /* Local Podspecs */,
-				6E4399A2206E2AAB00B7DF81 /* Manifest.lock */,
-				6E4399A3206E2AAB00B7DF81 /* Pods.xcodeproj */,
-				6E4399A6206E2AAB00B7DF81 /* Target Support Files */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		6E439971206E2AAB00B7DF81 /* Alamofire */ = {
-			isa = PBXGroup;
-			children = (
-				6E439972206E2AAB00B7DF81 /* LICENSE */,
-				6E439973206E2AAB00B7DF81 /* README.md */,
-				6E439974206E2AAB00B7DF81 /* Source */,
-			);
-			path = Alamofire;
-			sourceTree = "<group>";
-		};
-		6E439974206E2AAB00B7DF81 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				6E439975206E2AAB00B7DF81 /* AFError.swift */,
-				6E439976206E2AAB00B7DF81 /* Alamofire.swift */,
-				6E439977206E2AAB00B7DF81 /* DispatchQueue+Alamofire.swift */,
-				6E439978206E2AAB00B7DF81 /* MultipartFormData.swift */,
-				6E439979206E2AAB00B7DF81 /* NetworkReachabilityManager.swift */,
-				6E43997A206E2AAB00B7DF81 /* Notifications.swift */,
-				6E43997B206E2AAB00B7DF81 /* ParameterEncoding.swift */,
-				6E43997C206E2AAB00B7DF81 /* Request.swift */,
-				6E43997D206E2AAB00B7DF81 /* Response.swift */,
-				6E43997E206E2AAB00B7DF81 /* ResponseSerialization.swift */,
-				6E43997F206E2AAB00B7DF81 /* Result.swift */,
-				6E439980206E2AAB00B7DF81 /* ServerTrustPolicy.swift */,
-				6E439981206E2AAB00B7DF81 /* SessionDelegate.swift */,
-				6E439982206E2AAB00B7DF81 /* SessionManager.swift */,
-				6E439983206E2AAB00B7DF81 /* TaskDelegate.swift */,
-				6E439984206E2AAB00B7DF81 /* Timeline.swift */,
-				6E439985206E2AAB00B7DF81 /* Validation.swift */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		6E439986206E2AAB00B7DF81 /* Headers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Headers;
-			sourceTree = "<group>";
-		};
-		6E439987206E2AAB00B7DF81 /* Khalti */ = {
-			isa = PBXGroup;
-			children = (
-				6E439988206E2AAB00B7DF81 /* Khalti */,
-				6E43999F206E2AAB00B7DF81 /* LICENSE */,
-				6E4399A0206E2AAB00B7DF81 /* README.md */,
-			);
-			path = Khalti;
-			sourceTree = "<group>";
-		};
-		6E439988206E2AAB00B7DF81 /* Khalti */ = {
-			isa = PBXGroup;
-			children = (
-				6E439989206E2AAB00B7DF81 /* Assets */,
-				6E43998C206E2AAB00B7DF81 /* Classes */,
-			);
-			path = Khalti;
-			sourceTree = "<group>";
-		};
-		6E439989206E2AAB00B7DF81 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				6E43998A206E2AAB00B7DF81 /* CheckOut.storyboard */,
-				6E43998B206E2AAB00B7DF81 /* images.xcassets */,
-			);
-			path = Assets;
-			sourceTree = "<group>";
-		};
-		6E43998C206E2AAB00B7DF81 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				6E43998D206E2AAB00B7DF81 /* CheckOutViewController.swift */,
-				6E43998E206E2AAB00B7DF81 /* Config.swift */,
-				6E43998F206E2AAB00B7DF81 /* ErrorAction.swift */,
-				6E439990206E2AAB00B7DF81 /* KaltiApi.swift */,
-				6E439991206E2AAB00B7DF81 /* Khalti.swift */,
-				6E439992206E2AAB00B7DF81 /* KhaltiPayDelegate.swift */,
-				6E439993206E2AAB00B7DF81 /* List.swift */,
-				6E439994206E2AAB00B7DF81 /* Pay Options */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		6E439994206E2AAB00B7DF81 /* Pay Options */ = {
-			isa = PBXGroup;
-			children = (
-				6E439995206E2AAB00B7DF81 /* CardPayment */,
-				6E439998206E2AAB00B7DF81 /* Ebanking */,
-				6E43999C206E2AAB00B7DF81 /* KhaltiPayment */,
-			);
-			path = "Pay Options";
-			sourceTree = "<group>";
-		};
-		6E439995206E2AAB00B7DF81 /* CardPayment */ = {
-			isa = PBXGroup;
-			children = (
-				6E439996206E2AAB00B7DF81 /* CardPayment.swift */,
-				6E439997206E2AAB00B7DF81 /* CardPaymentViewController.swift */,
-			);
-			path = CardPayment;
-			sourceTree = "<group>";
-		};
-		6E439998206E2AAB00B7DF81 /* Ebanking */ = {
-			isa = PBXGroup;
-			children = (
-				6E439999206E2AAB00B7DF81 /* Ebanking.swift */,
-				6E43999A206E2AAB00B7DF81 /* EbankingViewController.swift */,
-				6E43999B206E2AAB00B7DF81 /* ListCell.swift */,
-			);
-			path = Ebanking;
-			sourceTree = "<group>";
-		};
-		6E43999C206E2AAB00B7DF81 /* KhaltiPayment */ = {
-			isa = PBXGroup;
-			children = (
-				6E43999D206E2AAB00B7DF81 /* KhaltiPayment.swift */,
-				6E43999E206E2AAB00B7DF81 /* KhaltiPaymentViewController.swift */,
-			);
-			path = KhaltiPayment;
-			sourceTree = "<group>";
-		};
-		6E4399A1206E2AAB00B7DF81 /* Local Podspecs */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Local Podspecs";
-			sourceTree = "<group>";
-		};
-		6E4399A4206E2AAB00B7DF81 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6E4399C9206E2AAB00B7DF81 /* Alamofire.framework */,
-				6E4399CB206E2AAB00B7DF81 /* Khalti.framework */,
-				6E4399CD206E2AAB00B7DF81 /* Khalti.bundle */,
-				6E4399CF206E2AAB00B7DF81 /* Pods_Khalti_Pay.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		6E4399A6206E2AAB00B7DF81 /* Target Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				6E4399A7206E2AAB00B7DF81 /* Alamofire */,
-				6E4399AE206E2AAB00B7DF81 /* Khalti */,
-				6E4399B6206E2AAB00B7DF81 /* Pods-Khalti-Pay */,
-			);
-			path = "Target Support Files";
-			sourceTree = "<group>";
-		};
-		6E4399A7206E2AAB00B7DF81 /* Alamofire */ = {
-			isa = PBXGroup;
-			children = (
-				6E4399A8206E2AAB00B7DF81 /* Alamofire-dummy.m */,
-				6E4399A9206E2AAB00B7DF81 /* Alamofire-prefix.pch */,
-				6E4399AA206E2AAB00B7DF81 /* Alamofire-umbrella.h */,
-				6E4399AB206E2AAB00B7DF81 /* Alamofire.modulemap */,
-				6E4399AC206E2AAB00B7DF81 /* Alamofire.xcconfig */,
-				6E4399AD206E2AAB00B7DF81 /* Info.plist */,
-			);
-			path = Alamofire;
-			sourceTree = "<group>";
-		};
-		6E4399AE206E2AAB00B7DF81 /* Khalti */ = {
-			isa = PBXGroup;
-			children = (
-				6E4399AF206E2AAB00B7DF81 /* Info.plist */,
-				6E4399B0206E2AAB00B7DF81 /* Khalti-dummy.m */,
-				6E4399B1206E2AAB00B7DF81 /* Khalti-prefix.pch */,
-				6E4399B2206E2AAB00B7DF81 /* Khalti-umbrella.h */,
-				6E4399B3206E2AAB00B7DF81 /* Khalti.modulemap */,
-				6E4399B4206E2AAB00B7DF81 /* Khalti.xcconfig */,
-				6E4399B5206E2AAB00B7DF81 /* ResourceBundle-Khalti-Info.plist */,
-			);
-			path = Khalti;
-			sourceTree = "<group>";
-		};
-		6E4399B6206E2AAB00B7DF81 /* Pods-Khalti-Pay */ = {
-			isa = PBXGroup;
-			children = (
-				6E4399B7206E2AAB00B7DF81 /* Info.plist */,
-				6E4399B8206E2AAB00B7DF81 /* Pods-Khalti-Pay-acknowledgements.markdown */,
-				6E4399B9206E2AAB00B7DF81 /* Pods-Khalti-Pay-acknowledgements.plist */,
-				6E4399BA206E2AAB00B7DF81 /* Pods-Khalti-Pay-dummy.m */,
-				6E4399BB206E2AAB00B7DF81 /* Pods-Khalti-Pay-frameworks.sh */,
-				6E4399BC206E2AAB00B7DF81 /* Pods-Khalti-Pay-resources.sh */,
-				6E4399BD206E2AAB00B7DF81 /* Pods-Khalti-Pay-umbrella.h */,
-				6E4399BE206E2AAB00B7DF81 /* Pods-Khalti-Pay.debug.xcconfig */,
-				6E4399BF206E2AAB00B7DF81 /* Pods-Khalti-Pay.modulemap */,
-				6E4399C0206E2AAB00B7DF81 /* Pods-Khalti-Pay.release.xcconfig */,
-			);
-			path = "Pods-Khalti-Pay";
-			sourceTree = "<group>";
-		};
 		FBFFEACDDC10CA983ED565EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -794,7 +182,6 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				486C1A8C9D6C3FDCE9360A94 /* [CP] Embed Pods Frameworks */,
-				44A10B7804B88B0D51E9D6E7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -813,8 +200,6 @@
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				5B3F6EA2859E559872E68ACA /* [CP] Embed Pods Frameworks */,
-				D94AB5C0B70B20FD1ACC5A6F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -860,16 +245,6 @@
 			mainGroup = 607FACC71AFB9204008FA782;
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 6E439953206E2AAB00B7DF81 /* Products */;
-					ProjectRef = 6E439952206E2AAB00B7DF81 /* Khalti-Pay.xcodeproj */;
-				},
-				{
-					ProductGroup = 6E4399A4206E2AAB00B7DF81 /* Products */;
-					ProjectRef = 6E4399A3206E2AAB00B7DF81 /* Pods.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				607FACCF1AFB9204008FA782 /* Khalti_Example */,
@@ -878,79 +253,15 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		6E4399C3206E2AAB00B7DF81 /* Khalti-Pay.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = "Khalti-Pay.app";
-			remoteRef = 6E4399C2206E2AAB00B7DF81 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6E4399C9206E2AAB00B7DF81 /* Alamofire.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Alamofire.framework;
-			remoteRef = 6E4399C8206E2AAB00B7DF81 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6E4399CB206E2AAB00B7DF81 /* Khalti.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Khalti.framework;
-			remoteRef = 6E4399CA206E2AAB00B7DF81 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6E4399CD206E2AAB00B7DF81 /* Khalti.bundle */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = Khalti.bundle;
-			remoteRef = 6E4399CC206E2AAB00B7DF81 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6E4399CF206E2AAB00B7DF81 /* Pods_Khalti_Pay.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Pods_Khalti_Pay.framework;
-			remoteRef = 6E4399CE206E2AAB00B7DF81 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		607FACCE1AFB9204008FA782 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E4399ED206E2AAC00B7DF81 /* CheckOut.storyboard in Resources */,
-				6E439A09206E2AAC00B7DF81 /* Pods-Khalti-Pay-acknowledgements.plist in Resources */,
-				6E4399D8206E2AAB00B7DF81 /* Podfile in Resources */,
-				6E4399D4206E2AAB00B7DF81 /* Info.plist in Resources */,
-				6E439A0C206E2AAC00B7DF81 /* Pods-Khalti-Pay-resources.sh in Resources */,
-				6E4399D7206E2AAB00B7DF81 /* Khalti-Pay.xcworkspace in Resources */,
-				6E4399D3206E2AAB00B7DF81 /* Main.storyboard in Resources */,
-				6E4399DB206E2AAC00B7DF81 /* README.md in Resources */,
-				6E439A0B206E2AAC00B7DF81 /* Pods-Khalti-Pay-frameworks.sh in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				6E0B7B11203FEECF004DC885 /* customUrlScheme.png in Resources */,
-				6E439A07206E2AAC00B7DF81 /* Info.plist in Resources */,
-				6E439A02206E2AAC00B7DF81 /* Info.plist in Resources */,
-				6E4399DA206E2AAB00B7DF81 /* LICENSE in Resources */,
-				6E4399FF206E2AAC00B7DF81 /* Manifest.lock in Resources */,
-				6E439A05206E2AAC00B7DF81 /* Khalti.xcconfig in Resources */,
-				6E4399EE206E2AAC00B7DF81 /* images.xcassets in Resources */,
-				6E439A01206E2AAC00B7DF81 /* Alamofire.xcconfig in Resources */,
-				6E4399FD206E2AAC00B7DF81 /* LICENSE in Resources */,
-				6E4399FE206E2AAC00B7DF81 /* README.md in Resources */,
-				6E439A0D206E2AAC00B7DF81 /* Pods-Khalti-Pay.debug.xcconfig in Resources */,
-				6E4399D9206E2AAB00B7DF81 /* Podfile.lock in Resources */,
-				6E439A08206E2AAC00B7DF81 /* Pods-Khalti-Pay-acknowledgements.markdown in Resources */,
-				6E439A06206E2AAC00B7DF81 /* ResourceBundle-Khalti-Info.plist in Resources */,
-				6E439A0E206E2AAC00B7DF81 /* Pods-Khalti-Pay.release.xcconfig in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
-				6E4399D2206E2AAB00B7DF81 /* LaunchScreen.storyboard in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
-				6E4399D1206E2AAB00B7DF81 /* Assets.xcassets in Resources */,
-				6E439A03206E2AAC00B7DF81 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1000,21 +311,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		44A10B7804B88B0D51E9D6E7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Khalti_Example/Pods-Khalti_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		486C1A8C9D6C3FDCE9360A94 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1022,49 +318,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Khalti_Example/Pods-Khalti_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/Khalti/Khalti.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Khalti.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Khalti_Example/Pods-Khalti_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5B3F6EA2859E559872E68ACA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Khalti_Tests/Pods-Khalti_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D94AB5C0B70B20FD1ACC5A6F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Khalti_Tests/Pods-Khalti_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1074,45 +338,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E4399E0206E2AAC00B7DF81 /* NetworkReachabilityManager.swift in Sources */,
-				6E4399F9206E2AAC00B7DF81 /* EbankingViewController.swift in Sources */,
-				6E4399F3206E2AAC00B7DF81 /* Khalti.swift in Sources */,
-				6E4399E3206E2AAC00B7DF81 /* Request.swift in Sources */,
-				6E4399EC206E2AAC00B7DF81 /* Validation.swift in Sources */,
-				6E4399DE206E2AAC00B7DF81 /* DispatchQueue+Alamofire.swift in Sources */,
-				6E4399E9206E2AAC00B7DF81 /* SessionManager.swift in Sources */,
-				6E439A04206E2AAC00B7DF81 /* Khalti-dummy.m in Sources */,
-				6E4399FB206E2AAC00B7DF81 /* KhaltiPayment.swift in Sources */,
-				6E4399F0206E2AAC00B7DF81 /* Config.swift in Sources */,
-				6E4399E8206E2AAC00B7DF81 /* SessionDelegate.swift in Sources */,
-				6E4399F8206E2AAC00B7DF81 /* Ebanking.swift in Sources */,
-				6E4399E1206E2AAC00B7DF81 /* Notifications.swift in Sources */,
-				6E4399FA206E2AAC00B7DF81 /* ListCell.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				6E4399E6206E2AAC00B7DF81 /* Result.swift in Sources */,
-				6E4399E4206E2AAC00B7DF81 /* Response.swift in Sources */,
-				6E4399D5206E2AAB00B7DF81 /* main.m in Sources */,
-				6E4399F7206E2AAC00B7DF81 /* CardPaymentViewController.swift in Sources */,
-				6E4399E2206E2AAC00B7DF81 /* ParameterEncoding.swift in Sources */,
-				6E4399F1206E2AAC00B7DF81 /* ErrorAction.swift in Sources */,
-				6E4399D0206E2AAB00B7DF81 /* AppDelegate.m in Sources */,
-				6E4399F2206E2AAC00B7DF81 /* KaltiApi.swift in Sources */,
-				6E4399E7206E2AAC00B7DF81 /* ServerTrustPolicy.swift in Sources */,
-				6E4399D6206E2AAB00B7DF81 /* ViewController.m in Sources */,
-				6E439A0A206E2AAC00B7DF81 /* Pods-Khalti-Pay-dummy.m in Sources */,
-				6E4399F6206E2AAC00B7DF81 /* CardPayment.swift in Sources */,
-				6E4399EB206E2AAC00B7DF81 /* Timeline.swift in Sources */,
-				6E4399EF206E2AAC00B7DF81 /* CheckOutViewController.swift in Sources */,
-				6E4399F5206E2AAC00B7DF81 /* List.swift in Sources */,
-				6E439A00206E2AAC00B7DF81 /* Alamofire-dummy.m in Sources */,
-				6E4399EA206E2AAC00B7DF81 /* TaskDelegate.swift in Sources */,
-				6E4399DF206E2AAC00B7DF81 /* MultipartFormData.swift in Sources */,
-				6E4399F4206E2AAC00B7DF81 /* KhaltiPayDelegate.swift in Sources */,
-				6E4399DC206E2AAC00B7DF81 /* AFError.swift in Sources */,
-				6E4399E5206E2AAC00B7DF81 /* ResponseSerialization.swift in Sources */,
-				6E4399FC206E2AAC00B7DF81 /* KhaltiPaymentViewController.swift in Sources */,
-				6E4399DD206E2AAC00B7DF81 /* Alamofire.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1149,22 +376,6 @@
 				607FACDF1AFB9204008FA782 /* Base */,
 			);
 			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-		6E43994A206E2AAB00B7DF81 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6E43994B206E2AAB00B7DF81 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		6E43994C206E2AAB00B7DF81 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6E43994D206E2AAB00B7DF81 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

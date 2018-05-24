@@ -44,6 +44,7 @@ class EbankingViewController: UIViewController {
                 self.listCollectionView.reloadData()
             }, onError: { errorMessage in
                 self.hideLoading()
+                
                 self.delegate?.onCheckOutError(action: "", message: errorMessage)
             })
         default:
@@ -107,7 +108,9 @@ class EbankingViewController: UIViewController {
             }
             var urlComp = URLComponents(string: KhaltiAPIUrl.bankInitiate.rawValue)
             urlComp?.queryItems = params
-            if let urll = try? urlComp!.asURL() {
+            
+            
+            if let urll = urlComp?.url {
                 if UIApplication.shared.canOpenURL(urll) {
                     UIApplication.shared.openURL(urll)
                 } else {
@@ -120,6 +123,8 @@ class EbankingViewController: UIViewController {
             self.showError(with: "No Scheme defined yet", dismiss: false)
         }
     }
+    
+
     
     
     // MARK: - Helpers
@@ -178,7 +183,8 @@ class EbankingViewController: UIViewController {
     }
     
     func addLoading() {
-        let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+        let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
+        activityIndicator.color = UIColor.black
         self.activityIndicator = activityIndicator
     }
     

@@ -42,13 +42,19 @@ class ListCell: UICollectionViewCell {
                     if let _ = response as? HTTPURLResponse {
                         if let imageData = data {
                             let imagee = UIImage(data: imageData)
-                            self?.itemButton.setImage(imagee, for: .normal)
+                            DispatchQueue.main.async {
+                                self?.itemButton.setImage(imagee, for: .normal)
+                            }
                         } else {
-                            self?.itemButton.setImage(self?.image, for: .normal)
+                            DispatchQueue.main.async {
+                                self?.itemButton.setImage(self?.image, for: .normal)
+                            }
                             print("Couldn't get image: Image is nil")
                         }
                     } else {
-                        self?.itemButton.setImage(self?.image, for: .normal)
+                        DispatchQueue.main.async {
+                            self?.itemButton.setImage(self?.image, for: .normal)
+                        }
                         print("Couldn't get response code for some reason")
                     }
                 }

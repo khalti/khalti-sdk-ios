@@ -38,5 +38,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'khalti/Classes/**/*.h'
   s.frameworks = 'UIKit'
-  s.dependency 'Alamofire'
+#  s.dependency 'Alamofire'
 end

@@ -1,6 +1,6 @@
 //
 //  BankingPop.swift
-//  Alamofire
+//  Khalti
 //
 //  Created by Rajendra Karki on 3/30/18.
 //

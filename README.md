@@ -6,15 +6,11 @@
 
 
 ## Pod Depedency 
-Khalti has currenlty depenceny on  ```Alamofire```.
-This dependency will be soon be removed.
 
 For best working with UI incorporated in this library ```IQKeyboardManager``` is used. Suggest using 
 ```swift
 pod 'IQKeyboarManager'
 ```
-
-So installation of ```Khalti``` provides automatically dependency pod ```Alamofire``` but use of ```IQKeyboardManager``` is up to you.
 
 ## Example
 

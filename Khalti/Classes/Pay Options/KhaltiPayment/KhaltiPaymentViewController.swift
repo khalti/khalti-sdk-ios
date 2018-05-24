@@ -25,17 +25,21 @@ class KhaltiPaymentViewController: UIViewController {
     @IBOutlet weak var fullPayView: UIView!
     @IBOutlet weak var payConfirmButton: UIButton!
     @IBOutlet weak var payInitiateButton: UIButton!
+    private var indicator:KhaltiIndicatorView!
+    
+    var activityIndicator: UIActivityIndicatorView!
     
     
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.addLoading()
         self.fullPayView.isHidden = true
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
+        self.payInitiateButton.isUserInteractionEnabled = true
         guard self.config != nil else {
             let alertController = UIAlertController(title: "Missing Required Data", message: "Cannot process for payment.", preferredStyle: .alert)
             let okAction = UIAlertAction(title: "OK" , style: .default, handler: {_ in
@@ -84,11 +88,15 @@ class KhaltiPaymentViewController: UIViewController {
         if params.count == 0 {
             return
         }
+        self.showLoading()
+        sender.isUserInteractionEnabled = false
         self.mobile = self.mobileTextField.text
         self.token = self.mobileTextField.text
         
         KhaltiAPI.shared.getPaymentInitiate(with: params, onCompletion: { (response) in
             print(response)
+            sender.isUserInteractionEnabled = true
+            self.hideLoading()
             if let token = response["token"] as? String {
                 self.token = token
                 self.numberOnlyView.isHidden = true
@@ -99,6 +107,8 @@ class KhaltiPaymentViewController: UIViewController {
                 self.showError(with: "Something went wrong.Input data invalid.", dismiss: false)
             }
         }, onError: { errorMessage in
+            self.hideLoading()
+            sender.isUserInteractionEnabled = true
             self.showError(with: errorMessage, dismiss: false)
         })
     }
@@ -108,8 +118,10 @@ class KhaltiPaymentViewController: UIViewController {
         if params.count == 0 {
             return
         }
+        sender.isUserInteractionEnabled = false
         KhaltiAPI.shared.getPaymentConfirm(with: params, onCompletion: { (response) in
             
+            sender.isUserInteractionEnabled = true
             if let detail = response["detail"] as? String {
                 self.delegate?.onCheckOutError(action: "", message: detail)
                 self.showError(with: detail, dismiss: false)
@@ -119,12 +131,41 @@ class KhaltiPaymentViewController: UIViewController {
                 self.delegate?.onCheckOutSuccess(data: response)
             })
         }, onError:{ errorMessage in
+            sender.isUserInteractionEnabled = true
             self.showError(with: errorMessage, dismiss: false)
         })
     }
     
     
     // MARK: - Helper Methods
+    
+    private func addLoading() {
+        let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+        self.activityIndicator = activityIndicator
+        self.activityIndicator.activityIndicatorViewStyle = .whiteLarge
+        self.activityIndicator.color = UIColor.black
+        self.activityIndicator.hidesWhenStopped = true
+        
+    }
+    
+    private func showLoading() {
+        
+        if let indicator = self.activityIndicator {
+            indicator.startAnimating()
+            self.view.alpha = 0.3
+            activityIndicator.center = self.view.center
+            self.view.addSubview(self.activityIndicator)
+        }
+    }
+    
+    private func hideLoading() {
+        
+        if let indicator = self.activityIndicator {
+            indicator.stopAnimating()
+            self.view.alpha = 1.0
+        }
+    }
+    
     private func validataInitiate() -> Dictionary<String,Any> {
         var params:[String:Any] = [:]
         
