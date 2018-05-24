@@ -7,76 +7,76 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04778AE4B77AF7580EBFE661EC61EC69 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20EB28F51AAEEAFFAD84455442A48715 /* images.xcassets */; };
 		050CA380FD80EE318D6AB6F68D0DC635 /* Pods-Khalti_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F852F39B0468A60DA38393E2F0B923E7 /* Pods-Khalti_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0580678F1329D12CAA30A47A7C8EE038 /* BankingPopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463B0271B941E8219BAD320423A40686 /* BankingPopViewController.swift */; };
 		0648973667FB537BDC3ABFA9F3AD2ED8 /* IQBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F51876D791D30CD209AD4183E3F8A7F /* IQBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		06FF2586AE76FBBCBF8171F98255D8CB /* IQUIScrollView+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 220B4F2821CD30A8FBDAF2E31E6F5778 /* IQUIScrollView+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0BB01995E79A4C90AA51D40ADE5A99E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89163E94743FDDD60913C47150E225B /* UIKit.framework */; };
+		097BDC30ED8BEE1976A78978A18187CE /* BankingPop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC821AC8AE7CF45A81CF1684D3CB692 /* BankingPop.swift */; };
 		0DB2E34289D18AA9810609ADCCBFA181 /* IQBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7342E6D61C5FA911A8B58E8BADE06BAA /* IQBarButtonItem.m */; };
 		13D87E1D99CFD98771E8066E6FF832CD /* IQUIViewController+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = B3CE95A9B11DCFD78DC8FD72E8A402F7 /* IQUIViewController+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14479278EA90F38247811468ADD8EBB7 /* IQKeyboardManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BC45EB15EC15D0CCE7353B66AE975C66 /* IQKeyboardManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A97FA578361454972413BE5A84F214C /* Khalti-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D9450897C9A65C6A569B79DE94E15EC /* Khalti-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15B01E95C25153E02D2CD2D56848BB48 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E0CDAEFD4CEAB0C1152CE4C36CCE20 /* images.xcassets */; };
 		1EB11A181898418829743F59AA3C9778 /* Pods-Khalti_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14ED5E3F97DC1CC58B5C6C5964D700A0 /* Pods-Khalti_Example-dummy.m */; };
-		210917D5AB250811CEC5966639FB59DF /* ErrorAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA5706E29BC5CE459B71104A29BCF31 /* ErrorAction.swift */; };
+		20EA3D335651972C34843631389862C6 /* Khalti.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66D3F99E77BA93E73E45BA1B838EF21 /* Khalti.swift */; };
 		236D1056D72193BD87A9E7C1E436B1C2 /* Pods-Khalti_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46777FDC9E03B2786DD8FDF64FFDD23D /* Pods-Khalti_Tests-dummy.m */; };
-		24ECF6E350BCB2C92A62121DFF54BE3A /* KaltiApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538B8B3CAB2E1D321DB67621214C736 /* KaltiApi.swift */; };
-		294460423B9ADA93C7D434AA6253A447 /* CheckOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80155843CCA56AA0385A4AB7112A485 /* CheckOutViewController.swift */; };
 		2D407C6492BC569F5361B9210C89A19C /* IQKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00686DDAEBFD6361467EA5B8CE55B5BA /* IQKeyboardManager.m */; };
+		311980FF718CBD15EF7EC916BFB96906 /* Khalti-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A74EFB9F84D2DB50852C081CBF2F63D2 /* Khalti-dummy.m */; };
 		33B0541B86FFB2D4122DA25DD2FADDD3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65E433A68C225D6FF6B2CE970853F1D /* QuartzCore.framework */; };
 		3619E77A8EC11571EE9F32921DAC0C89 /* IQKeyboardReturnKeyHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = B6DCA64298D89F328E3C527FC7BE7E48 /* IQKeyboardReturnKeyHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CB4F1ABBB50C1A12138C699613AFF74 /* Khalti.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 478A1869608FD4433F8A246D1E3EA820 /* Khalti.bundle */; };
+		3DA3A3D18CE3247C79D330DD501FC3B0 /* ErrorAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42966CADBF1B739206F5B962DA20C274 /* ErrorAction.swift */; };
 		431C76067CB09B1FC0E4DD5AEA6B540A /* IQUIScrollView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A3686372A00E4108601F98FB391949 /* IQUIScrollView+Additions.m */; };
-		4A49435CFB7B65F865698445852D4240 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8116691B4E9FA110B0465A3FF1F140 /* List.swift */; };
-		569DA5B8F59F5917695E3FE15DE957B7 /* KhaltiPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CEDF4E95A68DE11E125114DBD7F1CF /* KhaltiPayment.swift */; };
+		46D1C167AAE551E4551FAFC7CE555D54 /* CheckOut.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BD4B4DA5C63D9AF5284E699AE9C41B2 /* CheckOut.storyboard */; };
+		483DE9DE0832BECE2AF5AA450443FC35 /* Ebanking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73FFBFDC964AACA552E979D0AA1DB9D /* Ebanking.swift */; };
+		59FD270EB5FD025F9BBD6A2E56D97C42 /* BankingPopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7358D6035CDFA4EAB44E02C6EA54DA2 /* BankingPopViewController.swift */; };
 		5BD336D4E8710CFAA820E6CBB511BB2A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56348597C0DD615177C5C15A774BCF2 /* Foundation.framework */; };
-		5ED89F14AF1E4F3AF73ECE7246D92C7E /* Ebanking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CB1F9A6D113A3144DC4AB63D660AE6 /* Ebanking.swift */; };
 		639A86F8EDAF569092C61103FFAEA21D /* IQUIView+IQKeyboardToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = E7409D2B31B6023C5A0EB172F2626172 /* IQUIView+IQKeyboardToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		63F5BA839B931DB6605554B6D4369A0C /* IQUIView+Hierarchy.h in Headers */ = {isa = PBXBuildFile; fileRef = 8760A629D307F77698B85866FEF5B481 /* IQUIView+Hierarchy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		65E7511F80C43C420DA4B460BECA3D72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56348597C0DD615177C5C15A774BCF2 /* Foundation.framework */; };
 		665B3B037B98D3E3ADB449A43FF14F42 /* IQUITextFieldView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F11CFDC29096027FAE24748300C6908C /* IQUITextFieldView+Additions.m */; };
 		688E0882DFC8CABA02390F43178CB33F /* IQNSArray+Sort.h in Headers */ = {isa = PBXBuildFile; fileRef = 861BCD1B7519CAECE261202152D0E700 /* IQNSArray+Sort.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6D8F54A2698639FCAA2622281208FED5 /* KhaltiPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7324419EDDCFBA946C63DFBB94CB82F0 /* KhaltiPaymentViewController.swift */; };
+		68E783801317D7C501767623C17492E9 /* CheckOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0B2CC7F596109E657E4C93E5ECDC51 /* CheckOutViewController.swift */; };
 		72EE4A5DC3076CD8C13717D4DAA37DFD /* IQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 755CBE70B31E70191C9796D878A85297 /* IQTextView.m */; };
 		768AF84686083133A3E5D2A05167E72B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56348597C0DD615177C5C15A774BCF2 /* Foundation.framework */; };
-		77FB41376FFEC223B3A89C5483FF82EC /* BankingPop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68232DC96F5C0F862FAA6C149C361E62 /* BankingPop.swift */; };
 		788BA72F67004504FFDFC670048786B5 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 020ECC4A75B88C51E6E89535B9D4D4D9 /* IQKeyboardManager.bundle */; };
+		7A4B5D0DBA4D09C15C25444D828DEFCA /* Khalti-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 650E819B5EB9311C300F5E3121357B16 /* Khalti-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7AEA6896F609AB8ADAAD9375048323A4 /* KhaltiPayDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3439DF92F8CBE23755A151729791011C /* KhaltiPayDelegate.swift */; };
 		7C49A18841060D12A58F92CE62C21F9D /* IQNSArray+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF21EE6BF20BABBADCC43D42A603A7D /* IQNSArray+Sort.m */; };
 		7CF3668C8E30DA3CAB92C9C6A8B88B8F /* IQToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = E5E6965E52156F7A9A1D09FE6B8B3ADC /* IQToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		847B0BEA41FE53588723BAAC56327E45 /* EbankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A68E846D96198A05B2FF13E086425 /* EbankingViewController.swift */; };
 		85F02B2E2F922F439A12C7CBB077E8DE /* IQKeyboardManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 373AC1E345C1810CA51FE559BB170525 /* IQKeyboardManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8C9B7D6E07773C2A8803B31FD16DC1E3 /* KhaltiPayDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC0A0BFC080C13656CEB83A59F77D25 /* KhaltiPayDelegate.swift */; };
+		8A9EDC6CED3BF77C9FC22A400C4FE536 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA3D293A603AB7A1F47A453A415CB17 /* List.swift */; };
 		9522718D754C872BF535A670E984E47C /* Pods-Khalti_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B5E70A2A0A94956ACE9271AD6D7015 /* Pods-Khalti_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		958FEEE31215AB970371D4CBAEB8A4DC /* IQTitleBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DC4F7FCC2BAF87B0A66AFCCFC8291D /* IQTitleBarButtonItem.m */; };
-		97281BFD6C024557578D47CB7CFF2B99 /* Khalti.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 478A1869608FD4433F8A246D1E3EA820 /* Khalti.bundle */; };
 		99249B44D65716B5CCA0BFFD5F83062C /* IQTitleBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 90E733DC9EB515FE03AB569375F2843B /* IQTitleBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9AF9C0BD58F3B5FF635A6BB74EBEC89F /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03B2DC0A6DD3EC0584F3BD5A5133048 /* ListCell.swift */; };
-		9B2E7227FAF7F0E63BE93099BFEEA50F /* Khalti-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1264C35C013A56EFA6A50BF75FB86362 /* Khalti-dummy.m */; };
 		A3CE2D718CEB5AC059823178404AF0EF /* IQKeyboardManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 214B968DDAA7EB98CE63C68BAA4D98B6 /* IQKeyboardManager-dummy.m */; };
 		AAC6DB8270C474C50F5D71DE9BC73382 /* IQTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = F29060BEED8778F2E4D2437E2EEDC4F9 /* IQTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B05BDA89A18DA866355AD804B694F851 /* IQUITextFieldView+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = BD5CB1651B92C8C21380ACF30D32A33F /* IQUITextFieldView+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B21C3C93DAA23B1C331B9326991CDCFC /* IQKeyboardManagerConstantsInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 328853FB7A45D007050F845B127F2584 /* IQKeyboardManagerConstantsInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B9F79F8B00689F6DDACD02FDFF0DD90D /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B2A72337D4F8DCA8BB62C4E5C8FB64 /* Config.swift */; };
-		BE2D115618AB38F6428EAA72B6246433 /* Khalti.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB8B7DCF0543D49E4016E3F296A281 /* Khalti.swift */; };
-		BE3B4B9D50437B913A48B2A8F35C2FB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56348597C0DD615177C5C15A774BCF2 /* Foundation.framework */; };
+		BA5AA615F74A4B890A546BA34FDE1023 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89163E94743FDDD60913C47150E225B /* UIKit.framework */; };
+		BB9E6CA2B3C223D9DE66C81D023944C3 /* KaltiApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B319546AF9AA3B114F3C8DD8846594 /* KaltiApi.swift */; };
+		BC2AE758B98DD40A79D6DA8F9F7075B7 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B65B06D96E47CC71394C3D9B63659EA /* ListCell.swift */; };
 		C2B7F4EB405C401EA53023341C05E15E /* IQPreviousNextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 666B09C94E6B33BAFB522027BE5D3ADB /* IQPreviousNextView.m */; };
 		C480AC5D32406D4901116FCAC5FB0EB5 /* IQUIViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C7936243FF65D2FC44902E6DEDC1FB /* IQUIViewController+Additions.m */; };
 		C49ED0BA3BE26C50F202C5ED5FB85573 /* IQKeyboardManagerConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 136923C8F91E73D8136864372EC5DD97 /* IQKeyboardManagerConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C4AA57B938513DE614A7B90AEF5CD858 /* IQUIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEAD0D790DD752734EA843CB9284BEA /* IQUIView+IQKeyboardToolbar.m */; };
 		C5387F56E7B5924777146E8B3051201A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C473026796F8AFAA2ECD5A761494CE /* CoreGraphics.framework */; };
+		C750E7C55570AAB4C1CC05ED09B287B8 /* EbankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33F15A71479F02C6CAF5B624ED0FC5D /* EbankingViewController.swift */; };
 		CA1E205A4D3A8515ED42F76C2671F1BA /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FABA630FD313987449B9F4537D06AA /* IQToolbar.m */; };
-		CC3B02C2917E5F1A7F6B41ECAF82BB7F /* CheckOut.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EA1468AB0099C0BFC45A23DC2B1BA40 /* CheckOut.storyboard */; };
 		CF4EB3350726A86BCCDF5F363C5FCE72 /* IQPreviousNextView.h in Headers */ = {isa = PBXBuildFile; fileRef = DD62546AD2BDC266B419E9BF5CB32898 /* IQPreviousNextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D197B8A234B6DDE56E1DAC2B64A3DBF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56348597C0DD615177C5C15A774BCF2 /* Foundation.framework */; };
+		D198671949979317A8547DDE9E4C265B /* KhaltiPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472DD01B4A0B92CDE8752AEDE9FEB641 /* KhaltiPaymentViewController.swift */; };
+		DB8D3F638F5626FACABB2F847047325D /* KhaltiPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72A53583A6924D0DE98D327B59ADA30 /* KhaltiPayment.swift */; };
 		DEB92E2DB086E554AEA1DBFA8A9F00D0 /* IQUIView+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC898D5CD6464BFFB6C484FD827B739 /* IQUIView+Hierarchy.m */; };
+		E5199A8BD4AEE5B07F31A5D726466AAA /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653A2127078074FB54641DF2F236E21D /* Config.swift */; };
 		E802560B425A04296159872675948D29 /* IQKeyboardReturnKeyHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 61EC4234029D588DE3A764DAC9082D27 /* IQKeyboardReturnKeyHandler.m */; };
 		EE44351F11ED90F904FFCB257094967F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89163E94743FDDD60913C47150E225B /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7CAA92E78A530967E627F57FBB654471 /* PBXContainerItemProxy */ = {
+		0C282F668A648ACC50D7F8008E533F0F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 94369BF5449150EA670E4229280C4985;
+			remoteGlobalIDString = 4C45632F158E819CB8C9C9CF3588D4DC;
 			remoteInfo = "Khalti-Khalti";
 		};
 		99ED5C3EE3F3266C19C327626FE7DB0E /* PBXContainerItemProxy */ = {
@@ -97,110 +97,112 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3A264DA26F95516EEB61A44CE94E3C3A;
+			remoteGlobalIDString = D10317FDDC88F696EDC00138503B1D69;
 			remoteInfo = Khalti;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		00686DDAEBFD6361467EA5B8CE55B5BA /* IQKeyboardManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQKeyboardManager.m; path = IQKeyboardManager/IQKeyboardManager.m; sourceTree = "<group>"; };
+		00E693C855AFB9D80CA963CCC4D30070 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		020ECC4A75B88C51E6E89535B9D4D4D9 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = IQKeyboardManager.bundle; path = IQKeyboardManager/Resources/IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		06B319546AF9AA3B114F3C8DD8846594 /* KaltiApi.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaltiApi.swift; path = Khalti/Classes/KaltiApi.swift; sourceTree = "<group>"; };
 		0A0EBC0083D0DD06B0EFFD451F7AC2E6 /* Pods-Khalti_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Khalti_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		0AE8805370BD77371FCE647C331893A8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E5225133AFF165735FFEDC80E1BEB23 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1264C35C013A56EFA6A50BF75FB86362 /* Khalti-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Khalti-dummy.m"; sourceTree = "<group>"; };
+		1210261011CA6C6DC5A6CD621B8C4EF8 /* Khalti.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Khalti.xcconfig; sourceTree = "<group>"; };
 		136923C8F91E73D8136864372EC5DD97 /* IQKeyboardManagerConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardManagerConstants.h; path = IQKeyboardManager/Constants/IQKeyboardManagerConstants.h; sourceTree = "<group>"; };
 		14ED5E3F97DC1CC58B5C6C5964D700A0 /* Pods-Khalti_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Khalti_Example-dummy.m"; sourceTree = "<group>"; };
 		182962B1CC85E5F0A7A61D08526FB337 /* Pods-Khalti_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Khalti_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		1CC761A22DF3D45DBE20A31788E9DEEB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		20EB28F51AAEEAFFAD84455442A48715 /* images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = images.xcassets; path = Khalti/Assets/images.xcassets; sourceTree = "<group>"; };
+		1CC821AC8AE7CF45A81CF1684D3CB692 /* BankingPop.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BankingPop.swift; sourceTree = "<group>"; };
 		214B968DDAA7EB98CE63C68BAA4D98B6 /* IQKeyboardManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManager-dummy.m"; sourceTree = "<group>"; };
 		220B4F2821CD30A8FBDAF2E31E6F5778 /* IQUIScrollView+Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIScrollView+Additions.h"; path = "IQKeyboardManager/Categories/IQUIScrollView+Additions.h"; sourceTree = "<group>"; };
 		2CEAD0D790DD752734EA843CB9284BEA /* IQUIView+IQKeyboardToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIView+IQKeyboardToolbar.m"; path = "IQKeyboardManager/IQToolbar/IQUIView+IQKeyboardToolbar.m"; sourceTree = "<group>"; };
-		2DAD391B4253C73F5BFE5F36BD0FD8A8 /* Khalti.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = Khalti.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		2E22CD7F985E8B110703915A2EBDB7DB /* Khalti.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Khalti.modulemap; sourceTree = "<group>"; };
 		328853FB7A45D007050F845B127F2584 /* IQKeyboardManagerConstantsInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardManagerConstantsInternal.h; path = IQKeyboardManager/Constants/IQKeyboardManagerConstantsInternal.h; sourceTree = "<group>"; };
+		3439DF92F8CBE23755A151729791011C /* KhaltiPayDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KhaltiPayDelegate.swift; path = Khalti/Classes/KhaltiPayDelegate.swift; sourceTree = "<group>"; };
+		35DA5D2E11F55072A194DF09F1800DE5 /* Khalti.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = Khalti.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		36A3686372A00E4108601F98FB391949 /* IQUIScrollView+Additions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIScrollView+Additions.m"; path = "IQKeyboardManager/Categories/IQUIScrollView+Additions.m"; sourceTree = "<group>"; };
 		373AC1E345C1810CA51FE559BB170525 /* IQKeyboardManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManager-umbrella.h"; sourceTree = "<group>"; };
 		3790C5C53BF36E5DC9126C83888F7C95 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37C473026796F8AFAA2ECD5A761494CE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		38704F531E00846B68CCE8DF3BB1D6A2 /* ResourceBundle-Khalti-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Khalti-Info.plist"; sourceTree = "<group>"; };
+		3BD4B4DA5C63D9AF5284E699AE9C41B2 /* CheckOut.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = CheckOut.storyboard; path = Khalti/Assets/CheckOut.storyboard; sourceTree = "<group>"; };
 		3F51876D791D30CD209AD4183E3F8A7F /* IQBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQBarButtonItem.h; path = IQKeyboardManager/IQToolbar/IQBarButtonItem.h; sourceTree = "<group>"; };
-		463B0271B941E8219BAD320423A40686 /* BankingPopViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BankingPopViewController.swift; sourceTree = "<group>"; };
+		42966CADBF1B739206F5B962DA20C274 /* ErrorAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ErrorAction.swift; path = Khalti/Classes/ErrorAction.swift; sourceTree = "<group>"; };
+		45E0CDAEFD4CEAB0C1152CE4C36CCE20 /* images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = images.xcassets; path = Khalti/Assets/images.xcassets; sourceTree = "<group>"; };
 		46777FDC9E03B2786DD8FDF64FFDD23D /* Pods-Khalti_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Khalti_Tests-dummy.m"; sourceTree = "<group>"; };
-		478A1869608FD4433F8A246D1E3EA820 /* Khalti.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Khalti.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		472DD01B4A0B92CDE8752AEDE9FEB641 /* KhaltiPaymentViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KhaltiPaymentViewController.swift; sourceTree = "<group>"; };
+		478A1869608FD4433F8A246D1E3EA820 /* Khalti.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Khalti.bundle; path = "Khalti-Khalti.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4983A1FDC0D5E5974AEACEDBA97CB1C5 /* Pods-Khalti_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Khalti_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		4B8116691B4E9FA110B0465A3FF1F140 /* List.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = List.swift; path = Khalti/Classes/List.swift; sourceTree = "<group>"; };
-		5BA5706E29BC5CE459B71104A29BCF31 /* ErrorAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ErrorAction.swift; path = Khalti/Classes/ErrorAction.swift; sourceTree = "<group>"; };
-		5EA1468AB0099C0BFC45A23DC2B1BA40 /* CheckOut.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = CheckOut.storyboard; path = Khalti/Assets/CheckOut.storyboard; sourceTree = "<group>"; };
-		60CEDF4E95A68DE11E125114DBD7F1CF /* KhaltiPayment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KhaltiPayment.swift; sourceTree = "<group>"; };
 		61EC4234029D588DE3A764DAC9082D27 /* IQKeyboardReturnKeyHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQKeyboardReturnKeyHandler.m; path = IQKeyboardManager/IQKeyboardReturnKeyHandler.m; sourceTree = "<group>"; };
 		61F279F839B8FE5F12074DC4D653E9CC /* Pods-Khalti_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Khalti_Tests.modulemap"; sourceTree = "<group>"; };
+		650E819B5EB9311C300F5E3121357B16 /* Khalti-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Khalti-umbrella.h"; sourceTree = "<group>"; };
+		653A2127078074FB54641DF2F236E21D /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Config.swift; path = Khalti/Classes/Config.swift; sourceTree = "<group>"; };
 		666B09C94E6B33BAFB522027BE5D3ADB /* IQPreviousNextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQPreviousNextView.m; path = IQKeyboardManager/IQToolbar/IQPreviousNextView.m; sourceTree = "<group>"; };
-		66F9D8A9A4A3C61CB624B9041BE1BF30 /* Khalti-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Khalti-prefix.pch"; sourceTree = "<group>"; };
-		68232DC96F5C0F862FAA6C149C361E62 /* BankingPop.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BankingPop.swift; sourceTree = "<group>"; };
-		69B2A72337D4F8DCA8BB62C4E5C8FB64 /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Config.swift; path = Khalti/Classes/Config.swift; sourceTree = "<group>"; };
 		6A762609023FEC595D8761DFABD034B3 /* Pods-Khalti_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Khalti_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		6DF4150752CB6A50AC8A8117335CC059 /* Pods_Khalti_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Khalti_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E9574553BA9AC23D84DAACFB6DD1E83 /* IQKeyboardManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IQKeyboardManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6FC63AB5B723C733A9277AC164C995E1 /* Pods_Khalti_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Khalti_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DF4150752CB6A50AC8A8117335CC059 /* Pods_Khalti_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Khalti_Example.framework; path = "Pods-Khalti_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E9574553BA9AC23D84DAACFB6DD1E83 /* IQKeyboardManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IQKeyboardManager.framework; path = IQKeyboardManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FC63AB5B723C733A9277AC164C995E1 /* Pods_Khalti_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Khalti_Tests.framework; path = "Pods-Khalti_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FF21EE6BF20BABBADCC43D42A603A7D /* IQNSArray+Sort.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQNSArray+Sort.m"; path = "IQKeyboardManager/Categories/IQNSArray+Sort.m"; sourceTree = "<group>"; };
-		7324419EDDCFBA946C63DFBB94CB82F0 /* KhaltiPaymentViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KhaltiPaymentViewController.swift; sourceTree = "<group>"; };
 		7342E6D61C5FA911A8B58E8BADE06BAA /* IQBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQBarButtonItem.m; path = IQKeyboardManager/IQToolbar/IQBarButtonItem.m; sourceTree = "<group>"; };
 		755CBE70B31E70191C9796D878A85297 /* IQTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQTextView.m; path = IQKeyboardManager/IQTextView/IQTextView.m; sourceTree = "<group>"; };
-		7B94B197153F10F4B2E6F913ED0EC794 /* ResourceBundle-Khalti-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Khalti-Info.plist"; sourceTree = "<group>"; };
 		7BC898D5CD6464BFFB6C484FD827B739 /* IQUIView+Hierarchy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIView+Hierarchy.m"; path = "IQKeyboardManager/Categories/IQUIView+Hierarchy.m"; sourceTree = "<group>"; };
+		801BB00122CF5F4167EF847F75CB5D3E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		861BCD1B7519CAECE261202152D0E700 /* IQNSArray+Sort.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQNSArray+Sort.h"; path = "IQKeyboardManager/Categories/IQNSArray+Sort.h"; sourceTree = "<group>"; };
-		86F8A82D1405A412CBF9219CFA5D8ADF /* Khalti.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Khalti.xcconfig; sourceTree = "<group>"; };
 		8760A629D307F77698B85866FEF5B481 /* IQUIView+Hierarchy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIView+Hierarchy.h"; path = "IQKeyboardManager/Categories/IQUIView+Hierarchy.h"; sourceTree = "<group>"; };
 		88B33C4CBF03F52121EF413AF2C93347 /* Pods-Khalti_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Khalti_Example-frameworks.sh"; sourceTree = "<group>"; };
 		8B3B8E50B9CE3DDEE5013ABE290430DC /* Pods-Khalti_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Khalti_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8B65B06D96E47CC71394C3D9B63659EA /* ListCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		8C502DEA31C8CA0752345EA91807D088 /* Pods-Khalti_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Khalti_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9092B0B9960013643A36ACF7387A2A30 /* Pods-Khalti_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Khalti_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		90E733DC9EB515FE03AB569375F2843B /* IQTitleBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQTitleBarButtonItem.h; path = IQKeyboardManager/IQToolbar/IQTitleBarButtonItem.h; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		94CB1F9A6D113A3144DC4AB63D660AE6 /* Ebanking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Ebanking.swift; sourceTree = "<group>"; };
-		9D9450897C9A65C6A569B79DE94E15EC /* Khalti-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Khalti-umbrella.h"; sourceTree = "<group>"; };
-		A6494CF545C0638152A1F72E30FAEE8E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9AA3D293A603AB7A1F47A453A415CB17 /* List.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = List.swift; path = Khalti/Classes/List.swift; sourceTree = "<group>"; };
+		9E0B2CC7F596109E657E4C93E5ECDC51 /* CheckOutViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CheckOutViewController.swift; path = Khalti/Classes/CheckOutViewController.swift; sourceTree = "<group>"; };
+		A48AC683E6069D13A845007A60FBF912 /* Khalti.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Khalti.modulemap; sourceTree = "<group>"; };
+		A74EFB9F84D2DB50852C081CBF2F63D2 /* Khalti-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Khalti-dummy.m"; sourceTree = "<group>"; };
 		ADD19F351401958A5DBAAA341588BE05 /* IQKeyboardManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManager.xcconfig; sourceTree = "<group>"; };
-		B03B2DC0A6DD3EC0584F3BD5A5133048 /* ListCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		B3CE95A9B11DCFD78DC8FD72E8A402F7 /* IQUIViewController+Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIViewController+Additions.h"; path = "IQKeyboardManager/Categories/IQUIViewController+Additions.h"; sourceTree = "<group>"; };
-		B538B8B3CAB2E1D321DB67621214C736 /* KaltiApi.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaltiApi.swift; path = Khalti/Classes/KaltiApi.swift; sourceTree = "<group>"; };
 		B65E433A68C225D6FF6B2CE970853F1D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		B6DCA64298D89F328E3C527FC7BE7E48 /* IQKeyboardReturnKeyHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardReturnKeyHandler.h; path = IQKeyboardManager/IQKeyboardReturnKeyHandler.h; sourceTree = "<group>"; };
+		B73FFBFDC964AACA552E979D0AA1DB9D /* Ebanking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Ebanking.swift; sourceTree = "<group>"; };
 		BC45EB15EC15D0CCE7353B66AE975C66 /* IQKeyboardManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardManager.h; path = IQKeyboardManager/IQKeyboardManager.h; sourceTree = "<group>"; };
 		BCDF3664C74E9FF5F2030A58955D8E64 /* Pods-Khalti_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Khalti_Example-resources.sh"; sourceTree = "<group>"; };
 		BD5CB1651B92C8C21380ACF30D32A33F /* IQUITextFieldView+Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUITextFieldView+Additions.h"; path = "IQKeyboardManager/Categories/IQUITextFieldView+Additions.h"; sourceTree = "<group>"; };
 		C3C7936243FF65D2FC44902E6DEDC1FB /* IQUIViewController+Additions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIViewController+Additions.m"; path = "IQKeyboardManager/Categories/IQUIViewController+Additions.m"; sourceTree = "<group>"; };
+		C66D3F99E77BA93E73E45BA1B838EF21 /* Khalti.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Khalti.swift; path = Khalti/Classes/Khalti.swift; sourceTree = "<group>"; };
 		C79F21A9B627F428D9FBBF486C1CEF8D /* IQKeyboardManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IQKeyboardManager.modulemap; sourceTree = "<group>"; };
-		CDC0A0BFC080C13656CEB83A59F77D25 /* KhaltiPayDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KhaltiPayDelegate.swift; path = Khalti/Classes/KhaltiPayDelegate.swift; sourceTree = "<group>"; };
+		CFB6FE1DE1214A2F0F5EEC228CAE49C6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		D076CE089B31A5C8189626A84AD48EF8 /* Pods-Khalti_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Khalti_Tests-resources.sh"; sourceTree = "<group>"; };
 		D3387D624058616DCC958355A5A822B2 /* Pods-Khalti_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Khalti_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		D33F15A71479F02C6CAF5B624ED0FC5D /* EbankingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EbankingViewController.swift; sourceTree = "<group>"; };
 		D56348597C0DD615177C5C15A774BCF2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D7BEA065D3084C087A767E75EAD306B5 /* Khalti.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Khalti.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7358D6035CDFA4EAB44E02C6EA54DA2 /* BankingPopViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BankingPopViewController.swift; sourceTree = "<group>"; };
+		D7BEA065D3084C087A767E75EAD306B5 /* Khalti.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Khalti.framework; path = Khalti.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD62546AD2BDC266B419E9BF5CB32898 /* IQPreviousNextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQPreviousNextView.h; path = IQKeyboardManager/IQToolbar/IQPreviousNextView.h; sourceTree = "<group>"; };
 		E241B68233086E75B4E7081F8C8B4B5C /* Pods-Khalti_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Khalti_Example.modulemap"; sourceTree = "<group>"; };
 		E3B8D41D836730CE3C3DDA98047D8110 /* Pods-Khalti_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Khalti_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E5E6965E52156F7A9A1D09FE6B8B3ADC /* IQToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQToolbar.h; path = IQKeyboardManager/IQToolbar/IQToolbar.h; sourceTree = "<group>"; };
 		E6B5E70A2A0A94956ACE9271AD6D7015 /* Pods-Khalti_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Khalti_Example-umbrella.h"; sourceTree = "<group>"; };
+		E72A53583A6924D0DE98D327B59ADA30 /* KhaltiPayment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KhaltiPayment.swift; sourceTree = "<group>"; };
 		E7409D2B31B6023C5A0EB172F2626172 /* IQUIView+IQKeyboardToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIView+IQKeyboardToolbar.h"; path = "IQKeyboardManager/IQToolbar/IQUIView+IQKeyboardToolbar.h"; sourceTree = "<group>"; };
-		E77A68E846D96198A05B2FF13E086425 /* EbankingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EbankingViewController.swift; sourceTree = "<group>"; };
 		E89163E94743FDDD60913C47150E225B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		E9FABA630FD313987449B9F4537D06AA /* IQToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQToolbar.m; path = IQKeyboardManager/IQToolbar/IQToolbar.m; sourceTree = "<group>"; };
 		F11CFDC29096027FAE24748300C6908C /* IQUITextFieldView+Additions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUITextFieldView+Additions.m"; path = "IQKeyboardManager/Categories/IQUITextFieldView+Additions.m"; sourceTree = "<group>"; };
 		F29060BEED8778F2E4D2437E2EEDC4F9 /* IQTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQTextView.h; path = IQKeyboardManager/IQTextView/IQTextView.h; sourceTree = "<group>"; };
-		F4AB8B7DCF0543D49E4016E3F296A281 /* Khalti.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Khalti.swift; path = Khalti/Classes/Khalti.swift; sourceTree = "<group>"; };
 		F524955B676323532C56D0A08FDB7C5C /* IQKeyboardManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManager-prefix.pch"; sourceTree = "<group>"; };
 		F5DC4F7FCC2BAF87B0A66AFCCFC8291D /* IQTitleBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQTitleBarButtonItem.m; path = IQKeyboardManager/IQToolbar/IQTitleBarButtonItem.m; sourceTree = "<group>"; };
-		F80155843CCA56AA0385A4AB7112A485 /* CheckOutViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CheckOutViewController.swift; path = Khalti/Classes/CheckOutViewController.swift; sourceTree = "<group>"; };
+		F6AEEF593C3D5B2AE9BB422D3AF26AEB /* Khalti-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Khalti-prefix.pch"; sourceTree = "<group>"; };
 		F852F39B0468A60DA38393E2F0B923E7 /* Pods-Khalti_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Khalti_Tests-umbrella.h"; sourceTree = "<group>"; };
-		FE97FB315BC434F73E361DB04AC87C32 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5B8318A51457FF658ACF121DC22A3E48 /* Frameworks */ = {
+		57C35E30F3EE9280E227ECAC6491A492 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D197B8A234B6DDE56E1DAC2B64A3DBF0 /* Foundation.framework in Frameworks */,
+				BA5AA615F74A4B890A546BA34FDE1023 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,12 +217,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B29501C7F8F559937A92D275F5B73929 /* Frameworks */ = {
+		EA439453FB1955AADEE2D29C136913FD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE3B4B9D50437B913A48B2A8F35C2FB4 /* Foundation.framework in Frameworks */,
-				0BB01995E79A4C90AA51D40ADE5A99E8 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,13 +269,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		0A9BF9ADED449EC038AB7192D1DF4777 /* Resources */ = {
+		0D8EE21C6F7E759AAE10FB642EA04B04 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				5EA1468AB0099C0BFC45A23DC2B1BA40 /* CheckOut.storyboard */,
-				20EB28F51AAEEAFFAD84455442A48715 /* images.xcassets */,
+				35DA5D2E11F55072A194DF09F1800DE5 /* Khalti.podspec */,
+				00E693C855AFB9D80CA963CCC4D30070 /* LICENSE */,
+				CFB6FE1DE1214A2F0F5EEC228CAE49C6 /* README.md */,
 			);
-			name = Resources;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
@@ -284,25 +285,6 @@
 				53C8B4AB97860F06FE722851EA867B18 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2154F79DCDB1071032FEBF613B0A84E5 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				2DAD391B4253C73F5BFE5F36BD0FD8A8 /* Khalti.podspec */,
-				FE97FB315BC434F73E361DB04AC87C32 /* LICENSE */,
-				1CC761A22DF3D45DBE20A31788E9DEEB /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		2BE24CBC7451E43A58BAFDC2BEEAEBB9 /* KhaltiPayment */ = {
-			isa = PBXGroup;
-			children = (
-				60CEDF4E95A68DE11E125114DBD7F1CF /* KhaltiPayment.swift */,
-				7324419EDDCFBA946C63DFBB94CB82F0 /* KhaltiPaymentViewController.swift */,
-			);
-			path = KhaltiPayment;
 			sourceTree = "<group>";
 		};
 		32416B18F511461BC2CCCEB1B52D4129 /* Products */ = {
@@ -317,23 +299,26 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3466E8EB70A04996F7375149BB012011 /* Khalti */ = {
+		3FA66DCE8FD3E6D74FD6A43237A2B6E9 /* Pay Options */ = {
 			isa = PBXGroup;
 			children = (
-				F80155843CCA56AA0385A4AB7112A485 /* CheckOutViewController.swift */,
-				69B2A72337D4F8DCA8BB62C4E5C8FB64 /* Config.swift */,
-				5BA5706E29BC5CE459B71104A29BCF31 /* ErrorAction.swift */,
-				B538B8B3CAB2E1D321DB67621214C736 /* KaltiApi.swift */,
-				F4AB8B7DCF0543D49E4016E3F296A281 /* Khalti.swift */,
-				CDC0A0BFC080C13656CEB83A59F77D25 /* KhaltiPayDelegate.swift */,
-				4B8116691B4E9FA110B0465A3FF1F140 /* List.swift */,
-				FA38B258BDE8C176BF832E8020B068C6 /* Pay Options */,
-				2154F79DCDB1071032FEBF613B0A84E5 /* Pod */,
-				0A9BF9ADED449EC038AB7192D1DF4777 /* Resources */,
-				C5F6FD31FF19A9FA3E22279298DD39DD /* Support Files */,
+				1CC821AC8AE7CF45A81CF1684D3CB692 /* BankingPop.swift */,
+				D7358D6035CDFA4EAB44E02C6EA54DA2 /* BankingPopViewController.swift */,
+				BBE3D46FFA5EAF6A60D833860369FD8D /* Ebanking */,
+				40901E5874BEF87A6C31FA47E5511AB3 /* KhaltiPayment */,
 			);
-			name = Khalti;
-			path = ../..;
+			name = "Pay Options";
+			path = "Khalti/Classes/Pay Options";
+			sourceTree = "<group>";
+		};
+		40901E5874BEF87A6C31FA47E5511AB3 /* KhaltiPayment */ = {
+			isa = PBXGroup;
+			children = (
+				E72A53583A6924D0DE98D327B59ADA30 /* KhaltiPayment.swift */,
+				472DD01B4A0B92CDE8752AEDE9FEB641 /* KhaltiPaymentViewController.swift */,
+			);
+			name = KhaltiPayment;
+			path = KhaltiPayment;
 			sourceTree = "<group>";
 		};
 		53C8B4AB97860F06FE722851EA867B18 /* iOS */ = {
@@ -373,10 +358,10 @@
 			path = "Target Support Files/Pods-Khalti_Tests";
 			sourceTree = "<group>";
 		};
-		60AFDBAB1609073E9D894437CF203878 /* Development Pods */ = {
+		641C69446631D1A420CBBCFE1C2F8A10 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3466E8EB70A04996F7375149BB012011 /* Khalti */,
+				F2E6161AEA627601932BB2262E26AAC8 /* Khalti */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -385,7 +370,7 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				60AFDBAB1609073E9D894437CF203878 /* Development Pods */,
+				641C69446631D1A420CBBCFE1C2F8A10 /* Development Pods */,
 				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
 				062CC768B06593B5D721AB1F42B8479E /* Pods */,
 				32416B18F511461BC2CCCEB1B52D4129 /* Products */,
@@ -393,19 +378,24 @@
 			);
 			sourceTree = "<group>";
 		};
-		C5F6FD31FF19A9FA3E22279298DD39DD /* Support Files */ = {
+		8C83AF890D395F93C813E577933201B5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A6494CF545C0638152A1F72E30FAEE8E /* Info.plist */,
-				2E22CD7F985E8B110703915A2EBDB7DB /* Khalti.modulemap */,
-				86F8A82D1405A412CBF9219CFA5D8ADF /* Khalti.xcconfig */,
-				1264C35C013A56EFA6A50BF75FB86362 /* Khalti-dummy.m */,
-				66F9D8A9A4A3C61CB624B9041BE1BF30 /* Khalti-prefix.pch */,
-				9D9450897C9A65C6A569B79DE94E15EC /* Khalti-umbrella.h */,
-				7B94B197153F10F4B2E6F913ED0EC794 /* ResourceBundle-Khalti-Info.plist */,
+				3BD4B4DA5C63D9AF5284E699AE9C41B2 /* CheckOut.storyboard */,
+				45E0CDAEFD4CEAB0C1152CE4C36CCE20 /* images.xcassets */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Khalti";
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BBE3D46FFA5EAF6A60D833860369FD8D /* Ebanking */ = {
+			isa = PBXGroup;
+			children = (
+				B73FFBFDC964AACA552E979D0AA1DB9D /* Ebanking.swift */,
+				D33F15A71479F02C6CAF5B624ED0FC5D /* EbankingViewController.swift */,
+				8B65B06D96E47CC71394C3D9B63659EA /* ListCell.swift */,
+			);
+			name = Ebanking;
+			path = Ebanking;
 			sourceTree = "<group>";
 		};
 		DBCBCCE13A6A4DFA7A8646891F0C08AB /* Support Files */ = {
@@ -420,16 +410,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/IQKeyboardManager";
-			sourceTree = "<group>";
-		};
-		DBCBD7B4064FCD50633FE45FBF552E59 /* Ebanking */ = {
-			isa = PBXGroup;
-			children = (
-				94CB1F9A6D113A3144DC4AB63D660AE6 /* Ebanking.swift */,
-				E77A68E846D96198A05B2FF13E086425 /* EbankingViewController.swift */,
-				B03B2DC0A6DD3EC0584F3BD5A5133048 /* ListCell.swift */,
-			);
-			path = Ebanking;
 			sourceTree = "<group>";
 		};
 		DCA65D9B3B9F22D18156605600A68A5F /* IQKeyboardManager */ = {
@@ -466,6 +446,7 @@
 				542CA6DDB2055226CB960DB40373941B /* Resources */,
 				DBCBCCE13A6A4DFA7A8646891F0C08AB /* Support Files */,
 			);
+			name = IQKeyboardManager;
 			path = IQKeyboardManager;
 			sourceTree = "<group>";
 		};
@@ -478,16 +459,38 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		FA38B258BDE8C176BF832E8020B068C6 /* Pay Options */ = {
+		F2E6161AEA627601932BB2262E26AAC8 /* Khalti */ = {
 			isa = PBXGroup;
 			children = (
-				68232DC96F5C0F862FAA6C149C361E62 /* BankingPop.swift */,
-				463B0271B941E8219BAD320423A40686 /* BankingPopViewController.swift */,
-				DBCBD7B4064FCD50633FE45FBF552E59 /* Ebanking */,
-				2BE24CBC7451E43A58BAFDC2BEEAEBB9 /* KhaltiPayment */,
+				9E0B2CC7F596109E657E4C93E5ECDC51 /* CheckOutViewController.swift */,
+				653A2127078074FB54641DF2F236E21D /* Config.swift */,
+				42966CADBF1B739206F5B962DA20C274 /* ErrorAction.swift */,
+				06B319546AF9AA3B114F3C8DD8846594 /* KaltiApi.swift */,
+				C66D3F99E77BA93E73E45BA1B838EF21 /* Khalti.swift */,
+				3439DF92F8CBE23755A151729791011C /* KhaltiPayDelegate.swift */,
+				9AA3D293A603AB7A1F47A453A415CB17 /* List.swift */,
+				3FA66DCE8FD3E6D74FD6A43237A2B6E9 /* Pay Options */,
+				0D8EE21C6F7E759AAE10FB642EA04B04 /* Pod */,
+				8C83AF890D395F93C813E577933201B5 /* Resources */,
+				F55A1CB5FA40E85FBBA4327392D597D3 /* Support Files */,
 			);
-			name = "Pay Options";
-			path = "Khalti/Classes/Pay Options";
+			name = Khalti;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		F55A1CB5FA40E85FBBA4327392D597D3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				801BB00122CF5F4167EF847F75CB5D3E /* Info.plist */,
+				A48AC683E6069D13A845007A60FBF912 /* Khalti.modulemap */,
+				1210261011CA6C6DC5A6CD621B8C4EF8 /* Khalti.xcconfig */,
+				A74EFB9F84D2DB50852C081CBF2F63D2 /* Khalti-dummy.m */,
+				F6AEEF593C3D5B2AE9BB422D3AF26AEB /* Khalti-prefix.pch */,
+				650E819B5EB9311C300F5E3121357B16 /* Khalti-umbrella.h */,
+				38704F531E00846B68CCE8DF3BB1D6A2 /* ResourceBundle-Khalti-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Khalti";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -516,11 +519,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		62C44418B6953E38101AD101D6AB2FB6 /* Headers */ = {
+		660D368C7DA6DE0C894F3BD3367D299D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A97FA578361454972413BE5A84F214C /* Khalti-umbrella.h in Headers */,
+				7A4B5D0DBA4D09C15C25444D828DEFCA /* Khalti-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,25 +546,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3A264DA26F95516EEB61A44CE94E3C3A /* Khalti */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5F8FB77FD31E405A0686FD4A780B849C /* Build configuration list for PBXNativeTarget "Khalti" */;
-			buildPhases = (
-				1D8C4EDB6688DFB63CF7E7A6A069A6C5 /* Sources */,
-				B29501C7F8F559937A92D275F5B73929 /* Frameworks */,
-				EF6E685438A15E693D9472C660A9DE3F /* Resources */,
-				62C44418B6953E38101AD101D6AB2FB6 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BBC726BDE350DDDECCA31DCCFA132299 /* PBXTargetDependency */,
-			);
-			name = Khalti;
-			productName = Khalti;
-			productReference = D7BEA065D3084C087A767E75EAD306B5 /* Khalti.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		3D705DB217B51F98C71DD70BB5B64058 /* Pods-Khalti_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3413C6C482385D529B602C99E8B3E84C /* Build configuration list for PBXNativeTarget "Pods-Khalti_Tests" */;
@@ -579,6 +563,23 @@
 			productName = "Pods-Khalti_Tests";
 			productReference = 6FC63AB5B723C733A9277AC164C995E1 /* Pods_Khalti_Tests.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		4C45632F158E819CB8C9C9CF3588D4DC /* Khalti-Khalti */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C80A310E7451183518C702F83A48934 /* Build configuration list for PBXNativeTarget "Khalti-Khalti" */;
+			buildPhases = (
+				5B0641EC7232D9B83828F6864B5A29A9 /* Sources */,
+				EA439453FB1955AADEE2D29C136913FD /* Frameworks */,
+				5C68F529654AE4EBCB1E2170082AA88F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Khalti-Khalti";
+			productName = "Khalti-Khalti";
+			productReference = 478A1869608FD4433F8A246D1E3EA820 /* Khalti.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 		64BB75CF06AB287FCC1ED7DA48A8CC56 /* Pods-Khalti_Example */ = {
 			isa = PBXNativeTarget;
@@ -599,22 +600,24 @@
 			productReference = 6DF4150752CB6A50AC8A8117335CC059 /* Pods_Khalti_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		94369BF5449150EA670E4229280C4985 /* Khalti-Khalti */ = {
+		D10317FDDC88F696EDC00138503B1D69 /* Khalti */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 88D7C13BF015F7AC35CA7D5BDD49A88D /* Build configuration list for PBXNativeTarget "Khalti-Khalti" */;
+			buildConfigurationList = 84067E8E827F8A78F8DEBD390B910019 /* Build configuration list for PBXNativeTarget "Khalti" */;
 			buildPhases = (
-				7B1AE971DC7AEFC8F53DA210E71EB8B8 /* Sources */,
-				5B8318A51457FF658ACF121DC22A3E48 /* Frameworks */,
-				77B25FC32FBC18DADE222862BFD17C5B /* Resources */,
+				2D3F08CC8A900E72490D28F054E5F894 /* Sources */,
+				57C35E30F3EE9280E227ECAC6491A492 /* Frameworks */,
+				D9F6C6F2458C1494D2B9CFE73BE11935 /* Resources */,
+				660D368C7DA6DE0C894F3BD3367D299D /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				ABB3D3B9A784D8C273FC0CAEC3F02FFB /* PBXTargetDependency */,
 			);
-			name = "Khalti-Khalti";
-			productName = "Khalti-Khalti";
-			productReference = 478A1869608FD4433F8A246D1E3EA820 /* Khalti.bundle */;
-			productType = "com.apple.product-type.bundle";
+			name = Khalti;
+			productName = Khalti;
+			productReference = D7BEA065D3084C087A767E75EAD306B5 /* Khalti.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		D55833EC3DE9EBD9B329CAEB983D5A9D /* IQKeyboardManager */ = {
 			isa = PBXNativeTarget;
@@ -642,11 +645,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
-				TargetAttributes = {
-					94369BF5449150EA670E4229280C4985 = {
-						DevelopmentTeam = HW5PK5B369;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -661,8 +659,8 @@
 			projectRoot = "";
 			targets = (
 				D55833EC3DE9EBD9B329CAEB983D5A9D /* IQKeyboardManager */,
-				3A264DA26F95516EEB61A44CE94E3C3A /* Khalti */,
-				94369BF5449150EA670E4229280C4985 /* Khalti-Khalti */,
+				D10317FDDC88F696EDC00138503B1D69 /* Khalti */,
+				4C45632F158E819CB8C9C9CF3588D4DC /* Khalti-Khalti */,
 				64BB75CF06AB287FCC1ED7DA48A8CC56 /* Pods-Khalti_Example */,
 				3D705DB217B51F98C71DD70BB5B64058 /* Pods-Khalti_Tests */,
 			);
@@ -678,45 +676,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		77B25FC32FBC18DADE222862BFD17C5B /* Resources */ = {
+		5C68F529654AE4EBCB1E2170082AA88F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC3B02C2917E5F1A7F6B41ECAF82BB7F /* CheckOut.storyboard in Resources */,
-				04778AE4B77AF7580EBFE661EC61EC69 /* images.xcassets in Resources */,
+				46D1C167AAE551E4551FAFC7CE555D54 /* CheckOut.storyboard in Resources */,
+				15B01E95C25153E02D2CD2D56848BB48 /* images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EF6E685438A15E693D9472C660A9DE3F /* Resources */ = {
+		D9F6C6F2458C1494D2B9CFE73BE11935 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97281BFD6C024557578D47CB7CFF2B99 /* Khalti.bundle in Resources */,
+				3CB4F1ABBB50C1A12138C699613AFF74 /* Khalti.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1D8C4EDB6688DFB63CF7E7A6A069A6C5 /* Sources */ = {
+		2D3F08CC8A900E72490D28F054E5F894 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77FB41376FFEC223B3A89C5483FF82EC /* BankingPop.swift in Sources */,
-				0580678F1329D12CAA30A47A7C8EE038 /* BankingPopViewController.swift in Sources */,
-				294460423B9ADA93C7D434AA6253A447 /* CheckOutViewController.swift in Sources */,
-				B9F79F8B00689F6DDACD02FDFF0DD90D /* Config.swift in Sources */,
-				5ED89F14AF1E4F3AF73ECE7246D92C7E /* Ebanking.swift in Sources */,
-				847B0BEA41FE53588723BAAC56327E45 /* EbankingViewController.swift in Sources */,
-				210917D5AB250811CEC5966639FB59DF /* ErrorAction.swift in Sources */,
-				24ECF6E350BCB2C92A62121DFF54BE3A /* KaltiApi.swift in Sources */,
-				9B2E7227FAF7F0E63BE93099BFEEA50F /* Khalti-dummy.m in Sources */,
-				BE2D115618AB38F6428EAA72B6246433 /* Khalti.swift in Sources */,
-				8C9B7D6E07773C2A8803B31FD16DC1E3 /* KhaltiPayDelegate.swift in Sources */,
-				569DA5B8F59F5917695E3FE15DE957B7 /* KhaltiPayment.swift in Sources */,
-				6D8F54A2698639FCAA2622281208FED5 /* KhaltiPaymentViewController.swift in Sources */,
-				4A49435CFB7B65F865698445852D4240 /* List.swift in Sources */,
-				9AF9C0BD58F3B5FF635A6BB74EBEC89F /* ListCell.swift in Sources */,
+				097BDC30ED8BEE1976A78978A18187CE /* BankingPop.swift in Sources */,
+				59FD270EB5FD025F9BBD6A2E56D97C42 /* BankingPopViewController.swift in Sources */,
+				68E783801317D7C501767623C17492E9 /* CheckOutViewController.swift in Sources */,
+				E5199A8BD4AEE5B07F31A5D726466AAA /* Config.swift in Sources */,
+				483DE9DE0832BECE2AF5AA450443FC35 /* Ebanking.swift in Sources */,
+				C750E7C55570AAB4C1CC05ED09B287B8 /* EbankingViewController.swift in Sources */,
+				3DA3A3D18CE3247C79D330DD501FC3B0 /* ErrorAction.swift in Sources */,
+				BB9E6CA2B3C223D9DE66C81D023944C3 /* KaltiApi.swift in Sources */,
+				311980FF718CBD15EF7EC916BFB96906 /* Khalti-dummy.m in Sources */,
+				20EA3D335651972C34843631389862C6 /* Khalti.swift in Sources */,
+				7AEA6896F609AB8ADAAD9375048323A4 /* KhaltiPayDelegate.swift in Sources */,
+				DB8D3F638F5626FACABB2F847047325D /* KhaltiPayment.swift in Sources */,
+				D198671949979317A8547DDE9E4C265B /* KhaltiPaymentViewController.swift in Sources */,
+				8A9EDC6CED3BF77C9FC22A400C4FE536 /* List.swift in Sources */,
+				BC2AE758B98DD40A79D6DA8F9F7075B7 /* ListCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B0641EC7232D9B83828F6864B5A29A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -725,13 +730,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EB11A181898418829743F59AA3C9778 /* Pods-Khalti_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B1AE971DC7AEFC8F53DA210E71EB8B8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -767,16 +765,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BBC726BDE350DDDECCA31DCCFA132299 /* PBXTargetDependency */ = {
+		ABB3D3B9A784D8C273FC0CAEC3F02FFB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Khalti-Khalti";
-			target = 94369BF5449150EA670E4229280C4985 /* Khalti-Khalti */;
-			targetProxy = 7CAA92E78A530967E627F57FBB654471 /* PBXContainerItemProxy */;
+			target = 4C45632F158E819CB8C9C9CF3588D4DC /* Khalti-Khalti */;
+			targetProxy = 0C282F668A648ACC50D7F8008E533F0F /* PBXContainerItemProxy */;
 		};
 		DFB8ACB2FE53022E68059C667E7E5E7A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Khalti;
-			target = 3A264DA26F95516EEB61A44CE94E3C3A /* Khalti */;
+			target = D10317FDDC88F696EDC00138503B1D69 /* Khalti */;
 			targetProxy = D771693A8126A094EF4AE7FFEE67D7F3 /* PBXContainerItemProxy */;
 		};
 		E16CED6092A756EEF689EB9AA4B8B174 /* PBXTargetDependency */ = {
@@ -857,6 +855,39 @@
 			};
 			name = Debug;
 		};
+		1D42BB8BC3505651422827C5E722CA43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1210261011CA6C6DC5A6CD621B8C4EF8 /* Khalti.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Khalti/Khalti-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Khalti/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Khalti/Khalti.modulemap";
+				PRODUCT_MODULE_NAME = Khalti;
+				PRODUCT_NAME = Khalti;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		1DBF1DFEB97C68FC2AF2F6E43C5EC8F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9092B0B9960013643A36ACF7387A2A30 /* Pods-Khalti_Tests.debug.xcconfig */;
@@ -889,23 +920,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		2D61B2251F916238DCB4A9005C9A528B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86F8A82D1405A412CBF9219CFA5D8ADF /* Khalti.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Khalti";
-				DEVELOPMENT_TEAM = HW5PK5B369;
-				INFOPLIST_FILE = "Target Support Files/Khalti/ResourceBundle-Khalti-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = Khalti;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
 		};
 		3F44D9E6E2DB8B8E3E105A0EFD3193F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -941,39 +955,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		496D9459E997577FA8B988A1CFFA56D2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86F8A82D1405A412CBF9219CFA5D8ADF /* Khalti.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Khalti/Khalti-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Khalti/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Khalti/Khalti.modulemap";
-				PRODUCT_MODULE_NAME = Khalti;
-				PRODUCT_NAME = Khalti;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		6B2348FB347E058F9B32326787168D92 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1041,23 +1022,6 @@
 			};
 			name = Release;
 		};
-		A8A51B36F95A8ADDC5E1DA6B642640F8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86F8A82D1405A412CBF9219CFA5D8ADF /* Khalti.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Khalti";
-				DEVELOPMENT_TEAM = HW5PK5B369;
-				INFOPLIST_FILE = "Target Support Files/Khalti/ResourceBundle-Khalti-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = Khalti;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
 		C29F6CE377826EB4D722A49614E5C193 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6A762609023FEC595D8761DFABD034B3 /* Pods-Khalti_Tests.release.xcconfig */;
@@ -1124,9 +1088,9 @@
 			};
 			name = Release;
 		};
-		D30F424C39F11DA4CA13667BA2B8B828 /* Debug */ = {
+		D7E31510127F7700DFC7AC400C65413C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86F8A82D1405A412CBF9219CFA5D8ADF /* Khalti.xcconfig */;
+			baseConfigurationReference = 1210261011CA6C6DC5A6CD621B8C4EF8 /* Khalti.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1155,6 +1119,38 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		DD28E3ADD3D8989776A21AA5CF6957A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1210261011CA6C6DC5A6CD621B8C4EF8 /* Khalti.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Khalti";
+				INFOPLIST_FILE = "Target Support Files/Khalti/ResourceBundle-Khalti-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = Khalti;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		DD6C2EC483735FB689EED0C3CEBE93F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1210261011CA6C6DC5A6CD621B8C4EF8 /* Khalti.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Khalti";
+				INFOPLIST_FILE = "Target Support Files/Khalti/ResourceBundle-Khalti-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = Khalti;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
 		};
 		FDB2FC4A1E5891381CD9D922145497F1 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1244,11 +1240,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5F8FB77FD31E405A0686FD4A780B849C /* Build configuration list for PBXNativeTarget "Khalti" */ = {
+		4C80A310E7451183518C702F83A48934 /* Build configuration list for PBXNativeTarget "Khalti-Khalti" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D30F424C39F11DA4CA13667BA2B8B828 /* Debug */,
-				496D9459E997577FA8B988A1CFFA56D2 /* Release */,
+				DD28E3ADD3D8989776A21AA5CF6957A5 /* Debug */,
+				DD6C2EC483735FB689EED0C3CEBE93F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1262,11 +1258,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		88D7C13BF015F7AC35CA7D5BDD49A88D /* Build configuration list for PBXNativeTarget "Khalti-Khalti" */ = {
+		84067E8E827F8A78F8DEBD390B910019 /* Build configuration list for PBXNativeTarget "Khalti" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A8A51B36F95A8ADDC5E1DA6B642640F8 /* Debug */,
-				2D61B2251F916238DCB4A9005C9A528B /* Release */,
+				D7E31510127F7700DFC7AC400C65413C /* Debug */,
+				1D42BB8BC3505651422827C5E722CA43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
