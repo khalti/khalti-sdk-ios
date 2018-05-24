@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 @objc public class Config: NSObject {
     private var publicKey:String
     private var productId:String

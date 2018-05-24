@@ -29,7 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2F0C5E5C667F0019D102FE68 /* Khalti.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Khalti.podspec; path = ../Khalti.podspec; sourceTree = "<group>"; };
+		2F0C5E5C667F0019D102FE68 /* Khalti.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Khalti.podspec; path = ../Khalti.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		34B70C53D91DFACA0446B0A8 /* Pods_Khalti_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Khalti_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ECCC0E190291B77E7A325F4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Khalti_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Khalti_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
