@@ -25,7 +25,6 @@ class KhaltiPaymentViewController: UIViewController {
     @IBOutlet weak var fullPayView: UIView!
     @IBOutlet weak var payConfirmButton: UIButton!
     @IBOutlet weak var payInitiateButton: UIButton!
-    private var indicator:KhaltiIndicatorView!
     
     var activityIndicator: UIActivityIndicatorView!
     
