@@ -26,8 +26,8 @@ class KhaltiPaymentViewController: UIViewController {
     @IBOutlet weak var payConfirmButton: UIButton!
     @IBOutlet weak var payInitiateButton: UIButton!
     
-    var blurLoadingView: UIView!
-    var activityIndicator: UIActivityIndicatorView!
+    private var blurLoadingView: UIView!
+    private var activityIndicator: UIActivityIndicatorView!
     
     // MARK: - View Life Cycle
     override func viewDidLoad() {

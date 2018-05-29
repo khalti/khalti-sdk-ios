@@ -1,6 +1,6 @@
 PODS:
   - IQKeyboardManager (6.0.3)
-  - Khalti (1.0.3)
+  - Khalti (1.0.4)
 
 DEPENDENCIES:
   - IQKeyboardManager
@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   IQKeyboardManager: c390e612f4b98c8fd748016470138537dc163ead
-  Khalti: 487875fc20d7f3c728fbb264f45909c3cbf6a1cd
+  Khalti: 5aaa513f4e50b11a032d1a104282dac0b253e0be
 
 PODFILE CHECKSUM: 795152e7635da9ef6bca1ca1189334cab3948e3b
 
