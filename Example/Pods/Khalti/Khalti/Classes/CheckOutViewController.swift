@@ -30,9 +30,12 @@ class CheckOutViewController: UIViewController {
     @IBOutlet weak var firstLine: UIView!
     @IBOutlet weak var secondButton: UIButton!
     @IBOutlet weak var secondLine: UIView!
+    @IBOutlet weak var cardView:UIView!
     @IBOutlet weak var thirdButton: UIButton!
     @IBOutlet weak var thirdLine: UIView!
     @IBOutlet weak var containerView: UIView!
+    
+    @IBOutlet weak var optionsWidthConstraints: NSLayoutConstraint!
     
     var config:Config?
     var delegate:KhaltiPayDelegate?
@@ -67,6 +70,12 @@ class CheckOutViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.optionsWidthConstraints.constant = self.view.bounds.width/3
+        if let value = config?.getCardView() {
+            self.cardView.isHidden = !value
+            self.optionsWidthConstraints.constant = value ? self.view.bounds.width/3 : self.view.bounds.width/2
+        }
+        
         let tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
         tap.cancelsTouchesInView = false
         self.view.addGestureRecognizer(tap)
@@ -81,7 +90,7 @@ class CheckOutViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        guard let _ = config, let _ = delegate else {
+        guard let config = config, let _ = delegate else {
             let alertController = UIAlertController(title: "Missing Configuration", message: "Cannot process for payment.", preferredStyle: .alert)
             let okAction = UIAlertAction(title: "OK" , style: .default, handler: {_ in
                 self.dismiss(animated: true, completion: nil)
@@ -90,6 +99,10 @@ class CheckOutViewController: UIViewController {
             self.present(alertController, animated: true, completion: nil)
             return
         }
+        
+        self.cardView.isHidden = !config.getCardView()
+        self.optionsWidthConstraints.constant = config.getCardView() ? self.view.bounds.width/3 : self.view.bounds.width/2
+        
         
     }
     

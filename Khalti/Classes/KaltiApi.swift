@@ -140,7 +140,7 @@ enum ErrorMessage:String {
 class KhaltiAPI {
     
     static let shared = KhaltiAPI()
-    static let debug:Bool = false
+    static let debug:Bool = true
     
     func getBankList(banking: Bool = true, onCompletion: @escaping (([List])->()), onError: @escaping ((String)->())) {
         

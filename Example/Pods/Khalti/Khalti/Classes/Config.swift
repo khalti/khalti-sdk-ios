@@ -16,14 +16,16 @@ import Foundation
     private var productUrl:String?
     private var amount:Int
     private var additionalData:Dictionary<String,String>?
+    private var cardPayment:Bool = false
     
-    @objc public init(publicKey:String,  amount:Int, productId:String,productName:String, productUrl:String? = nil, additionalData:Dictionary<String,String>? = nil) {
+    @objc public init(publicKey:String,  amount:Int, productId:String,productName:String, productUrl:String? = nil, additionalData:Dictionary<String,String>? = nil, cardPayment: Bool = false) {
         self.publicKey = publicKey
         self.productId = productId
         self.productName = productName
         self.productUrl = productUrl
         self.amount = amount
         self.additionalData = additionalData
+        self.cardPayment = cardPayment
     }
     
     @objc public func getPublicKey() -> String {
@@ -44,6 +46,11 @@ import Foundation
     
     @objc public func getProductUrl() -> String? {
         return self.productUrl
+    }
+    
+    
+    @objc public func getCardView() -> Bool {
+        return self.cardPayment
     }
     
     @objc public func getAdditionalData() -> Dictionary<String,String>? {
