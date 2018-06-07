@@ -13,11 +13,9 @@ protocol BankingPopDelegate {
 }
 
 class BankingPopViewController: UIViewController {
-
     
     @IBOutlet weak var mobileTextField: UITextField!
     @IBOutlet weak var payButton: UIButton!
-    
     @IBOutlet weak var selectedBankButton: UIButton!
     @IBOutlet weak var selectedBankLabel: UILabel!
     
@@ -31,11 +29,6 @@ class BankingPopViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        let tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
-//        tap.cancelsTouchesInView = false
-//        self.view.addGestureRecognizer(tap)
-//        
-        
         if let name = self.bankName, let shortName = self.bankShortName {
             if name.count > 24 {
                 self.selectedBankLabel.text = shortName
@@ -48,18 +41,15 @@ class BankingPopViewController: UIViewController {
         image = UIImage(named: "khalti_small")
     }
     
-//    @objc func dismissKeyboard() {
-//        view.endEditing(true)
-//    }
-    
-    
     private func setImage(with url:String?) {
         if let imageUrl = url, let urll = URL(string: imageUrl) {
             let session = URLSession(configuration: .default)
             let downloadPicTask = session.dataTask(with: urll) { [weak self] (data, response, error) in
                 if let e = error {
                     self?.selectedBankButton.setImage(self?.image, for: .normal)
-                    print("Error downloading bank logo: \(e)")
+                    if KhaltiAPI.debug {
+                        print("Error downloading bank logo: \(e)")
+                    }
                 } else {
                     if let _ = response as? HTTPURLResponse {
                         if let imageData = data {
@@ -71,13 +61,17 @@ class BankingPopViewController: UIViewController {
                             DispatchQueue.main.async {
                                 self?.selectedBankButton.setImage(self?.image, for: .normal)
                             }
-                            print("Couldn't get image: Image is nil")
+                            if KhaltiAPI.debug {
+                                print("Couldn't get image: Image is nil")
+                            }
                         }
                     } else {
                         DispatchQueue.main.async {
                             self?.selectedBankButton.setImage(self?.image, for: .normal)
                         }
-                        print("Couldn't get response code for some reason")
+                        if KhaltiAPI.debug {
+                            print("Couldn't get response code for some reason")
+                        }
                     }
                 }
             }

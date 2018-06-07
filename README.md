@@ -141,7 +141,7 @@ extension YourViewController: KhaltiPayDelegate {
 | Method                                   | Description                                                                                                                                                                                                                                                                                                                                                                           |
 |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `onCheckOutSuccess(data: Dictionary<String, Any>)`                | This method is called when a transaction has been completed and confirmed by the user. A dictionary containing an access token, required to verify the transaction and data passed through Config instance is returned. Once this method is called, use the access token to verify the transaction. Please follow the [verification](http://docs.khalti.com/api/verification/) process for further instructions. |
-| `onCheckOutError(action: String, message: String)` | This method is called when an error occurs during payment initiation and confirmation. Action and message value is passed where action defines, the current action being performed and message defines the error.                                                                                                                                                                      |
+| `onCheckOutError(action: String, message: String, data:Dictionary<String,Any>?)` | This method is called when an error occurs during payment initiation and confirmation. Action, message and errordata value is passed where action defines, the current action being performed, message defines the error and data defines the errorData associated with error if exists.                                                                                                                                              |
 
 
 ##### Response Sample
@@ -161,7 +161,9 @@ The success message also contains all the `key` and `value` provide as extra dat
 ###### Error Messsage
 |  Variable                 | Description                            |    Type   |
 |---------------------------|----------------------------------------|-----------| 
+| action                       | initiate/confirm/ebanking             |   String  |
 | message                   | Detail Error Message                   |   String  |
+| data                          | data of error   (Optional)               |   Dictionary<String,Any>?  |
 
 ## Objective-C
 If you are using objective-c. See the example project [here](https://github.com/khalti/khalti-sdk-objective-c-example.git)

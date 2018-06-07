@@ -10,5 +10,5 @@ import Foundation
 
 @objc public protocol KhaltiPayDelegate {
     func onCheckOutSuccess(data: Dictionary<String,Any>)
-    func onCheckOutError(action:String, message:String)
+    func onCheckOutError(action:String, message:String, data:Dictionary<String,Any>?)
 }

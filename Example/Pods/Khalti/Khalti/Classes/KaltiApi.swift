@@ -9,6 +9,7 @@
 import UIKit
 import Foundation
 
+
 enum KhaltiAPIUrl: String {
     case ebankList = "https://khalti.com/api/bank/?has_ebanking=true&page_size=200"
     case cardBankList = "https://khalti.com/api/bank/?has_cardpayment=true&page_size=200"
@@ -142,10 +143,17 @@ class KhaltiAPI {
     static let shared = KhaltiAPI()
     static let debug:Bool = false
     
+    
+    static let subitServer = "http://192.168.1.211:8000"
+    static let testServer = "http://a.khalti.com"
+    static let liveServer = "https://khalti.com"
+    private let debugServer = debug ? subitServer : liveServer
+    
     func getBankList(banking: Bool = true, onCompletion: @escaping (([List])->()), onError: @escaping ((String)->())) {
         
+        
         let urlValue:String = banking ? KhaltiAPIUrl.ebankList.rawValue : KhaltiAPIUrl.cardBankList.rawValue
-        let urlString = KhaltiAPI.debug ? urlValue.replacingOccurrences(of: "https://khalti.com", with: "http://a.khalti.com") : urlValue
+        let urlString = KhaltiAPI.debug ? urlValue.replacingOccurrences(of: "https://khalti.com", with: debugServer) : urlValue
         guard let url = URL(string: urlString) else {
             onError("Invalid url. Please contact Khalti iOS support.")
             return
@@ -204,8 +212,12 @@ class KhaltiAPI {
     
     func getPaymentInitiate(with params: Dictionary<String,Any>, onCompletion: @escaping ((Dictionary<String,Any>)->()), onError: @escaping ((String)->())) {
         
+        if KhaltiAPI.debug {
+            print(params)
+        }
+        
         let urlValue:String = KhaltiAPIUrl.paymentInitiate.rawValue
-        let urlString = KhaltiAPI.debug ? urlValue.replacingOccurrences(of: "https://khalti.com", with: "http://a.khalti.com") : urlValue
+        let urlString = KhaltiAPI.debug ? urlValue.replacingOccurrences(of: "https://khalti.com", with: debugServer) : urlValue
         
         guard let url = URL(string: urlString) else {
             onError("Invalid url. Please contact Khalti iOS support.")
@@ -243,20 +255,43 @@ class KhaltiAPI {
                 return
             }
             
-            print("===========================================================")
-            print("Response for: \(url)")
-            if let responsee = response as? HTTPURLResponse {
-                print("Status Code: \(responsee.statusCode)")
+            guard let responsee = response as? HTTPURLResponse else {
+                onError("Unable to get response")
+                return
             }
+            print("Status: \(responsee.statusCode), Response for: \(url)")
+            print("===========================================================")
             print("\(json)")
             print("===========================================================")
             
-            if let dict = json as? [String:Any] {
-                onCompletion(dict)
-            } else {
-                onError(error?.localizedDescription ?? "Something went wrong")
+            guard let dict = json as? [String:Any] else {
+                onError(error?.localizedDescription ?? "Something went wrong.")
+                return
             }
-            
+            onCompletion(dict)
+//            let statusCode = responsee.statusCode
+//            if statusCode == 200 {
+//                onCompletion(dict)
+//            } else if statusCode == 400 {
+//                if let errorMessage = dict["detail"] as? String {
+//                    onError(errorMessage)
+//                } else if let nonFieldError = dict["non_field_error"] as? [String], nonFieldError.count > 0 {
+//                    let newValue = nonFieldError.joined(separator: "\n")
+//                    onError(newValue)
+//                } else {
+//                    let newErrorDict = dict.map({ (key,value) -> String in
+//                        if let values = value as? [String] {
+//                            return key + ":" + values.joined(separator: ", ")
+//                        } else {
+//                            return key + ":" + "Something not expected."
+//                        }
+//                    })
+//                    let errorString = newErrorDict.joined(separator: "\n")
+//                    onError(errorString)
+//                }
+//            } else {
+//                onError(error?.localizedDescription ?? "Something went wrong.")
+//            }
         }
         task.resume()
     }
@@ -264,7 +299,7 @@ class KhaltiAPI {
     func getPaymentConfirm(with params: Dictionary<String,Any>, onCompletion: @escaping ((Dictionary<String,Any>)->()), onError: @escaping ((String)->())) {
         
         let urlValue = KhaltiAPIUrl.paymentConfirm.rawValue
-        let urlString = KhaltiAPI.debug ? urlValue.replacingOccurrences(of: "https://khalti.com", with: "http://a.khalti.com") : urlValue
+        let urlString = KhaltiAPI.debug ? urlValue.replacingOccurrences(of: "https://khalti.com", with: debugServer) : urlValue
         guard let url = URL(string: urlString) else {
             onError("Invalid url. Please contact Khalti iOS support.")
             return

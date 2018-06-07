@@ -9,7 +9,7 @@
 import UIKit
 
 class EbankingViewController: UIViewController {
-
+    
     // MARK: - Properties
     var config:Config?
     var delegate:KhaltiPayDelegate?
@@ -34,13 +34,6 @@ class EbankingViewController: UIViewController {
         return label
     }()
     
-    private lazy var noDataView: UIView = {
-        let view = UIView()
-        view.backgroundColor = UIColor.cyan
-        return view
-    }()
-    
-    
     // MARK: - Outlets
     @IBOutlet weak var searchTextField: UITextField!
     
@@ -48,10 +41,6 @@ class EbankingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        self.noLabel.center = self.noDataView.center
-        self.noDataView.addSubview(self.noLabel)
-
         // Do any additional setup after loading the view.
         self.addLoading()
         self.getBankList()
@@ -68,42 +57,40 @@ class EbankingViewController: UIViewController {
         self.showLoading()
         switch loadType {
         case .cardBankList:
-//            if let card = self.config?.getCardView(), card {
             KhaltiAPI.shared.getBankList(banking: false, onCompletion: { (banks) in
+                self.refreshControl.endRefreshing()
+                self.hideLoading()
+                self.banks = banks
+                self.filteredBanks = self.banks
                 if self.filteredBanks.count == 0 {
-                self.noLabel.text = "No Banks with card payment found. \n Pull to refresh."
-                self.listCollectionView.backgroundView = self.noLabel
+                    self.noLabel.text = "No Banks with card payment found. \n Pull to refresh."
+                    self.listCollectionView.backgroundView = self.noLabel
                 } else {
                     self.listCollectionView.backgroundView = nil
                 }
-                    self.refreshControl.endRefreshing()
-                    self.hideLoading()
-                    self.banks = banks
-                    self.filteredBanks = self.banks
-                    self.listCollectionView.reloadData()
-                }, onError: { errorMessage in
-                    if self.filteredBanks.count == 0 {
-                        self.noLabel.text = "Unable to fetch Banks now. \n Pull to refresh."
-                        self.listCollectionView.backgroundView = self.noLabel
-                    } else {
-                        self.listCollectionView.backgroundView = nil
-                    }
-                    self.refreshControl.endRefreshing()
-                    self.hideLoading()
-                })
-//            }
-        default:
-            KhaltiAPI.shared.getBankList(onCompletion: { (banks) in
+                self.listCollectionView.reloadData()
+            }, onError: { errorMessage in
                 if self.filteredBanks.count == 0 {
-                    self.noLabel.text = "No Banks found. \n Pull to refresh."
+                    self.noLabel.text = "Unable to fetch Banks now. \n Pull to refresh."
                     self.listCollectionView.backgroundView = self.noLabel
                 } else {
                     self.listCollectionView.backgroundView = nil
                 }
                 self.refreshControl.endRefreshing()
                 self.hideLoading()
+            })
+        default:
+            KhaltiAPI.shared.getBankList(onCompletion: { (banks) in
+                self.refreshControl.endRefreshing()
+                self.hideLoading()
                 self.banks = banks
                 self.filteredBanks = self.banks
+                if self.filteredBanks.count == 0 {
+                    self.noLabel.text = "No Banks found. \n Pull to refresh."
+                    self.listCollectionView.backgroundView = self.noLabel
+                } else {
+                    self.listCollectionView.backgroundView = nil
+                }
                 self.listCollectionView.reloadData()
             }, onError: { errorMessage in
                 if self.filteredBanks.count == 0 {
@@ -127,7 +114,9 @@ class EbankingViewController: UIViewController {
         super.viewDidAppear(animated)
         
         guard let _ = self.config else  {
-            showError(with: "Missing required data! Cannot process for payment.", dismiss: true)
+            let errorMessage = "Missing required data! Cannot process for payment."
+            self.delegate?.onCheckOutError(action: "Ebanking", message: errorMessage, data: nil)
+            showError(with: errorMessage, dismiss: true)
             return
         }
     }
@@ -139,7 +128,7 @@ class EbankingViewController: UIViewController {
         self.getBankList()
     }
     
-
+    
     // MARK: - IBActions
     
     @IBAction func searchTextChanged(_ sender: UITextField) {
@@ -189,7 +178,7 @@ class EbankingViewController: UIViewController {
         }
     }
     
-
+    
     
     
     // MARK: - Helpers
@@ -365,7 +354,4 @@ extension EbankingViewController: BankingPopDelegate {
         self.view!.alpha = 1.0
         self.payAction(with: mobile)
     }
-    
 }
-
-

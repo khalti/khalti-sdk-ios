@@ -22,7 +22,7 @@ struct KhaltiColor {
 
 @objc public class Khalti: NSObject {
     
-    @objc  public static let shared = Khalti()
+    @objc public static let shared = Khalti()
     @objc public var appUrlScheme:String?
     @objc public var canOpenUrl:Bool = {
         return true
@@ -49,7 +49,7 @@ struct KhaltiColor {
         let navigationViewController = UINavigationController(rootViewController: viewController)
         
         navigationViewController.navigationBar.isTranslucent = false
-        navigationViewController.navigationBar.barTintColor = UIColor(red: 76.0/255.0, green: 39.0/255.0, blue: 109.0/255.0, alpha: 1)
+        navigationViewController.navigationBar.barTintColor = KhaltiColor.base
         navigationViewController.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         caller.present(navigationViewController, animated: true, completion: nil)
     }

@@ -18,7 +18,6 @@ extension URL {
         for item in queryItems {
             parameters[item.name] = item.value
         }
-        
         return parameters
     }
 }
@@ -34,7 +33,6 @@ class CheckOutViewController: UIViewController {
     @IBOutlet weak var thirdButton: UIButton!
     @IBOutlet weak var thirdLine: UIView!
     @IBOutlet weak var containerView: UIView!
-    
     @IBOutlet weak var optionsWidthConstraints: NSLayoutConstraint!
     
     var config:Config?
@@ -106,8 +104,6 @@ class CheckOutViewController: UIViewController {
         
         self.cardView.isHidden = !config.getCardView()
         self.optionsWidthConstraints.constant = config.getCardView() ? self.view.bounds.width/3 : self.view.bounds.width/2
-        
-        
     }
     
     @objc func handle(withNotification notification : Notification) {
@@ -119,7 +115,9 @@ class CheckOutViewController: UIViewController {
                 })
             }
         }
-        print("RECEIVED SPECIFIC NOTIFICATION: \(notification)")
+        if KhaltiAPI.debug {
+            print("RECEIVED SPECIFIC NOTIFICATION: \(notification)")
+        }
     }
     
     @objc func dismissKeyboard() {
@@ -215,5 +213,3 @@ class CheckOutViewController: UIViewController {
         }
     }
 }
-
-

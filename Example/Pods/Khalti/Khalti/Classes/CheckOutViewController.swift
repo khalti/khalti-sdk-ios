@@ -87,6 +87,10 @@ class CheckOutViewController: UIViewController {
         
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -186,7 +190,9 @@ class CheckOutViewController: UIViewController {
                 self.firstLine.backgroundColor = khaltiOrangeColor
             })
             self.remove(asChildViewController: self.khaltiPayViewController)
-            self.remove(asChildViewController: self.cardPayViewController)
+            if let card = self.config?.getCardView(), card {
+                self.remove(asChildViewController: self.cardPayViewController)
+            }
             self.add(asChildViewController: self.ebankingViewController)
         } else if to == .khalti {
             UIView.animate(withDuration: 0.3, animations: {
@@ -194,7 +200,9 @@ class CheckOutViewController: UIViewController {
                 self.secondLine.backgroundColor = khaltiOrangeColor
             })
             self.remove(asChildViewController: self.ebankingViewController)
-            self.remove(asChildViewController: self.cardPayViewController)
+            if let card = self.config?.getCardView(), card {
+                self.remove(asChildViewController: self.cardPayViewController)
+            }
             self.add(asChildViewController: self.khaltiPayViewController)
         } else if to == .card {
             UIView.animate(withDuration: 0.3, animations: {

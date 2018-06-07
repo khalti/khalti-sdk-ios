@@ -26,8 +26,8 @@ class KhaltiPaymentViewController: UIViewController {
     @IBOutlet weak var payConfirmButton: UIButton!
     @IBOutlet weak var payInitiateButton: UIButton!
     
-    var activityIndicator: UIActivityIndicatorView!
-    
+    private var blurLoadingView: UIView!
+    private var activityIndicator: UIActivityIndicatorView!
     
     // MARK: - View Life Cycle
     override func viewDidLoad() {
@@ -100,10 +100,21 @@ class KhaltiPaymentViewController: UIViewController {
                 self.token = token
                 self.numberOnlyView.isHidden = true
                 self.fullPayView.isHidden = false
-            } else if let message = response["mobile"] as? [String], let value = message.first {
-                self.showError(with: value, dismiss: false)
+            } else if let errorMessage = response["detail"] as? String {
+                self.showError(with: errorMessage, dismiss: false)
+            } else if let nonFieldError = response["non_field_error"] as? [String], nonFieldError.count > 0 {
+                let errorMessage = nonFieldError.joined(separator: "\n")
+                self.showError(with: errorMessage, dismiss: false)
             } else {
-                self.showError(with: "Something went wrong.Input data invalid.", dismiss: false)
+                let newErrorDict = response.map({ (key,value) -> String in
+                    if let values = value as? [String] {
+                        return key + ":" + values.joined(separator: ", ")
+                    } else {
+                        return key + ":" + "Something not expected."
+                    }
+                })
+                let errorMessage = newErrorDict.joined(separator: "\n")
+                self.showError(with: errorMessage, dismiss: false)
             }
         }, onError: { errorMessage in
             self.hideLoading()
@@ -117,8 +128,10 @@ class KhaltiPaymentViewController: UIViewController {
         if params.count == 0 {
             return
         }
+        self.showLoading()
         sender.isUserInteractionEnabled = false
         KhaltiAPI.shared.getPaymentConfirm(with: params, onCompletion: { (response) in
+            self.hideLoading()
             
             sender.isUserInteractionEnabled = true
             if let detail = response["detail"] as? String {
@@ -130,6 +143,7 @@ class KhaltiPaymentViewController: UIViewController {
                 self.delegate?.onCheckOutSuccess(data: response)
             })
         }, onError:{ errorMessage in
+            self.hideLoading()
             sender.isUserInteractionEnabled = true
             self.showError(with: errorMessage, dismiss: false)
         })
@@ -140,25 +154,34 @@ class KhaltiPaymentViewController: UIViewController {
     
     private func addLoading() {
         let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
-        self.activityIndicator = activityIndicator
-        self.activityIndicator.activityIndicatorViewStyle = .whiteLarge
-        self.activityIndicator.color = UIColor.black
-        self.activityIndicator.hidesWhenStopped = true
+        activityIndicator.activityIndicatorViewStyle = .whiteLarge
+        activityIndicator.hidesWhenStopped = true
         
+        let view = UIView(frame: self.view.frame)
+        view.backgroundColor = UIColor.black.withAlphaComponent(0.5)
+        view.center = self.view.center
+        
+        self.activityIndicator = activityIndicator
+        self.blurLoadingView = view
+        self.blurLoadingView.isHidden = true
+        
+        self.view.addSubview(self.blurLoadingView)
+        self.blurLoadingView.addSubview(activityIndicator)
+        self.view.bringSubview(toFront: self.blurLoadingView)
+        self.blurLoadingView.bringSubview(toFront: self.activityIndicator)
     }
     
     private func showLoading() {
-        
         if let indicator = self.activityIndicator {
             indicator.startAnimating()
-            self.view.alpha = 0.3
             activityIndicator.center = self.view.center
-            self.view.addSubview(self.activityIndicator)
+            self.blurLoadingView.isHidden = false
         }
     }
     
     private func hideLoading() {
         
+        self.blurLoadingView.isHidden = true
         if let indicator = self.activityIndicator {
             indicator.stopAnimating()
             self.view.alpha = 1.0
@@ -277,7 +300,5 @@ class KhaltiPaymentViewController: UIViewController {
         alertController.addAction(okAction)
         self.present(alertController, animated: true, completion: nil)
     }
-
-
 
 }

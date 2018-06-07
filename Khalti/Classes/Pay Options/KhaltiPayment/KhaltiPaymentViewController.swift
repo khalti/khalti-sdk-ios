@@ -93,7 +93,6 @@ class KhaltiPaymentViewController: UIViewController {
         self.token = self.mobileTextField.text
         
         KhaltiAPI.shared.getPaymentInitiate(with: params, onCompletion: { (response) in
-            print(response)
             sender.isUserInteractionEnabled = true
             self.hideLoading()
             if let token = response["token"] as? String {
@@ -101,9 +100,11 @@ class KhaltiPaymentViewController: UIViewController {
                 self.numberOnlyView.isHidden = true
                 self.fullPayView.isHidden = false
             } else if let errorMessage = response["detail"] as? String {
+                self.delegate?.onCheckOutError(action: "initiate", message: errorMessage, data: nil)
                 self.showError(with: errorMessage, dismiss: false)
             } else if let nonFieldError = response["non_field_error"] as? [String], nonFieldError.count > 0 {
                 let errorMessage = nonFieldError.joined(separator: "\n")
+                self.delegate?.onCheckOutError(action: "initiate", message: errorMessage, data: nil)
                 self.showError(with: errorMessage, dismiss: false)
             } else {
                 let newErrorDict = response.map({ (key,value) -> String in
@@ -114,11 +115,14 @@ class KhaltiPaymentViewController: UIViewController {
                     }
                 })
                 let errorMessage = newErrorDict.joined(separator: "\n")
+                
+                self.delegate?.onCheckOutError(action: "initiate", message: errorMessage, data: response)
                 self.showError(with: errorMessage, dismiss: false)
             }
-        }, onError: { errorMessage in
+        }, onError: { (errorMessage, data) in
             self.hideLoading()
             sender.isUserInteractionEnabled = true
+            self.delegate?.onCheckOutError(action: "initiate", message: errorMessage, data: data)
             self.showError(with: errorMessage, dismiss: false)
         })
     }
@@ -132,19 +136,19 @@ class KhaltiPaymentViewController: UIViewController {
         sender.isUserInteractionEnabled = false
         KhaltiAPI.shared.getPaymentConfirm(with: params, onCompletion: { (response) in
             self.hideLoading()
-            
             sender.isUserInteractionEnabled = true
-            if let detail = response["detail"] as? String {
-                self.delegate?.onCheckOutError(action: "", message: detail)
-                self.showError(with: detail, dismiss: false)
-                return
-            }
-            self.dismiss(animated: true, completion: {
-                self.delegate?.onCheckOutSuccess(data: response)
+            let alertController = UIAlertController(title: "Success", message: "Payment via khalti is successful", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK" , style: .default, handler: {_ in
+                self.dismiss(animated: true, completion: {
+                    self.delegate?.onCheckOutSuccess(data: response)
+                })
             })
-        }, onError:{ errorMessage in
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true, completion: nil)
+        }, onError:{ (errorMessage, data) in
             self.hideLoading()
             sender.isUserInteractionEnabled = true
+            self.delegate?.onCheckOutError(action: "confirm", message: errorMessage, data: data)
             self.showError(with: errorMessage, dismiss: false)
         })
     }
