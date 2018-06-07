@@ -29,6 +29,7 @@ class EbankingViewController: UIViewController {
         let label = UILabel()
         label.textAlignment = NSTextAlignment.center
         label.textColor = KhaltiColor.base
+        label.numberOfLines = 0
         label.font = UIFont.systemFont(ofSize: 11)
         return label
     }()
