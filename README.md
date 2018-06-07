@@ -109,7 +109,7 @@ let khaltiMerchantKey = "test_public_key_dc74e0fd57cb46cd93832aee0a507256" // Th
 let TEST_CONFIG:Config = Config(publicKey: khaltiMerchantKey, amount: 1000, productId: "1234567890", productName: "Dragon_boss", productUrl: "http://gameofthrones.wikia.com/wiki/Dragons",additionalData: additionalData)
 Khalti.present(caller: self, with: TEST_CONFIG, delegate: self)
 ```
-
+Config file has property cardPayment with default value false, indication the cardPayment facility is OFF. If you want cardPayment available to your users then set cardPayment option to true while creating config object.
 Additionally, Config class also accepts a Dictionary<String,String> which you can use to pass any additional data. Make sure you add a `merchant_` prefix in your map key.
 
 ### Using delegates
@@ -154,13 +154,13 @@ extension YourViewController: KhaltiPayDelegate {
 | product_url       | Product Url                  |           String        |
 | amount            | 100                          |            Int          |
 | token             | token                        |           String        | 
+| cardPayment       | false                        |           Bool          | 
 
-The success message also contains all the `key` and `value` provide as extra data while initiating `Config` 
+The success message also contains all the `key` and `value` provide as extra data while initiating `Config`. 
 
 ###### Error Messsage
 |  Variable                 | Description                            |    Type   |
-|---------------------------|----------------------------------------|-----------|   
-| action                    | -                                      |   String  |
+|---------------------------|----------------------------------------|-----------| 
 | message                   | Detail Error Message                   |   String  |
 
 ## Objective-C
