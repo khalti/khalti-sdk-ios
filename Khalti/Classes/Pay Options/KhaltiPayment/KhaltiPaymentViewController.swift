@@ -100,10 +100,21 @@ class KhaltiPaymentViewController: UIViewController {
                 self.token = token
                 self.numberOnlyView.isHidden = true
                 self.fullPayView.isHidden = false
-            } else if let message = response["mobile"] as? [String], let value = message.first {
-                self.showError(with: value, dismiss: false)
+            } else if let errorMessage = response["detail"] as? String {
+                self.showError(with: errorMessage, dismiss: false)
+            } else if let nonFieldError = response["non_field_error"] as? [String], nonFieldError.count > 0 {
+                let errorMessage = nonFieldError.joined(separator: "\n")
+                self.showError(with: errorMessage, dismiss: false)
             } else {
-                self.showError(with: "Something went wrong.Input data invalid.", dismiss: false)
+                let newErrorDict = response.map({ (key,value) -> String in
+                    if let values = value as? [String] {
+                        return key + ":" + values.joined(separator: ", ")
+                    } else {
+                        return key + ":" + "Something not expected."
+                    }
+                })
+                let errorMessage = newErrorDict.joined(separator: "\n")
+                self.showError(with: errorMessage, dismiss: false)
             }
         }, onError: { errorMessage in
             self.hideLoading()

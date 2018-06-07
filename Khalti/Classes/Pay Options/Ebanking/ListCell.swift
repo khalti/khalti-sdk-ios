@@ -37,7 +37,9 @@ class ListCell: UICollectionViewCell {
             let downloadPicTask = session.dataTask(with: urll) { [weak self] (data, response, error) in
                 if let e = error {
                     print("Error downloading bank logo: \(e)")
-                    self?.itemButton.setImage(self?.image, for: .normal)
+                    DispatchQueue.main.async {
+                        self?.itemButton.setImage(self?.image, for: .normal)
+                    }
                 } else {
                     if let _ = response as? HTTPURLResponse {
                         if let imageData = data {
