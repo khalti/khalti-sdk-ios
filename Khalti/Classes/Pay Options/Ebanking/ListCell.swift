@@ -36,7 +36,7 @@ class ListCell: UICollectionViewCell {
             let session = URLSession(configuration: .default)
             let downloadPicTask = session.dataTask(with: urll) { [weak self] (data, response, error) in
                 if let e = error {
-                    if KhaltiAPI.debug {
+                    if Khalti.shared.debugLog {
                         print("Error downloading bank logo: \(e)")
                     }
                     DispatchQueue.main.async {
@@ -53,7 +53,7 @@ class ListCell: UICollectionViewCell {
                             DispatchQueue.main.async {
                                 self?.itemButton.setImage(self?.image, for: .normal)
                             }
-                            if KhaltiAPI.debug {
+                            if Khalti.shared.debugLog {
                                 print("Couldn't get image: Image is nil")
                             }
                         }
@@ -61,7 +61,7 @@ class ListCell: UICollectionViewCell {
                         DispatchQueue.main.async {
                             self?.itemButton.setImage(self?.image, for: .normal)
                         }
-                        if KhaltiAPI.debug {
+                        if Khalti.shared.debugLog {
                             print("Couldn't get response code for some reason")
                         }
                     }

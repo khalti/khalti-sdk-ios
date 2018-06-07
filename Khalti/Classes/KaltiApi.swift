@@ -33,7 +33,7 @@ public enum ErrorMessage:String {
 class KhaltiAPI {
     
     static let shared = KhaltiAPI()
-    static let debug:Bool = false
+    static let logMessage:Bool = Khalti.shared.debugLog
     
     func getBankList(banking: Bool = true, onCompletion: @escaping (([List])->()), onError: @escaping ((String)->())) {
         
@@ -71,7 +71,7 @@ class KhaltiAPI {
             }
             
             var banks: [List] = []
-            if KhaltiAPI.debug {
+            if KhaltiAPI.logMessage {
                 print("Status: \(responsee.statusCode), Response for: \(url)")
                 print("===========================================================")
                 print("\(json)")
@@ -100,7 +100,7 @@ class KhaltiAPI {
     
     func getPaymentInitiate(with params: Dictionary<String,Any>, onCompletion: @escaping ((Dictionary<String,Any>)->()), onError: @escaping ((String,Dictionary<String,Any>?)->())) {
         
-        if KhaltiAPI.debug {
+        if KhaltiAPI.logMessage {
             print(params)
         }
         
@@ -128,7 +128,7 @@ class KhaltiAPI {
             request.httpBody = data
             
         } catch let error {
-            if KhaltiAPI.debug {
+            if KhaltiAPI.logMessage {
                 print(error.localizedDescription)
             }
             onError(ErrorMessage.parse.rawValue, nil)
@@ -149,7 +149,7 @@ class KhaltiAPI {
                 onError(ErrorMessage.noresponse.rawValue, nil)
                 return
             }
-            if KhaltiAPI.debug {
+            if KhaltiAPI.logMessage {
                 print("Status: \(responsee.statusCode), Response for: \(url)")
                 print("===========================================================")
                 print("\(json)")
@@ -166,7 +166,7 @@ class KhaltiAPI {
     }
     
     func getPaymentConfirm(with params: Dictionary<String,Any>, onCompletion: @escaping ((Dictionary<String,Any>)->()), onError: @escaping ((String, Dictionary<String,Any>?)->())) {
-        if KhaltiAPI.debug {
+        if KhaltiAPI.logMessage {
             print(params)
         }
         let urlValue = KhaltiAPIUrl.paymentConfirm.rawValue
@@ -191,7 +191,7 @@ class KhaltiAPI {
             
             request.httpBody = data
         } catch let error {
-            if KhaltiAPI.debug {
+            if KhaltiAPI.logMessage {
                 print(error.localizedDescription)
             }
             onError(ErrorMessage.parse.rawValue, nil)
@@ -212,7 +212,7 @@ class KhaltiAPI {
                 return
             }
             
-            if KhaltiAPI.debug {
+            if KhaltiAPI.logMessage {
                 print("Status: \(responsee.statusCode), Response for: \(url)")
                 print("===========================================================")
                 print("\(json)")
@@ -257,7 +257,7 @@ class KhaltiAPI {
  class KhaltiAPI {
  
  static let shared = KhaltiAPI()
- static let debug:Bool = true
+ static let logMessage:Bool = true
  
  func getBankList(banking: Bool = true, onCompletion: @escaping (([List])->()), onError: @escaping ((String)->())) {
  let url = banking ? KhaltiAPIUrl.ebankList.rawValue : KhaltiAPIUrl.cardBankList.rawValue

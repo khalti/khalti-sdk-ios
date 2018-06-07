@@ -24,6 +24,7 @@ struct KhaltiColor {
     
     @objc public static let shared = Khalti()
     @objc public var appUrlScheme:String?
+    @objc public var debugLog:Bool = false
     @objc public var canOpenUrl:Bool = {
         return true
     }()

@@ -47,7 +47,7 @@ class BankingPopViewController: UIViewController {
             let downloadPicTask = session.dataTask(with: urll) { [weak self] (data, response, error) in
                 if let e = error {
                     self?.selectedBankButton.setImage(self?.image, for: .normal)
-                    if KhaltiAPI.debug {
+                    if Khalti.shared.debugLog {
                         print("Error downloading bank logo: \(e)")
                     }
                 } else {
@@ -61,7 +61,7 @@ class BankingPopViewController: UIViewController {
                             DispatchQueue.main.async {
                                 self?.selectedBankButton.setImage(self?.image, for: .normal)
                             }
-                            if KhaltiAPI.debug {
+                            if Khalti.shared.debugLog {
                                 print("Couldn't get image: Image is nil")
                             }
                         }
@@ -69,7 +69,7 @@ class BankingPopViewController: UIViewController {
                         DispatchQueue.main.async {
                             self?.selectedBankButton.setImage(self?.image, for: .normal)
                         }
-                        if KhaltiAPI.debug {
+                        if Khalti.shared.debugLog {
                             print("Couldn't get response code for some reason")
                         }
                     }

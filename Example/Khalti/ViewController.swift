@@ -11,6 +11,8 @@ import Khalti
 
 class ViewController: UIViewController, KhaltiPayDelegate {
 
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -42,6 +44,7 @@ class ViewController: UIViewController, KhaltiPayDelegate {
         let khaltiMerchantKey = "test_public_key_1d57e4d159794c6790a62f8953124053"
         
         let TEST_CONFIG:Config = Config(publicKey: khaltiMerchantKey, amount: 1000, productId: "1234567890", productName: "Dragon_boss", productUrl: "http://gameofthrones.wikia.com/wiki/Dragons",additionalData: additionalData)
+        Khalti.shared.debugLog = true
         Khalti.present(caller: self, with: TEST_CONFIG, delegate: self)
     }
     
@@ -50,10 +53,14 @@ class ViewController: UIViewController, KhaltiPayDelegate {
         print("Oh there is success message received")
     }
     
-    func onCheckOutError(action: String, message: String ) {
+    func onCheckOutError(action: String, message: String, data: Dictionary<String, Any>?) {
         print(action)
         print(message)
+        if let value = data {
+            print(value)
+        }
         print("Oh there occure error in payment")
     }
+    
 }
 

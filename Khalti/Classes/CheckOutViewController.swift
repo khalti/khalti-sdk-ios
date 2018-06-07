@@ -115,7 +115,7 @@ class CheckOutViewController: UIViewController {
                 })
             }
         }
-        if KhaltiAPI.debug {
+        if Khalti.shared.debugLog {
             print("RECEIVED SPECIFIC NOTIFICATION: \(notification)")
         }
     }
