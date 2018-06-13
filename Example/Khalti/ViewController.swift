@@ -43,7 +43,8 @@ class ViewController: UIViewController, KhaltiPayDelegate {
         Khalti.shared.appUrlScheme = khaltiUrlScheme
         let khaltiMerchantKey = "test_public_key_1d57e4d159794c6790a62f8953124053"
         
-        let TEST_CONFIG:Config = Config(publicKey: khaltiMerchantKey, amount: 1000, productId: "1234567890", productName: "Dragon_boss", productUrl: "http://gameofthrones.wikia.com/wiki/Dragons",additionalData: additionalData)
+        let TEST_CONFIG:Config = Config(publicKey: khaltiMerchantKey, amount: 1000, productId: "1234567890", productName: "Dragon_boss", productUrl: "http://gameofthrones.wikia.com/wiki/Dragons",additionalData: additionalData,cardPayment: true)
+        
         Khalti.shared.debugLog = true
         Khalti.present(caller: self, with: TEST_CONFIG, delegate: self)
     }

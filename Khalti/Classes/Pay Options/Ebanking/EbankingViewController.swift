@@ -15,6 +15,13 @@ class EbankingViewController: UIViewController {
     var delegate:KhaltiPayDelegate?
     var activityIndicator: UIActivityIndicatorView!
     var banks:[List] = []
+    var terms:[String] = [
+        "The first 3 transactions are free of cost.",
+        "You can load a maximum amount of upto Rs.16,000 at once.",
+        "For SCT cards, a service charge of 2% (maximum amount Rs.25) will be levied after the first 3 transactions.",
+        "For all other cards, a service charge of 2% will be levied after the first 3 transactions.",
+        "For non SCT Cards, make sure your card has been enabled for online payments by your bank."
+    ]
     var selectedBank: List?
     var filteredBanks:[List] = []
     var loadType:KhaltiAPIUrl = .ebankList
@@ -79,6 +86,12 @@ class EbankingViewController: UIViewController {
                 self.refreshControl.endRefreshing()
                 self.hideLoading()
             })
+            KhaltiAPI.shared.getCardTerms(onCompletion: { (response) in
+                self.terms = response
+            }, onError: { _ in
+                
+            })
+            
         default:
             KhaltiAPI.shared.getBankList(onCompletion: { (banks) in
                 self.refreshControl.endRefreshing()
@@ -330,6 +343,7 @@ extension EbankingViewController: UIPopoverControllerDelegate, UIPopoverPresenta
         switch self.loadType {
         case .cardBankList:
             popoverVC.preferredContentSize = CGSize(width: self.view!.bounds.width, height: 392)
+            popoverVC.terms = self.terms
         default:
             break
         }

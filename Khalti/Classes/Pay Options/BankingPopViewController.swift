@@ -16,6 +16,7 @@ class BankingPopViewController: UIViewController {
     
     @IBOutlet weak var mobileTextField: UITextField!
     @IBOutlet weak var payButton: UIButton!
+    @IBOutlet weak var termsTableView:UITableView!
     @IBOutlet weak var selectedBankButton: UIButton!
     @IBOutlet weak var selectedBankLabel: UILabel!
     
@@ -25,6 +26,7 @@ class BankingPopViewController: UIViewController {
     var delegate: BankingPopDelegate?
     var amount:Int = 0
     var image:UIImage?
+    var terms:[String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -108,5 +110,35 @@ class BankingPopViewController: UIViewController {
         })
         alertController.addAction(okAction)
         self.present(alertController, animated: true, completion: nil)
+    }
+}
+
+extension BankingPopViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return terms.count == 0 ? 0 : terms.count + 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        cell.textLabel?.numberOfLines = 0
+        if indexPath.row == 0 {
+            cell.textLabel?.font = UIFont.systemFont(ofSize: 14)
+            cell.textLabel?.textColor = KhaltiColor.orange
+            cell.textLabel?.text = "*Terms & Conditions"
+        } else {
+            cell.textLabel?.font = UIFont.systemFont(ofSize: 12)
+            let row = self.terms.count > 0 ? indexPath.row-1 : indexPath.row
+            cell.textLabel?.textColor = UIColor(red: 51/256, green: 51/256, blue: 51/256, alpha: 1.0)
+            cell.textLabel?.text = "\(row+1). \(self.terms[row])"
+        }
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
     }
 }

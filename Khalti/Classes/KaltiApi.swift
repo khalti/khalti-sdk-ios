@@ -9,13 +9,13 @@
 import UIKit
 import Foundation
 
-
 enum KhaltiAPIUrl: String {
     case ebankList = "https://khalti.com/api/bank/?has_ebanking=true&page_size=200"
     case cardBankList = "https://khalti.com/api/bank/?has_cardpayment=true&page_size=200"
     case paymentInitiate = "https://khalti.com/api/payment/initiate/"
     case paymentConfirm = "https://khalti.com/api/payment/confirm/"
     case bankInitiate = "https://khalti.com/ebanking/initiate/"
+    case cardTerms = "https://khalti.com/api/termsandconditions/cardpayment/"
 }
 
 public enum ErrorMessage:String {
@@ -27,13 +27,25 @@ public enum ErrorMessage:String {
     case badRequest = "Invalid data request"
     case tryAgain = "Something went wrong.Please try again later"
     case timeOut = "Request time out."
-    case noConnection = "No internet Connection."
+    case noConnection = "The internet connection appears to be offline."
 }
 
 class KhaltiAPI {
     
     static let shared = KhaltiAPI()
     static let logMessage:Bool = Khalti.shared.debugLog
+    
+    private func createRequest(for url:URL) -> URLRequest {
+        
+        var request = URLRequest(url: url)
+        request.setValue(Bundle.main.infoDictionary!["CFBundleShortVersionString"] as? String, forHTTPHeaderField: "checkout-version")
+        request.setValue("iOS", forHTTPHeaderField: "checkout-source")
+        request.setValue(UIDevice.current.model, forHTTPHeaderField: "checkout-device-model")
+        request.setValue(UIDevice.current.identifierForVendor?.uuidString ?? "", forHTTPHeaderField: "checkout-device-id")
+        request.setValue(UIDevice.current.systemVersion, forHTTPHeaderField: "checkout-ios-version")
+        request.httpMethod = "GET"
+        return request
+    }
     
     func getBankList(banking: Bool = true, onCompletion: @escaping (([List])->()), onError: @escaping ((String)->())) {
         
@@ -43,18 +55,10 @@ class KhaltiAPI {
             onError(ErrorMessage.invalidUrl.rawValue)
             return
         }
-        
+    
         let configuration = URLSessionConfiguration.ephemeral
         let session = URLSession(configuration: configuration, delegate: nil, delegateQueue: OperationQueue.main)
-        
-        var request = URLRequest(url: url)
-        request.setValue(Bundle.main.infoDictionary!["CFBundleShortVersionString"] as? String, forHTTPHeaderField: "checkout-version")
-        request.setValue("iOS", forHTTPHeaderField: "checkout-source")
-        request.setValue(UIDevice.current.model, forHTTPHeaderField: "checkout-device-model")
-        request.setValue(UIDevice.current.identifierForVendor?.uuidString ?? "", forHTTPHeaderField: "checkout-device-id")
-        request.setValue(UIDevice.current.systemVersion, forHTTPHeaderField: "checkout-ios-version")
-        request.httpMethod = "GET"
-        
+        let request = self.createRequest(for: url)
         let task = session.dataTask(with: request) { (data: Data?, response: URLResponse?, error: Error?) -> Void in
             
             guard let data = data else {
@@ -97,6 +101,50 @@ class KhaltiAPI {
         task.resume()
     }
     
+    func getCardTerms(onCompletion: @escaping (([String])->()), onError: @escaping ((String)->())) {
+        
+        let urlString:String = KhaltiAPIUrl.cardTerms.rawValue
+        guard let url = URL(string: urlString) else {
+            onError(ErrorMessage.invalidUrl.rawValue)
+            return
+        }
+        
+        let configuration = URLSessionConfiguration.ephemeral
+        let session = URLSession(configuration: configuration, delegate: nil, delegateQueue: OperationQueue.main)
+        let request = self.createRequest(for: url)
+        let task = session.dataTask(with: request) { (data: Data?, response: URLResponse?, error: Error?) -> Void in
+            
+            guard let data = data else {
+                onError((error?.localizedDescription)!)
+                return
+            }
+            
+            guard let json = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers) else {
+                onError(ErrorMessage.parse.rawValue)
+                return
+            }
+            guard let responsee = response as? HTTPURLResponse else {
+                onError(ErrorMessage.noresponse.rawValue)
+                return
+            }
+            
+            if KhaltiAPI.logMessage {
+                print("Status: \(responsee.statusCode), Response for: \(url)")
+                print("===========================================================")
+                print("\(json)")
+                print("===========================================================")
+            }
+            
+            if let value = json as? [String] {
+                onCompletion(value)
+            } else {
+                onError(error?.localizedDescription ?? ErrorMessage.tryAgain.rawValue)
+            }
+        }
+        task.resume()
+    }
+
+    
     
     func getPaymentInitiate(with params: Dictionary<String,Any>, onCompletion: @escaping ((Dictionary<String,Any>)->()), onError: @escaping ((String,Dictionary<String,Any>?)->())) {
         
@@ -112,12 +160,7 @@ class KhaltiAPI {
             return
         }
         let configuration = URLSessionConfiguration.ephemeral
-        var request = URLRequest(url: url)
-        request.setValue(Bundle.main.infoDictionary!["CFBundleShortVersionString"] as? String, forHTTPHeaderField: "checkout-version")
-        request.setValue("iOS", forHTTPHeaderField: "checkout-source")
-        request.setValue(UIDevice.current.model, forHTTPHeaderField: "checkout-device-model")
-        request.setValue(UIDevice.current.identifierForVendor?.uuidString ?? "", forHTTPHeaderField: "checkout-device-id")
-        request.setValue(UIDevice.current.systemVersion, forHTTPHeaderField: "checkout-ios-version")
+        var request = self.createRequest(for: url)
         do {
             let data = try JSONSerialization.data(withJSONObject: params, options: [])
             
@@ -177,12 +220,7 @@ class KhaltiAPI {
         }
         let configuration = URLSessionConfiguration.ephemeral
         let session = URLSession(configuration: configuration, delegate: nil, delegateQueue: OperationQueue.main)
-        var request = URLRequest(url: url)
-        request.setValue(Bundle.main.infoDictionary!["CFBundleShortVersionString"] as? String, forHTTPHeaderField: "checkout-version")
-        request.setValue("iOS", forHTTPHeaderField: "checkout-source")
-        request.setValue(UIDevice.current.model, forHTTPHeaderField: "checkout-device-model")
-        request.setValue(UIDevice.current.identifierForVendor?.uuidString ?? "", forHTTPHeaderField: "checkout-device-id")
-        request.setValue(UIDevice.current.systemVersion, forHTTPHeaderField: "checkout-ios-version")
+        var request = self.createRequest(for: url)
         do {
             let data = try JSONSerialization.data(withJSONObject: params, options: [])
             if request.value(forHTTPHeaderField: "Content-Type") == nil {
