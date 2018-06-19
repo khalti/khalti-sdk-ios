@@ -174,9 +174,9 @@ For Queries, feel free to call us at:
 
 <!-- Mobile : 9801165568
 
-<!-- Viber/Whatsapp/Skype ID: 9801165568
+ Viber/Whatsapp/Skype ID: 9801165568
 
-<!-- Email: merchant@khalti.com
+ Email: merchant@khalti.com -->
 
 Mail: [here](mailto:rajendrak@janakitech.com)
 
