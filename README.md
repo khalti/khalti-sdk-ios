@@ -170,15 +170,15 @@ If you are using objective-c. See the example project [here](https://github.com/
 
 
 ## Support
-For Queries, feel free to call us at:
+<!-- For Queries, feel free to call us at:
 
-<!-- Mobile : 9801165568
+Mobile : 9801165568
 
  Viber/Whatsapp/Skype ID: 9801165568
 
  Email: merchant@khalti.com -->
 
-Mail: [here](mailto:rajendrak@janakitech.com)
+For Queries, feel free to mail us at: [here](mailto:rajendrak@janakitech.com)
 
 <!-- Check out the source for Khalti checkout on [github ](https://github.com/khalti/khalti-sdk-ios/). -->
 Check out the [API Documentation](http://docs.khalti.com/checkout/ios/).
