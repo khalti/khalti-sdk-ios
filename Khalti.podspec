@@ -7,7 +7,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Khalti'
-  s.version          = '1.0.8'
+  s.version          = '1.0.9'
   s.summary          = 'Khalti is the new generation Payment Gateway, Digital Wallet and API provider for various services.'
   s.description      = <<-DESC
     Khalti is the new generation Payment Gateway, Digital Wallet and API provider for various services. We provide you with true Payment Gateway, where you can accepts payments from: Khalti User, Net Banking customers of our partner banks (need not be Khalti user).
