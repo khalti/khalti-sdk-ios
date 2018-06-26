@@ -5,16 +5,15 @@
 [![Platform](https://img.shields.io/cocoapods/p/Khalti.svg?style=flat)](http://cocoapods.org/pods/Khalti)
 
 
-## Pod Depedency 
+## Requirements
+This system is tested on Xcode 8, 9 and 10 beta with swift version 3 and 4. 
+### Xcode: >=8
+### Swift: 3 and 4
 
-For best working with UI incorporated in this library ```IQKeyboardManager``` is used. Suggest using 
-```swift
-pod 'IQKeyboarManager'
-```
 
 ## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+### Swift : Clone project and used 'Example' directory. Do 'pod install'.
+### Objective-C :  Clone project and used 'Example Obj-c' directory. Do 'pod install'.
 
 ## Installation guide
 
@@ -106,10 +105,10 @@ let additionalData:Dictionary<String,String> = [
 Khalti.shared.appUrlScheme = khaltiUrlScheme
 let khaltiMerchantKey = "test_public_key_dc74e0fd57cb46cd93832aee0a507256" // This key is from local server so it won't work if you use the example as is it. Use your own public test key
         
-let TEST_CONFIG:Config = Config(publicKey: khaltiMerchantKey, amount: 1000, productId: "1234567890", productName: "Dragon_boss", productUrl: "http://gameofthrones.wikia.com/wiki/Dragons",additionalData: additionalData)
+let TEST_CONFIG:Config = Config(publicKey: khaltiMerchantKey, amount: 1000, productId: "1234567890", productName: "Dragon_boss", productUrl: "http://gameofthrones.wikia.com/wiki/Dragons",additionalData: additionalData, cardPayment:false)
 Khalti.present(caller: self, with: TEST_CONFIG, delegate: self)
 ```
-Config file has property cardPayment with default value false, indication the cardPayment facility is OFF. If you want cardPayment available to your users then set cardPayment option to true while creating config object.
+Config file has property cardPayment with default value false, indication the cardPayment facility is OFF. If you want cardPayment available to your users then set cardPayment option to true while creating config object. Please read merchant terms and conditions before enabling this feature.
 Additionally, Config class also accepts a Dictionary<String,String> which you can use to pass any additional data. Make sure you add a `merchant_` prefix in your map key.
 
 ### Using delegates
@@ -164,10 +163,6 @@ The success message also contains all the `key` and `value` provide as extra dat
 | action                       | initiate/confirm/ebanking             |   String  |
 | message                   | Detail Error Message                   |   String  |
 | data                          | data of error   (Optional)               |   Dictionary<String,Any>?  |
-
-## Objective-C
-If you are using objective-c. See the example project [here](https://github.com/khalti/khalti-sdk-objective-c-example.git)
-
 
 ## Support
 <!-- For Queries, feel free to call us at:
