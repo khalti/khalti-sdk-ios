@@ -7,13 +7,13 @@
 
 ## Requirements
 This system is tested on Xcode 8, 9 and 10 beta with swift version 3 and 4. 
-### Xcode: >=8
-### Swift: 3 and 4
+**Xcode**: >=8
+**Swift**: 3 and 4
 
 
 ## Example
-### Swift : Clone project and used 'Example' directory. Do 'pod install'.
-### Objective-C :  Clone project and used 'Example Obj-c' directory. Do 'pod install'.
+**Swift** : Clone project and use 'Example' directory. Do 'pod install'.
+**Objective-C** :  Clone project and use 'Example Obj-c' directory. Do 'pod install'.
 
 ## Installation guide
 
