@@ -8,29 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		06BBDCD0ECA0965A3853952E5F93F167 /* Pods-Khalti-Pay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFB9356B3E87A33EEC132D8E13A06FC /* Pods-Khalti-Pay-dummy.m */; };
-		097BDC30ED8BEE1976A78978A18187CE /* BankingPop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C4582F6752F6AC9C9EA14EA8564717 /* BankingPop.swift */; };
-		15B01E95C25153E02D2CD2D56848BB48 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EB50EA5CC9FE4DEC4174A0F186C521C /* images.xcassets */; };
+		0B66E4171C6FE618801C3FA73740CACA /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C0885665DCE9BA74AD73812BE5E4C /* ListCell.swift */; };
+		15B01E95C25153E02D2CD2D56848BB48 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7968C4C8C53F6691007E8BD3816A491 /* images.xcassets */; };
 		167215F41FAC8DD33B7043BDAFCDC168 /* Pods-Khalti-Pay-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D9A15DB4B5E84A533C38B59CDAA54E0E /* Pods-Khalti-Pay-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20EA3D335651972C34843631389862C6 /* Khalti.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D83D0F97916018182A766FCD0CFBAE /* Khalti.swift */; };
-		311980FF718CBD15EF7EC916BFB96906 /* Khalti-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C40187F9E7D59E8FC740E48691ACDA /* Khalti-dummy.m */; };
+		1A110EAABAA0EAF0CBC13FCA45F9D7F1 /* Ebanking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D240E83198AD4F78916C025CE23315 /* Ebanking.swift */; };
+		2FEE426BCBD5C4D58D99D6CC97AD16B1 /* ErrorAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44425F840E66E75CD7B6D0607714DB4 /* ErrorAction.swift */; };
+		3174836E592B96BCA0980C3A51C03A14 /* KhaltiPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F003C7FDEA39455A232F359250CD3F1 /* KhaltiPaymentViewController.swift */; };
+		399714B2C7FE1C83650CB2A86C971649 /* BankingPop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971E7798E7B59146B6352A6DF396DD79 /* BankingPop.swift */; };
 		3CB4F1ABBB50C1A12138C699613AFF74 /* Khalti.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E83B74D921C87C23ECC74002B1313A54 /* Khalti.bundle */; };
-		3DA3A3D18CE3247C79D330DD501FC3B0 /* ErrorAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9449FCFE6DCB7A50D7CA64BB53954E7 /* ErrorAction.swift */; };
-		46D1C167AAE551E4551FAFC7CE555D54 /* CheckOut.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 014C7D4D1555DA429026976C0DF514E0 /* CheckOut.storyboard */; };
-		483DE9DE0832BECE2AF5AA450443FC35 /* Ebanking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F240E5ECBB1C34DB3383DC310EAD734 /* Ebanking.swift */; };
-		59FD270EB5FD025F9BBD6A2E56D97C42 /* BankingPopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D9C78A2C88FC7C3890D85190F55508 /* BankingPopViewController.swift */; };
-		68E783801317D7C501767623C17492E9 /* CheckOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE3D8AA5F0EEEAD2A9754F8CD709736 /* CheckOutViewController.swift */; };
-		7A4B5D0DBA4D09C15C25444D828DEFCA /* Khalti-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 22E0641B5F2C17A7B5106696CB0E46AF /* Khalti-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7AEA6896F609AB8ADAAD9375048323A4 /* KhaltiPayDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA43BA00D64926E05C2E8EAD63B5177 /* KhaltiPayDelegate.swift */; };
-		8A9EDC6CED3BF77C9FC22A400C4FE536 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686C81B492DCF880D6BFEAA620B4C390 /* List.swift */; };
+		46D1C167AAE551E4551FAFC7CE555D54 /* CheckOut.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE0E6D84D56227E24B46D1FD47420F5F /* CheckOut.storyboard */; };
+		5B4A8E9EBE1B67CBCA0C192F6F602527 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD9F4627218EEBF53BBD48DAEA4CDBE /* Config.swift */; };
+		78FA2941689C745060B30427DEC5F1E1 /* Khalti-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D9D0DCC9CC1410613F3D7A8474B99C /* Khalti-dummy.m */; };
+		7A4B5D0DBA4D09C15C25444D828DEFCA /* Khalti-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D870138F41ECF0E8D705A143F6E14545 /* Khalti-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8180514F0767C6943305F3BA49AA138C /* EbankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F661D4549FED8A7EDB6F49306E9D393C /* EbankingViewController.swift */; };
+		AC2D209CB6BC78E961D51FC85825446E /* CheckOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08052EBEC6AA9C181B1A2F5309BDEB73 /* CheckOutViewController.swift */; };
 		BA5AA615F74A4B890A546BA34FDE1023 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */; };
-		BB9E6CA2B3C223D9DE66C81D023944C3 /* KaltiApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA3C86F3540FC97A5F611D2C01DB7F4 /* KaltiApi.swift */; };
-		BC2AE758B98DD40A79D6DA8F9F7075B7 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A8A5CD464817E476BB15A1F3B4C622 /* ListCell.swift */; };
-		C750E7C55570AAB4C1CC05ED09B287B8 /* EbankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F2E4897EF5843B3FE32EDBC6FF4C75 /* EbankingViewController.swift */; };
+		C3507E729B6C2920E79FCED4F57F383C /* Khalti.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47642914B915501269976220AEC33C4B /* Khalti.swift */; };
 		D197B8A234B6DDE56E1DAC2B64A3DBF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
-		D198671949979317A8547DDE9E4C265B /* KhaltiPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D3CBBEAC0CB19FB2BEDCF66EC62E99 /* KhaltiPaymentViewController.swift */; };
-		DB8D3F638F5626FACABB2F847047325D /* KhaltiPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A365E2F3B2AB2D26EFBF42FAE555B7D6 /* KhaltiPayment.swift */; };
-		E5199A8BD4AEE5B07F31A5D726466AAA /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AEBB6E1B993C6E4814E9CE789BFD0A /* Config.swift */; };
+		D622048C1C7E84ACCA6C8EF7524D9F34 /* BankingPopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E588319FDF15C14681E95CE18F0315BE /* BankingPopViewController.swift */; };
+		E5425BCEAD868A064F412EFAF36C22D2 /* KaltiApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E668DD8B4935B2725C5A9A0E5A85DA3B /* KaltiApi.swift */; };
 		E680D603CD39CCA2FA62510E1757B1D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
+		E8795EF370403BE47B032D9DFCEEA05B /* KhaltiPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6E5A3C5922E91AA5657842DA9B9130 /* KhaltiPayment.swift */; };
+		EE2008A6FEE7ED682B5ADA626DDA59B9 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DCFC10242C069B0D89EE6105D38F54 /* List.swift */; };
+		F01ADD4824B8E95E03BA80A1F79E9642 /* KhaltiPayDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2E11E8938F53871E569DB749D0E2D8 /* KhaltiPayDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,48 +51,45 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		014C7D4D1555DA429026976C0DF514E0 /* CheckOut.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = CheckOut.storyboard; path = Khalti/Assets/CheckOut.storyboard; sourceTree = "<group>"; };
 		0347B3FDD44DC3FC1114A501F1D50517 /* Pods-Khalti-Pay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Khalti-Pay.debug.xcconfig"; sourceTree = "<group>"; };
-		03D83D0F97916018182A766FCD0CFBAE /* Khalti.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Khalti.swift; path = Khalti/Classes/Khalti.swift; sourceTree = "<group>"; };
-		22E0641B5F2C17A7B5106696CB0E46AF /* Khalti-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Khalti-umbrella.h"; sourceTree = "<group>"; };
+		08052EBEC6AA9C181B1A2F5309BDEB73 /* CheckOutViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CheckOutViewController.swift; path = Khalti/Classes/CheckOutViewController.swift; sourceTree = "<group>"; };
 		26382F4E9A6E17F4C12E5CEA1581472F /* Pods-Khalti-Pay-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Khalti-Pay-frameworks.sh"; sourceTree = "<group>"; };
-		2EB50EA5CC9FE4DEC4174A0F186C521C /* images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = images.xcassets; path = Khalti/Assets/images.xcassets; sourceTree = "<group>"; };
-		32A8A5CD464817E476BB15A1F3B4C622 /* ListCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
-		38D3CBBEAC0CB19FB2BEDCF66EC62E99 /* KhaltiPaymentViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KhaltiPaymentViewController.swift; sourceTree = "<group>"; };
+		381EE3231A00E5EE287EB4524926DACB /* Khalti.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Khalti.xcconfig; sourceTree = "<group>"; };
+		3F003C7FDEA39455A232F359250CD3F1 /* KhaltiPaymentViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KhaltiPaymentViewController.swift; path = "Khalti/Classes/Pay Options/KhaltiPayment/KhaltiPaymentViewController.swift"; sourceTree = "<group>"; };
+		47642914B915501269976220AEC33C4B /* Khalti.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Khalti.swift; path = Khalti/Classes/Khalti.swift; sourceTree = "<group>"; };
 		4CAB1F446CFB1F18DB76D8DFF1514109 /* Pods_Khalti_Pay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Khalti_Pay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D832A786FF88216CE0FBBC9D78955A6 /* Khalti.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = Khalti.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		4F240E5ECBB1C34DB3383DC310EAD734 /* Ebanking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Ebanking.swift; sourceTree = "<group>"; };
+		4F22C1BA552494EA658A5C180D0C677C /* Khalti.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Khalti.modulemap; sourceTree = "<group>"; };
+		51D240E83198AD4F78916C025CE23315 /* Ebanking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Ebanking.swift; path = "Khalti/Classes/Pay Options/Ebanking/Ebanking.swift"; sourceTree = "<group>"; };
 		5607B555D692EA1D211644E4D946B7AC /* Pods-Khalti-Pay-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Khalti-Pay-acknowledgements.markdown"; sourceTree = "<group>"; };
 		576796AA5A923200E98F2A2FFB1A3ABC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		686C81B492DCF880D6BFEAA620B4C390 /* List.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = List.swift; path = Khalti/Classes/List.swift; sourceTree = "<group>"; };
-		6990F4DB101E1286F0B2175670A84781 /* Khalti.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Khalti.xcconfig; sourceTree = "<group>"; };
-		6CA3C86F3540FC97A5F611D2C01DB7F4 /* KaltiApi.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaltiApi.swift; path = Khalti/Classes/KaltiApi.swift; sourceTree = "<group>"; };
 		6E8C24AC1394B29F37C95626F654A869 /* Pods-Khalti-Pay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Khalti-Pay.release.xcconfig"; sourceTree = "<group>"; };
-		73C4582F6752F6AC9C9EA14EA8564717 /* BankingPop.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BankingPop.swift; sourceTree = "<group>"; };
-		8004C171405E97B5CFF5D149ECC7B4CF /* ResourceBundle-Khalti-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Khalti-Info.plist"; sourceTree = "<group>"; };
-		835AF74F5FDDDB0B5BE529766C75A68A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		86D9C78A2C88FC7C3890D85190F55508 /* BankingPopViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BankingPopViewController.swift; sourceTree = "<group>"; };
+		7C6E5A3C5922E91AA5657842DA9B9130 /* KhaltiPayment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KhaltiPayment.swift; path = "Khalti/Classes/Pay Options/KhaltiPayment/KhaltiPayment.swift"; sourceTree = "<group>"; };
+		7E2E11E8938F53871E569DB749D0E2D8 /* KhaltiPayDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KhaltiPayDelegate.swift; path = Khalti/Classes/KhaltiPayDelegate.swift; sourceTree = "<group>"; };
 		872B42F6FE16C780047D83D2F2BE070C /* Pods-Khalti-Pay.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Khalti-Pay.modulemap"; sourceTree = "<group>"; };
-		89C40187F9E7D59E8FC740E48691ACDA /* Khalti-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Khalti-dummy.m"; sourceTree = "<group>"; };
-		8CA7041DCD50750F7754EF74DE6318DA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		908E902E026C5C22904CF9014A5604AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93F2E4897EF5843B3FE32EDBC6FF4C75 /* EbankingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EbankingViewController.swift; sourceTree = "<group>"; };
-		972A55BDC09A3BB33E3D7E49450F6BC6 /* Khalti.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Khalti.modulemap; sourceTree = "<group>"; };
-		9AA43BA00D64926E05C2E8EAD63B5177 /* KhaltiPayDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KhaltiPayDelegate.swift; path = Khalti/Classes/KhaltiPayDelegate.swift; sourceTree = "<group>"; };
-		A365E2F3B2AB2D26EFBF42FAE555B7D6 /* KhaltiPayment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KhaltiPayment.swift; sourceTree = "<group>"; };
-		A3AEBB6E1B993C6E4814E9CE789BFD0A /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Config.swift; path = Khalti/Classes/Config.swift; sourceTree = "<group>"; };
+		971E7798E7B59146B6352A6DF396DD79 /* BankingPop.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BankingPop.swift; path = "Khalti/Classes/Pay Options/BankingPop.swift"; sourceTree = "<group>"; };
+		A44425F840E66E75CD7B6D0607714DB4 /* ErrorAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ErrorAction.swift; path = Khalti/Classes/ErrorAction.swift; sourceTree = "<group>"; };
+		AB6D868457BACDC0312C7F7776093FAC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFEB13FC2BE4DB081150B81D4D27589D /* Khalti-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Khalti-prefix.pch"; sourceTree = "<group>"; };
 		B6C7A69321D8B03CEF4FA20919954276 /* Pods-Khalti-Pay-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Khalti-Pay-resources.sh"; sourceTree = "<group>"; };
 		BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		BF2C0885665DCE9BA74AD73812BE5E4C /* ListCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ListCell.swift; path = "Khalti/Classes/Pay Options/Ebanking/ListCell.swift"; sourceTree = "<group>"; };
 		C5C38655414DF5874146796FF9A73830 /* Khalti.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Khalti.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C85710AD38CC813CC7D96B7E16805CD2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		CAEFF1C5C539492EE5C9F2D0DE57E295 /* Khalti-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Khalti-prefix.pch"; sourceTree = "<group>"; };
-		D9449FCFE6DCB7A50D7CA64BB53954E7 /* ErrorAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ErrorAction.swift; path = Khalti/Classes/ErrorAction.swift; sourceTree = "<group>"; };
+		D870138F41ECF0E8D705A143F6E14545 /* Khalti-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Khalti-umbrella.h"; sourceTree = "<group>"; };
 		D9A15DB4B5E84A533C38B59CDAA54E0E /* Pods-Khalti-Pay-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Khalti-Pay-umbrella.h"; sourceTree = "<group>"; };
-		DCE3D8AA5F0EEEAD2A9754F8CD709736 /* CheckOutViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CheckOutViewController.swift; path = Khalti/Classes/CheckOutViewController.swift; sourceTree = "<group>"; };
 		DCFB9356B3E87A33EEC132D8E13A06FC /* Pods-Khalti-Pay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Khalti-Pay-dummy.m"; sourceTree = "<group>"; };
+		DE0E6D84D56227E24B46D1FD47420F5F /* CheckOut.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = CheckOut.storyboard; path = Khalti/Assets/CheckOut.storyboard; sourceTree = "<group>"; };
+		E588319FDF15C14681E95CE18F0315BE /* BankingPopViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BankingPopViewController.swift; path = "Khalti/Classes/Pay Options/BankingPopViewController.swift"; sourceTree = "<group>"; };
+		E5DCFC10242C069B0D89EE6105D38F54 /* List.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = List.swift; path = Khalti/Classes/List.swift; sourceTree = "<group>"; };
+		E668DD8B4935B2725C5A9A0E5A85DA3B /* KaltiApi.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaltiApi.swift; path = Khalti/Classes/KaltiApi.swift; sourceTree = "<group>"; };
+		E6D9D0DCC9CC1410613F3D7A8474B99C /* Khalti-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Khalti-dummy.m"; sourceTree = "<group>"; };
 		E83B74D921C87C23ECC74002B1313A54 /* Khalti.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Khalti.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB440E936EE1624568B7D8B4314C40DE /* ResourceBundle-Khalti-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Khalti-Info.plist"; sourceTree = "<group>"; };
+		EFD9F4627218EEBF53BBD48DAEA4CDBE /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Config.swift; path = Khalti/Classes/Config.swift; sourceTree = "<group>"; };
 		F1FD7F72C22D8DCB910D2551C799C303 /* Pods-Khalti-Pay-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Khalti-Pay-acknowledgements.plist"; sourceTree = "<group>"; };
+		F661D4549FED8A7EDB6F49306E9D393C /* EbankingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EbankingViewController.swift; path = "Khalti/Classes/Pay Options/Ebanking/EbankingViewController.swift"; sourceTree = "<group>"; };
+		F7968C4C8C53F6691007E8BD3816A491 /* images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = images.xcassets; path = Khalti/Assets/images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,27 +139,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		1D0655A34AAEAB0AA389F5A895D28B31 /* Pay Options */ = {
-			isa = PBXGroup;
-			children = (
-				73C4582F6752F6AC9C9EA14EA8564717 /* BankingPop.swift */,
-				86D9C78A2C88FC7C3890D85190F55508 /* BankingPopViewController.swift */,
-				7FD8C438F1D866019E86F9C74225E925 /* Ebanking */,
-				4AAE7E2ED3DE69183A5F677F9564EF78 /* KhaltiPayment */,
-			);
-			name = "Pay Options";
-			path = "Khalti/Classes/Pay Options";
-			sourceTree = "<group>";
-		};
-		1F1EA4043AD345195DB2BF6AEBE36790 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				014C7D4D1555DA429026976C0DF514E0 /* CheckOut.storyboard */,
-				2EB50EA5CC9FE4DEC4174A0F186C521C /* images.xcassets */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,86 +147,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		45E5D0F250C9851FC15F2623DD353FF8 /* Pod */ = {
+		4F319F1E714433C0546BE989C5517D47 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4D832A786FF88216CE0FBBC9D78955A6 /* Khalti.podspec */,
-				835AF74F5FDDDB0B5BE529766C75A68A /* LICENSE */,
-				C85710AD38CC813CC7D96B7E16805CD2 /* README.md */,
+				DE0E6D84D56227E24B46D1FD47420F5F /* CheckOut.storyboard */,
+				F7968C4C8C53F6691007E8BD3816A491 /* images.xcassets */,
 			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		4AAE7E2ED3DE69183A5F677F9564EF78 /* KhaltiPayment */ = {
-			isa = PBXGroup;
-			children = (
-				A365E2F3B2AB2D26EFBF42FAE555B7D6 /* KhaltiPayment.swift */,
-				38D3CBBEAC0CB19FB2BEDCF66EC62E99 /* KhaltiPaymentViewController.swift */,
-			);
-			path = KhaltiPayment;
-			sourceTree = "<group>";
-		};
-		5639B85321FBF1C452F9FAD41D2C925D /* Khalti */ = {
-			isa = PBXGroup;
-			children = (
-				DCE3D8AA5F0EEEAD2A9754F8CD709736 /* CheckOutViewController.swift */,
-				A3AEBB6E1B993C6E4814E9CE789BFD0A /* Config.swift */,
-				D9449FCFE6DCB7A50D7CA64BB53954E7 /* ErrorAction.swift */,
-				6CA3C86F3540FC97A5F611D2C01DB7F4 /* KaltiApi.swift */,
-				03D83D0F97916018182A766FCD0CFBAE /* Khalti.swift */,
-				9AA43BA00D64926E05C2E8EAD63B5177 /* KhaltiPayDelegate.swift */,
-				686C81B492DCF880D6BFEAA620B4C390 /* List.swift */,
-				1D0655A34AAEAB0AA389F5A895D28B31 /* Pay Options */,
-				45E5D0F250C9851FC15F2623DD353FF8 /* Pod */,
-				1F1EA4043AD345195DB2BF6AEBE36790 /* Resources */,
-				6F24B2F84FD03E9C1644842DF8888F35 /* Support Files */,
-			);
-			name = Khalti;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		641C69446631D1A420CBBCFE1C2F8A10 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5639B85321FBF1C452F9FAD41D2C925D /* Khalti */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		6F24B2F84FD03E9C1644842DF8888F35 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8CA7041DCD50750F7754EF74DE6318DA /* Info.plist */,
-				972A55BDC09A3BB33E3D7E49450F6BC6 /* Khalti.modulemap */,
-				6990F4DB101E1286F0B2175670A84781 /* Khalti.xcconfig */,
-				89C40187F9E7D59E8FC740E48691ACDA /* Khalti-dummy.m */,
-				CAEFF1C5C539492EE5C9F2D0DE57E295 /* Khalti-prefix.pch */,
-				22E0641B5F2C17A7B5106696CB0E46AF /* Khalti-umbrella.h */,
-				8004C171405E97B5CFF5D149ECC7B4CF /* ResourceBundle-Khalti-Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example Obj-c/Pods/Target Support Files/Khalti";
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				641C69446631D1A420CBBCFE1C2F8A10 /* Development Pods */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				C01272C0CB17358EF26EC1324996F7B2 /* Pods */,
 				0A565A3ADCBED3E93F51A34C75D000E9 /* Products */,
 				FE9A80A9C2EBD768DBB5CCADB294B2D8 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		7FD8C438F1D866019E86F9C74225E925 /* Ebanking */ = {
-			isa = PBXGroup;
-			children = (
-				4F240E5ECBB1C34DB3383DC310EAD734 /* Ebanking.swift */,
-				93F2E4897EF5843B3FE32EDBC6FF4C75 /* EbankingViewController.swift */,
-				32A8A5CD464817E476BB15A1F3B4C622 /* ListCell.swift */,
-			);
-			path = Ebanking;
 			sourceTree = "<group>";
 		};
 		9929B56C44426A3D0FBCDF03E242CA88 /* Pods-Khalti-Pay */ = {
@@ -269,6 +183,52 @@
 			);
 			name = "Pods-Khalti-Pay";
 			path = "Target Support Files/Pods-Khalti-Pay";
+			sourceTree = "<group>";
+		};
+		C01272C0CB17358EF26EC1324996F7B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4D90864A48088956575B6446A62C3DE /* Khalti */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D4D90864A48088956575B6446A62C3DE /* Khalti */ = {
+			isa = PBXGroup;
+			children = (
+				971E7798E7B59146B6352A6DF396DD79 /* BankingPop.swift */,
+				E588319FDF15C14681E95CE18F0315BE /* BankingPopViewController.swift */,
+				08052EBEC6AA9C181B1A2F5309BDEB73 /* CheckOutViewController.swift */,
+				EFD9F4627218EEBF53BBD48DAEA4CDBE /* Config.swift */,
+				51D240E83198AD4F78916C025CE23315 /* Ebanking.swift */,
+				F661D4549FED8A7EDB6F49306E9D393C /* EbankingViewController.swift */,
+				A44425F840E66E75CD7B6D0607714DB4 /* ErrorAction.swift */,
+				E668DD8B4935B2725C5A9A0E5A85DA3B /* KaltiApi.swift */,
+				47642914B915501269976220AEC33C4B /* Khalti.swift */,
+				7E2E11E8938F53871E569DB749D0E2D8 /* KhaltiPayDelegate.swift */,
+				7C6E5A3C5922E91AA5657842DA9B9130 /* KhaltiPayment.swift */,
+				3F003C7FDEA39455A232F359250CD3F1 /* KhaltiPaymentViewController.swift */,
+				E5DCFC10242C069B0D89EE6105D38F54 /* List.swift */,
+				BF2C0885665DCE9BA74AD73812BE5E4C /* ListCell.swift */,
+				4F319F1E714433C0546BE989C5517D47 /* Resources */,
+				F8641DAAE8567A999BA2F0A04898C836 /* Support Files */,
+			);
+			path = Khalti;
+			sourceTree = "<group>";
+		};
+		F8641DAAE8567A999BA2F0A04898C836 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB6D868457BACDC0312C7F7776093FAC /* Info.plist */,
+				4F22C1BA552494EA658A5C180D0C677C /* Khalti.modulemap */,
+				381EE3231A00E5EE287EB4524926DACB /* Khalti.xcconfig */,
+				E6D9D0DCC9CC1410613F3D7A8474B99C /* Khalti-dummy.m */,
+				AFEB13FC2BE4DB081150B81D4D27589D /* Khalti-prefix.pch */,
+				D870138F41ECF0E8D705A143F6E14545 /* Khalti-umbrella.h */,
+				EB440E936EE1624568B7D8B4314C40DE /* ResourceBundle-Khalti-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Khalti";
 			sourceTree = "<group>";
 		};
 		FE9A80A9C2EBD768DBB5CCADB294B2D8 /* Targets Support Files */ = {
@@ -322,7 +282,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84067E8E827F8A78F8DEBD390B910019 /* Build configuration list for PBXNativeTarget "Khalti" */;
 			buildPhases = (
-				2D3F08CC8A900E72490D28F054E5F894 /* Sources */,
+				0A0566CE4F7CD8E0F06E864A1CF5B629 /* Sources */,
 				57C35E30F3EE9280E227ECAC6491A492 /* Frameworks */,
 				D9F6C6F2458C1494D2B9CFE73BE11935 /* Resources */,
 				660D368C7DA6DE0C894F3BD3367D299D /* Headers */,
@@ -404,33 +364,33 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0A0566CE4F7CD8E0F06E864A1CF5B629 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				399714B2C7FE1C83650CB2A86C971649 /* BankingPop.swift in Sources */,
+				D622048C1C7E84ACCA6C8EF7524D9F34 /* BankingPopViewController.swift in Sources */,
+				AC2D209CB6BC78E961D51FC85825446E /* CheckOutViewController.swift in Sources */,
+				5B4A8E9EBE1B67CBCA0C192F6F602527 /* Config.swift in Sources */,
+				1A110EAABAA0EAF0CBC13FCA45F9D7F1 /* Ebanking.swift in Sources */,
+				8180514F0767C6943305F3BA49AA138C /* EbankingViewController.swift in Sources */,
+				2FEE426BCBD5C4D58D99D6CC97AD16B1 /* ErrorAction.swift in Sources */,
+				E5425BCEAD868A064F412EFAF36C22D2 /* KaltiApi.swift in Sources */,
+				78FA2941689C745060B30427DEC5F1E1 /* Khalti-dummy.m in Sources */,
+				C3507E729B6C2920E79FCED4F57F383C /* Khalti.swift in Sources */,
+				F01ADD4824B8E95E03BA80A1F79E9642 /* KhaltiPayDelegate.swift in Sources */,
+				E8795EF370403BE47B032D9DFCEEA05B /* KhaltiPayment.swift in Sources */,
+				3174836E592B96BCA0980C3A51C03A14 /* KhaltiPaymentViewController.swift in Sources */,
+				EE2008A6FEE7ED682B5ADA626DDA59B9 /* List.swift in Sources */,
+				0B66E4171C6FE618801C3FA73740CACA /* ListCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		21A76BEF36E1E301A7DCA5CC3EE8749E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				06BBDCD0ECA0965A3853952E5F93F167 /* Pods-Khalti-Pay-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2D3F08CC8A900E72490D28F054E5F894 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				097BDC30ED8BEE1976A78978A18187CE /* BankingPop.swift in Sources */,
-				59FD270EB5FD025F9BBD6A2E56D97C42 /* BankingPopViewController.swift in Sources */,
-				68E783801317D7C501767623C17492E9 /* CheckOutViewController.swift in Sources */,
-				E5199A8BD4AEE5B07F31A5D726466AAA /* Config.swift in Sources */,
-				483DE9DE0832BECE2AF5AA450443FC35 /* Ebanking.swift in Sources */,
-				C750E7C55570AAB4C1CC05ED09B287B8 /* EbankingViewController.swift in Sources */,
-				3DA3A3D18CE3247C79D330DD501FC3B0 /* ErrorAction.swift in Sources */,
-				BB9E6CA2B3C223D9DE66C81D023944C3 /* KaltiApi.swift in Sources */,
-				311980FF718CBD15EF7EC916BFB96906 /* Khalti-dummy.m in Sources */,
-				20EA3D335651972C34843631389862C6 /* Khalti.swift in Sources */,
-				7AEA6896F609AB8ADAAD9375048323A4 /* KhaltiPayDelegate.swift in Sources */,
-				DB8D3F638F5626FACABB2F847047325D /* KhaltiPayment.swift in Sources */,
-				D198671949979317A8547DDE9E4C265B /* KhaltiPaymentViewController.swift in Sources */,
-				8A9EDC6CED3BF77C9FC22A400C4FE536 /* List.swift in Sources */,
-				BC2AE758B98DD40A79D6DA8F9F7075B7 /* ListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,7 +484,7 @@
 		};
 		36A799D31799AE75F731D51F2F06909F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6990F4DB101E1286F0B2175670A84781 /* Khalti.xcconfig */;
+			baseConfigurationReference = 381EE3231A00E5EE287EB4524926DACB /* Khalti.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -591,7 +551,7 @@
 		};
 		DD28E3ADD3D8989776A21AA5CF6957A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6990F4DB101E1286F0B2175670A84781 /* Khalti.xcconfig */;
+			baseConfigurationReference = 381EE3231A00E5EE287EB4524926DACB /* Khalti.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Khalti";
@@ -607,7 +567,7 @@
 		};
 		DD6C2EC483735FB689EED0C3CEBE93F6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6990F4DB101E1286F0B2175670A84781 /* Khalti.xcconfig */;
+			baseConfigurationReference = 381EE3231A00E5EE287EB4524926DACB /* Khalti.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Khalti";
@@ -716,7 +676,7 @@
 		};
 		F8E5F0BD2CCB00DA653D0ACC80C9CB40 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6990F4DB101E1286F0B2175670A84781 /* Khalti.xcconfig */;
+			baseConfigurationReference = 381EE3231A00E5EE287EB4524926DACB /* Khalti.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

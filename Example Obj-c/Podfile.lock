@@ -2,15 +2,15 @@ PODS:
   - Khalti (1.0.9)
 
 DEPENDENCIES:
-  - Khalti (from `../`)
+  - Khalti
 
-EXTERNAL SOURCES:
-  Khalti:
-    :path: "../"
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Khalti
 
 SPEC CHECKSUMS:
-  Khalti: 57a156575697a06a80086092cb350eeeab3c80d7
+  Khalti: 8bc33cc57449a582c033af1f95824fed48c5359e
 
-PODFILE CHECKSUM: 7b92389943cac07aa14baf52d4d0e4edd2a66a51
+PODFILE CHECKSUM: 3ca7b372d5620fdb1b33a75595d7b0c997b78a84
 
 COCOAPODS: 1.5.3
