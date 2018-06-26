@@ -1,0 +1,6 @@
+framework module Khalti {
+  umbrella header "Khalti-umbrella.h"
+
+  export *
+  module * { export * }
+}

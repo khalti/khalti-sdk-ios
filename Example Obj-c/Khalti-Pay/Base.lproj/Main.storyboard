@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f9Z-ew-FKa">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="7MI-7i-Jxn">
+            <objects>
+                <viewController id="f9Z-ew-FKa" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nfs-XT-VIT"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xpk-DN-WmM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lyI-bi-UgN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XB5-XA-YOs">
+                                <rect key="frame" x="110" y="221" width="100" height="38"/>
+                                <color key="backgroundColor" red="0.96770882609999997" green="0.57780718799999997" blue="0.13238912820000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                                <state key="normal" title="Pay Now">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="pay:" destination="f9Z-ew-FKa" eventType="touchUpInside" id="KN9-4B-sMH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is payment example from Khalti" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60n-KC-VQj">
+                                <rect key="frame" x="16" y="60" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Khalti payment allows pay via ebanking, wallet(Khalit itself and card)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="moQ-b7-bHM">
+                                <rect key="frame" x="16" y="101" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XB5-XA-YOs" firstAttribute="centerX" secondItem="lyI-bi-UgN" secondAttribute="centerX" id="1fJ-EP-zOd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="60n-KC-VQj" secondAttribute="trailing" id="9c8-rs-Nq6"/>
+                            <constraint firstItem="moQ-b7-bHM" firstAttribute="leading" secondItem="lyI-bi-UgN" secondAttribute="leadingMargin" id="JNv-4L-5en"/>
+                            <constraint firstItem="moQ-b7-bHM" firstAttribute="top" secondItem="60n-KC-VQj" secondAttribute="bottom" constant="20" id="Nh6-Cn-eHA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="moQ-b7-bHM" secondAttribute="trailing" id="X8V-jx-1C2"/>
+                            <constraint firstItem="XB5-XA-YOs" firstAttribute="centerY" secondItem="lyI-bi-UgN" secondAttribute="centerY" id="lU2-NM-b9Z"/>
+                            <constraint firstItem="60n-KC-VQj" firstAttribute="leading" secondItem="lyI-bi-UgN" secondAttribute="leadingMargin" id="maS-AU-5sz"/>
+                            <constraint firstItem="60n-KC-VQj" firstAttribute="top" secondItem="Nfs-XT-VIT" secondAttribute="bottom" constant="40" id="weC-Fa-WQi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4Dc-2Y-Q2m"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YBZ-O0-tD3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
