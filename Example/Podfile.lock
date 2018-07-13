@@ -4,17 +4,20 @@ PODS:
 
 DEPENDENCIES:
   - IQKeyboardManager
-  - Khalti
+  - Khalti (from `../`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - IQKeyboardManager
-    - Khalti
+
+EXTERNAL SOURCES:
+  Khalti:
+    :path: "../"
 
 SPEC CHECKSUMS:
   IQKeyboardManager: c390e612f4b98c8fd748016470138537dc163ead
-  Khalti: 8bc33cc57449a582c033af1f95824fed48c5359e
+  Khalti: 57a156575697a06a80086092cb350eeeab3c80d7
 
-PODFILE CHECKSUM: 8a423dc9e6219f8c0cf45451c7a0815ff9863bdd
+PODFILE CHECKSUM: c3deb649febb3e38b67eab739f641c8a137b97b2
 
 COCOAPODS: 1.5.3
