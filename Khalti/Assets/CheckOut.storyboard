@@ -55,11 +55,11 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="106.5" height="59"/>
                                                         <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
                                                         <inset key="contentEdgeInsets" minX="0.0" minY="16" maxX="0.0" maxY="16"/>
-                                                        <state key="normal" title="eBanking">
+                                                        <state key="normal" title="Khalti">
                                                             <color key="titleColor" red="0.96770882609999997" green="0.57780718799999997" blue="0.13238912820000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="ebankingPay:" destination="nqx-nj-bY9" eventType="touchUpInside" id="7uj-E8-U2a"/>
+                                                            <action selector="khaltiPay:" destination="nqx-nj-bY9" eventType="touchUpInside" id="ea6-GR-636"/>
                                                         </connections>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3LM-wg-iWH" userLabel="First Line">
@@ -88,11 +88,11 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePr-0x-FK1">
                                                         <rect key="frame" x="0.0" y="0.0" width="106.5" height="59"/>
                                                         <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
-                                                        <state key="normal" title="Khalti">
+                                                        <state key="normal" title="ebanking">
                                                             <color key="titleColor" red="0.27890625600000002" green="0.1618569195" blue="0.41170451050000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="khaltiPay:" destination="nqx-nj-bY9" eventType="touchUpInside" id="sXV-Jo-1VP"/>
+                                                            <action selector="ebankingPay:" destination="nqx-nj-bY9" eventType="touchUpInside" id="Rzb-UV-qAN"/>
                                                         </connections>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B0Z-v7-JOE">
@@ -124,7 +124,7 @@
                                                             <color key="titleColor" red="0.27890625600000002" green="0.1618569195" blue="0.41170451050000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="cardPay:" destination="nqx-nj-bY9" eventType="touchUpInside" id="ZeU-iH-DCc"/>
+                                                            <action selector="cardPay:" destination="nqx-nj-bY9" eventType="touchUpInside" id="41R-aD-38R"/>
                                                         </connections>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MJM-R6-pxS">
@@ -206,6 +206,7 @@
                     <connections>
                         <outlet property="cardView" destination="z8P-2s-5vh" id="gIX-w5-TGH"/>
                         <outlet property="containerView" destination="a9E-OV-RkC" id="WNg-TB-hsq"/>
+                        <outlet property="ebankingView" destination="5rK-84-HC5" id="7ZF-pJ-WNI"/>
                         <outlet property="firstButton" destination="pmN-Jf-MN8" id="nbs-ev-ywt"/>
                         <outlet property="firstLine" destination="3LM-wg-iWH" id="eE6-QL-vSJ"/>
                         <outlet property="optionsWidthConstraints" destination="sr2-ft-w3L" id="AS4-vY-9qj"/>

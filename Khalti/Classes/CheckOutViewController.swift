@@ -27,6 +27,7 @@ class CheckOutViewController: UIViewController {
     // MARK: Outlets
     @IBOutlet weak var firstButton: UIButton!
     @IBOutlet weak var firstLine: UIView!
+    @IBOutlet weak var ebankingView:UIView!
     @IBOutlet weak var secondButton: UIButton!
     @IBOutlet weak var secondLine: UIView!
     @IBOutlet weak var cardView:UIView!
@@ -37,20 +38,20 @@ class CheckOutViewController: UIViewController {
     
     var config:Config?
     var delegate:KhaltiPayDelegate?
+
+    private lazy var khaltiPayViewController: KhaltiPaymentViewController = {
+        let viewController = KhaltiPayment.viewController()
+        viewController.config = self.config
+        viewController.delegate = self.delegate
+        self.add(asChildViewController: viewController)
+        return viewController
+    }()
     
     private lazy var ebankingViewController:EbankingViewController = {
         let viewController = Ebanking.viewController()
         viewController.config = self.config
         viewController.delegate = self.delegate
         viewController.loadType = KhaltiAPIUrl.ebankList
-        self.add(asChildViewController: viewController)
-        return viewController
-    }()
-    
-    private lazy var khaltiPayViewController: KhaltiPaymentViewController = {
-        let viewController = KhaltiPayment.viewController()
-        viewController.config = self.config
-        viewController.delegate = self.delegate
         self.add(asChildViewController: viewController)
         return viewController
     }()
@@ -69,9 +70,18 @@ class CheckOutViewController: UIViewController {
         super.viewDidLoad()
         
         self.optionsWidthConstraints.constant = self.view.bounds.width/3
-        if let value = config?.getCardView() {
-            self.cardView.isHidden = !value
-            self.optionsWidthConstraints.constant = value ? self.view.bounds.width/3 : self.view.bounds.width/2
+        if let card = config?.getCardView(), let bank = config?.getebankingView() {
+            let cardHide = !card
+            let bankHide = !bank
+            
+            self.cardView.isHidden = cardHide
+            self.ebankingView.isHidden = bankHide
+            
+            if bankHide && cardHide {
+                self.optionsWidthConstraints.constant = self.view.bounds.width
+            } else if cardHide || bankHide {
+                self.optionsWidthConstraints.constant = self.view.bounds.width/2
+            }
         }
         
         let tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
@@ -79,7 +89,7 @@ class CheckOutViewController: UIViewController {
         self.view.addGestureRecognizer(tap)
         
         self.addBackButton()
-        self.updateView(to: .ebanking)
+        self.updateView(to: .khalti)
         
         NotificationCenter.default.addObserver(self, selector: #selector(handle(withNotification:)), name: Notification.Name(rawValue: Khalti.shared.appUrlScheme!), object: nil)
         
@@ -102,8 +112,22 @@ class CheckOutViewController: UIViewController {
             return
         }
         
-        self.cardView.isHidden = !config.getCardView()
-        self.optionsWidthConstraints.constant = config.getCardView() ? self.view.bounds.width/3 : self.view.bounds.width/2
+        let cardHide = !config.getCardView()
+        let bankHide = !config.getebankingView()
+        
+        if bankHide && cardHide {
+            self.cardView.isHidden = true
+            self.ebankingView.isHidden = true
+            self.optionsWidthConstraints.constant = self.view.bounds.width
+        } else if bankHide {
+            self.secondButton.setTitle("Card", for: .normal)
+            self.optionsWidthConstraints.constant = self.view.bounds.width/2
+            self.ebankingView.isHidden = false
+            self.cardView.isHidden = true
+        } else if cardHide {
+            self.optionsWidthConstraints.constant = self.view.bounds.width/2
+            self.cardView.isHidden = true
+        }
     }
     
     @objc func handle(withNotification notification : Notification) {
@@ -139,7 +163,12 @@ class CheckOutViewController: UIViewController {
     
     // MARK: - Actions
     @IBAction func ebankingPay(_ sender: UIButton) {
-        self.updateView(to: .ebanking)
+        if let _value = config?.getebankingView(), _value {
+            self.updateView(to: .ebanking)
+        }
+        else if let _value = config?.getCardView(), _value {
+            self.updateView(to: .card)
+        }
     }
     
     @IBAction func khaltiPay(_ sender: UIButton) {
@@ -182,33 +211,44 @@ class CheckOutViewController: UIViewController {
         self.secondLine.backgroundColor = UIColor.clear
         self.thirdButton.setTitleColor(khaltiBaseColor, for: .normal)
         self.thirdLine.backgroundColor = UIColor.clear
-        if to == .ebanking {
+        if to == .khalti {
             UIView.animate(withDuration: 0.3, animations: {
                 self.firstButton.setTitleColor(khaltiOrangeColor, for: .normal)
                 self.firstLine.backgroundColor = khaltiOrangeColor
+            })
+            
+            if let _value = self.config?.getebankingView(), _value {
+                self.remove(asChildViewController: self.ebankingViewController)
+            }
+            if let _value = self.config?.getCardView(), _value {
+                self.remove(asChildViewController: self.cardPayViewController)
+            }
+            self.add(asChildViewController: self.khaltiPayViewController)
+        } else if to == .ebanking {
+            UIView.animate(withDuration: 0.3, animations: {
+                self.secondButton.setTitleColor(khaltiOrangeColor, for: .normal)
+                self.secondLine.backgroundColor = khaltiOrangeColor
             })
             self.remove(asChildViewController: self.khaltiPayViewController)
             if let card = self.config?.getCardView(), card {
                 self.remove(asChildViewController: self.cardPayViewController)
             }
             self.add(asChildViewController: self.ebankingViewController)
-        } else if to == .khalti {
-            UIView.animate(withDuration: 0.3, animations: {
-                self.secondButton.setTitleColor(khaltiOrangeColor, for: .normal)
-                self.secondLine.backgroundColor = khaltiOrangeColor
-            })
-            self.remove(asChildViewController: self.ebankingViewController)
-            if let card = self.config?.getCardView(), card {
-                self.remove(asChildViewController: self.cardPayViewController)
-            }
-            self.add(asChildViewController: self.khaltiPayViewController)
         } else if to == .card {
-            UIView.animate(withDuration: 0.3, animations: {
-                self.thirdButton.setTitleColor(khaltiOrangeColor, for: .normal)
-                self.thirdLine.backgroundColor = khaltiOrangeColor
+            UIView.animate(withDuration: 0.3, animations: { [weak self] in
+                if let _value = self?.config?.getebankingView(), !_value {
+                    self?.secondButton.setTitleColor(khaltiOrangeColor, for: .normal)
+                    self?.secondLine.backgroundColor = khaltiOrangeColor
+                } else {
+                    self?.thirdButton.setTitleColor(khaltiOrangeColor, for: .normal)
+                    self?.thirdLine.backgroundColor = khaltiOrangeColor
+                }
             })
-            self.remove(asChildViewController: self.ebankingViewController)
+            
             self.remove(asChildViewController: self.khaltiPayViewController)
+            if let _value = self.config?.getebankingView(), _value {
+                self.remove(asChildViewController: self.ebankingViewController)
+            }
             self.add(asChildViewController: self.cardPayViewController)
         }
     }
