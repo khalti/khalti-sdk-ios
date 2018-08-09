@@ -104,7 +104,7 @@ let jsonData = try? JSONSerialization.data(withJSONObject: extra, options: JSONS
 let jsonString = String(data: jsonData!, encoding: .utf8)!
         
 let additionalData:Dictionary<String,String> = [
-    "merchant_name" : "HelloPaaaaisaPVTLtd.",
+    "merchant_name" : "Merchant Company Name",
     "merchant_extra" : jsonString
 ]
         
