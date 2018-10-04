@@ -17,8 +17,8 @@ class ListCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         // Please check Main.storyboard with PaymentCell for the tag.
-        itemNameLabel = self.viewWithTag(202) as! UILabel
-        itemButton = self.viewWithTag(203) as! UIButton
+        itemNameLabel = (self.viewWithTag(202) as! UILabel)
+        itemButton = (self.viewWithTag(203) as! UIButton)
         itemButton.isHidden = false
         itemButton.layer.cornerRadius = 53/2
         itemButton.layer.masksToBounds = true
