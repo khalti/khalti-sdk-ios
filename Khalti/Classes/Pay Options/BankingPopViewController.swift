@@ -20,13 +20,13 @@ class BankingPopViewController: UIViewController {
     @IBOutlet weak var selectedBankButton: UIButton!
     @IBOutlet weak var selectedBankLabel: UILabel!
     
-    var bankName:String?
-    var bankShortName:String?
-    var bankLogo:String?
+    @objc var bankName:String?
+    @objc var bankShortName:String?
+    @objc var bankLogo:String?
     var delegate: BankingPopDelegate?
-    var amount:Int = 0
-    var image:UIImage?
-    var terms:[String] = []
+    @objc var amount:Int = 0
+    @objc var image:UIImage?
+    @objc var terms:[String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -135,10 +135,18 @@ extension BankingPopViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableViewAutomaticDimension
+        #if swift(>=4.2)
+            return UITableView.automaticDimension
+        #else
+            return UITableViewAutomaticDimension
+        #endif
     }
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableViewAutomaticDimension
+        #if swift(>=4.2)
+            return UITableView.automaticDimension
+        #else
+            return UITableViewAutomaticDimension
+        #endif
     }
 }

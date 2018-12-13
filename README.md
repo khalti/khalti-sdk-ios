@@ -1,18 +1,18 @@
 # Khalti
 
 [![IDE](https://img.shields.io/badge/Xcode-8%209%2010Beta-blue.svg)](https://developer.apple.com/xcode/)
-[![Language](https://img.shields.io/badge/swift-3,%204-orange.svg)](https://swift.org)
+[![Language](https://img.shields.io/badge/swift-3,%204,%204.2-orange.svg)](https://swift.org)
 [![Version](https://img.shields.io/cocoapods/v/Khalti.svg?style=flat)](http://cocoapods.org/pods/Khalti)
 [![License](https://img.shields.io/cocoapods/l/Khalti.svg?style=flat)](http://cocoapods.org/pods/Khalti)
 [![Platform](https://img.shields.io/cocoapods/p/Khalti.svg?style=flat)](http://cocoapods.org/pods/Khalti)
 
 
 ## Requirements
-This system is tested on Xcode 8, 9 and 10 beta with swift version 3 and 4. 
+This system is tested on Xcode 8, 9 and 10  with swift version 3, 4 and 4.2. 
 
 **Xcode**: >=8
 
-**Swift**: 3 and 4
+**Swift**: 3, 4 and 4.2
 
 
 ## Example

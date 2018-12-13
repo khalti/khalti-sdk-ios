@@ -11,11 +11,11 @@ import UIKit
 class EbankingViewController: UIViewController {
     
     // MARK: - Properties
-    var config:Config?
-    var delegate:KhaltiPayDelegate?
-    var activityIndicator: UIActivityIndicatorView!
+    @objc var config:Config?
+    @objc var delegate:KhaltiPayDelegate?
+    @objc var activityIndicator: UIActivityIndicatorView!
     var banks:[List] = []
-    var terms:[String] = [
+    @objc var terms:[String] = [
         "The first 3 transactions are free of cost.",
         "You can load a maximum amount of upto Rs.16,000 at once.",
         "For SCT cards, a service charge of 2% (maximum amount Rs.25) will be levied after the first 3 transactions.",
@@ -29,8 +29,8 @@ class EbankingViewController: UIViewController {
     @IBOutlet weak var listView: UIView!
     @IBOutlet weak var listCollectionView: UICollectionView!
     
-    internal var isFetching:Bool = true
-    internal let refreshControl = UIRefreshControl()
+    @objc internal var isFetching:Bool = true
+    @objc internal let refreshControl = UIRefreshControl()
     
     private lazy var noLabel: UILabel = {
         let label = UILabel()
@@ -157,7 +157,7 @@ class EbankingViewController: UIViewController {
         }
     }
     
-    internal func payAction(with mobile:String) {
+    @objc internal func payAction(with mobile:String) {
         var params = self.validate(with: mobile)
         print(params)
         if params.count == 0 {
@@ -249,13 +249,17 @@ class EbankingViewController: UIViewController {
         return params
     }
     
-    func addLoading() {
+    @objc func addLoading() {
+        #if swift(>=4.2)
+        let activityIndicator = UIActivityIndicatorView(style: .whiteLarge)
+        #else
         let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
+        #endif
         activityIndicator.color = UIColor.black
         self.activityIndicator = activityIndicator
     }
     
-    func showLoading() {
+    @objc func showLoading() {
         if let indicator = self.activityIndicator {
             indicator.startAnimating()
             activityIndicator.center = self.view.center
@@ -263,7 +267,7 @@ class EbankingViewController: UIViewController {
         }
     }
     
-    func hideLoading() {
+    @objc func hideLoading() {
         if let indicator = self.activityIndicator {
             indicator.stopAnimating()
             self.activityIndicator.removeFromSuperview()
@@ -271,7 +275,7 @@ class EbankingViewController: UIViewController {
     }
     
     // MARK: - Alert
-    internal func showError(with message:String, dismiss:Bool = true) {
+    @objc internal func showError(with message:String, dismiss:Bool = true) {
         let alertController = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK" , style: .default, handler: {_ in
             if dismiss {
@@ -328,7 +332,7 @@ extension EbankingViewController: UIPopoverControllerDelegate, UIPopoverPresenta
         self.view.alpha = 1.0
     }
     
-    func presentLoad() {
+    @objc func presentLoad() {
         let popoverVC = BankingPop.viewController()
         
         popoverVC.modalPresentationStyle = UIModalPresentationStyle.popover
@@ -364,7 +368,7 @@ extension EbankingViewController: UIPopoverControllerDelegate, UIPopoverPresenta
 }
 
 extension EbankingViewController: BankingPopDelegate {
-    func eBankingloadActivated(with mobile: String) {
+    @objc func eBankingloadActivated(with mobile: String) {
         self.view!.alpha = 1.0
         self.payAction(with: mobile)
     }

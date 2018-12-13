@@ -36,8 +36,8 @@ class CheckOutViewController: UIViewController {
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var optionsWidthConstraints: NSLayoutConstraint!
     
-    var config:Config?
-    var delegate:KhaltiPayDelegate?
+    @objc var config:Config?
+    @objc var delegate:KhaltiPayDelegate?
 
     private lazy var khaltiPayViewController: KhaltiPaymentViewController = {
         let viewController = KhaltiPayment.viewController()
@@ -148,7 +148,7 @@ class CheckOutViewController: UIViewController {
         view.endEditing(true)
     }
     
-    func addBackButton() {
+    @objc func addBackButton() {
         let menuBarButtonItem = UIBarButtonItem(title: "Close", style: .plain, target: self, action:  #selector(self.navigateBack))
         menuBarButtonItem.tintColor = UIColor.white
         self.navigationItem.rightBarButtonItem = menuBarButtonItem
@@ -181,7 +181,12 @@ class CheckOutViewController: UIViewController {
     
     private func add(asChildViewController viewController: UIViewController) {
         
-        addChildViewController(viewController) // Add Child View Controller
+         // Add Child View Controller
+        #if swift(>=4.2)
+            addChild(viewController)
+        #else
+            addChildViewController(viewController)
+        #endif
         containerView.addSubview(viewController.view) // Add Child View as Subview
         
         // Configure Child View
@@ -189,16 +194,29 @@ class CheckOutViewController: UIViewController {
         viewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
         // Notify Child View Controller
+        #if swift(>=4.2)
+        viewController.didMove(toParent: self)
+        #else
         viewController.didMove(toParentViewController: self)
+        #endif
     }
     
     private func remove(asChildViewController viewController: UIViewController) {
         
-        viewController.willMove(toParentViewController: nil) // Notify Child View Controller
+         // Notify Child View Controller
+        #if swift(>=4.2)
+        viewController.willMove(toParent: nil)
+        #else
+        viewController.willMove(toParentViewController: nil)
+        #endif
         viewController.view.removeFromSuperview() // Remove Child View From Superview
         
         // Notify Child View Controller
+        #if swift(>=4.2)
+        viewController.removeFromParent()
+        #else
         viewController.removeFromParentViewController()
+        #endif
     }
     
     fileprivate func updateView(to:PaymentType) {

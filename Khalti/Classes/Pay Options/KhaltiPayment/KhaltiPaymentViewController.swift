@@ -11,8 +11,8 @@ import UIKit
 class KhaltiPaymentViewController: UIViewController {
     
     // MARK: - Properties
-    var config:Config?
-    var delegate:KhaltiPayDelegate?
+    @objc var config:Config?
+    @objc var delegate:KhaltiPayDelegate?
     
     fileprivate var token:String?
     fileprivate var mobile:String?
@@ -157,8 +157,13 @@ class KhaltiPaymentViewController: UIViewController {
     // MARK: - Helper Methods
     
     private func addLoading() {
+        #if swift(>=4.2)
+        let activityIndicator = UIActivityIndicatorView(style: .gray)
+        activityIndicator.style = .whiteLarge
+        #else
         let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
         activityIndicator.activityIndicatorViewStyle = .whiteLarge
+        #endif
         activityIndicator.hidesWhenStopped = true
         
         let view = UIView(frame: self.view.frame)
@@ -171,8 +176,14 @@ class KhaltiPaymentViewController: UIViewController {
         
         self.view.addSubview(self.blurLoadingView)
         self.blurLoadingView.addSubview(activityIndicator)
+        
+        #if swift(>=4.2)
+        self.view.bringSubviewToFront(self.blurLoadingView)
+        self.blurLoadingView.bringSubviewToFront(self.activityIndicator)
+        #else
         self.view.bringSubview(toFront: self.blurLoadingView)
         self.blurLoadingView.bringSubview(toFront: self.activityIndicator)
+        #endif
     }
     
     private func showLoading() {
