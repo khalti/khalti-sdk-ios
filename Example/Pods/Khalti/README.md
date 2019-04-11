@@ -1,20 +1,25 @@
 # Khalti
 
+[![IDE](https://img.shields.io/badge/Xcode-8%209%2010Beta-blue.svg)](https://developer.apple.com/xcode/)
+[![Language](https://img.shields.io/badge/swift-3,%204-orange.svg)](https://swift.org)
 [![Version](https://img.shields.io/cocoapods/v/Khalti.svg?style=flat)](http://cocoapods.org/pods/Khalti)
 [![License](https://img.shields.io/cocoapods/l/Khalti.svg?style=flat)](http://cocoapods.org/pods/Khalti)
 [![Platform](https://img.shields.io/cocoapods/p/Khalti.svg?style=flat)](http://cocoapods.org/pods/Khalti)
 
 
-## Pod Depedency 
+## Requirements
+This system is tested on Xcode 8, 9 and 10 beta with swift version 3 and 4. 
 
-For best working with UI incorporated in this library ```IQKeyboardManager``` is used. Suggest using 
-```swift
-pod 'IQKeyboarManager'
-```
+**Xcode**: >=8
+
+**Swift**: 3 and 4
+
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+**Swift** : Clone project and use 'Example' directory. Do 'pod install'.
+
+**Objective-C** :  Clone project and use 'Example Obj-c' directory. Do 'pod install'.
 
 ## Installation guide
 
@@ -26,7 +31,7 @@ pod 'Khalti'
 ```
 ## Usage
 
-### Adding CustomSchme
+### Adding CustomSchme (Needed only if either card and/or ebanking are made available)
 Khalti uses custom Scheme: So merhant should setup **URLScheme** unique for their app. We have made usability as of user case.
 
 <!-- ![Khalti scheme setup overview](../img/customUrlScheme.png) -->
@@ -41,9 +46,9 @@ let khaltiUrlScheme:String = "KhaltiPayExampleScheme"
 To work around with this redirection you have to implement some openUrl in ```Appdelegate.swift```. 
 
 ```Khalti.shared.defaultAction()``` returns `true` if you initiate payment through Khalti.
-```Khalti.shared.action(with: url)``` is needed for complete action after ebanking and card payment. 
+```Khalti.shared.action(with: url)``` is needed for complete action after ebanking and card payment. (Needed only if either card and/or ebanking are made available)
 
-**Note:** Using ```Khalti.shared.action(with: url)```  is mandatory.
+**Note:** Using ```Khalti.shared.action(with: url)``` is needed only if either card and/or ebanking are made available.
 
 Add following code to `Appdelegate.swift`
 ```swift
@@ -72,7 +77,7 @@ At this stage the scheme named you declared earlier is passed to `Khatli.shared.
 ```swift
 Khalti.shared.appUrlScheme = khaltiUrlScheme // see above for file khaltiUrlScheme
 // This can be used at appdelegate during didfinishlaunching. 
-// This should be mandatory
+// This must be included only if either card and/or ebanking are made available.
 ```
 
  Finally present the khaltiPay Viewcontroller by calling public funcation 
@@ -99,17 +104,18 @@ let jsonData = try? JSONSerialization.data(withJSONObject: extra, options: JSONS
 let jsonString = String(data: jsonData!, encoding: .utf8)!
         
 let additionalData:Dictionary<String,String> = [
-    "merchant_name" : "HelloPaaaaisaPVTLtd.",
+    "merchant_name" : "Merchant Company Name",
     "merchant_extra" : jsonString
 ]
         
 Khalti.shared.appUrlScheme = khaltiUrlScheme
 let khaltiMerchantKey = "test_public_key_dc74e0fd57cb46cd93832aee0a507256" // This key is from local server so it won't work if you use the example as is it. Use your own public test key
         
-let TEST_CONFIG:Config = Config(publicKey: khaltiMerchantKey, amount: 1000, productId: "1234567890", productName: "Dragon_boss", productUrl: "http://gameofthrones.wikia.com/wiki/Dragons",additionalData: additionalData)
+let TEST_CONFIG:Config = Config(publicKey: khaltiMerchantKey, amount: 1000, productId: "1234567890", productName: "Dragon_boss", productUrl: "http://gameofthrones.wikia.com/wiki/Dragons",additionalData: additionalData, ebankingPayment:false) // This makes only khalti Payment available
 Khalti.present(caller: self, with: TEST_CONFIG, delegate: self)
 ```
-Config file has property cardPayment with default value false, indication the cardPayment facility is OFF. If you want cardPayment available to your users then set cardPayment option to true while creating config object.
+Config file has property ebankingPayment with default value true,, indication the cardPayment facility is available.If you want ebankingPayment nto available to your users then set ebankingPayment option to false while creating config object.
+And config file also support property cardPayment with default value false, indication the cardPayment facility is not available. If you want cardPayment available to your users then set cardPayment option to true while creating config object. Please read merchant terms and conditions before enabling this feature.
 Additionally, Config class also accepts a Dictionary<String,String> which you can use to pass any additional data. Make sure you add a `merchant_` prefix in your map key.
 
 ### Using delegates
@@ -164,10 +170,6 @@ The success message also contains all the `key` and `value` provide as extra dat
 | action                       | initiate/confirm/ebanking             |   String  |
 | message                   | Detail Error Message                   |   String  |
 | data                          | data of error   (Optional)               |   Dictionary<String,Any>?  |
-
-## Objective-C
-If you are using objective-c. See the example project [here](https://github.com/khalti/khalti-sdk-objective-c-example.git)
-
 
 ## Support
 <!-- For Queries, feel free to call us at:

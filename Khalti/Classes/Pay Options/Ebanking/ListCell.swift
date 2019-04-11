@@ -11,9 +11,9 @@ import UIKit
 
 class ListCell: UICollectionViewCell {
     
-    var itemNameLabel: UILabel!
-    var itemButton: UIButton!
-    var image:UIImage?
+    @objc var itemNameLabel: UILabel!
+    @objc var itemButton: UIButton!
+    @objc var image:UIImage?
     
     override func awakeFromNib() {
         // Please check Main.storyboard with PaymentCell for the tag.
@@ -24,13 +24,13 @@ class ListCell: UICollectionViewCell {
         itemButton.layer.masksToBounds = true
     }
     
-    func setImage(with url:String?) {
+    @objc func setImage(with url:String?) {
         image = UIImage(named: "khalti_small")
         self.itemButton.setImage(image, for: .normal)
         self.setImageWithoutLibrary(with: url)
     }
     
-    func setImageWithoutLibrary(with url:String?) {
+    @objc func setImageWithoutLibrary(with url:String?) {
         
         if let imageUrl = url, let urll = URL(string: imageUrl) {
             let session = URLSession(configuration: .default)

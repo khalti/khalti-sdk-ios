@@ -7,98 +7,98 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		050CA380FD80EE318D6AB6F68D0DC635 /* Pods-Khalti_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F852F39B0468A60DA38393E2F0B923E7 /* Pods-Khalti_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0648973667FB537BDC3ABFA9F3AD2ED8 /* IQBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F51876D791D30CD209AD4183E3F8A7F /* IQBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		06FF2586AE76FBBCBF8171F98255D8CB /* IQUIScrollView+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 220B4F2821CD30A8FBDAF2E31E6F5778 /* IQUIScrollView+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		097BDC30ED8BEE1976A78978A18187CE /* BankingPop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC821AC8AE7CF45A81CF1684D3CB692 /* BankingPop.swift */; };
-		0DB2E34289D18AA9810609ADCCBFA181 /* IQBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7342E6D61C5FA911A8B58E8BADE06BAA /* IQBarButtonItem.m */; };
-		13D87E1D99CFD98771E8066E6FF832CD /* IQUIViewController+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = B3CE95A9B11DCFD78DC8FD72E8A402F7 /* IQUIViewController+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		14479278EA90F38247811468ADD8EBB7 /* IQKeyboardManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BC45EB15EC15D0CCE7353B66AE975C66 /* IQKeyboardManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		15B01E95C25153E02D2CD2D56848BB48 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E0CDAEFD4CEAB0C1152CE4C36CCE20 /* images.xcassets */; };
-		1EB11A181898418829743F59AA3C9778 /* Pods-Khalti_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14ED5E3F97DC1CC58B5C6C5964D700A0 /* Pods-Khalti_Example-dummy.m */; };
-		20EA3D335651972C34843631389862C6 /* Khalti.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66D3F99E77BA93E73E45BA1B838EF21 /* Khalti.swift */; };
-		236D1056D72193BD87A9E7C1E436B1C2 /* Pods-Khalti_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46777FDC9E03B2786DD8FDF64FFDD23D /* Pods-Khalti_Tests-dummy.m */; };
-		2D407C6492BC569F5361B9210C89A19C /* IQKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00686DDAEBFD6361467EA5B8CE55B5BA /* IQKeyboardManager.m */; };
-		311980FF718CBD15EF7EC916BFB96906 /* Khalti-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A74EFB9F84D2DB50852C081CBF2F63D2 /* Khalti-dummy.m */; };
-		33B0541B86FFB2D4122DA25DD2FADDD3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65E433A68C225D6FF6B2CE970853F1D /* QuartzCore.framework */; };
-		3619E77A8EC11571EE9F32921DAC0C89 /* IQKeyboardReturnKeyHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = B6DCA64298D89F328E3C527FC7BE7E48 /* IQKeyboardReturnKeyHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3CB4F1ABBB50C1A12138C699613AFF74 /* Khalti.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 478A1869608FD4433F8A246D1E3EA820 /* Khalti.bundle */; };
-		3DA3A3D18CE3247C79D330DD501FC3B0 /* ErrorAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42966CADBF1B739206F5B962DA20C274 /* ErrorAction.swift */; };
-		431C76067CB09B1FC0E4DD5AEA6B540A /* IQUIScrollView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A3686372A00E4108601F98FB391949 /* IQUIScrollView+Additions.m */; };
-		46D1C167AAE551E4551FAFC7CE555D54 /* CheckOut.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BD4B4DA5C63D9AF5284E699AE9C41B2 /* CheckOut.storyboard */; };
-		483DE9DE0832BECE2AF5AA450443FC35 /* Ebanking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73FFBFDC964AACA552E979D0AA1DB9D /* Ebanking.swift */; };
-		59FD270EB5FD025F9BBD6A2E56D97C42 /* BankingPopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7358D6035CDFA4EAB44E02C6EA54DA2 /* BankingPopViewController.swift */; };
-		5BD336D4E8710CFAA820E6CBB511BB2A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56348597C0DD615177C5C15A774BCF2 /* Foundation.framework */; };
-		639A86F8EDAF569092C61103FFAEA21D /* IQUIView+IQKeyboardToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = E7409D2B31B6023C5A0EB172F2626172 /* IQUIView+IQKeyboardToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		63F5BA839B931DB6605554B6D4369A0C /* IQUIView+Hierarchy.h in Headers */ = {isa = PBXBuildFile; fileRef = 8760A629D307F77698B85866FEF5B481 /* IQUIView+Hierarchy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		65E7511F80C43C420DA4B460BECA3D72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56348597C0DD615177C5C15A774BCF2 /* Foundation.framework */; };
-		665B3B037B98D3E3ADB449A43FF14F42 /* IQUITextFieldView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F11CFDC29096027FAE24748300C6908C /* IQUITextFieldView+Additions.m */; };
-		688E0882DFC8CABA02390F43178CB33F /* IQNSArray+Sort.h in Headers */ = {isa = PBXBuildFile; fileRef = 861BCD1B7519CAECE261202152D0E700 /* IQNSArray+Sort.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		68E783801317D7C501767623C17492E9 /* CheckOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0B2CC7F596109E657E4C93E5ECDC51 /* CheckOutViewController.swift */; };
-		72EE4A5DC3076CD8C13717D4DAA37DFD /* IQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 755CBE70B31E70191C9796D878A85297 /* IQTextView.m */; };
-		768AF84686083133A3E5D2A05167E72B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56348597C0DD615177C5C15A774BCF2 /* Foundation.framework */; };
-		788BA72F67004504FFDFC670048786B5 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 020ECC4A75B88C51E6E89535B9D4D4D9 /* IQKeyboardManager.bundle */; };
-		7A4B5D0DBA4D09C15C25444D828DEFCA /* Khalti-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 650E819B5EB9311C300F5E3121357B16 /* Khalti-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7AEA6896F609AB8ADAAD9375048323A4 /* KhaltiPayDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3439DF92F8CBE23755A151729791011C /* KhaltiPayDelegate.swift */; };
-		7C49A18841060D12A58F92CE62C21F9D /* IQNSArray+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF21EE6BF20BABBADCC43D42A603A7D /* IQNSArray+Sort.m */; };
-		7CF3668C8E30DA3CAB92C9C6A8B88B8F /* IQToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = E5E6965E52156F7A9A1D09FE6B8B3ADC /* IQToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		85F02B2E2F922F439A12C7CBB077E8DE /* IQKeyboardManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 373AC1E345C1810CA51FE559BB170525 /* IQKeyboardManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8A9EDC6CED3BF77C9FC22A400C4FE536 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA3D293A603AB7A1F47A453A415CB17 /* List.swift */; };
-		9522718D754C872BF535A670E984E47C /* Pods-Khalti_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B5E70A2A0A94956ACE9271AD6D7015 /* Pods-Khalti_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		958FEEE31215AB970371D4CBAEB8A4DC /* IQTitleBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DC4F7FCC2BAF87B0A66AFCCFC8291D /* IQTitleBarButtonItem.m */; };
-		99249B44D65716B5CCA0BFFD5F83062C /* IQTitleBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 90E733DC9EB515FE03AB569375F2843B /* IQTitleBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A3CE2D718CEB5AC059823178404AF0EF /* IQKeyboardManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 214B968DDAA7EB98CE63C68BAA4D98B6 /* IQKeyboardManager-dummy.m */; };
-		AAC6DB8270C474C50F5D71DE9BC73382 /* IQTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = F29060BEED8778F2E4D2437E2EEDC4F9 /* IQTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B05BDA89A18DA866355AD804B694F851 /* IQUITextFieldView+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = BD5CB1651B92C8C21380ACF30D32A33F /* IQUITextFieldView+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B21C3C93DAA23B1C331B9326991CDCFC /* IQKeyboardManagerConstantsInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 328853FB7A45D007050F845B127F2584 /* IQKeyboardManagerConstantsInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		BA5AA615F74A4B890A546BA34FDE1023 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89163E94743FDDD60913C47150E225B /* UIKit.framework */; };
-		BB9E6CA2B3C223D9DE66C81D023944C3 /* KaltiApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B319546AF9AA3B114F3C8DD8846594 /* KaltiApi.swift */; };
-		BC2AE758B98DD40A79D6DA8F9F7075B7 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B65B06D96E47CC71394C3D9B63659EA /* ListCell.swift */; };
-		C2B7F4EB405C401EA53023341C05E15E /* IQPreviousNextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 666B09C94E6B33BAFB522027BE5D3ADB /* IQPreviousNextView.m */; };
-		C480AC5D32406D4901116FCAC5FB0EB5 /* IQUIViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C7936243FF65D2FC44902E6DEDC1FB /* IQUIViewController+Additions.m */; };
-		C49ED0BA3BE26C50F202C5ED5FB85573 /* IQKeyboardManagerConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 136923C8F91E73D8136864372EC5DD97 /* IQKeyboardManagerConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C4AA57B938513DE614A7B90AEF5CD858 /* IQUIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEAD0D790DD752734EA843CB9284BEA /* IQUIView+IQKeyboardToolbar.m */; };
-		C5387F56E7B5924777146E8B3051201A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C473026796F8AFAA2ECD5A761494CE /* CoreGraphics.framework */; };
-		C750E7C55570AAB4C1CC05ED09B287B8 /* EbankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33F15A71479F02C6CAF5B624ED0FC5D /* EbankingViewController.swift */; };
-		CA1E205A4D3A8515ED42F76C2671F1BA /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FABA630FD313987449B9F4537D06AA /* IQToolbar.m */; };
-		CF4EB3350726A86BCCDF5F363C5FCE72 /* IQPreviousNextView.h in Headers */ = {isa = PBXBuildFile; fileRef = DD62546AD2BDC266B419E9BF5CB32898 /* IQPreviousNextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D197B8A234B6DDE56E1DAC2B64A3DBF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56348597C0DD615177C5C15A774BCF2 /* Foundation.framework */; };
-		D198671949979317A8547DDE9E4C265B /* KhaltiPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472DD01B4A0B92CDE8752AEDE9FEB641 /* KhaltiPaymentViewController.swift */; };
-		DB8D3F638F5626FACABB2F847047325D /* KhaltiPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72A53583A6924D0DE98D327B59ADA30 /* KhaltiPayment.swift */; };
-		DEB92E2DB086E554AEA1DBFA8A9F00D0 /* IQUIView+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC898D5CD6464BFFB6C484FD827B739 /* IQUIView+Hierarchy.m */; };
-		E5199A8BD4AEE5B07F31A5D726466AAA /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653A2127078074FB54641DF2F236E21D /* Config.swift */; };
-		E802560B425A04296159872675948D29 /* IQKeyboardReturnKeyHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 61EC4234029D588DE3A764DAC9082D27 /* IQKeyboardReturnKeyHandler.m */; };
-		EE44351F11ED90F904FFCB257094967F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89163E94743FDDD60913C47150E225B /* UIKit.framework */; };
+		0E2EF782F412B9E4B62EC9D58313964E /* IQUIView+Hierarchy.h in Headers */ = {isa = PBXBuildFile; fileRef = 8760A629D307F77698B85866FEF5B481 /* IQUIView+Hierarchy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E4B8913A6194C1F91B73A74CAED0DCB /* IQBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7342E6D61C5FA911A8B58E8BADE06BAA /* IQBarButtonItem.m */; };
+		10D5DDC653E3129429EAA5F479578CF7 /* IQUIView+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC898D5CD6464BFFB6C484FD827B739 /* IQUIView+Hierarchy.m */; };
+		1201B1B59F2CBAE4BFF1C769A089F04B /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FABA630FD313987449B9F4537D06AA /* IQToolbar.m */; };
+		19C41620E42A3A4DF03738C72AFB55ED /* Khalti.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66D3F99E77BA93E73E45BA1B838EF21 /* Khalti.swift */; };
+		22D1CB1D357616EB781962AB33FA39F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749ADD089E805C2D7E7DF8BD44F537E3 /* Foundation.framework */; };
+		266CC0324D1A0024FDE39A2DC8FDE73A /* IQKeyboardManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BC45EB15EC15D0CCE7353B66AE975C66 /* IQKeyboardManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2705F4D63AED5B1C81170950EDBA0FF1 /* EbankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33F15A71479F02C6CAF5B624ED0FC5D /* EbankingViewController.swift */; };
+		38BC30C5D37873A81BD640AD81D0B6BB /* Khalti.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 478A1869608FD4433F8A246D1E3EA820 /* Khalti.bundle */; };
+		3A7B808B944E125AF3B6FC5576F803EC /* Khalti-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 650E819B5EB9311C300F5E3121357B16 /* Khalti-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D492DFD7FD3C2BBAC286CC6BFF468EE /* Pods-Khalti_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F852F39B0468A60DA38393E2F0B923E7 /* Pods-Khalti_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D7B9AB514124A054C4743DCCE14A7D9 /* IQUIScrollView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A3686372A00E4108601F98FB391949 /* IQUIScrollView+Additions.m */; };
+		3F7946B6980350182019FE263719E5CE /* IQUIViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C7936243FF65D2FC44902E6DEDC1FB /* IQUIViewController+Additions.m */; };
+		3FDA1CCC5C9CF26A05D9BC63FD39080D /* IQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 755CBE70B31E70191C9796D878A85297 /* IQTextView.m */; };
+		40CDAE3042B8831613E47CEA56966B01 /* IQKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00686DDAEBFD6361467EA5B8CE55B5BA /* IQKeyboardManager.m */; };
+		41BA77CFEAB561E3F9B519185B693515 /* KhaltiPayDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3439DF92F8CBE23755A151729791011C /* KhaltiPayDelegate.swift */; };
+		43B515EFF247E214FE33401EC8121D8E /* IQKeyboardReturnKeyHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = B6DCA64298D89F328E3C527FC7BE7E48 /* IQKeyboardReturnKeyHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47ACE3AC563AF20D4B5214D3E9D54A24 /* IQPreviousNextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 666B09C94E6B33BAFB522027BE5D3ADB /* IQPreviousNextView.m */; };
+		48A682A843C729F832E95B4D9E79574A /* CheckOut.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BD4B4DA5C63D9AF5284E699AE9C41B2 /* CheckOut.storyboard */; };
+		49E7363452F39BD8E66574DF83D56C77 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E886B8A5323A225031593C734420F7 /* CoreGraphics.framework */; };
+		4EDAA3CBC9D424B3E8A8FDB78AB2C563 /* IQKeyboardManagerConstantsInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 328853FB7A45D007050F845B127F2584 /* IQKeyboardManagerConstantsInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		50211E13372A7BB7F52D15ADF482DD83 /* IQTitleBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DC4F7FCC2BAF87B0A66AFCCFC8291D /* IQTitleBarButtonItem.m */; };
+		50B7B54B5D5C314F0A7F1D4484FBE38B /* IQUIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEAD0D790DD752734EA843CB9284BEA /* IQUIView+IQKeyboardToolbar.m */; };
+		5B8EF03569F63562143A302D72EC3D3A /* ErrorAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42966CADBF1B739206F5B962DA20C274 /* ErrorAction.swift */; };
+		695B15B926033750A60778938829CACE /* IQTitleBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 90E733DC9EB515FE03AB569375F2843B /* IQTitleBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7276C2249C2E9166FD4BAA9E4B5A878D /* Ebanking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73FFBFDC964AACA552E979D0AA1DB9D /* Ebanking.swift */; };
+		7628112A0717D7B73392A55B348FBDE5 /* Pods-Khalti_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14ED5E3F97DC1CC58B5C6C5964D700A0 /* Pods-Khalti_Example-dummy.m */; };
+		7A15663A29FCFAC7A0CEDBD4054CD3F2 /* IQUITextFieldView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F11CFDC29096027FAE24748300C6908C /* IQUITextFieldView+Additions.m */; };
+		7A2685E30335AB08F230A5EF4C703DA6 /* IQNSArray+Sort.h in Headers */ = {isa = PBXBuildFile; fileRef = 861BCD1B7519CAECE261202152D0E700 /* IQNSArray+Sort.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7B9FD8963C83EAD768E39632D58C4CDC /* IQKeyboardReturnKeyHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 61EC4234029D588DE3A764DAC9082D27 /* IQKeyboardReturnKeyHandler.m */; };
+		8238A3BD3A5E8970DCC4A4D4F6737C87 /* Pods-Khalti_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46777FDC9E03B2786DD8FDF64FFDD23D /* Pods-Khalti_Tests-dummy.m */; };
+		83F0C1CA2A07FB618F77598BBCBE0631 /* BankingPop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC821AC8AE7CF45A81CF1684D3CB692 /* BankingPop.swift */; };
+		886B363A3D929975C49C4D402D3B1D09 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE2CE86CEAA9896D6244DE9999C4B48 /* UIKit.framework */; };
+		8D3D649AC816938B8B78CAEC5CE8962F /* IQToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = E5E6965E52156F7A9A1D09FE6B8B3ADC /* IQToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DC3DEB3108EC119D2C56680A7F943F0 /* BankingPopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7358D6035CDFA4EAB44E02C6EA54DA2 /* BankingPopViewController.swift */; };
+		914FF42207F91FBE4B29F6D1DEF2EA12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749ADD089E805C2D7E7DF8BD44F537E3 /* Foundation.framework */; };
+		9A55E421C9A3401A1ED89FEB58282588 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B65B06D96E47CC71394C3D9B63659EA /* ListCell.swift */; };
+		9BC9F7A5ED759A38FBA50B4BB98D421F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749ADD089E805C2D7E7DF8BD44F537E3 /* Foundation.framework */; };
+		9CC2E583FE800ADE166A1C9D3580ACF5 /* IQKeyboardManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 214B968DDAA7EB98CE63C68BAA4D98B6 /* IQKeyboardManager-dummy.m */; };
+		A16A713508967D8B3E5E7B703B788D5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749ADD089E805C2D7E7DF8BD44F537E3 /* Foundation.framework */; };
+		A4CBB299F1244630410150448F219B08 /* IQNSArray+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF21EE6BF20BABBADCC43D42A603A7D /* IQNSArray+Sort.m */; };
+		A9A1B4884406BA13CF99C74C85056DDF /* IQUIViewController+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = B3CE95A9B11DCFD78DC8FD72E8A402F7 /* IQUIViewController+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFD65ABB11B0CD3D3D63B8E1F8033737 /* CheckOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0B2CC7F596109E657E4C93E5ECDC51 /* CheckOutViewController.swift */; };
+		B030B9B3C8A024EC312F290CEA6D0880 /* Khalti-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A74EFB9F84D2DB50852C081CBF2F63D2 /* Khalti-dummy.m */; };
+		B2F680D0240F775C701CD954D2CBF214 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA3D293A603AB7A1F47A453A415CB17 /* List.swift */; };
+		B89E3F69B65F9F1033495F254C6FE7FD /* IQBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F51876D791D30CD209AD4183E3F8A7F /* IQBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC02A38613A30AB18A5BE68C546882B3 /* KaltiApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B319546AF9AA3B114F3C8DD8846594 /* KaltiApi.swift */; };
+		BFF0DB6E50C7CA760F2DF75FC37EB370 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653A2127078074FB54641DF2F236E21D /* Config.swift */; };
+		C3263856FA65926DFBCCDE3C4396DD3C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8205DCE243CEBCEAAFFDB2563B65CD4 /* QuartzCore.framework */; };
+		C91D1216111E6B2DC6F0717E1A86E5CD /* IQTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = F29060BEED8778F2E4D2437E2EEDC4F9 /* IQTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB1BA39A04D63DE4DBACCD1F14ECBB4A /* IQUIView+IQKeyboardToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = E7409D2B31B6023C5A0EB172F2626172 /* IQUIView+IQKeyboardToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB432A2C93529BBF35A027DB947859FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE2CE86CEAA9896D6244DE9999C4B48 /* UIKit.framework */; };
+		CFC09D4DDE3E33FB00200C0E03A3B354 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 020ECC4A75B88C51E6E89535B9D4D4D9 /* IQKeyboardManager.bundle */; };
+		DB36F63C4DFB8D9B3ABA85EC4786C5F7 /* KhaltiPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72A53583A6924D0DE98D327B59ADA30 /* KhaltiPayment.swift */; };
+		DD29D5E6ABAFFDA1CF5F11334868D16E /* Pods-Khalti_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B5E70A2A0A94956ACE9271AD6D7015 /* Pods-Khalti_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E39A8AE2B37B69CABBE67D8A8475A326 /* KhaltiPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472DD01B4A0B92CDE8752AEDE9FEB641 /* KhaltiPaymentViewController.swift */; };
+		E5EBDD83953D2E17DA2025AC0243F3E5 /* IQPreviousNextView.h in Headers */ = {isa = PBXBuildFile; fileRef = DD62546AD2BDC266B419E9BF5CB32898 /* IQPreviousNextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E887EB54D7A5D4132B0AE0CC28B6C984 /* IQKeyboardManagerConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 136923C8F91E73D8136864372EC5DD97 /* IQKeyboardManagerConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F36545DFE43F5D04592758A4199481E6 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E0CDAEFD4CEAB0C1152CE4C36CCE20 /* images.xcassets */; };
+		F7A5376102E8A5DDE3B67B1F01497D03 /* IQKeyboardManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 373AC1E345C1810CA51FE559BB170525 /* IQKeyboardManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA4D5BB0A7CC863C9B52E990ED4002CB /* IQUITextFieldView+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = BD5CB1651B92C8C21380ACF30D32A33F /* IQUITextFieldView+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD7A36750DCF463CEA1958FE5CA5A1B1 /* IQUIScrollView+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 220B4F2821CD30A8FBDAF2E31E6F5778 /* IQUIScrollView+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0C282F668A648ACC50D7F8008E533F0F /* PBXContainerItemProxy */ = {
+		C69914EBC9F5EAB10560F554C8E5B69B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4C45632F158E819CB8C9C9CF3588D4DC;
-			remoteInfo = "Khalti-Khalti";
-		};
-		99ED5C3EE3F3266C19C327626FE7DB0E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D55833EC3DE9EBD9B329CAEB983D5A9D;
+			remoteGlobalIDString = A938F7AB77B92F5273D43659F12031AD;
 			remoteInfo = IQKeyboardManager;
 		};
-		C1CE0368362D73486AB68F2A502C8D19 /* PBXContainerItemProxy */ = {
+		C788C9F92711EAFEA3965890A235E5F3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 64BB75CF06AB287FCC1ED7DA48A8CC56;
-			remoteInfo = "Pods-Khalti_Example";
+			remoteGlobalIDString = C4824CEAAF385C7E916F7FDA9E382AEE;
+			remoteInfo = "Khalti-Khalti";
 		};
-		D771693A8126A094EF4AE7FFEE67D7F3 /* PBXContainerItemProxy */ = {
+		DFC0B23F3DFDF8514D0F14C7994B36BB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D10317FDDC88F696EDC00138503B1D69;
+			remoteGlobalIDString = 9B626A7C5C3E4F2D7EA61CE2AC8856D1;
 			remoteInfo = Khalti;
+		};
+		F54F6DBC3343C5606F0DCADF3C592311 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BAA778B4143256F9CFD1D1C2A7F2F14;
+			remoteInfo = "Pods-Khalti_Example";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -124,7 +124,6 @@
 		36A3686372A00E4108601F98FB391949 /* IQUIScrollView+Additions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIScrollView+Additions.m"; path = "IQKeyboardManager/Categories/IQUIScrollView+Additions.m"; sourceTree = "<group>"; };
 		373AC1E345C1810CA51FE559BB170525 /* IQKeyboardManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManager-umbrella.h"; sourceTree = "<group>"; };
 		3790C5C53BF36E5DC9126C83888F7C95 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		37C473026796F8AFAA2ECD5A761494CE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		38704F531E00846B68CCE8DF3BB1D6A2 /* ResourceBundle-Khalti-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Khalti-Info.plist"; sourceTree = "<group>"; };
 		3BD4B4DA5C63D9AF5284E699AE9C41B2 /* CheckOut.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = CheckOut.storyboard; path = Khalti/Assets/CheckOut.storyboard; sourceTree = "<group>"; };
 		3F51876D791D30CD209AD4183E3F8A7F /* IQBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQBarButtonItem.h; path = IQKeyboardManager/IQToolbar/IQBarButtonItem.h; sourceTree = "<group>"; };
@@ -145,6 +144,7 @@
 		6FC63AB5B723C733A9277AC164C995E1 /* Pods_Khalti_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Khalti_Tests.framework; path = "Pods-Khalti_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FF21EE6BF20BABBADCC43D42A603A7D /* IQNSArray+Sort.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQNSArray+Sort.m"; path = "IQKeyboardManager/Categories/IQNSArray+Sort.m"; sourceTree = "<group>"; };
 		7342E6D61C5FA911A8B58E8BADE06BAA /* IQBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQBarButtonItem.m; path = IQKeyboardManager/IQToolbar/IQBarButtonItem.m; sourceTree = "<group>"; };
+		749ADD089E805C2D7E7DF8BD44F537E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		755CBE70B31E70191C9796D878A85297 /* IQTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQTextView.m; path = IQKeyboardManager/IQTextView/IQTextView.m; sourceTree = "<group>"; };
 		7BC898D5CD6464BFFB6C484FD827B739 /* IQUIView+Hierarchy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIView+Hierarchy.m"; path = "IQKeyboardManager/Categories/IQUIView+Hierarchy.m"; sourceTree = "<group>"; };
 		801BB00122CF5F4167EF847F75CB5D3E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -163,9 +163,9 @@
 		A74EFB9F84D2DB50852C081CBF2F63D2 /* Khalti-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Khalti-dummy.m"; sourceTree = "<group>"; };
 		ADD19F351401958A5DBAAA341588BE05 /* IQKeyboardManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManager.xcconfig; sourceTree = "<group>"; };
 		B3CE95A9B11DCFD78DC8FD72E8A402F7 /* IQUIViewController+Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIViewController+Additions.h"; path = "IQKeyboardManager/Categories/IQUIViewController+Additions.h"; sourceTree = "<group>"; };
-		B65E433A68C225D6FF6B2CE970853F1D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		B6DCA64298D89F328E3C527FC7BE7E48 /* IQKeyboardReturnKeyHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardReturnKeyHandler.h; path = IQKeyboardManager/IQKeyboardReturnKeyHandler.h; sourceTree = "<group>"; };
 		B73FFBFDC964AACA552E979D0AA1DB9D /* Ebanking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Ebanking.swift; sourceTree = "<group>"; };
+		B8E886B8A5323A225031593C734420F7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		BC45EB15EC15D0CCE7353B66AE975C66 /* IQKeyboardManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardManager.h; path = IQKeyboardManager/IQKeyboardManager.h; sourceTree = "<group>"; };
 		BCDF3664C74E9FF5F2030A58955D8E64 /* Pods-Khalti_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Khalti_Example-resources.sh"; sourceTree = "<group>"; };
 		BD5CB1651B92C8C21380ACF30D32A33F /* IQUITextFieldView+Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUITextFieldView+Additions.h"; path = "IQKeyboardManager/Categories/IQUITextFieldView+Additions.h"; sourceTree = "<group>"; };
@@ -176,7 +176,6 @@
 		D076CE089B31A5C8189626A84AD48EF8 /* Pods-Khalti_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Khalti_Tests-resources.sh"; sourceTree = "<group>"; };
 		D3387D624058616DCC958355A5A822B2 /* Pods-Khalti_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Khalti_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D33F15A71479F02C6CAF5B624ED0FC5D /* EbankingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EbankingViewController.swift; sourceTree = "<group>"; };
-		D56348597C0DD615177C5C15A774BCF2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D7358D6035CDFA4EAB44E02C6EA54DA2 /* BankingPopViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BankingPopViewController.swift; sourceTree = "<group>"; };
 		D7BEA065D3084C087A767E75EAD306B5 /* Khalti.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Khalti.framework; path = Khalti.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD62546AD2BDC266B419E9BF5CB32898 /* IQPreviousNextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQPreviousNextView.h; path = IQKeyboardManager/IQToolbar/IQPreviousNextView.h; sourceTree = "<group>"; };
@@ -186,57 +185,58 @@
 		E6B5E70A2A0A94956ACE9271AD6D7015 /* Pods-Khalti_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Khalti_Example-umbrella.h"; sourceTree = "<group>"; };
 		E72A53583A6924D0DE98D327B59ADA30 /* KhaltiPayment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KhaltiPayment.swift; sourceTree = "<group>"; };
 		E7409D2B31B6023C5A0EB172F2626172 /* IQUIView+IQKeyboardToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIView+IQKeyboardToolbar.h"; path = "IQKeyboardManager/IQToolbar/IQUIView+IQKeyboardToolbar.h"; sourceTree = "<group>"; };
-		E89163E94743FDDD60913C47150E225B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		E9FABA630FD313987449B9F4537D06AA /* IQToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQToolbar.m; path = IQKeyboardManager/IQToolbar/IQToolbar.m; sourceTree = "<group>"; };
+		EBE2CE86CEAA9896D6244DE9999C4B48 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		F11CFDC29096027FAE24748300C6908C /* IQUITextFieldView+Additions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUITextFieldView+Additions.m"; path = "IQKeyboardManager/Categories/IQUITextFieldView+Additions.m"; sourceTree = "<group>"; };
 		F29060BEED8778F2E4D2437E2EEDC4F9 /* IQTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQTextView.h; path = IQKeyboardManager/IQTextView/IQTextView.h; sourceTree = "<group>"; };
 		F524955B676323532C56D0A08FDB7C5C /* IQKeyboardManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManager-prefix.pch"; sourceTree = "<group>"; };
 		F5DC4F7FCC2BAF87B0A66AFCCFC8291D /* IQTitleBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQTitleBarButtonItem.m; path = IQKeyboardManager/IQToolbar/IQTitleBarButtonItem.m; sourceTree = "<group>"; };
 		F6AEEF593C3D5B2AE9BB422D3AF26AEB /* Khalti-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Khalti-prefix.pch"; sourceTree = "<group>"; };
+		F8205DCE243CEBCEAAFFDB2563B65CD4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		F852F39B0468A60DA38393E2F0B923E7 /* Pods-Khalti_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Khalti_Tests-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		57C35E30F3EE9280E227ECAC6491A492 /* Frameworks */ = {
+		11D216CA1AEE30456D620336A5C4BC99 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D197B8A234B6DDE56E1DAC2B64A3DBF0 /* Foundation.framework in Frameworks */,
-				BA5AA615F74A4B890A546BA34FDE1023 /* UIKit.framework in Frameworks */,
+				914FF42207F91FBE4B29F6D1DEF2EA12 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8944C0B131AF550CF6CC8073435E22F2 /* Frameworks */ = {
+		2FD8AA413CB07C17B9E32926641EBCAE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5387F56E7B5924777146E8B3051201A /* CoreGraphics.framework in Frameworks */,
-				5BD336D4E8710CFAA820E6CBB511BB2A /* Foundation.framework in Frameworks */,
-				33B0541B86FFB2D4122DA25DD2FADDD3 /* QuartzCore.framework in Frameworks */,
-				EE44351F11ED90F904FFCB257094967F /* UIKit.framework in Frameworks */,
+				A16A713508967D8B3E5E7B703B788D5A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EA439453FB1955AADEE2D29C136913FD /* Frameworks */ = {
+		666394A079C4D1571C47CC2BDC42F11F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49E7363452F39BD8E66574DF83D56C77 /* CoreGraphics.framework in Frameworks */,
+				22D1CB1D357616EB781962AB33FA39F2 /* Foundation.framework in Frameworks */,
+				C3263856FA65926DFBCCDE3C4396DD3C /* QuartzCore.framework in Frameworks */,
+				886B363A3D929975C49C4D402D3B1D09 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87FCC9F90EF080FBC13060AECDE0E01A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7DC938A4466E5594D4CA1F3A2EF1117 /* Frameworks */ = {
+		92572795C78F1F7DB99531DE28CA9A11 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				768AF84686083133A3E5D2A05167E72B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F9D530C08D2FFD48352B5707E00BCF5A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				65E7511F80C43C420DA4B460BECA3D72 /* Foundation.framework in Frameworks */,
+				9BC9F7A5ED759A38FBA50B4BB98D421F /* Foundation.framework in Frameworks */,
+				CB432A2C93529BBF35A027DB947859FA /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +282,7 @@
 		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				53C8B4AB97860F06FE722851EA867B18 /* iOS */,
+				4725EC43CB891FB958E82D265451CEF5 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -321,13 +321,13 @@
 			path = KhaltiPayment;
 			sourceTree = "<group>";
 		};
-		53C8B4AB97860F06FE722851EA867B18 /* iOS */ = {
+		4725EC43CB891FB958E82D265451CEF5 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				37C473026796F8AFAA2ECD5A761494CE /* CoreGraphics.framework */,
-				D56348597C0DD615177C5C15A774BCF2 /* Foundation.framework */,
-				B65E433A68C225D6FF6B2CE970853F1D /* QuartzCore.framework */,
-				E89163E94743FDDD60913C47150E225B /* UIKit.framework */,
+				B8E886B8A5323A225031593C734420F7 /* CoreGraphics.framework */,
+				749ADD089E805C2D7E7DF8BD44F537E3 /* Foundation.framework */,
+				F8205DCE243CEBCEAAFFDB2563B65CD4 /* QuartzCore.framework */,
+				EBE2CE86CEAA9896D6244DE9999C4B48 /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -496,81 +496,120 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		03AB14DB0235B494910320324F3BF2C2 /* Headers */ = {
+		113B92AB4CB51577B3DDE909AD98FFC6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0648973667FB537BDC3ABFA9F3AD2ED8 /* IQBarButtonItem.h in Headers */,
-				85F02B2E2F922F439A12C7CBB077E8DE /* IQKeyboardManager-umbrella.h in Headers */,
-				14479278EA90F38247811468ADD8EBB7 /* IQKeyboardManager.h in Headers */,
-				C49ED0BA3BE26C50F202C5ED5FB85573 /* IQKeyboardManagerConstants.h in Headers */,
-				B21C3C93DAA23B1C331B9326991CDCFC /* IQKeyboardManagerConstantsInternal.h in Headers */,
-				3619E77A8EC11571EE9F32921DAC0C89 /* IQKeyboardReturnKeyHandler.h in Headers */,
-				688E0882DFC8CABA02390F43178CB33F /* IQNSArray+Sort.h in Headers */,
-				CF4EB3350726A86BCCDF5F363C5FCE72 /* IQPreviousNextView.h in Headers */,
-				AAC6DB8270C474C50F5D71DE9BC73382 /* IQTextView.h in Headers */,
-				99249B44D65716B5CCA0BFFD5F83062C /* IQTitleBarButtonItem.h in Headers */,
-				7CF3668C8E30DA3CAB92C9C6A8B88B8F /* IQToolbar.h in Headers */,
-				06FF2586AE76FBBCBF8171F98255D8CB /* IQUIScrollView+Additions.h in Headers */,
-				B05BDA89A18DA866355AD804B694F851 /* IQUITextFieldView+Additions.h in Headers */,
-				63F5BA839B931DB6605554B6D4369A0C /* IQUIView+Hierarchy.h in Headers */,
-				639A86F8EDAF569092C61103FFAEA21D /* IQUIView+IQKeyboardToolbar.h in Headers */,
-				13D87E1D99CFD98771E8066E6FF832CD /* IQUIViewController+Additions.h in Headers */,
+				DD29D5E6ABAFFDA1CF5F11334868D16E /* Pods-Khalti_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		660D368C7DA6DE0C894F3BD3367D299D /* Headers */ = {
+		20119FDB9553C9BF8D08D49E34696C31 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A4B5D0DBA4D09C15C25444D828DEFCA /* Khalti-umbrella.h in Headers */,
+				3D492DFD7FD3C2BBAC286CC6BFF468EE /* Pods-Khalti_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A893A062B40A9B5AFAC44AE737031825 /* Headers */ = {
+		822385C6B8DDC0E1DCD95FF064F64C83 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				050CA380FD80EE318D6AB6F68D0DC635 /* Pods-Khalti_Tests-umbrella.h in Headers */,
+				3A7B808B944E125AF3B6FC5576F803EC /* Khalti-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F4237D98C85CC238CA6C63E6D0719DB4 /* Headers */ = {
+		CDD89AE2B5E03B80EF60EB95DE649BE9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9522718D754C872BF535A670E984E47C /* Pods-Khalti_Example-umbrella.h in Headers */,
+				B89E3F69B65F9F1033495F254C6FE7FD /* IQBarButtonItem.h in Headers */,
+				F7A5376102E8A5DDE3B67B1F01497D03 /* IQKeyboardManager-umbrella.h in Headers */,
+				266CC0324D1A0024FDE39A2DC8FDE73A /* IQKeyboardManager.h in Headers */,
+				E887EB54D7A5D4132B0AE0CC28B6C984 /* IQKeyboardManagerConstants.h in Headers */,
+				4EDAA3CBC9D424B3E8A8FDB78AB2C563 /* IQKeyboardManagerConstantsInternal.h in Headers */,
+				43B515EFF247E214FE33401EC8121D8E /* IQKeyboardReturnKeyHandler.h in Headers */,
+				7A2685E30335AB08F230A5EF4C703DA6 /* IQNSArray+Sort.h in Headers */,
+				E5EBDD83953D2E17DA2025AC0243F3E5 /* IQPreviousNextView.h in Headers */,
+				C91D1216111E6B2DC6F0717E1A86E5CD /* IQTextView.h in Headers */,
+				695B15B926033750A60778938829CACE /* IQTitleBarButtonItem.h in Headers */,
+				8D3D649AC816938B8B78CAEC5CE8962F /* IQToolbar.h in Headers */,
+				FD7A36750DCF463CEA1958FE5CA5A1B1 /* IQUIScrollView+Additions.h in Headers */,
+				FA4D5BB0A7CC863C9B52E990ED4002CB /* IQUITextFieldView+Additions.h in Headers */,
+				0E2EF782F412B9E4B62EC9D58313964E /* IQUIView+Hierarchy.h in Headers */,
+				CB1BA39A04D63DE4DBACCD1F14ECBB4A /* IQUIView+IQKeyboardToolbar.h in Headers */,
+				A9A1B4884406BA13CF99C74C85056DDF /* IQUIViewController+Additions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3D705DB217B51F98C71DD70BB5B64058 /* Pods-Khalti_Tests */ = {
+		6BAA778B4143256F9CFD1D1C2A7F2F14 /* Pods-Khalti_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3413C6C482385D529B602C99E8B3E84C /* Build configuration list for PBXNativeTarget "Pods-Khalti_Tests" */;
+			buildConfigurationList = 00515D45E4CE86FD1B4A26B3815E5A5D /* Build configuration list for PBXNativeTarget "Pods-Khalti_Example" */;
 			buildPhases = (
-				E985B3D01F6CEDAFF65A27F68A73A228 /* Sources */,
-				F9D530C08D2FFD48352B5707E00BCF5A /* Frameworks */,
-				A893A062B40A9B5AFAC44AE737031825 /* Headers */,
+				113B92AB4CB51577B3DDE909AD98FFC6 /* Headers */,
+				64C0C5819389D8067FA2C58B5E58CA58 /* Sources */,
+				2FD8AA413CB07C17B9E32926641EBCAE /* Frameworks */,
+				036780527357D58DDB16E3947AB88771 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				ED74A439A671B4032FD7A0BB42905E68 /* PBXTargetDependency */,
+				5DFAF81273C3E1967937186A141F7408 /* PBXTargetDependency */,
+				E50A98984276478F9247FB7BAC66FA7B /* PBXTargetDependency */,
 			);
-			name = "Pods-Khalti_Tests";
-			productName = "Pods-Khalti_Tests";
-			productReference = 6FC63AB5B723C733A9277AC164C995E1 /* Pods_Khalti_Tests.framework */;
+			name = "Pods-Khalti_Example";
+			productName = "Pods-Khalti_Example";
+			productReference = 6DF4150752CB6A50AC8A8117335CC059 /* Pods_Khalti_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4C45632F158E819CB8C9C9CF3588D4DC /* Khalti-Khalti */ = {
+		9B626A7C5C3E4F2D7EA61CE2AC8856D1 /* Khalti */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4C80A310E7451183518C702F83A48934 /* Build configuration list for PBXNativeTarget "Khalti-Khalti" */;
+			buildConfigurationList = 221EB3CCDCD6F35F1BF02B2A7ABD9A4F /* Build configuration list for PBXNativeTarget "Khalti" */;
 			buildPhases = (
-				5B0641EC7232D9B83828F6864B5A29A9 /* Sources */,
-				EA439453FB1955AADEE2D29C136913FD /* Frameworks */,
-				5C68F529654AE4EBCB1E2170082AA88F /* Resources */,
+				822385C6B8DDC0E1DCD95FF064F64C83 /* Headers */,
+				2F7A172E7994A799E46BEA40FD0A5C27 /* Sources */,
+				92572795C78F1F7DB99531DE28CA9A11 /* Frameworks */,
+				9825FA9DDE127B78C490D9D6EF5E0078 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE12F754A2F6F385DE5E3D4F53F35FC7 /* PBXTargetDependency */,
+			);
+			name = Khalti;
+			productName = Khalti;
+			productReference = D7BEA065D3084C087A767E75EAD306B5 /* Khalti.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A938F7AB77B92F5273D43659F12031AD /* IQKeyboardManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F1E080D0C17D9EECB7A0F73562A384B /* Build configuration list for PBXNativeTarget "IQKeyboardManager" */;
+			buildPhases = (
+				CDD89AE2B5E03B80EF60EB95DE649BE9 /* Headers */,
+				487B8E18B11D5D96332ADD13BA3CE7C3 /* Sources */,
+				666394A079C4D1571C47CC2BDC42F11F /* Frameworks */,
+				D2491073816F91F3BC79E28EA02C451B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IQKeyboardManager;
+			productName = IQKeyboardManager;
+			productReference = 6E9574553BA9AC23D84DAACFB6DD1E83 /* IQKeyboardManager.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C4824CEAAF385C7E916F7FDA9E382AEE /* Khalti-Khalti */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A65A55EA69C327598E711ADE4A1C2EF8 /* Build configuration list for PBXNativeTarget "Khalti-Khalti" */;
+			buildPhases = (
+				148FEE2CAF0321F8C4CB363D57FDBABC /* Sources */,
+				87FCC9F90EF080FBC13060AECDE0E01A /* Frameworks */,
+				CFDFB2971F3437B2CD9A0D133DE59266 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -581,60 +620,23 @@
 			productReference = 478A1869608FD4433F8A246D1E3EA820 /* Khalti.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		64BB75CF06AB287FCC1ED7DA48A8CC56 /* Pods-Khalti_Example */ = {
+		FDE6D4E2C1B68F847F57C65B4CDCF20F /* Pods-Khalti_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6C9B1FC018CEE95E3586E1F08E465429 /* Build configuration list for PBXNativeTarget "Pods-Khalti_Example" */;
+			buildConfigurationList = A461EC4E1BB36DB057437D0D2EAF9DC5 /* Build configuration list for PBXNativeTarget "Pods-Khalti_Tests" */;
 			buildPhases = (
-				71D88584D8D5C97FD4220950C0F31339 /* Sources */,
-				F7DC938A4466E5594D4CA1F3A2EF1117 /* Frameworks */,
-				F4237D98C85CC238CA6C63E6D0719DB4 /* Headers */,
+				20119FDB9553C9BF8D08D49E34696C31 /* Headers */,
+				57C82B43569E64F1471AD47F80B9D6CE /* Sources */,
+				11D216CA1AEE30456D620336A5C4BC99 /* Frameworks */,
+				3E126664374FD7CCAFE9CD4FC75A7E16 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E16CED6092A756EEF689EB9AA4B8B174 /* PBXTargetDependency */,
-				DFB8ACB2FE53022E68059C667E7E5E7A /* PBXTargetDependency */,
+				D300570D3240E23C35EB488B99961E96 /* PBXTargetDependency */,
 			);
-			name = "Pods-Khalti_Example";
-			productName = "Pods-Khalti_Example";
-			productReference = 6DF4150752CB6A50AC8A8117335CC059 /* Pods_Khalti_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D10317FDDC88F696EDC00138503B1D69 /* Khalti */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 84067E8E827F8A78F8DEBD390B910019 /* Build configuration list for PBXNativeTarget "Khalti" */;
-			buildPhases = (
-				2D3F08CC8A900E72490D28F054E5F894 /* Sources */,
-				57C35E30F3EE9280E227ECAC6491A492 /* Frameworks */,
-				D9F6C6F2458C1494D2B9CFE73BE11935 /* Resources */,
-				660D368C7DA6DE0C894F3BD3367D299D /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				ABB3D3B9A784D8C273FC0CAEC3F02FFB /* PBXTargetDependency */,
-			);
-			name = Khalti;
-			productName = Khalti;
-			productReference = D7BEA065D3084C087A767E75EAD306B5 /* Khalti.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D55833EC3DE9EBD9B329CAEB983D5A9D /* IQKeyboardManager */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 22A2379BF2B87BFC7BA495F9BD85DD28 /* Build configuration list for PBXNativeTarget "IQKeyboardManager" */;
-			buildPhases = (
-				EF7C3A296212CFB87AC9B8A7939E3733 /* Sources */,
-				8944C0B131AF550CF6CC8073435E22F2 /* Frameworks */,
-				03AB14DB0235B494910320324F3BF2C2 /* Headers */,
-				2E730D5A406D8720DD8830A43109145D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = IQKeyboardManager;
-			productName = IQKeyboardManager;
-			productReference = 6E9574553BA9AC23D84DAACFB6DD1E83 /* IQKeyboardManager.framework */;
+			name = "Pods-Khalti_Tests";
+			productName = "Pods-Khalti_Tests";
+			productReference = 6FC63AB5B723C733A9277AC164C995E1 /* Pods_Khalti_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -658,141 +660,493 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D55833EC3DE9EBD9B329CAEB983D5A9D /* IQKeyboardManager */,
-				D10317FDDC88F696EDC00138503B1D69 /* Khalti */,
-				4C45632F158E819CB8C9C9CF3588D4DC /* Khalti-Khalti */,
-				64BB75CF06AB287FCC1ED7DA48A8CC56 /* Pods-Khalti_Example */,
-				3D705DB217B51F98C71DD70BB5B64058 /* Pods-Khalti_Tests */,
+				A938F7AB77B92F5273D43659F12031AD /* IQKeyboardManager */,
+				9B626A7C5C3E4F2D7EA61CE2AC8856D1 /* Khalti */,
+				C4824CEAAF385C7E916F7FDA9E382AEE /* Khalti-Khalti */,
+				6BAA778B4143256F9CFD1D1C2A7F2F14 /* Pods-Khalti_Example */,
+				FDE6D4E2C1B68F847F57C65B4CDCF20F /* Pods-Khalti_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2E730D5A406D8720DD8830A43109145D /* Resources */ = {
+		036780527357D58DDB16E3947AB88771 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				788BA72F67004504FFDFC670048786B5 /* IQKeyboardManager.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5C68F529654AE4EBCB1E2170082AA88F /* Resources */ = {
+		3E126664374FD7CCAFE9CD4FC75A7E16 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46D1C167AAE551E4551FAFC7CE555D54 /* CheckOut.storyboard in Resources */,
-				15B01E95C25153E02D2CD2D56848BB48 /* images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D9F6C6F2458C1494D2B9CFE73BE11935 /* Resources */ = {
+		9825FA9DDE127B78C490D9D6EF5E0078 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CB4F1ABBB50C1A12138C699613AFF74 /* Khalti.bundle in Resources */,
+				38BC30C5D37873A81BD640AD81D0B6BB /* Khalti.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFDFB2971F3437B2CD9A0D133DE59266 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48A682A843C729F832E95B4D9E79574A /* CheckOut.storyboard in Resources */,
+				F36545DFE43F5D04592758A4199481E6 /* images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2491073816F91F3BC79E28EA02C451B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFC09D4DDE3E33FB00200C0E03A3B354 /* IQKeyboardManager.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2D3F08CC8A900E72490D28F054E5F894 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				097BDC30ED8BEE1976A78978A18187CE /* BankingPop.swift in Sources */,
-				59FD270EB5FD025F9BBD6A2E56D97C42 /* BankingPopViewController.swift in Sources */,
-				68E783801317D7C501767623C17492E9 /* CheckOutViewController.swift in Sources */,
-				E5199A8BD4AEE5B07F31A5D726466AAA /* Config.swift in Sources */,
-				483DE9DE0832BECE2AF5AA450443FC35 /* Ebanking.swift in Sources */,
-				C750E7C55570AAB4C1CC05ED09B287B8 /* EbankingViewController.swift in Sources */,
-				3DA3A3D18CE3247C79D330DD501FC3B0 /* ErrorAction.swift in Sources */,
-				BB9E6CA2B3C223D9DE66C81D023944C3 /* KaltiApi.swift in Sources */,
-				311980FF718CBD15EF7EC916BFB96906 /* Khalti-dummy.m in Sources */,
-				20EA3D335651972C34843631389862C6 /* Khalti.swift in Sources */,
-				7AEA6896F609AB8ADAAD9375048323A4 /* KhaltiPayDelegate.swift in Sources */,
-				DB8D3F638F5626FACABB2F847047325D /* KhaltiPayment.swift in Sources */,
-				D198671949979317A8547DDE9E4C265B /* KhaltiPaymentViewController.swift in Sources */,
-				8A9EDC6CED3BF77C9FC22A400C4FE536 /* List.swift in Sources */,
-				BC2AE758B98DD40A79D6DA8F9F7075B7 /* ListCell.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B0641EC7232D9B83828F6864B5A29A9 /* Sources */ = {
+		148FEE2CAF0321F8C4CB363D57FDBABC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		71D88584D8D5C97FD4220950C0F31339 /* Sources */ = {
+		2F7A172E7994A799E46BEA40FD0A5C27 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EB11A181898418829743F59AA3C9778 /* Pods-Khalti_Example-dummy.m in Sources */,
+				83F0C1CA2A07FB618F77598BBCBE0631 /* BankingPop.swift in Sources */,
+				8DC3DEB3108EC119D2C56680A7F943F0 /* BankingPopViewController.swift in Sources */,
+				AFD65ABB11B0CD3D3D63B8E1F8033737 /* CheckOutViewController.swift in Sources */,
+				BFF0DB6E50C7CA760F2DF75FC37EB370 /* Config.swift in Sources */,
+				7276C2249C2E9166FD4BAA9E4B5A878D /* Ebanking.swift in Sources */,
+				2705F4D63AED5B1C81170950EDBA0FF1 /* EbankingViewController.swift in Sources */,
+				5B8EF03569F63562143A302D72EC3D3A /* ErrorAction.swift in Sources */,
+				BC02A38613A30AB18A5BE68C546882B3 /* KaltiApi.swift in Sources */,
+				B030B9B3C8A024EC312F290CEA6D0880 /* Khalti-dummy.m in Sources */,
+				19C41620E42A3A4DF03738C72AFB55ED /* Khalti.swift in Sources */,
+				41BA77CFEAB561E3F9B519185B693515 /* KhaltiPayDelegate.swift in Sources */,
+				DB36F63C4DFB8D9B3ABA85EC4786C5F7 /* KhaltiPayment.swift in Sources */,
+				E39A8AE2B37B69CABBE67D8A8475A326 /* KhaltiPaymentViewController.swift in Sources */,
+				B2F680D0240F775C701CD954D2CBF214 /* List.swift in Sources */,
+				9A55E421C9A3401A1ED89FEB58282588 /* ListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E985B3D01F6CEDAFF65A27F68A73A228 /* Sources */ = {
+		487B8E18B11D5D96332ADD13BA3CE7C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				236D1056D72193BD87A9E7C1E436B1C2 /* Pods-Khalti_Tests-dummy.m in Sources */,
+				0E4B8913A6194C1F91B73A74CAED0DCB /* IQBarButtonItem.m in Sources */,
+				9CC2E583FE800ADE166A1C9D3580ACF5 /* IQKeyboardManager-dummy.m in Sources */,
+				40CDAE3042B8831613E47CEA56966B01 /* IQKeyboardManager.m in Sources */,
+				7B9FD8963C83EAD768E39632D58C4CDC /* IQKeyboardReturnKeyHandler.m in Sources */,
+				A4CBB299F1244630410150448F219B08 /* IQNSArray+Sort.m in Sources */,
+				47ACE3AC563AF20D4B5214D3E9D54A24 /* IQPreviousNextView.m in Sources */,
+				3FDA1CCC5C9CF26A05D9BC63FD39080D /* IQTextView.m in Sources */,
+				50211E13372A7BB7F52D15ADF482DD83 /* IQTitleBarButtonItem.m in Sources */,
+				1201B1B59F2CBAE4BFF1C769A089F04B /* IQToolbar.m in Sources */,
+				3D7B9AB514124A054C4743DCCE14A7D9 /* IQUIScrollView+Additions.m in Sources */,
+				7A15663A29FCFAC7A0CEDBD4054CD3F2 /* IQUITextFieldView+Additions.m in Sources */,
+				10D5DDC653E3129429EAA5F479578CF7 /* IQUIView+Hierarchy.m in Sources */,
+				50B7B54B5D5C314F0A7F1D4484FBE38B /* IQUIView+IQKeyboardToolbar.m in Sources */,
+				3F7946B6980350182019FE263719E5CE /* IQUIViewController+Additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EF7C3A296212CFB87AC9B8A7939E3733 /* Sources */ = {
+		57C82B43569E64F1471AD47F80B9D6CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DB2E34289D18AA9810609ADCCBFA181 /* IQBarButtonItem.m in Sources */,
-				A3CE2D718CEB5AC059823178404AF0EF /* IQKeyboardManager-dummy.m in Sources */,
-				2D407C6492BC569F5361B9210C89A19C /* IQKeyboardManager.m in Sources */,
-				E802560B425A04296159872675948D29 /* IQKeyboardReturnKeyHandler.m in Sources */,
-				7C49A18841060D12A58F92CE62C21F9D /* IQNSArray+Sort.m in Sources */,
-				C2B7F4EB405C401EA53023341C05E15E /* IQPreviousNextView.m in Sources */,
-				72EE4A5DC3076CD8C13717D4DAA37DFD /* IQTextView.m in Sources */,
-				958FEEE31215AB970371D4CBAEB8A4DC /* IQTitleBarButtonItem.m in Sources */,
-				CA1E205A4D3A8515ED42F76C2671F1BA /* IQToolbar.m in Sources */,
-				431C76067CB09B1FC0E4DD5AEA6B540A /* IQUIScrollView+Additions.m in Sources */,
-				665B3B037B98D3E3ADB449A43FF14F42 /* IQUITextFieldView+Additions.m in Sources */,
-				DEB92E2DB086E554AEA1DBFA8A9F00D0 /* IQUIView+Hierarchy.m in Sources */,
-				C4AA57B938513DE614A7B90AEF5CD858 /* IQUIView+IQKeyboardToolbar.m in Sources */,
-				C480AC5D32406D4901116FCAC5FB0EB5 /* IQUIViewController+Additions.m in Sources */,
+				8238A3BD3A5E8970DCC4A4D4F6737C87 /* Pods-Khalti_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64C0C5819389D8067FA2C58B5E58CA58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7628112A0717D7B73392A55B348FBDE5 /* Pods-Khalti_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		ABB3D3B9A784D8C273FC0CAEC3F02FFB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Khalti-Khalti";
-			target = 4C45632F158E819CB8C9C9CF3588D4DC /* Khalti-Khalti */;
-			targetProxy = 0C282F668A648ACC50D7F8008E533F0F /* PBXContainerItemProxy */;
-		};
-		DFB8ACB2FE53022E68059C667E7E5E7A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Khalti;
-			target = D10317FDDC88F696EDC00138503B1D69 /* Khalti */;
-			targetProxy = D771693A8126A094EF4AE7FFEE67D7F3 /* PBXContainerItemProxy */;
-		};
-		E16CED6092A756EEF689EB9AA4B8B174 /* PBXTargetDependency */ = {
+		5DFAF81273C3E1967937186A141F7408 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = IQKeyboardManager;
-			target = D55833EC3DE9EBD9B329CAEB983D5A9D /* IQKeyboardManager */;
-			targetProxy = 99ED5C3EE3F3266C19C327626FE7DB0E /* PBXContainerItemProxy */;
+			target = A938F7AB77B92F5273D43659F12031AD /* IQKeyboardManager */;
+			targetProxy = C69914EBC9F5EAB10560F554C8E5B69B /* PBXContainerItemProxy */;
 		};
-		ED74A439A671B4032FD7A0BB42905E68 /* PBXTargetDependency */ = {
+		D300570D3240E23C35EB488B99961E96 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Khalti_Example";
-			target = 64BB75CF06AB287FCC1ED7DA48A8CC56 /* Pods-Khalti_Example */;
-			targetProxy = C1CE0368362D73486AB68F2A502C8D19 /* PBXContainerItemProxy */;
+			target = 6BAA778B4143256F9CFD1D1C2A7F2F14 /* Pods-Khalti_Example */;
+			targetProxy = F54F6DBC3343C5606F0DCADF3C592311 /* PBXContainerItemProxy */;
+		};
+		DE12F754A2F6F385DE5E3D4F53F35FC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Khalti-Khalti";
+			target = C4824CEAAF385C7E916F7FDA9E382AEE /* Khalti-Khalti */;
+			targetProxy = C788C9F92711EAFEA3965890A235E5F3 /* PBXContainerItemProxy */;
+		};
+		E50A98984276478F9247FB7BAC66FA7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Khalti;
+			target = 9B626A7C5C3E4F2D7EA61CE2AC8856D1 /* Khalti */;
+			targetProxy = DFC0B23F3DFDF8514D0F14C7994B36BB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		199D972A13F2B4C56847F7A89CCA83BC /* Debug */ = {
+		0A52728F9312F9E257F2A766F69F340C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADD19F351401958A5DBAAA341588BE05 /* IQKeyboardManager.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardManager/IQKeyboardManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IQKeyboardManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/IQKeyboardManager/IQKeyboardManager.modulemap";
+				PRODUCT_MODULE_NAME = IQKeyboardManager;
+				PRODUCT_NAME = IQKeyboardManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0AD9FFFF60C615791B99B1BFD8B19F7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C502DEA31C8CA0752345EA91807D088 /* Pods-Khalti_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Khalti_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Khalti_Example/Pods-Khalti_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1F45D7E9206594491DF5791F8B181FAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1210261011CA6C6DC5A6CD621B8C4EF8 /* Khalti.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Khalti/Khalti-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Khalti/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Khalti/Khalti.modulemap";
+				PRODUCT_MODULE_NAME = Khalti;
+				PRODUCT_NAME = Khalti;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		21FACF08D4271D14D904BBC825E74C42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3387D624058616DCC958355A5A822B2 /* Pods-Khalti_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Khalti_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Khalti_Example/Pods-Khalti_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2E461EC8A0914605435EB3AAF79889A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9092B0B9960013643A36ACF7387A2A30 /* Pods-Khalti_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Khalti_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Khalti_Tests/Pods-Khalti_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4233764FE38178665E82B9F2AE1CFC69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A762609023FEC595D8761DFABD034B3 /* Pods-Khalti_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Khalti_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Khalti_Tests/Pods-Khalti_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4423AA659EEE9A1A01210A17EE9D8BA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADD19F351401958A5DBAAA341588BE05 /* IQKeyboardManager.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardManager/IQKeyboardManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IQKeyboardManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/IQKeyboardManager/IQKeyboardManager.modulemap";
+				PRODUCT_MODULE_NAME = IQKeyboardManager;
+				PRODUCT_NAME = IQKeyboardManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5A576AE96F4308BFC2E2C1CF51009DD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1210261011CA6C6DC5A6CD621B8C4EF8 /* Khalti.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Khalti/Khalti-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Khalti/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Khalti/Khalti.modulemap";
+				PRODUCT_MODULE_NAME = Khalti;
+				PRODUCT_NAME = Khalti;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5DE19CECB206ACCCACF04D62F93FFDA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		7E7F250F7E818B3C9BE64E26E50F50F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1210261011CA6C6DC5A6CD621B8C4EF8 /* Khalti.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Khalti";
+				INFOPLIST_FILE = "Target Support Files/Khalti/ResourceBundle-Khalti-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = Khalti;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		858D01EEFE984249A9581D18DBEA53F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -846,281 +1200,19 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		1D42BB8BC3505651422827C5E722CA43 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1210261011CA6C6DC5A6CD621B8C4EF8 /* Khalti.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Khalti/Khalti-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Khalti/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Khalti/Khalti.modulemap";
-				PRODUCT_MODULE_NAME = Khalti;
-				PRODUCT_NAME = Khalti;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		1DBF1DFEB97C68FC2AF2F6E43C5EC8F7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9092B0B9960013643A36ACF7387A2A30 /* Pods-Khalti_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Khalti_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Khalti_Tests/Pods-Khalti_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3F44D9E6E2DB8B8E3E105A0EFD3193F1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3387D624058616DCC958355A5A822B2 /* Pods-Khalti_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Khalti_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Khalti_Example/Pods-Khalti_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6B2348FB347E058F9B32326787168D92 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ADD19F351401958A5DBAAA341588BE05 /* IQKeyboardManager.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardManager/IQKeyboardManager-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/IQKeyboardManager/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/IQKeyboardManager/IQKeyboardManager.modulemap";
-				PRODUCT_MODULE_NAME = IQKeyboardManager;
-				PRODUCT_NAME = IQKeyboardManager;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		7E9B763B6F4835DD52081669024D794D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C502DEA31C8CA0752345EA91807D088 /* Pods-Khalti_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Khalti_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Khalti_Example/Pods-Khalti_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C29F6CE377826EB4D722A49614E5C193 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6A762609023FEC595D8761DFABD034B3 /* Pods-Khalti_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Khalti_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Khalti_Tests/Pods-Khalti_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C65AB6202DCBC1905641588CEDCC5BDF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ADD19F351401958A5DBAAA341588BE05 /* IQKeyboardManager.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardManager/IQKeyboardManager-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/IQKeyboardManager/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/IQKeyboardManager/IQKeyboardManager.modulemap";
-				PRODUCT_MODULE_NAME = IQKeyboardManager;
-				PRODUCT_NAME = IQKeyboardManager;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D7E31510127F7700DFC7AC400C65413C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1210261011CA6C6DC5A6CD621B8C4EF8 /* Khalti.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Khalti/Khalti-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Khalti/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Khalti/Khalti.modulemap";
-				PRODUCT_MODULE_NAME = Khalti;
-				PRODUCT_NAME = Khalti;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		DD28E3ADD3D8989776A21AA5CF6957A5 /* Debug */ = {
+		A6469F43DADED3802D03C8EA3036A703 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1210261011CA6C6DC5A6CD621B8C4EF8 /* Khalti.xcconfig */;
 			buildSettings = {
@@ -1135,89 +1227,33 @@
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
-		};
-		DD6C2EC483735FB689EED0C3CEBE93F6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1210261011CA6C6DC5A6CD621B8C4EF8 /* Khalti.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Khalti";
-				INFOPLIST_FILE = "Target Support Files/Khalti/ResourceBundle-Khalti-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = Khalti;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		FDB2FC4A1E5891381CD9D922145497F1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		22A2379BF2B87BFC7BA495F9BD85DD28 /* Build configuration list for PBXNativeTarget "IQKeyboardManager" */ = {
+		00515D45E4CE86FD1B4A26B3815E5A5D /* Build configuration list for PBXNativeTarget "Pods-Khalti_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6B2348FB347E058F9B32326787168D92 /* Debug */,
-				C65AB6202DCBC1905641588CEDCC5BDF /* Release */,
+				21FACF08D4271D14D904BBC825E74C42 /* Debug */,
+				0AD9FFFF60C615791B99B1BFD8B19F7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F1E080D0C17D9EECB7A0F73562A384B /* Build configuration list for PBXNativeTarget "IQKeyboardManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4423AA659EEE9A1A01210A17EE9D8BA0 /* Debug */,
+				0A52728F9312F9E257F2A766F69F340C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		221EB3CCDCD6F35F1BF02B2A7ABD9A4F /* Build configuration list for PBXNativeTarget "Khalti" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F45D7E9206594491DF5791F8B181FAA /* Debug */,
+				5A576AE96F4308BFC2E2C1CF51009DD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1225,44 +1261,26 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				199D972A13F2B4C56847F7A89CCA83BC /* Debug */,
-				FDB2FC4A1E5891381CD9D922145497F1 /* Release */,
+				858D01EEFE984249A9581D18DBEA53F1 /* Debug */,
+				5DE19CECB206ACCCACF04D62F93FFDA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3413C6C482385D529B602C99E8B3E84C /* Build configuration list for PBXNativeTarget "Pods-Khalti_Tests" */ = {
+		A461EC4E1BB36DB057437D0D2EAF9DC5 /* Build configuration list for PBXNativeTarget "Pods-Khalti_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1DBF1DFEB97C68FC2AF2F6E43C5EC8F7 /* Debug */,
-				C29F6CE377826EB4D722A49614E5C193 /* Release */,
+				2E461EC8A0914605435EB3AAF79889A3 /* Debug */,
+				4233764FE38178665E82B9F2AE1CFC69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4C80A310E7451183518C702F83A48934 /* Build configuration list for PBXNativeTarget "Khalti-Khalti" */ = {
+		A65A55EA69C327598E711ADE4A1C2EF8 /* Build configuration list for PBXNativeTarget "Khalti-Khalti" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DD28E3ADD3D8989776A21AA5CF6957A5 /* Debug */,
-				DD6C2EC483735FB689EED0C3CEBE93F6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6C9B1FC018CEE95E3586E1F08E465429 /* Build configuration list for PBXNativeTarget "Pods-Khalti_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3F44D9E6E2DB8B8E3E105A0EFD3193F1 /* Debug */,
-				7E9B763B6F4835DD52081669024D794D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		84067E8E827F8A78F8DEBD390B910019 /* Build configuration list for PBXNativeTarget "Khalti" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D7E31510127F7700DFC7AC400C65413C /* Debug */,
-				1D42BB8BC3505651422827C5E722CA43 /* Release */,
+				A6469F43DADED3802D03C8EA3036A703 /* Debug */,
+				7E7F250F7E818B3C9BE64E26E50F50F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
