@@ -179,7 +179,11 @@ class EbankingViewController: UIViewController {
             
             if let urll = urlComp?.url {
                 if UIApplication.shared.canOpenURL(urll) {
-                    UIApplication.shared.openURL(urll)
+                    if #available(iOS 10.0, *) {
+                        UIApplication.shared.open(urll, options: [ : ], completionHandler: nil)
+                    } else {
+                        UIApplication.shared.openURL(urll)
+                    }
                 } else {
                     self.showError(with: "Unable to open your request.", dismiss: false)
                 }
