@@ -250,7 +250,11 @@ class EbankingViewController: UIViewController {
     }
     
     func addLoading() {
+        #if swift (>=4.2)
+        let activityIndicator = UIActivityIndicatorView(style: .whiteLarge)
+        #else
         let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
+        #endif
         activityIndicator.color = UIColor.black
         self.activityIndicator = activityIndicator
     }

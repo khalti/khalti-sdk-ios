@@ -180,8 +180,12 @@ class CheckOutViewController: UIViewController {
     }
     
     private func add(asChildViewController viewController: UIViewController) {
-        
-        addChildViewController(viewController) // Add Child View Controller
+         // Add Child View Controller
+        #if swift (>=4.2)
+        addChild(viewController)
+        #else
+        addChildViewController(viewController)
+        #endif
         containerView.addSubview(viewController.view) // Add Child View as Subview
         
         // Configure Child View
@@ -189,16 +193,29 @@ class CheckOutViewController: UIViewController {
         viewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
         // Notify Child View Controller
+        #if swift (>=4.2)
+        viewController.didMove(toParent: self)
+        #else
         viewController.didMove(toParentViewController: self)
+        #endif
     }
     
     private func remove(asChildViewController viewController: UIViewController) {
         
-        viewController.willMove(toParentViewController: nil) // Notify Child View Controller
+        // Notify Child View Controller
+        #if swift (>=4.2)
+            viewController.willMove(toParent: nil)
+        #else
+            viewController.willMove(toParentViewController: nil)
+        #endif
         viewController.view.removeFromSuperview() // Remove Child View From Superview
         
         // Notify Child View Controller
-        viewController.removeFromParentViewController()
+        #if swift (>=4.2)
+            viewController.removeFromParent()
+        #else
+            viewController.removeFromParentViewController()
+        #endif
     }
     
     fileprivate func updateView(to:PaymentType) {

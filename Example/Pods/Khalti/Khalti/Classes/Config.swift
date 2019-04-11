@@ -16,16 +16,18 @@ import Foundation
     private var productUrl:String?
     private var amount:Int
     private var additionalData:Dictionary<String,String>?
+    private var ebankingPayment:Bool = true
     private var cardPayment:Bool = false
     
-    @objc public init(publicKey:String,  amount:Int, productId:String,productName:String, productUrl:String? = nil, additionalData:Dictionary<String,String>? = nil, cardPayment: Bool = false) {
+    @objc public init(publicKey:String,  amount:Int, productId:String,productName:String, productUrl:String? = nil, additionalData:Dictionary<String,String>? = nil, ebankingPayment: Bool = true) {
         self.publicKey = publicKey
         self.productId = productId
         self.productName = productName
         self.productUrl = productUrl
         self.amount = amount
         self.additionalData = additionalData
-        self.cardPayment = cardPayment
+        self.ebankingPayment = ebankingPayment
+        self.cardPayment = false
     }
     
     @objc public func getPublicKey() -> String {
@@ -48,6 +50,9 @@ import Foundation
         return self.productUrl
     }
     
+    @objc public func getebankingView() -> Bool {
+        return self.ebankingPayment
+    }
     
     @objc public func getCardView() -> Bool {
         return self.cardPayment

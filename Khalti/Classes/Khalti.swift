@@ -53,7 +53,7 @@ struct KhaltiColor {
         navigationViewController.navigationBar.barTintColor = KhaltiColor.base
         
         #if swift(>=4)
-            let attribute = [NSAttributedStringKey.foregroundColor : UIColor.white]
+        let attribute = [NSAttributedString.Key.foregroundColor : UIColor.white]
             navigationViewController.navigationBar.titleTextAttributes = attribute
         #else
             let attribute = [NSForegroundColorAttributeName: UIColor.white]

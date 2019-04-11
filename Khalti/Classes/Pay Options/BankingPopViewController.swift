@@ -135,10 +135,18 @@ extension BankingPopViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableViewAutomaticDimension
+        #if swift (>=4.2)
+            return UITableView.automaticDimension
+        #else
+            return UITableViewAutomaticDimension
+        #endif
     }
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableViewAutomaticDimension
+        #if swift (>=4.2)
+            return UITableView.automaticDimension
+        #else
+            return UITableViewAutomaticDimension
+        #endif
     }
 }
