@@ -22,6 +22,7 @@
 // THE SOFTWARE.
 
 #import <UIKit/UIView.h>
+#import <UIKit/UIViewController.h>
 #import "IQKeyboardManagerConstants.h"
 
 @class UICollectionView, UIScrollView, UITableView, UISearchBar, NSArray;
@@ -62,12 +63,12 @@
 /**
  Returns all siblings of the receiver which canBecomeFirstResponder.
  */
-@property (nonnull, nonatomic, readonly, copy) NSArray *responderSiblings;
+@property (nonnull, nonatomic, readonly, copy) NSArray<__kindof UIView*> *responderSiblings;
 
 /**
  Returns all deep subViews of the receiver which canBecomeFirstResponder.
  */
-@property (nonnull, nonatomic, readonly, copy) NSArray *deepResponderViews;
+@property (nonnull, nonatomic, readonly, copy) NSArray<__kindof UIView*> *deepResponderViews;
 
 ///-------------------------
 /// @name Special TextFields
@@ -76,7 +77,7 @@
 /**
  Returns searchBar if receiver object is UISearchBarTextField, otherwise return nil.
  */
-@property (nullable, nonatomic, readonly) UISearchBar *searchBar;
+@property (nullable, nonatomic, readonly) UISearchBar *textFieldSearchBar;
 
 /**
  Returns YES if the receiver object is UIAlertSheetTextField, otherwise return NO.
@@ -113,6 +114,12 @@
 
 @end
 
+
+@interface UIViewController (IQ_UIView_Hierarchy)
+
+-(nullable UIViewController*)parentIQContainerViewController;
+
+@end
 
 /**
  NSObject category to used for logging purposes

@@ -1,6 +1,6 @@
 PODS:
-  - IQKeyboardManager (6.0.3)
-  - Khalti (1.0.13)
+  - IQKeyboardManager (6.2.1)
+  - Khalti (1.0.14)
 
 DEPENDENCIES:
   - IQKeyboardManager
@@ -15,9 +15,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  IQKeyboardManager: c390e612f4b98c8fd748016470138537dc163ead
-  Khalti: 477042fabda3e3781fa56829ded89c5f28fb0288
+  IQKeyboardManager: 964638372b4a61892cc74fdfa6fd26de8c9464a2
+  Khalti: b7d6688887bb7079b63471d1c0fe9d3a65b32627
 
-PODFILE CHECKSUM: c3deb649febb3e38b67eab739f641c8a137b97b2
+PODFILE CHECKSUM: f15c808c8be75207e3c94dfad4e746e17774b0d8
 
 COCOAPODS: 1.5.3
