@@ -180,7 +180,7 @@ Mobile : 9801165568
 
  Email: merchant@khalti.com -->
 
-For Queries, feel free to mail us at: [here](mailto:merchant@khalti.com?cc=rajendrak@janakitech.com,developers@khalti.com,support@khalti.com)
+For Queries, feel free to mail us at: [here](mailto:merchant@khalti.com?cc=ios@khalti.com,rajendrakarki@khalti.com,bikasgiri@khalti.com,developers@khalti.com,support@khalti.com)
 
 <!-- Check out the source for Khalti checkout on [github ](https://github.com/khalti/khalti-sdk-ios/). -->
 Check out the [API Documentation](http://docs.khalti.com/checkout/ios/).
