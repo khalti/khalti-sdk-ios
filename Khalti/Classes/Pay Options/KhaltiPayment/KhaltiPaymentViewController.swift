@@ -53,7 +53,21 @@ class KhaltiPaymentViewController: UIViewController {
             showError(with: "Amount not found")
             return
         }
-        self.payInitiateButton.setTitle("PAY RS \(amount/100)", for: .normal)
+        let amounInDouble = Double(amount)/100
+        
+        let amountInString = String(format:"%.2f", amounInDouble)
+        if amountInString.contains("00"){
+            let separatedString = amountInString.components(separatedBy: ".")
+            if separatedString.count > 0{
+                self.payInitiateButton.setTitle("PAY RS \(separatedString[0])", for: .normal)
+
+            }
+
+        }else{
+            self.payInitiateButton.setTitle("PAY RS \(amountInString)", for: .normal)
+
+        }
+        
         
         self.payInitiateButton.layer.cornerRadius = 5.0
         self.payInitiateButton.layer.masksToBounds = true
