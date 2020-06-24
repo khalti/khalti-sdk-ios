@@ -7,7 +7,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Khalti'
-  s.version          = '1.0.15'
+  s.version          = '1.0.16'
   s.swift_versions   = '3.2'
   s.summary          = 'Khalti is the new generation Payment Gateway, Digital Wallet and API provider for various services.'
   s.description      = <<-DESC
