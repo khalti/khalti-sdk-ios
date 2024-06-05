@@ -638,6 +638,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					691B4543810BB5FC3D86AD379112DDC5 = {
+						DevelopmentTeam = HW5PK5B369;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1059,6 +1064,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Khalti";
+				DEVELOPMENT_TEAM = HW5PK5B369;
 				IBSC_MODULE = Khalti;
 				INFOPLIST_FILE = "Target Support Files/Khalti/ResourceBundle-Khalti-Khalti-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1208,6 +1214,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Khalti";
+				DEVELOPMENT_TEAM = HW5PK5B369;
 				IBSC_MODULE = Khalti;
 				INFOPLIST_FILE = "Target Support Files/Khalti/ResourceBundle-Khalti-Khalti-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
