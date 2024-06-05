@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.author           = { 'khalti' => 'info@khalti.com' }
   s.source           = { :git => 'https://github.com/khalti/khalti-sdk-ios.git', :branch => 'master', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/KhaltiOfficial'
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '12.0'
   s.source_files = 'khalti/Classes/**/*.{swift}'
   s.resource_bundles = {
     'Khalti' => ['khalti/Assets/**/*.{png,storyboard,xib,xcassets}']
